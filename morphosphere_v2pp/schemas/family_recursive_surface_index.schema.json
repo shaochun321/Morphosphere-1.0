@@ -1,0 +1,18 @@
+{
+  "$id": "https://morphosphere.local/schemas/family_recursive_surface_index.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FamilyRecursiveSurfaceIndex",
+  "type": "object",
+  "required": ["surface_id", "clock_n", "transition_ids"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "surface_id": { "type": "string" },
+    "clock_n": { "type": "integer" },
+    "transition_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "shell0_verdict": { "type": "string", "default": "unknown" }
+  }
+}

@@ -1,0 +1,1 @@
+{"boundary": {"hot_swap_forbidden": true, "p_r_before_xi": true, "source_facts_immutable": true}, "parameters": {"bias": -0.5, "boundary_penalty": -0.7, "source": "legacy_like_comparison_not_hot_swapped", "support_weight": 1.2, "transport_weight": 1.5}, "profile_id": "baseline_current_governed_profile_v18", "role": "baseline_current_mainline_proxy"}

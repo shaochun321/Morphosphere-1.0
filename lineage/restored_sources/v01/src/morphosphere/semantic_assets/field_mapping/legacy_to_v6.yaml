@@ -1,0 +1,42 @@
+# legacy_to_v6.yaml
+# Mapping of legacy fields to V6 Unified Architecture fields
+
+Stage1SignalPacket:
+  maps_to: CellGraphState
+  mapping_type: exact
+  used_for: validation
+
+InterfaceBundleTensor:
+  maps_to: LegacyProjectionView.bundle_tensor_compat
+  mapping_type: derived
+  used_for: replay
+
+CompileSignalPacket.p_band:
+  maps_to: PrimaryBandRecord
+  mapping_type: approximate
+  used_for: validation
+
+CompileSignalPacket.r_band:
+  maps_to: ResidualBandRecord
+  mapping_type: approximate
+  used_for: validation
+
+old_t_seed:
+  maps_to: TSeedReplayPacket
+  mapping_type: manual_review
+  used_for: replay
+
+old_family_surface:
+  maps_to: LegacyProjectionView.family_surface_compat
+  mapping_type: derived
+  used_for: replay
+
+reader_audit_outputs:
+  maps_to: ReplayAlignment
+  mapping_type: approximate
+  used_for: readout
+
+semantic_library_term_layer:
+  maps_to: SemanticReadoutSurface
+  mapping_type: exact
+  used_for: readout

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-05-05T19:09:29.940253+00:00",
+  "outputs_dir": "/mnt/data/morpho_v365_full_run/Morphosphere_v36_5_full_lineage_rebase/outputs",
+  "source_dbs": {
+    "m25": "/mnt/data/morpho_v365_full_run/Morphosphere_v36_5_full_lineage_rebase/outputs/m25.db",
+    "m35h": "/mnt/data/morpho_v365_full_run/Morphosphere_v36_5_full_lineage_rebase/outputs/m35H.db",
+    "m365": "/mnt/data/morpho_v365_full_run/Morphosphere_v36_5_full_lineage_rebase/outputs/m365.db",
+    "m362": "/mnt/data/morpho_v365_full_run/Morphosphere_v36_5_full_lineage_rebase/outputs/m362.db"
+  },
+  "distance_threshold": 6.0,
+  "overload_threshold": 50,
+  "script": "/mnt/data/probe_v366_feasibility.py",
+  "hyperedge_arity": {
+    "status": "PASS",
+    "hyperedge_count": 120,
+    "avg_node_count_per_hyperedge": 7.125,
+    "min_node_count": 7,
+    "max_node_count": 8,
+    "ge_3_count": 120,
+    "lt_3_count": 0
+  },
+  "xin_carrier_definition": {
+    "status": "PASS_WITH_LIMITATION",
+    "carrier_count": 31,
+    "external_definition_nonnull_count": 31,
+    "external_definition_nonnull_ratio": 1.0,
+    "polyphony_candidate_count_ge_3_defs": 0,
+    "definition_families_count": 6
+  },
+  "nonlocal_projection": {
+    "status": "PASS_PROXY_EVIDENCE",
+    "projected_hyperedge_count": 120,
+    "projected_pair_count": 2625,
+    "distance_threshold": 6.0,
+    "pairs_above_threshold": 1984,
+    "max_projected_distance": 10.288855498169907,
+    "top_pair_hyperedge": "he35h_0005",
+    "top_pair_node_a": "hn35h_0070",
+    "top_pair_node_b": "hn35h_0138",
+    "top_pair_cell_a": "stc_0_20",
+    "top_pair_cell_b": "stc_8_38",
+    "direct_fk_available": false
+  },
+  "overload": {
+    "status": "PASS_NO_OVERLOAD",
+    "objects_checked": 1078,
+    "overload_threshold": 50,
+    "overloaded_count": 0,
+    "max_total_references": 4,
+    "top_ref": "xin_carrier_000",
+    "top_ref_source": "v362_candidate_path_inventory.xin_carrier_ref",
+    "top_ref_counts": {
+      "hyperedges": 0,
+      "paths": 4,
+      "total": 4
+    }
+  }
+}

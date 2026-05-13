@@ -1,0 +1,25 @@
+{
+  "$id": "morphosphere/schemas/external_anomaly_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalAnomalyLedger",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "anomaly_type", "anomaly_score"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "anomaly_type": {
+      "type": "string",
+      "enum": ["representation", "transport", "boundary", "freeze", "replay", "noise_budget_overrun", "unexplained_growth"]
+    },
+    "anomaly_score": {"type": "number"},
+    "possible_sources": {"type": "array", "items": {"type": "string"}, "default": []},
+    "linked_object_refs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "evidence_ref": {"type": ["string", "null"]}
+  }
+}

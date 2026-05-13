@@ -1,0 +1,101 @@
+{
+  "version": "v37417_honest_eval",
+  "elapsed_s": 0.24,
+  "train_seeds": [
+    42,
+    100,
+    200
+  ],
+  "test_seeds": [
+    500,
+    600,
+    700
+  ],
+  "results": {
+    "Legacy (lookup table)": {
+      "train_accuracy": 0.8249,
+      "test_accuracy": 0.887,
+      "test_std": 0.0259,
+      "test_per_seed": [
+        0.8814,
+        0.8644,
+        0.9153
+      ],
+      "train_test_gap": -0.0621,
+      "test_per_regime": {
+        "stationary": 1.0,
+        "slow_drift": 1.0,
+        "fast_drift": 1.0,
+        "oscillation": 1.0,
+        "jump": 0.611,
+        "diffusion": 0.278
+      },
+      "test_confusion": {
+        "stationary": {
+          "stationary": 51
+        },
+        "slow_drift": {
+          "slow_drift": 36
+        },
+        "oscillation": {
+          "oscillation": 36
+        },
+        "fast_drift": {
+          "fast_drift": 18
+        },
+        "jump": {
+          "jump": 11,
+          "stationary": 6,
+          "oscillation": 1
+        },
+        "diffusion": {
+          "fast_drift": 4,
+          "diffusion": 5,
+          "oscillation": 9
+        }
+      },
+      "verdict": "GOOD GENERALIZATION"
+    },
+    "Bayesian (online)": {
+      "train_accuracy": 0.9548,
+      "test_accuracy": 0.9887,
+      "test_std": 0.0098,
+      "test_per_seed": [
+        0.9831,
+        0.9831,
+        1.0
+      ],
+      "train_test_gap": -0.0339,
+      "test_per_regime": {
+        "stationary": 1.0,
+        "slow_drift": 1.0,
+        "fast_drift": 1.0,
+        "oscillation": 1.0,
+        "jump": 1.0,
+        "diffusion": 0.889
+      },
+      "test_confusion": {
+        "stationary": {
+          "stationary": 51
+        },
+        "slow_drift": {
+          "slow_drift": 36
+        },
+        "oscillation": {
+          "oscillation": 36
+        },
+        "fast_drift": {
+          "fast_drift": 18
+        },
+        "jump": {
+          "jump": 18
+        },
+        "diffusion": {
+          "diffusion": 16,
+          "fast_drift": 2
+        }
+      },
+      "verdict": "GOOD GENERALIZATION"
+    }
+  }
+}

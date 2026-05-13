@@ -1,0 +1,125 @@
+========================================================================
+SQL Query #1  (第一刀: 法医尸检报告)
+========================================================================
+
+  SQL:
+    SELECT node_uid, death_reason, dna_snapshot_json
+    FROM pipe_stress_node_necropolis
+    LIMIT 1;
+
+------------------------------------------------------------------------
+  RESULT:
+------------------------------------------------------------------------
+  node_uid:          stress_ctc_01_0_0
+  death_reason:      inertia_singularity
+  dna_snapshot_json:
+    [
+        {
+            "from": "ctc_01_0_0",
+            "to": "ctc_01_0_1",
+            "weight": 0.990216,
+            "inertia_mass": 4.0,
+            "cumulative_potential": 1.62,
+            "external_hits": 20
+        },
+        {
+            "from": "ctc_01_0_0",
+            "to": "ctc_01_0_2",
+            "weight": 0.990216,
+            "inertia_mass": 4.0,
+            "cumulative_potential": 1.62,
+            "external_hits": 20
+        },
+        {
+            "from": "ctc_01_0_0",
+            "to": "ctc_01_0_3",
+            "weight": 0.990216,
+            "inertia_mass": 4.0,
+            "cumulative_potential": 1.62,
+            "external_hits": 20
+        }
+    ]
+
+------------------------------------------------------------------------
+  BONUS: First 5 rows (summary)
+------------------------------------------------------------------------
+  [1] node_uid=stress_ctc_01_0_0, death_reason=inertia_singularity, dna_edges=3
+  [2] node_uid=stress_ctc_01_0_1, death_reason=inertia_singularity, dna_edges=3
+  [3] node_uid=stress_ctc_01_0_2, death_reason=inertia_singularity, dna_edges=3
+  [4] node_uid=stress_ctc_01_0_3, death_reason=inertia_singularity, dna_edges=3
+  [5] node_uid=stress_ctc_01_1_0, death_reason=inertia_singularity, dna_edges=3
+  Total dead nodes in necropolis: 40
+
+
+========================================================================
+SQL Query #2  (第二刀: 第五法则 oscillation)
+========================================================================
+
+  Available prx_decomp tables: ['v37415_round_prx_decomposition', 'pipe_fluo_prx_decomp', 'pipe_phc_prx_decomp', 'pipe_usgs_prx_decomp']
+  [v37415_round_prx_decomposition] no regime column found (cols=['record_id', 'run_id', 'round_id', 'window_k', 'adapter_name', 'p_core', 'p_band', 'r_core', 'r_band', 'm_band', 'x_true', 'u_unresolved', 'score_p_core', 'score_p_band', 'score_r_core', 'score_r_band', 'score_m_band', 'score_x_true', 'score_u', 'dominant_component', 'created_at'])
+
+  SQL:
+    SELECT * FROM pipe_fluo_prx_decomp
+    WHERE regime_label = 'oscillation'
+    LIMIT 1;
+
+------------------------------------------------------------------------
+  RESULT:
+------------------------------------------------------------------------
+  record_id                     : prx_18c9bef5
+  run_id                        : v37493_multi_pipeline_001
+  window_k                      : 4
+  adapter_name                  : ctc_real_seq01
+  p_core                        : 0.1
+  p_band                        : 0.1
+  r_core                        : 0.2
+  r_band                        : 0.25
+  m_band                        : 0.1
+  x_true                        : 0.1
+  u                             : 0.15
+  regime_label                  : oscillation
+  pipeline                      : fluo
+  created_at                    : 2026-05-14T13:18:25.096798+00:00
+
+  Total oscillation records in pipe_fluo_prx_decomp: 30
+
+  SQL:
+    SELECT * FROM pipe_phc_prx_decomp
+    WHERE regime_label = 'oscillation'
+    LIMIT 1;
+
+------------------------------------------------------------------------
+  RESULT:
+------------------------------------------------------------------------
+  record_id                     : prx_be2849d0
+  run_id                        : v37493_multi_pipeline_001
+  window_k                      : 4
+  adapter_name                  : phc_u373_seq01
+  p_core                        : 0.1
+  p_band                        : 0.1
+  r_core                        : 0.2
+  r_band                        : 0.25
+  m_band                        : 0.1
+  x_true                        : 0.1
+  u                             : 0.15
+  regime_label                  : oscillation
+  pipeline                      : phc
+  created_at                    : 2026-05-14T13:18:25.101213+00:00
+
+  Total oscillation records in pipe_phc_prx_decomp: 24
+
+  SQL:
+    SELECT * FROM pipe_usgs_prx_decomp
+    WHERE regime_label = 'oscillation'
+    LIMIT 1;
+
+------------------------------------------------------------------------
+  RESULT:
+------------------------------------------------------------------------
+  (no oscillation rows)
+
+  Total oscillation records in pipe_usgs_prx_decomp: 0
+
+========================================================================
+END OF REPORT
+========================================================================

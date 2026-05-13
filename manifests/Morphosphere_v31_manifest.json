@@ -1,0 +1,23 @@
+{
+  "version": "v31_embodied_active_inference_loop_sandbox_only",
+  "root": "Morphosphere_v31",
+  "created_at": "2026-05-03T17:03:54.993933+00:00",
+  "source_root": "Morphosphere_v30",
+  "db": "outputs/m31.db",
+  "counts": {
+    "v31_policy_belief_state": 4,
+    "v31_active_loop_cycle": 389,
+    "v31_action_observation_trace": 389,
+    "v31_policy_update": 4,
+    "v31_macro_policy_binding": 4,
+    "v31_guardrail_audit": 6,
+    "v31_acceptance_report": 12
+  },
+  "boundaries": {
+    "source_facts_rewritten": 0,
+    "hot_swap_allowed": 0,
+    "real_action_authorized": 0,
+    "sandbox_only": 1,
+    "xi_direct_to_pr_allowed": 0
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "created_at": "2026-05-06T11:53:04.502380+00:00",
+  "artifact": "m366_implementation_coverage_audit",
+  "concept_count": 56,
+  "maturity_summary": [
+    {
+      "maturity_level": "BLUEPRINT_ONLY",
+      "maturity_rank": 0,
+      "concept_count": 5,
+      "total_evidence_rows": 0
+    },
+    {
+      "maturity_level": "SCHEMA_ONLY",
+      "maturity_rank": 1,
+      "concept_count": 1,
+      "total_evidence_rows": 6
+    },
+    {
+      "maturity_level": "MATERIALIZED_INDEX",
+      "maturity_rank": 2,
+      "concept_count": 13,
+      "total_evidence_rows": 30049
+    },
+    {
+      "maturity_level": "DATA_POPULATED",
+      "maturity_rank": 3,
+      "concept_count": 8,
+      "total_evidence_rows": 3691
+    },
+    {
+      "maturity_level": "NATIVE_RUN_GENERATED",
+      "maturity_rank": 5,
+      "concept_count": 29,
+      "total_evidence_rows": 24131
+    }
+  ],
+  "placement_summary": [
+    {
+      "placement_class": "blueprint_core",
+      "concept_count": 26,
+      "total_rows": 32465
+    },
+    {
+      "placement_class": "materialized_full_chain_data",
+      "concept_count": 6,
+      "total_rows": 13569
+    },
+    {
+      "placement_class": "test_operability_surface",
+      "concept_count": 4,
+      "total_rows": 582
+    },
+    {
+      "placement_class": "core_governance",
+      "concept_count": 3,
+      "total_rows": 4507
+    },
+    {
+      "placement_class": "future_runtime",
+      "concept_count": 2,
+      "total_rows": 0
+    },
+    {
+      "placement_class": "forbidden_overclaim",
+      "concept_count": 2,
+      "total_rows": 0
+    },
+    {
+      "placement_class": "external_module",
+      "concept_count": 2,
+      "total_rows": 37
+    },
+    {
+      "placement_class": "core_governance_ledger",
+      "concept_count": 2,
+      "total_rows": 5009
+    },
+    {
+      "placement_class": "storage_system",
+      "concept_count": 1,
+      "total_rows": 146
+    },
+    {
+      "placement_class": "optional_core_route",
+      "concept_count": 1,
+      "total_rows": 18
+    },
+    {
+      "placement_class": "external_module/test_surface",
+      "concept_count": 1,
+      "total_rows": 0
+    },
+    {
+      "placement_class": "core_source_substrate",
+      "concept_count": 1,
+      "total_rows": 500
+    },
+    {
+      "placement_class": "core_interface",
+      "concept_count": 1,
+      "total_rows": 500
+    },
+    {
+      "placement_class": "core_boundary_guard",
+      "concept_count": 1,
+      "total_rows": 4
+    },
+    {
+      "placement_class": "core_boundary",
+      "concept_count": 1,
+      "total_rows": 1
+    },
+    {
+      "placement_class": "blueprint_core/materialized_data",
+      "concept_count": 1,
+      "total_rows": 532
+    },
+    {
+      "placement_class": "advisory_engineering_suggestion",
+      "concept_count": 1,
+      "total_rows": 7
+    }
+  ],
+  "current_run_type": "full-chain full-data materialized integration run",
+  "not_claimed": [
+    "native synchronous full-chain runtime",
+    "online life runtime",
+    "true PDE/continuous field",
+    "native hypergraph database",
+    "physical truth of metrics/actions"
+  ],
+  "key_gaps": [
+    "upper-layer direct FK to bottom evidence",
+    "native process_window writes from all modules",
+    "strong perturbation/stress suite for R/Xin/novelty",
+    "full external Xin taxonomy/capacity/PDE-ghost module"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": "ctc_download_extraction_v2.1",
+  "primary_dataset": "Fluo-N2DH-GOWT1",
+  "doi": "10.5281/zenodo.15608211",
+  "zenodo_record": "https://zenodo.org/records/15608211",
+  "download_url": "https://zenodo.org/records/15608211/files/Fluo-N2DH-GOWT1.zip?download=1",
+  "file_name": "Fluo-N2DH-GOWT1.zip",
+  "expected_md5": "ac11ba7b39fddcaf27fc1998eaa5f76c",
+  "expected_size_mb": 59.3,
+  "license": "CC-BY-4.0",
+  "selected_reason": "small 2D fluorescence nuclei cell-tracking dataset suitable for first real-data test of latent trajectory and P/R/Xi without jumping to EEG or large 3D volumes",
+  "not_bundled_reason": "public dataset is not bundled to keep the project package small and to preserve explicit user-side provenance and license acknowledgement"
+}

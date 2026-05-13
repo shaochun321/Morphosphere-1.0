@@ -1,0 +1,12 @@
+{
+  "version": "v36.4",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "runtime_sidecars": [
+    "dissipation_light_cone.jsonl",
+    "r_band_beam_search.jsonl",
+    "xin_triage_queue.jsonl"
+  ],
+  "global_optimum_claimed": false,
+  "field_equation_used_as_loss": false,
+  "semantic_label_in_mainline": false
+}

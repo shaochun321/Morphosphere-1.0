@@ -1,0 +1,40 @@
+concept_id,version,concept,maturity_level,placement_class,current_limit,next_action,directness_status
+empirical_stress_suite,future,perturbation/control stress suite for strong R/Xin/novelty,BLUEPRINT_ONLY,test_operability_surface,current dataset is stable/low-R/low-Xin,,not implemented
+native_full_chain_runtime,future,native full-chain runtime skeleton,BLUEPRINT_ONLY,future_runtime,"current run is materialized integration, not native synchronous runtime",design separate skeleton if required,not implemented in current package
+native_hypergraph_db,future,native hypergraph database,BLUEPRINT_ONLY,forbidden_overclaim,"v35H requires logical hypergraph index, not DB migration",,not implemented and not currently recommended
+online_life_runtime,future,online life-like runtime / synchronous external modules,BLUEPRINT_ONLY,future_runtime,not implemented and not required for current full-chain full-data materialization,,not current goal
+true_pde_continuous_field,future,true continuous field / PDE solver / real nonlocal spacetime,BLUEPRINT_ONLY,forbidden_overclaim,"blueprints require proxy/downgrade, not real PDE/nonlocal physics",,explicitly not claimed
+full_external_xin_taxonomy,future,full external Xin taxonomy/capacity/PDE-ghost/leakage module,SCHEMA_ONLY,external_module,only 6 definitions and 31 readouts in current package,expand only as external readout module,minimal definitions only
+full_chain_toprxin_profile,v36.6 materialized,T/O/P/R/Xin empirical profile,MATERIALIZED_INDEX,materialized_full_chain_data,,,materialized from v25 profile
+native_writer_contract,pass7 advisory,native writer contract / direct FK upgrade plan,MATERIALIZED_INDEX,advisory_engineering_suggestion,should not be presented as v36.6 blueprint requirement,,"advisory only, not blueprint core"
+v34_1_meta_proxy,v34.1,meta-proxy governance / runtime guard hardening,MATERIALIZED_INDEX,core_governance,v34.1 appears as blueprint/partial hardening rather than separate full DB,do not overclaim as complete runtime hardening,partial v34 tables; no separate v34.1 DB in audited package
+v366_coordinate_nonlocal_audit,v36.6,coordinate-nonlocal proxy audit,MATERIALIZED_INDEX,test_operability_surface,,,proxy audit examples
+v366_external_module_sync,v36.6 pass9,external module offline sync index,MATERIALIZED_INDEX,external_module/test_surface,,,operability/index layer
+v366_hypernode_backprojection,v36.6,hypernode spacetime backprojection,MATERIALIZED_INDEX,materialized_full_chain_data,not full direct evidence linkage,keep directness label explicit,"mostly inferred/proxy, not raw direct FK"
+v366_ledger_binding,v36.6,process_window ledger binding,MATERIALIZED_INDEX,blueprint_core,,,materialized integration mapping
+v366_measure_binding,v36.6,coordinate-hidden measure binding,MATERIALIZED_INDEX,blueprint_core,,,materialized integration mapping
+v366_process_hyperedge_relation,v36.6,process/hyperedge spacetime relation,MATERIALIZED_INDEX,blueprint_core,,,derived relation audit
+v366_process_members,v36.6,process_window members,MATERIALIZED_INDEX,blueprint_core,,,materialized integration index
+v366_process_window,v36.6,process_window registry,MATERIALIZED_INDEX,blueprint_core,not yet native writer output for all modules,future native full-chain skeleton,post-hoc materialized index from existing data
+v366_run_plan,v36.6 pass9,full-chain execution plan,MATERIALIZED_INDEX,test_operability_surface,,,operability layer
+v366_upper_empirical,v36.6 empirical,upper-layer empirical analysis,MATERIALIZED_INDEX,test_operability_surface,,,"analysis database, not core writer"
+information_fiber,legacy-v25,information fiber,DATA_POPULATED,core_interface,,,base rows
+masking_layer,v25/v35/pass2,masking / counter-evidence shielding layer,DATA_POPULATED,blueprint_core,coverage is not one concrete mask object per R-chain,add concrete mask object when needed,partial direct; template/category bindings added later
+physical_stage1,legacy-v25,Stage 1 physical/source substrate,DATA_POPULATED,core_source_substrate,not full 3D electromechanical live sphere in current run,separate external 2D source route from full electromechanical route,legacy/base rows + external 2D source substitute
+preneural_interface,v0.2-v25/pass3,preneural interface bundle,DATA_POPULATED,materialized_full_chain_data,not every current process_window is originally written by preneural writer,"keep as optional interface trace, not external module",base rows; process_window supplement added later
+src_envelope,v25/v36.5,external/source input envelope,DATA_POPULATED,core_boundary,"offline source/envelope, not live runtime sensorium",add native run_id for future full-chain skeleton,source inventory materialized
+stage2_object_surface,legacy-v25/pass8,Stage 2 object surface / early-neural simulation layer,DATA_POPULATED,optional_core_route,legitimate bypass in current architecture; not mandatory route,report route status rather than treating bypass as failure,legacy partial direct rows
+storage_ledger_split,v1.0-v36.6,SQLite ledger/index + runtime_store payload split,DATA_POPULATED,storage_system,,,inventory materialized
+v35h_appeal_gc,v35H,hyperedge appeal and GC governance,DATA_POPULATED,blueprint_core,,,direct v35H rows
+external_entropy_ledger,v34,external entropy / equivalent energy ledger,NATIVE_RUN_GENERATED,core_governance_ledger,"ledger energy is proxy, not joule/physical energy",,direct v34 ledger rows
+noether_audit,v34,Noether-style balance audit,NATIVE_RUN_GENERATED,core_governance_ledger,not proof of physical law,,direct v34 rows
+o_candidate,v25,O candidate support,NATIVE_RUN_GENERATED,blueprint_core,small legacy O surface count; current O refs often v25-derived,,legacy direct rows; v25 O refs also exist in trajectory profiles
+v35_attention,v35,attention proposal/path integral governance,NATIVE_RUN_GENERATED,blueprint_core,attention is not action authorization,,direct v35 overlay rows
+v35h_hyperedge,v35H,hyperedge incidence sidecar,NATIVE_RUN_GENERATED,blueprint_core,"logical hypergraph sidecar, not primary hypergraph DB",,direct v35H incidence; bottom backprojection mostly inferred
+v361_variational_measure,v36.1,variational external ledger measure,NATIVE_RUN_GENERATED,blueprint_core,not real physical action,,direct v36.1 rows
+v362_action_revision,v36.2,S_IE_proxy action revision and Xin_var,NATIVE_RUN_GENERATED,blueprint_core,minimum action score != truth,,direct v36.2 rows
+v363_r_band,v36.3,R spacetime band / pseudo-continuity,NATIVE_RUN_GENERATED,blueprint_core,"pseudo-continuity only, not true continuous manifold",,direct v36.3 rows
+v365_external_readout,v36.5,external Xin definition and readout-only module,NATIVE_RUN_GENERATED,external_module,"minimal external module, not full taxonomy",,direct v36.5 readout rows
+v36_curvature_proxy,v36,curvature / singularity / heat-bath proxy,NATIVE_RUN_GENERATED,blueprint_core,not Ricci curvature,,direct v36 rows
+v36_dissipative_source,v36,steady dissipative source registry,NATIVE_RUN_GENERATED,blueprint_core,not physical heat source,,direct v36 rows
+v36_metric_proxy,v36,information-energy metric proxy,NATIVE_RUN_GENERATED,blueprint_core,not physical metric,,direct v36 rows

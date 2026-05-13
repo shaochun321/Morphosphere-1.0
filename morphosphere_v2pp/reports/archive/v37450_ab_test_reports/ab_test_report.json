@@ -1,0 +1,188 @@
+{
+  "version": "v37450_ab_test",
+  "elapsed_s": 1.25,
+  "checks": [
+    {
+      "name": "A/B verdict exists",
+      "value": "A_strata",
+      "pass": true
+    },
+    {
+      "name": "All engines logged",
+      "value": "3",
+      "pass": true
+    },
+    {
+      "name": "Weight snapshots exist",
+      "value": "1914",
+      "pass": true
+    },
+    {
+      "name": "B dead nodes < 10%",
+      "value": "9/555 (2%)",
+      "pass": true
+    },
+    {
+      "name": "No explosions",
+      "value": "A=0, B=0, C=0",
+      "pass": true
+    },
+    {
+      "name": "Markov blanket Xin→R→P",
+      "value": "True",
+      "pass": true
+    },
+    {
+      "name": "Hebbian decay applied",
+      "value": "20",
+      "pass": true
+    },
+    {
+      "name": "Total rows > 10000",
+      "value": "27125",
+      "pass": true
+    },
+    {
+      "name": "Contradiction escape >10%",
+      "value": "96.2%",
+      "pass": true
+    },
+    {
+      "name": "Semantic leakage = 0",
+      "value": "0",
+      "pass": true
+    },
+    {
+      "name": "Engine A prior layer",
+      "value": "count=556",
+      "pass": true
+    },
+    {
+      "name": "Source events written",
+      "value": "3",
+      "pass": true
+    },
+    {
+      "name": "M_eff audit trail",
+      "value": "66",
+      "pass": true
+    },
+    {
+      "name": "Measure coordinate z_t",
+      "value": "1",
+      "pass": true
+    },
+    {
+      "name": "Frozen holdout no overfit",
+      "value": "drift_a=0.019, drift_b=0.066",
+      "pass": true
+    },
+    {
+      "name": "Holdout source event",
+      "value": "1",
+      "pass": true
+    },
+    {
+      "name": "Prior strata drift > 0",
+      "value": "0.000061",
+      "pass": true
+    },
+    {
+      "name": "Noise heat-bath > 50%",
+      "value": "100.0%",
+      "pass": true
+    },
+    {
+      "name": "False-P rate < 10%",
+      "value": "0.0%",
+      "pass": true
+    },
+    {
+      "name": "Basin retention > 50%",
+      "value": "100.0%",
+      "pass": true
+    }
+  ],
+  "passed": 20,
+  "total": 20,
+  "verdict": {
+    "winner": "A_strata",
+    "survival_a": 0.4715261958997722,
+    "survival_b": 0.7175398633257403,
+    "survival_winner": "B_inertia",
+    "latency_a": 13.0,
+    "latency_b": 3.0,
+    "latency_winner": "B_inertia",
+    "overhead_a_ms": 1.6339,
+    "overhead_b_ms": 1.767,
+    "overhead_winner": "DRAW",
+    "wins_a": 0,
+    "wins_b": 2,
+    "rationale": "B wins 2/3 but not all 3 — Occam's razor keeps A"
+  },
+  "config": {
+    "eta": 0.18,
+    "oja_lambda": 0.05,
+    "w_floor": 0.01,
+    "w_ceil": 1.0,
+    "alpha": 0.5,
+    "M_max": 8.0,
+    "M_min": 0.5,
+    "decay_epsilon": 0.025,
+    "kappa": 0.15,
+    "external_hit_weight": 0.4,
+    "internal_only_penalty": 0.6,
+    "strata_absorb_interval": 50,
+    "strata_absorb_rate": 0.1,
+    "prior_absorb_rate": 0.005,
+    "prior_absorb_interval": 200
+  },
+  "engine_metrics": {
+    "A_strata": {
+      "avg": 0.009750225221301811,
+      "max": 0.05487308693156403,
+      "min": 0.0066487693575551015,
+      "count": 556,
+      "entropy": 6.225947091235531,
+      "dead_nodes": 0,
+      "exploded": 0,
+      "prior_count": 556,
+      "mean_prior": 6.1e-05
+    },
+    "B_inertia": {
+      "avg": 0.009999999999999867,
+      "max": 0.01,
+      "min": 0.01,
+      "count": 555,
+      "entropy": 6.318968113650616,
+      "dead_nodes": 9,
+      "exploded": 0,
+      "singularity_events": 138,
+      "collapse_events": 0,
+      "avg_inertia_mass": 2.1314,
+      "external_hits": 882,
+      "internal_hits": 0
+    },
+    "C_hybrid": {
+      "avg": 0.010202685974461669,
+      "max": 0.03306154345831691,
+      "min": 0.007880184225908192,
+      "count": 554,
+      "entropy": 6.2861902165946555,
+      "dead_nodes": 0,
+      "exploded": 0,
+      "fallback_count": 0,
+      "avg_inertia_mass": 1.6102
+    }
+  },
+  "markov_blanket": {
+    "p_frozen": 11,
+    "r_frozen": 12,
+    "enforced": true
+  },
+  "hebbian_decay": {
+    "decayed": 20,
+    "evaporated": 0,
+    "decay_factor": 0.98
+  }
+}

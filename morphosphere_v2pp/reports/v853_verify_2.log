@@ -1,0 +1,10 @@
+Morphosphere v8.5.2 diagnostic_full complete
+run_id=v85_diag_00c77c85
+db=/mnt/data/v853_build/morphosphere_v2pp/v85_full_diagnostic_run.db
+integrity_check=ok
+spacetime_cell=500
+information_fiber=500
+transport_current_edge=900
+proxy_provenance=7
+
+--- STDERR ---

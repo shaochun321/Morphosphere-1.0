@@ -1,0 +1,32 @@
+{
+  "artifact_name": "Morphosphere_v36_3_spacetime_band_bridge_overlay",
+  "version": "v36.3",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "includes_full_base": false,
+  "not_a_full_lineage": true,
+  "created_utc": "2026-05-05T12:03:14.310453+00:00",
+  "base_requirement": "Apply to Morphosphere v34 or newer full tree. It may be applied before or after adjacent bridge overlays, but cumulative rollup is preferred.",
+  "implemented_tables": {
+    "v363_p_relative_stasis_profile": 60,
+    "v363_spacetime_block_registry": 180,
+    "v363_r_spacetime_band_candidate": 90,
+    "v363_band_segment_link": 450,
+    "v363_xin_noncontinuity_ledger": 50,
+    "v363_ledger_guided_smoothing_proposal": 24,
+    "v363_pde_like_continuity_residual": 40,
+    "v363_pseudo_continuity_audit": 90,
+    "v363_downgrade_contract": 8,
+    "v363_acceptance_report": 12
+  },
+  "guardrails": {
+    "source_facts_rewritten": 0,
+    "hot_swap_allowed": 0,
+    "semantic_label_in_mainline": 0,
+    "ledger_smoothing_sandbox_only": 1,
+    "pde_claimed": 0,
+    "xin_direct_to_P_allowed": 0,
+    "xin_direct_to_R_allowed": 0,
+    "raw_coordinate_replaced": 0
+  },
+  "next_expected_overlay": "v36.4 constrained variational coupler bridge overlay"
+}

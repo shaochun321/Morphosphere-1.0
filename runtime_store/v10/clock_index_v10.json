@@ -1,0 +1,67 @@
+{
+  "clock_count": 10,
+  "clock_source_table": "system_clock_entry",
+  "clocks": [
+    {
+      "clock_n": 0,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.0
+    },
+    {
+      "clock_n": 1,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.01
+    },
+    {
+      "clock_n": 2,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.02
+    },
+    {
+      "clock_n": 3,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.03
+    },
+    {
+      "clock_n": 4,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.04
+    },
+    {
+      "clock_n": 5,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.05
+    },
+    {
+      "clock_n": 6,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.06
+    },
+    {
+      "clock_n": 7,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.07
+    },
+    {
+      "clock_n": 8,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.08
+    },
+    {
+      "clock_n": 9,
+      "dt_s": 0.01,
+      "run_id": "v85_diag_a5dabddb",
+      "time_s": 0.09
+    }
+  ],
+  "run_id": "runtime_ledger_split_v10"
+}

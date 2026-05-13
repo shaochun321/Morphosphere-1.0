@@ -1,0 +1,27 @@
+{
+  "auto_applied": false,
+  "blockers": [
+    "real_external_data_gate",
+    "human_approval_gate"
+  ],
+  "created_at": "2026-05-01T18:25:23+00:00",
+  "final_decision": "STAGED_FROZEN_PROFILE_NOT_PROMOTED_PENDING_REAL_EXTERNAL_DATA_AND_HUMAN_APPROVAL",
+  "hot_swap_allowed": false,
+  "manual_review_required": true,
+  "profile_id": "frozen_profile_candidate_v17_from_profilev06_68eb27c0757316645b",
+  "run_id": "frozen_promotion_v17",
+  "satisfied_gates": [
+    "candidate_profile_present",
+    "holdout_improvement_present",
+    "v15_multirate_sync_acceptance",
+    "v16_sensor_fusion_memory_acceptance",
+    "hot_swap_forbidden",
+    "p_r_before_xi_boundary",
+    "source_fact_digest_created",
+    "shell0_not_blocking",
+    "frozen_profile_written",
+    "rollback_plan_required"
+  ],
+  "source_db": "morphosphere_sensor_fusion_memory_v16_output_database.db",
+  "version": "v1.7"
+}

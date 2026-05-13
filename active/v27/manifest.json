@@ -1,0 +1,18 @@
+{
+  "package": "m27.zip",
+  "root": "m27/",
+  "version": "measure_field_materialization_reversible_query_v2.7",
+  "db": "outputs/m27.db",
+  "db_sha256": "3b27d521a08b9d94b6995dad0e8b4387b297ac3f4d2cabba541194e1ef4fe5be",
+  "counts": {
+    "v27_measure_point_sample": 13725,
+    "v27_measure_field_cell": 13725,
+    "v27_reversible_query_index": 11278,
+    "v27_measure_recipe_trace": 1,
+    "v27_reconstruction_query_sample": 2,
+    "v27_field_grid_spec": 1,
+    "v27_acceptance_report": 10
+  },
+  "source_base": "ms25 evidence reconstruction package in current chat",
+  "note": "Fluo-N2DH-GOWT1.zip is not bundled; v25 source points and provenance remain in m27.db."
+}

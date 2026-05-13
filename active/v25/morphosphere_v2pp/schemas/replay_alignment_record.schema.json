@@ -1,0 +1,17 @@
+{
+  "$id": "https://morphosphere.local/schemas/replay_alignment_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReplayAlignmentRecord",
+  "type": "object",
+  "required": ["alignment_id", "run_id", "v6_surface_id", "legacy_record_id"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "alignment_id": { "type": "string" },
+    "run_id": { "type": "string" },
+    "v6_surface_id": { "type": "string" },
+    "legacy_record_id": { "type": "string" },
+    "alignment_score": { "type": "number", "default": 0.0 },
+    "divergence_reason": { "type": "string", "default": "" }
+  }
+}

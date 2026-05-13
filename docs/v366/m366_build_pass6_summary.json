@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-05-06T05:58:50Z",
+  "lineage_traces": 532,
+  "samples": 20,
+  "module_health": 7,
+  "collaboration_edges": 10,
+  "hypernode_direct": 0,
+  "hypernode_total": 855,
+  "process_windows": 1633,
+  "members": 22128,
+  "high_confidence": 120,
+  "medium_confidence": 671,
+  "low_confidence": 842
+}

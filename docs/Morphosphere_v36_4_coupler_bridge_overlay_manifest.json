@@ -1,0 +1,85 @@
+{
+  "name": "Morphosphere_v36_4_coupler_bridge_overlay",
+  "version": "v36.4",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "includes_full_base": false,
+  "not_a_full_lineage": true,
+  "generated_at": "2026-05-05T13:05:03.180972Z",
+  "files": [
+    {
+      "path": "APPLY_TO_EXISTING_TREE.sh",
+      "bytes": 464,
+      "sha256": "609ad2bc3f67c5e02eb590ab499d05fe974c097f0cad8fd8274998b1b71d8690"
+    },
+    {
+      "path": "RUN_EXAMPLES.sh",
+      "bytes": 262,
+      "sha256": "f4357d1a82e09c4706b283a93b83f1b48013be82d82c87cd287569f38c41192f"
+    },
+    {
+      "path": "active/v364/scripts/audit_v364_coupler.py",
+      "bytes": 1024,
+      "sha256": "81aed253b591dd354c48809d4c0afc0d029593be13b45dfebf65f02b4355299a"
+    },
+    {
+      "path": "active/v364/scripts/check_v364.py",
+      "bytes": 2176,
+      "sha256": "8fb5a61705f8bb951510f022c3d1ec1fbedd2e013ce278d3ac609c4c767503a7"
+    },
+    {
+      "path": "active/v364/scripts/query_v364.py",
+      "bytes": 1000,
+      "sha256": "deb9b34fea4393ec8389a5b7824f3900f3e2a75ab86edf9f33dbb82d3e1a8feb"
+    },
+    {
+      "path": "docs/Morphosphere_v36_4_coupler_bridge_overlay_report.docx",
+      "bytes": 38199,
+      "sha256": "d516878b7b6959ca23932e2ca31cd2ee3e387cc8f14947575cf1c4efa403b42b"
+    },
+    {
+      "path": "docs/Morphosphere_v36_4_coupler_bridge_overlay_report.md",
+      "bytes": 3566,
+      "sha256": "911ffa95d5d6f91990244b0c8755c3d787607785cfaf1b6776e7b4d59326a93f"
+    },
+    {
+      "path": "outputs/m364.db",
+      "bytes": 266240,
+      "sha256": "e6f39a6d3972580947f559d4b6304cd3e4be78e31137dec88cc98bdc838eff2b"
+    },
+    {
+      "path": "runtime_store/v364/coupler_runtime_manifest.json",
+      "bytes": 312,
+      "sha256": "0ea94df040a8d28fcfa57e91161b3d8e8e0761a8f0621c4e70f87b58d2dcd97c"
+    },
+    {
+      "path": "runtime_store/v364/dissipation_light_cone.jsonl",
+      "bytes": 2756,
+      "sha256": "831bb75aceb3f153851b9b32a3568008353be5eb87be811f95fc3b644d14c090"
+    },
+    {
+      "path": "runtime_store/v364/r_band_beam_search.jsonl",
+      "bytes": 4080,
+      "sha256": "39a43754bba9258cd3238d9f4ba25aceadef14d794c3d55b975f3673cb09cc9f"
+    },
+    {
+      "path": "runtime_store/v364/xin_triage_queue.jsonl",
+      "bytes": 2160,
+      "sha256": "2a0429fbdc46a84ea90fa554f0907aa460f22b58d371566e081ea62cc035a2b0"
+    }
+  ],
+  "entrypoints": [
+    "RUN_EXAMPLES.sh",
+    "active/v364/scripts/check_v364.py",
+    "active/v364/scripts/query_v364.py",
+    "active/v364/scripts/audit_v364_coupler.py",
+    "APPLY_TO_EXISTING_TREE.sh"
+  ],
+  "guardrails": {
+    "source_facts_rewritten": 0,
+    "semantic_label_in_mainline": 0,
+    "global_optimum_claimed": 0,
+    "physical_field_equation_claimed": 0,
+    "xin_direct_to_P_allowed": 0,
+    "xin_direct_to_R_allowed": 0
+  }
+}

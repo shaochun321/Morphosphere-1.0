@@ -1,0 +1,17 @@
+{
+  "$id": "https://morphosphere.local/schemas/occupancy_state.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OccupancyState",
+  "type": "object",
+  "required": ["occupancy_id", "o_surface_id", "occupancy_distribution"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "occupancy_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "occupancy_distribution": {
+      "type": "array",
+      "items": { "type": "number" }
+    }
+  }
+}

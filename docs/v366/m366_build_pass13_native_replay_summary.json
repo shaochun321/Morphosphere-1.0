@@ -1,0 +1,46 @@
+{
+  "artifact": "Pass13 Native Replay Skeleton + Upper-Layer Stress Evidence",
+  "run_type": "native_shaped_replay_over_materialized_data",
+  "sample_count": 70,
+  "scenario_count": 7,
+  "stage_output_rows": 5880,
+  "toprxin_outputs": 490,
+  "case_studies": 20,
+  "transition_summary": {
+    "baseline": {
+      "stable_retained": 70
+    },
+    "coordinate_jitter": {
+      "observe_retain_shift": 7,
+      "stable_retained": 63
+    },
+    "support_dropout": {
+      "observe_retain_shift": 13,
+      "stable_retained": 56,
+      "P_or_stable_to_R_focus": 1
+    },
+    "counter_boost": {
+      "P_or_stable_to_R_focus": 66,
+      "stable_retained": 4
+    },
+    "xin_spike": {
+      "R_or_P_to_Xin_escalation": 69,
+      "stable_retained": 1
+    },
+    "masking_failure": {
+      "observe_retain_shift": 13,
+      "stable_retained": 33,
+      "P_or_stable_to_R_focus": 24
+    },
+    "semantic_attack": {
+      "semantic_backwrite_blocked": 70
+    }
+  },
+  "not_claimed": [
+    "native synchronous online runtime",
+    "source physics rerun",
+    "true PDE/continuous field",
+    "semantic writeback"
+  ],
+  "acceptance_failed": []
+}

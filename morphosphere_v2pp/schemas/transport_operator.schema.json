@@ -1,0 +1,23 @@
+{
+  "$id": "https://morphosphere.local/schemas/transport_operator.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TransportOperator",
+  "type": "object",
+  "required": ["transport_id", "from_slice_id", "to_slice_id", "mapping_matrix"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "transport_id": { "type": "string" },
+    "from_slice_id": { "type": "string" },
+    "to_slice_id": { "type": "string" },
+    "mapping_matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": { "type": "number" }
+      },
+      "description": "2D assignment or mapping matrix between slices"
+    },
+    "transport_error": { "type": "number", "default": 0.0 }
+  }
+}

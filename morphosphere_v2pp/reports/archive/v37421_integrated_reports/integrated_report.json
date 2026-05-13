@@ -1,0 +1,220 @@
+{
+  "version": "v37421_integrated",
+  "elapsed_s": 9.89,
+  "checks": [
+    {
+      "name": "EM converged (ΔJ < 0.05)",
+      "value": "0.039997",
+      "pass": true
+    },
+    {
+      "name": "Hebbian directional (>50%)",
+      "value": "100%",
+      "pass": true
+    },
+    {
+      "name": "Motion-PRX coupling exists",
+      "value": "2640",
+      "pass": true
+    },
+    {
+      "name": "Motion accuracy > 70%",
+      "value": "100.0%",
+      "pass": true
+    },
+    {
+      "name": "Xin gap < 0.05",
+      "value": "0.0000",
+      "pass": true
+    },
+    {
+      "name": "Gamma avg > 0.80",
+      "value": "0.8619",
+      "pass": true
+    },
+    {
+      "name": "P-band 'band' exists",
+      "value": "10",
+      "pass": true
+    },
+    {
+      "name": "R routing diversity",
+      "value": "r_band_active=6, r_core_resolved=12, xi_boundary=4",
+      "pass": true
+    },
+    {
+      "name": "EM λ learned (≠ default)",
+      "value": "True",
+      "pass": true
+    },
+    {
+      "name": "Formula competition stable",
+      "value": "STABLE",
+      "pass": true
+    },
+    {
+      "name": "Total rows > 30000",
+      "value": "60175",
+      "pass": true
+    },
+    {
+      "name": "PRX converged",
+      "value": "CONVERGED",
+      "pass": true
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "verdict": "ALL PASS",
+  "em": {
+    "converged": false,
+    "iterations": 15,
+    "final_j": 5.1863,
+    "learned_lambda": {
+      "lambda_L": 0.290502,
+      "lambda_C": 0.248552,
+      "lambda_H": 0.258917,
+      "lambda_B": 0.202028,
+      "w_motion": 1.149278,
+      "w_prx": 0.805771,
+      "w_xin_cons": 1.35,
+      "w_r_core": 1.65,
+      "w_p_band": 0.95,
+      "w_unresolved": -1.0,
+      "w_drift": -0.5,
+      "w_writeback": -0.3
+    }
+  },
+  "hebbian": {
+    "updates": 7,
+    "directionality": 1.0
+  },
+  "motion": {
+    "accuracy": 1.0,
+    "coupling_entries": 2640
+  },
+  "formula": {
+    "final_winner": "E",
+    "stability": 1.0,
+    "volatility": 0.0,
+    "switches": 0,
+    "convergence_round": 1,
+    "verdict": "STABLE",
+    "analysis": {
+      "winner_sequence": [
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E",
+        "E"
+      ],
+      "j_total_evolution": {
+        "A": [
+          3.4197,
+          3.4196,
+          3.4203,
+          3.421,
+          3.4217,
+          3.4224,
+          3.4231,
+          3.4238
+        ],
+        "B": [
+          5.7354,
+          5.7354,
+          5.7364,
+          5.7374,
+          5.7385,
+          5.7395,
+          5.7405,
+          5.7416
+        ],
+        "C": [
+          5.0584,
+          5.059,
+          5.061,
+          5.0631,
+          5.0652,
+          5.0673,
+          5.0694,
+          5.0716
+        ],
+        "D": [
+          4.9897,
+          4.9913,
+          4.994,
+          4.9967,
+          4.9994,
+          5.0022,
+          5.005,
+          5.0078
+        ],
+        "E": [
+          7.0611,
+          7.0578,
+          7.0591,
+          7.0604,
+          7.0617,
+          7.063,
+          7.0643,
+          7.0657
+        ]
+      },
+      "rank_evolution": {
+        "A": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "B": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "C": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "D": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "E": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  }
+}

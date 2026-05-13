@@ -1,0 +1,26 @@
+{
+  "version": "v36.7.5_consolidated_release_candidate",
+  "status": "RELEASE_CANDIDATE_WITH_KNOWN_WARNINGS",
+  "metrics": {
+    "native_anchor_fact": 855,
+    "anchor_validation_pass": 855,
+    "strict_external_entropy_hits": 848,
+    "legacy_direct_fk": 0,
+    "dark_grid_zones": 120,
+    "guard_rules": 27,
+    "guard_regression_matches": 0,
+    "quarantine_rows": 36,
+    "semantic_free_view_manifests": 22,
+    "semantic_regression_pass": 3,
+    "rmi_default_rows": 11530,
+    "rmi_h2_rows": 0,
+    "rmi_h3_rows": 0,
+    "rmi_h2_false_groups": 0,
+    "rmi_h3_false_groups": 0,
+    "coordinate_ci_status": "PASS"
+  },
+  "warnings": [
+    "7 operational ledger refs are not strict historical external entropy event hits; preserved as WARN boundary.",
+    "Legacy direct_fk_available remains 0; v36.7 native anchor baseline is non-destructive overlay."
+  ]
+}

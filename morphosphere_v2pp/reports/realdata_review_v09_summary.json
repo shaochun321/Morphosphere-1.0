@@ -1,0 +1,33 @@
+{
+  "blockers": [
+    "declared_real_external",
+    "human_review_required"
+  ],
+  "boundary": "append-only no source fact mutation no Xi replacement of P/R",
+  "candidate_profile_id": "profilev06_68eb27c0757316645b",
+  "decision": "MANUAL_REVIEW_PACKET_CREATED_PATCH_NOT_APPLIED",
+  "declared_real_external": false,
+  "metrics": {
+    "force_nonuniformity": 0.2277242820753374,
+    "mapped_sample_count": 80,
+    "mapping_confidence_mean": 0.5511837174771193,
+    "met_alignment_score": 1.0,
+    "multimodal_consistency_score": 0.9992894937422763,
+    "p_stability_proxy": 0.7064500011588266,
+    "phase_continuity_score": 0.4282629481894279,
+    "r_counter_proxy": 0.17505435949734166,
+    "sample_count": 80,
+    "xi_pressure_proxy": 0.24510407063072015
+  },
+  "patch_id": "patchv07_89007227aa167d50e4",
+  "real_data_gate_status": "BLOCKED_PENDING_REAL_EXTERNAL_DATA",
+  "run_id": "realv09_b58ab0a8602b490f91",
+  "satisfied_gates": [
+    "schema_valid",
+    "sample_count_minimum",
+    "mapping_confidence",
+    "p_r_xi_boundary_preserved",
+    "candidate_patch_not_auto_applied"
+  ],
+  "version": "v0.9"
+}

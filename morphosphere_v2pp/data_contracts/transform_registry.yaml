@@ -1,0 +1,135 @@
+transform_registry:
+  - transform_id: cell_to_patch_aggregation
+    category: state_preserving_lift
+    domain: [CellGraphState]
+    codomain: [PatchGraph]
+    quantity_class_map:
+      physical_quantities:
+        - position_xyz -> centroid_xyz
+        - neighbor_ids -> neighbor_patch_ids
+        - strain_proxy -> mean_strain
+        - release_rate -> mean_release
+    preserved_invariants:
+      - provenance_continuity
+      - source_cell_traceability
+      - boundary_band_traceability
+    loss_budget:
+      - within_patch_cell_level_variation
+    reversibility_class: approximate_reversible
+    unit_policy: preserve_physical_units
+    forbidden_shortcuts:
+      - CellGraphState -> semantic_label
+
+  - transform_id: patch_to_preneural_geometry
+    category: state_preserving_lift
+    domain: [PatchGraph]
+    codomain: [PreNeuralGeometry]
+    quantity_class_map:
+      physical_quantities:
+        - centroid_xyz -> xyz
+        - local_normal -> normal
+        - boundary_distance -> boundary_distance
+    preserved_invariants:
+      - source_patch_traceability
+      - topology_traceability
+    loss_budget:
+      - none_beyond_reindexing
+    reversibility_class: approximate_reversible
+    unit_policy: preserve_physical_units
+    forbidden_shortcuts:
+      - PatchGraph -> semantic_label
+
+  - transform_id: state_to_signal_window_summary
+    category: coarse_graining_summary
+    domain: [CellGraphState[]]
+    codomain: [PreNeuralSignalWindow]
+    quantity_class_map:
+      physical_quantities:
+        - V_hair -> V_mean,V_std,V_slope
+        - release_rate -> release_mean,release_slope
+        - spike_times_recent -> spike_count,spike_rate,timing_precision
+    preserved_invariants:
+      - provenance_continuity
+      - window_membership_traceability
+    loss_budget:
+      - high_frequency_membrane_detail
+      - exact_event_phase_outside_window
+    reversibility_class: non_reversible_but_auditable
+    unit_policy: source_units_preserved_summary_units_declared
+    forbidden_shortcuts:
+      - CellGraphState -> P_k
+      - CellGraphState -> semantic_label
+
+  - transform_id: geometry_plus_signal_to_pointset
+    category: structural_encoding
+    domain: [PreNeuralGeometry, PreNeuralSignalWindow]
+    codomain: [PreNeuralPointSetSlice]
+    quantity_class_map:
+      hybrid_signal_summaries:
+        - geometry_anchor + signal_summary + topology -> pointset_node
+    preserved_invariants:
+      - geometry_anchor_integrity
+      - source_patch_traceability
+      - topology_integrity
+    loss_budget:
+      - none_if_manifest_complete
+    reversibility_class: exact_reversible_manifest
+    unit_policy: mixed_units_allowed_but_must_be_declared
+    forbidden_shortcuts:
+      - PointSetSlice -> semantic_label
+
+  - transform_id: pointset_to_o_field_surface
+    category: structural_encoding
+    domain: [PreNeuralPointSetSlice, TransportOperator]
+    codomain: [O_field_surface]
+    quantity_class_map:
+      hybrid_signal_summaries:
+        - pointset_features -> coherence,bandwidth,contradiction,transport_match
+    preserved_invariants:
+      - source_traceability
+      - transport_auditability
+    loss_budget:
+      - raw_event_sequence_detail
+    reversibility_class: non_reversible_but_auditable
+    unit_policy: structural_scores_are_dimensionless
+    forbidden_shortcuts:
+      - PointSetSlice -> P_k
+      - PointSetSlice -> R_k
+
+  - transform_id: o_to_frozen_objects
+    category: object_freezing
+    domain: [O_k]
+    codomain: [P_k, R_k, Omega_k, OccupancyState, T_seed]
+    quantity_class_map:
+      structural_field_quantities:
+        - candidate_p -> P_k
+        - candidate_r -> R_k
+        - candidate_origin -> Omega_k
+    preserved_invariants:
+      - provenance_continuity
+      - replay_traceability
+      - failure_path_to_R_or_candidate_preserved
+    loss_budget:
+      - candidate_level_ambiguity_becomes_explicit_freeze_reason
+    reversibility_class: non_reversible_but_auditable
+    unit_policy: structural_scores_not_physical_units
+    forbidden_shortcuts:
+      - O_k -> semantic_label
+      - legacy_verdict -> P_k
+      - external_ledger_score -> Omega_k
+
+  - transform_id: family_to_semantic_projection
+    category: read_only_projection
+    domain: [FamilyRecursiveSurface]
+    codomain: [SemanticReadoutSurface]
+    quantity_class_map:
+      frozen_object_quantities:
+        - object_refs -> labels,confidence,evidence_ref
+    preserved_invariants:
+      - read_only_directionality
+    loss_budget:
+      - semantic_abstraction_from_object_detail
+    reversibility_class: projection_only
+    unit_policy: semantic_outputs_non_physical
+    forbidden_shortcuts:
+      - SemanticReadoutSurface -> any_core_object

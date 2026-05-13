@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "legacy_projection_view.schema.json",
+  "title": "LegacyProjectionView",
+  "type": "object",
+  "required": ["schema_version", "run_id", "legacy_record_id", "projection_type"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "run_id": { "type": "string" },
+    "legacy_record_id": { "type": "string" },
+    "projection_type": { "type": "string", "enum": ["bundle_tensor_compat", "family_surface_compat", "signal_packet_compat"] },
+    "projected_fields": { "type": "object" },
+    "mapping_ref": { "type": "string" }
+  }
+}

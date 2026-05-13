@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-05-01T18:25:23+00:00",
+  "profile_id": "frozen_profile_candidate_v17_from_profilev06_68eb27c0757316645b",
+  "rollback_id": "rollback_plan_v17",
+  "rollback_mode": "do_not_apply_candidate; keep previous frozen profile active",
+  "safe_state": "candidate remains staged and inactive",
+  "verification": [
+    "source digest unchanged",
+    "runtime hot-swap disabled",
+    "previous DB artifacts retained"
+  ]
+}

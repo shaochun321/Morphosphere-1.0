@@ -1,0 +1,18 @@
+[
+  {
+    "path": "morphosphere/stage1_physics",
+    "status": "not_found_in_uploaded_artifacts"
+  },
+  {
+    "path": "morphosphere/stage2_object",
+    "status": "not_found_in_uploaded_artifacts"
+  },
+  {
+    "path": "morphosphere/runtime/spms",
+    "status": "not_found_in_uploaded_artifacts"
+  },
+  {
+    "path": "morphosphere/solvers",
+    "status": "not_found_in_uploaded_artifacts"
+  }
+]

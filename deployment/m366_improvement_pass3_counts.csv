@@ -1,0 +1,10 @@
+object_name,object_count,notes
+process_window_registry_pass3_total,1633,Includes pass2 registry plus promoted preneural interface process windows.
+preneural_interface_process_windows,500,Promoted into main registry.
+process_window_members_total,22128,Includes preneural members.
+route_legitimacy_rows,1633,One per process window.
+materialization_confidence_rows,1633,One per process window.
+high_materialization_confidence,120,Data-rich process windows.
+medium_materialization_confidence,671,Usable materialized windows.
+low_materialization_confidence,842,Overlay/proxy or incomplete data windows.
+hypernode_direct_fk_after_normalization,390,Kept separate from proxy/inferred backprojection.

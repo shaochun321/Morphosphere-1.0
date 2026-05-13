@@ -1,0 +1,29 @@
+DB: v85_full_diagnostic_run.db
+[PASS] integrity_check: [('ok',)]
+[PASS] v853_manifest_present: [(2,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] six_perturbations_recorded: [(6,)]
+[PASS] all_effects_passed: [(0,)]
+[PASS] counterfactual_acceptance_passed: [(0,)]
+[PASS] failed_expectations_visible_and_empty_when_passed: [(0, 0)]
+[PASS] signal_shuffle_entropy_increases: [(0.07579806441648296,)]
+[PASS] geometry_shift_cost_increases: [(0.20000000000000007,)]
+[PASS] boundary_flip_rejection_increases: [(0.15000000000000002,)]
+[PASS] masking_injection_o_support_decreases: [(-0.09999999999999998,)]
+[PASS] xi_pressure_increases: [(0.2,)]
+[PASS] threshold_sweep_nonflat: [(22, 0.6454828005735918)]
+[PASS] transport_cost_matrix_exported: [(18,)]
+[PASS] transport_cost_matrix_record_exported: [(1800,)]
+[PASS] object_evidence_terms_exported: [(36,)]
+[PASS] xi_residual_mass_exported: [(8,)]
+[PASS] xi_residue_mass_record_exported: [(18,)]
+[PASS] reproducibility_report_present: [(2,)]
+[PASS] reproducibility_latest_compared_and_passed: [(18, 0.0, 1e-09, 1)]
+[PASS] artifact_manifest_exported: [(7,)]
+{
+  "passed": 21,
+  "total": 21,
+  "failed": []
+}
+
+--- STDERR ---

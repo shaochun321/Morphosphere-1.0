@@ -1,0 +1,10 @@
+{
+  "version": "ctc_download_extraction_v2.1",
+  "input_csv": "morphosphere_v2pp/data/ctc_centroid_sample_v21.csv",
+  "declared_real_external": false,
+  "rows": 48,
+  "tracks": 6,
+  "frames": 8,
+  "avg_interframe_displacement": 1.2909409306900053,
+  "realdata_gate": "BLOCKED_PENDING_REAL_CTC_DOWNLOAD_OR_UPLOAD"
+}

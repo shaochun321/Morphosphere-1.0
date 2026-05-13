@@ -1,0 +1,48 @@
+{
+  "pass": "20",
+  "db": "/mnt/data/m366_pass20_native_writer_expansion_rmi_benchmark.db",
+  "integrity": "ok",
+  "expanded_writer_facts": 855,
+  "fk_validation_pass": 848,
+  "rmi": {
+    "H1": {
+      "assignment_count": 855,
+      "average_bucket_candidates": 1.0070175438596491,
+      "max_bucket_candidates": 2,
+      "collision_groups": 3,
+      "false_neighbor_groups": 3,
+      "verdict": "RISKY"
+    },
+    "H2": {
+      "assignment_count": 855,
+      "average_bucket_candidates": 1.0,
+      "max_bucket_candidates": 1,
+      "collision_groups": 0,
+      "false_neighbor_groups": 0,
+      "verdict": "PREFERRED"
+    },
+    "H3": {
+      "assignment_count": 855,
+      "average_bucket_candidates": 1.0,
+      "max_bucket_candidates": 1,
+      "collision_groups": 0,
+      "false_neighbor_groups": 0,
+      "verdict": "PREFERRED"
+    }
+  },
+  "coordinate_ci": {
+    "tested_windows": 520,
+    "role_changed": 0,
+    "max_relative_path_delta": 6.155097294527702e-15,
+    "status": "PASS"
+  },
+  "acceptance": {
+    "expanded writer facts cover all L2 safe candidates": "PASS",
+    "FK validation targets hit materialized tables": "WARN",
+    "H1 exposes collision risk": "PASS",
+    "H3 removes false-neighbor collisions in sample": "PASS",
+    "H3 query bucket size is near O(1)": "PASS",
+    "coordinate invariance CI default gate passes": "PASS",
+    "legacy DBs are not mutated": "PASS"
+  }
+}

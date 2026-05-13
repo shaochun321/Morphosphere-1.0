@@ -1,0 +1,23 @@
+DB: outputs/morphosphere_candidate_adoption_v07_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] state_manifest_present: [(1,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] physical_first_assertion_recorded: [(1,)]
+[PASS] raw_events_present: [(1500,)]
+[PASS] raw_events_multi_channel: [(3,)]
+[PASS] origin_anchors_present: [(10,)]
+[PASS] latent_trajectories_nonsemantic: [(5,)]
+[PASS] trajectory_scores_nonzero: [(0.972324596040456, 0.7674656377729635, 0.794382862996861, 0.889661525612145)]
+[PASS] trajectory_bindings_present: [(1500, 1498)]
+[PASS] xin_residue_retained: [(2,)]
+[PASS] reprojection_passed: [(1,)]
+[PASS] noise_sweep_complete: [(4,)]
+[PASS] noise_sweep_not_collapsed_10pct: [(0.8865306122448979,)]
+[PASS] noise_xin_increases: [(0.206703608780134, 0.3112648332699299)]
+[PASS] hidden_structure_probe_passed: [(1,)]
+[PASS] cross_modal_binding_passed: [(1.0,)]
+[PASS] all_state_tests_passed: [(0,)]
+{
+  "passed": 18,
+  "failed": []
+}

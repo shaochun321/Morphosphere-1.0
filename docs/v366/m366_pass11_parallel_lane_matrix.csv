@@ -1,0 +1,6 @@
+lane_id,lane_name,purpose,placement,status,boundary_note
+L1,native_full_chain_run_skeleton,Define one run-order skeleton without claiming native sync runtime,materialized_full_chain_data + advisory boundary,complete,Skeleton only; not native synchronous runtime.
+L2,perturbation_stress_suite_plan,Create stress scenarios to test strong R/Xin/novelty later,test_operability_surface,complete,Plan/fixtures; not evidence that strong perturbation has run.
+L3,upper_layer_empirical_v2,Summarize actual recognitions and separations with limitations,materialized_full_chain_data,complete,Empirical over existing materialized data; not fresh native recomputation.
+L4,implementation_coverage_delta,Propagate Pass10 maturity distinctions into Pass11,test_operability_surface,complete,Coverage classification; not new implementation.
+L5,packaging_parallel_sync,Update quick/full package contracts and entrypoints,test_operability_surface,complete,Packaging and operability only.

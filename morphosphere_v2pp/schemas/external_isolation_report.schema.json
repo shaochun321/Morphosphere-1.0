@@ -1,0 +1,26 @@
+{
+  "$id": "morphosphere/schemas/external_isolation_report.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalIsolationReport",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "external_free_energy", "balance_summary"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "related_T_ref": {"type": ["string", "null"]},
+    "related_O_ref": {"type": ["string", "null"]},
+    "related_P_refs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "related_R_refs": {"type": "array", "items": {"type": "string"}, "default": []},
+    "related_origin_ref": {"type": ["string", "null"]},
+    "external_free_energy": {"type": "number"},
+    "balance_summary": {"type": "string"},
+    "recommended_validation_path": {"type": ["string", "null"]},
+    "linked_ledger_refs": {"type": "array", "items": {"type": "string"}, "default": []}
+  }
+}

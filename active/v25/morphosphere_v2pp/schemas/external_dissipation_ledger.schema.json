@@ -1,0 +1,24 @@
+{
+  "$id": "morphosphere/schemas/external_dissipation_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalDissipationLedger",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "coarse_graining_dissipation", "boundary_dissipation",
+    "numerical_dissipation", "dissipation_total"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "coarse_graining_dissipation": {"type": "number"},
+    "boundary_dissipation": {"type": "number"},
+    "numerical_dissipation": {"type": "number"},
+    "dissipation_total": {"type": "number"},
+    "evidence_ref": {"type": ["string", "null"]},
+    "dissipation_variant": {"type": "string", "default": "v1_minimal"}
+  }
+}

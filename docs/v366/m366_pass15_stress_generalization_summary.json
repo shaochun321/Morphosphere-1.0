@@ -1,0 +1,140 @@
+{
+  "db": "/mnt/data/m366_pass15_stress_generalization.db",
+  "integrity": "ok",
+  "coordinate_rigid": {
+    "stress_id": "C0_rigid_translation",
+    "trajectory_count": "520",
+    "role_changed_count": "0",
+    "max_abs_rel_path_length_delta": 6.155097294527702e-15,
+    "max_abs_delta_direction_coherence": 1.4988010832439613e-15,
+    "max_abs_delta_curvature": 1.6431300764452317e-14,
+    "localized_pressure_count": "0",
+    "global_collapse_flag": "0",
+    "verdict": "PASS",
+    "interpretation": "Rigid translation preserved recomputed trajectory metrics and role proxy."
+  },
+  "coordinate_warp": {
+    "stress_id": "C1_nonrigid_registration_warp",
+    "trajectory_count": "520",
+    "role_changed_count": "40",
+    "max_abs_rel_path_length_delta": 4.331064948392876,
+    "max_abs_delta_direction_coherence": 0.7383915106092142,
+    "max_abs_delta_curvature": 0.8514141867144097,
+    "localized_pressure_count": "70",
+    "global_collapse_flag": "0",
+    "verdict": "PASS",
+    "interpretation": "Nonrigid warp created local metric pressure without global role collapse."
+  },
+  "counter_injection": {
+    "target_p_stable_windows": 65.0,
+    "monotonic_r_cases": 65.0,
+    "r_band_triggered_rows": 257.0,
+    "xin_localized_rows": 130.0,
+    "p_core_collapse_rows": 0.0,
+    "projected_role_to_R_rows": 260.0
+  },
+  "sequence_inventory": [
+    {
+      "sequence_id": "01",
+      "point_count": 2058,
+      "trajectory_window_count": 241,
+      "track_count": 28,
+      "mean_path_length": 67.27609296172349,
+      "mean_p": 0.5699096978349834,
+      "mean_r": 0.3012001871722457,
+      "mean_xin": 0.2885072225082383,
+      "note": "m25 contains both sequences; Pass15 compares them without retuning"
+    },
+    {
+      "sequence_id": "02",
+      "point_count": 2517,
+      "trajectory_window_count": 291,
+      "track_count": 58,
+      "mean_path_length": 83.86804537354307,
+      "mean_p": 0.5501470494426705,
+      "mean_r": 0.29775834509157834,
+      "mean_xin": 0.27141179341630367,
+      "note": "m25 contains both sequences; Pass15 compares them without retuning"
+    }
+  ],
+  "directness_tiers": [
+    {
+      "tier_id": "L0",
+      "tier_name": "raw_inferred_backprojection",
+      "object_count": 855,
+      "share": 1.0,
+      "evidence_source": "v366_hypernode_spacetime_backprojection.direct_fk_available=0",
+      "required_upgrade": "requires upstream writer to emit direct refs",
+      "note": "current raw backprojection remains inferred/proxy"
+    },
+    {
+      "tier_id": "L1",
+      "tier_name": "normalized_materialized_direct_candidate",
+      "object_count": 390,
+      "share": 0.45614035087719296,
+      "evidence_source": "hypernode_fk_upgrade_applied_pass2.direct_fk_available_after=1",
+      "required_upgrade": "may be promoted only if upstream emits normalized source_ref natively",
+      "note": "candidate directness after normalization, not original FK fact"
+    },
+    {
+      "tier_id": "L2",
+      "tier_name": "native_raw_direct_backprojection",
+      "object_count": 0,
+      "share": 0.0,
+      "evidence_source": "raw direct_fk_available=1",
+      "required_upgrade": "target state for future writer contracts",
+      "note": "currently absent in raw v36.6 process-window backprojection"
+    }
+  ],
+  "acceptance": [
+    {
+      "check_id": "A1",
+      "status": "PASS",
+      "observed": "PASS",
+      "requirement": "rigid translation should preserve trajectory metrics and role proxy",
+      "note": "checks absolute coordinate dependence"
+    },
+    {
+      "check_id": "A2",
+      "status": "PASS",
+      "observed": "localized=70, global_collapse=0",
+      "requirement": "nonrigid warp should localize pressure without global collapse",
+      "note": "checks local stress response"
+    },
+    {
+      "check_id": "A3",
+      "status": "PASS",
+      "observed": "65.0/65",
+      "requirement": "R should increase monotonically under structured counter injection",
+      "note": "measurement-level pressure audit"
+    },
+    {
+      "check_id": "A4",
+      "status": "PASS",
+      "observed": "p_core_collapse_rows=0.0/260",
+      "requirement": "P should not globally collapse under boundary counter injection",
+      "note": "locality check"
+    },
+    {
+      "check_id": "A5",
+      "status": "PASS",
+      "observed": "seq02_windows=291.0",
+      "requirement": "CTC 02 sequence should be present for no-retune comparison",
+      "note": "n=1 mitigation"
+    },
+    {
+      "check_id": "A6",
+      "status": "WARN",
+      "observed": "raw_direct=0; normalized_candidates=390",
+      "requirement": "Backprojection directness must not be faked; raw direct remains debt",
+      "note": "directness tiering"
+    },
+    {
+      "check_id": "A7",
+      "status": "PASS",
+      "observed": "Xin role denominator=532",
+      "requirement": "Xin role share must be bounded to empirical role classifier",
+      "note": "prevents rhetoric overclaim"
+    }
+  ]
+}

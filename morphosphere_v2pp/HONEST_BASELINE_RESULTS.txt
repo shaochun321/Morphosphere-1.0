@@ -1,0 +1,31 @@
+Morphosphere v38 — Honest Baseline Results
+Date: 2026-05-14 23:04:01
+Train seeds: [42, 100, 200]
+Test seeds: [500, 600, 700]
+Windows per seed: 60
+
+Bayesian Test Accuracy: 0.9548 ± 0.1060
+Legacy Test Accuracy: 0.8870 ± 0.0643
+Random Baseline: 0.1250
+Train/Test Gap: 0.0056
+
+Per-Regime Metrics (Bayesian):
+  burst_firing: P=0.000 R=0.000 F1=0.000 support=0
+  diffusion: P=1.000 R=0.611 F1=0.759 support=18
+  fast_drift: P=1.000 R=1.000 F1=1.000 support=18
+  jump: P=1.000 R=0.944 F1=0.971 support=18
+  oscillation: P=1.000 R=1.000 F1=1.000 support=36
+  slow_drift: P=1.000 R=1.000 F1=1.000 support=36
+  stationary: P=1.000 R=1.000 F1=1.000 support=51
+  sustained_activity: P=0.000 R=0.000 F1=0.000 support=0
+
+Confusion Matrix:
+   burst_ diffus fast_d   jump oscill slow_d statio sustai
+  burst_fi      0      0      0      0      0      0      0      0
+  diffusio      7     11      0      0      0      0      0      0
+  fast_dri      0      0     18      0      0      0      0      0
+      jump      1      0      0     17      0      0      0      0
+  oscillat      0      0      0      0     36      0      0      0
+  slow_dri      0      0      0      0      0     36      0      0
+  stationa      0      0      0      0      0      0     51      0
+  sustaine      0      0      0      0      0      0      0      0

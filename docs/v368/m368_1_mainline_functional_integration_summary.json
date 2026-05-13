@@ -1,0 +1,19 @@
+{
+  "version": "v36.8.1_mainline_functional_integration",
+  "stage_contract_rows": 12,
+  "module_classifications": 15,
+  "formulae": 10,
+  "effect_rows": 10,
+  "acceptance": {
+    "mainline_stage_contract_present": "PASS",
+    "empirical_pipeline_imported": "PASS",
+    "toprxin_roles_populated": "PASS",
+    "sample_trace_present": "PASS",
+    "module_boundary_classified": "PASS",
+    "math_proxy_catalog_present": "PASS",
+    "module_effect_matrix_present": "PASS",
+    "hardening_dependencies_no_fail": "PASS",
+    "non_destructive_boundary": "PASS"
+  },
+  "db": "m368_1_mainline_functional_integration.db"
+}

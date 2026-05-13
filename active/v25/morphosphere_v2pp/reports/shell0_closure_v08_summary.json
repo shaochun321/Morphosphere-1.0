@@ -1,0 +1,23 @@
+{
+  "acceptance_pass_count": 13,
+  "acceptance_total_count": 13,
+  "auto_adoption_allowed": false,
+  "candidate_patch_status": "STAGED_PATCH_REVIEWED_NOT_APPLIED",
+  "external_mapped_count": 80,
+  "external_real_data_gate_status": "BLOCKED_FIXTURE_ONLY",
+  "external_sample_count": 80,
+  "force_nonuniformity": 0.22648158680941446,
+  "manual_review_required": true,
+  "met_alignment_score": 0.8698143032646583,
+  "p_stability_proxy": 0.832940986858124,
+  "phase_continuity_score": 0.7290591948036994,
+  "physical_watchlist": true,
+  "r_counter_proxy": 0.3390914555443291,
+  "run_id": "sh0close_v08_358de04ba535",
+  "schema_version": "shell0_boundary_closure_external_real_data_trial_v0.8",
+  "shell0_blocks_auto_adoption": false,
+  "shell0_closed": true,
+  "shell0_final_verdict": "closed_as_structural_boundary_artifact_with_physical_watchlist",
+  "source_digest_unchanged_count": 15,
+  "xi_pressure_proxy": 0.4250298225157108
+}

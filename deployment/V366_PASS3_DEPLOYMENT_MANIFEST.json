@@ -1,0 +1,41 @@
+{
+  "artifact": "Morphosphere_v36_6_full_chain_process_window_deployable_pass3",
+  "created_at": "2026-05-06T04:31:53.316530+00:00",
+  "files": [
+    {
+      "path": "outputs/v366/m366_process_window_pass3.db",
+      "size_bytes": 11624448,
+      "sha256": "34cbe0c3592a9b8690ed56ac7641bef9792015f9f9ca886c2b6c7c7ef2ccc1de"
+    },
+    {
+      "path": "outputs/v366/m366_improvement_pass3.db",
+      "size_bytes": 1388544,
+      "sha256": "775e96253bd5e2f26641c73e4aaec6c34f80965311a75ba8141a75846b9e7545"
+    },
+    {
+      "path": "docs/v366_context/V366_IMPROVEMENT_PASS3_REPORT.md",
+      "size_bytes": 2689,
+      "sha256": "4b8c662eae26c7b4ba6b7f6e4667a0b1da17c2bf4df862f899d6d16f0f7e827f"
+    },
+    {
+      "path": "docs/v366_context/V366_IMPROVEMENT_PASS3_SUMMARY.md",
+      "size_bytes": 1217,
+      "sha256": "21f5fd174d71ac01409e07fad954570d0441c93177b9693ea9d5d5a4343f49ce"
+    },
+    {
+      "path": "active/v366_process_window/scripts/improve_v366_materialization_pass3.py",
+      "size_bytes": 22034,
+      "sha256": "c39debd3f930f3aaf6b07607adbd0d5c2a4b0e387c740a837b0fd4d2d3ca5874"
+    },
+    {
+      "path": "RUN_V366_PASS3_CHECKS.sh",
+      "size_bytes": 1346,
+      "sha256": "748d6dbd635e5452cbdb1e170f641d59ba0d1ad3f266a9e36705914a2ec648b4"
+    }
+  ],
+  "boundary": {
+    "source_facts_rewritten": 0,
+    "semantic_writeback_allowed": 0,
+    "stage2_direct_required_for_current_architecture": 0
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "stream_event_count": 640,
+  "bridge_count": 640,
+  "pr_response_count": 50,
+  "replay_scenario_count": 8,
+  "source": "zarr v2 raw chunks dependency-free reader"
+}

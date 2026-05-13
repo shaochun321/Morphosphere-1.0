@@ -1,0 +1,12 @@
+{
+  "version": "v1.4",
+  "queue_events": 640,
+  "dispatched": 504,
+  "dropped": 88,
+  "replay_scenarios": 9,
+  "baseline_p": 0.5150056723828144,
+  "baseline_r": 0.16112,
+  "baseline_xi": 0.34070068620704697,
+  "avg_latency_ms": 9.765625,
+  "backpressure_ticks": 9
+}

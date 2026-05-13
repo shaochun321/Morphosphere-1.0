@@ -1,0 +1,314 @@
+{
+  "manifest": {
+    "restoration_run_id": "prrest_v022_67bb9a8812385ade77",
+    "parent_recursive_run_id": "dynrec_v02_5dd10f0aa3",
+    "source_run_id": "v85_diag_a5dabddb",
+    "restoration_version": "pr_restoration_xi_boundary_v0.2.2",
+    "execution_mode": "diagnostic_append_only_pr_restoration",
+    "scientific_run": 0,
+    "semantic_labels_allowed": 0,
+    "append_only_assertion": "source facts are counted before/after and cannot be rewritten; this patch appends O/P/R/Xi boundary records, contracts, and diagnostic external ledger rows",
+    "source_fact_counts_before_json": "{\"cell_spatial_coordinate_snapshot\": 500, \"dynamic_latent_trajectory_state\": 250, \"dynamic_origin_anchor_state\": 250, \"information_fiber\": 500, \"information_relative_coordinate_snapshot\": 1500, \"preneural_node_state\": 2500, \"raw_event_stream\": 1500, \"spacetime_cell\": 500, \"system_clock_entry\": 10, \"xin_residue_dynamics\": 87}",
+    "source_fact_counts_after_json": "{\"cell_spatial_coordinate_snapshot\": 500, \"dynamic_latent_trajectory_state\": 250, \"dynamic_origin_anchor_state\": 250, \"information_fiber\": 500, \"information_relative_coordinate_snapshot\": 1500, \"preneural_node_state\": 2500, \"raw_event_stream\": 1500, \"spacetime_cell\": 500, \"system_clock_entry\": 10, \"xin_residue_dynamics\": 87}",
+    "historical_issue_count": 9,
+    "open_issue_count": 4,
+    "interface_contract_count": 13,
+    "o_bridge_count": 50,
+    "p_support_count": 50,
+    "r_counter_count": 18,
+    "xi_guard_count": 87,
+    "external_ledger_rows_inserted": 60,
+    "created_at": "2026-04-30T10:17:41+00:00",
+    "forbidden_use": "semantic_labeling, Xi_replaces_PR, R_as_residual, source_fact_rewrite, scientific_conservation_claim, final_biology"
+  },
+  "acceptance": [
+    {
+      "test_name": "R_defined_as_counterstructure",
+      "status": "PASS",
+      "observed_value": "Refutational Counter-Structure",
+      "expected_value": "Refutational Counter-Structure"
+    },
+    {
+      "test_name": "R_not_equivalent_to_Xi_in_rows",
+      "status": "PASS",
+      "observed_value": "18",
+      "expected_value": "all R rows declare not Xi"
+    },
+    {
+      "test_name": "Xi_defined_as_residue_carrier",
+      "status": "PASS",
+      "observed_value": "Unresolved Residue Carrier",
+      "expected_value": "Unresolved Residue Carrier"
+    },
+    {
+      "test_name": "chain_contract_present",
+      "status": "PASS",
+      "observed_value": "present",
+      "expected_value": "4 chain contracts"
+    },
+    {
+      "test_name": "external_ledgers_populated",
+      "status": "PASS",
+      "observed_value": "{'external_entropy_ledger': 10, 'external_conserved_quantity_ledger': 10, 'external_dissipation_ledger': 10, 'external_noise_budget_ledger': 10, 'external_anomaly_ledger': 10, 'external_isolation_report': 10}",
+      "expected_value": "all >0"
+    },
+    {
+      "test_name": "external_status_reported",
+      "status": "PASS",
+      "observed_value": "6",
+      "expected_value": ">=6"
+    },
+    {
+      "test_name": "interface_contracts_ge_12",
+      "status": "PASS",
+      "observed_value": "13",
+      "expected_value": ">=12"
+    },
+    {
+      "test_name": "legacy_pr_kept_separate",
+      "status": "PASS",
+      "observed_value": "{'legacy_pr': 18, 'new_P': 50}",
+      "expected_value": "legacy kept; new P separate"
+    },
+    {
+      "test_name": "o_bridge_exists_before_pr",
+      "status": "PASS",
+      "observed_value": "{'O': 50, 'P': 50}",
+      "expected_value": "O > 0 and P = O"
+    },
+    {
+      "test_name": "open_issues_retained",
+      "status": "PASS",
+      "observed_value": "4",
+      "expected_value": ">=3"
+    },
+    {
+      "test_name": "ports_ge_2_per_contract",
+      "status": "PASS",
+      "observed_value": "26",
+      "expected_value": ">=2 per contract"
+    },
+    {
+      "test_name": "pr_decomposition_binding_complete",
+      "status": "PASS",
+      "observed_value": "{'bindings': 50, 'O': 50}",
+      "expected_value": "one per O"
+    },
+    {
+      "test_name": "r_counterstructure_exists",
+      "status": "PASS",
+      "observed_value": "18",
+      "expected_value": ">0"
+    },
+    {
+      "test_name": "semantic_labels_disallowed",
+      "status": "PASS",
+      "observed_value": "0",
+      "expected_value": "0"
+    },
+    {
+      "test_name": "source_fact_counts_unchanged",
+      "status": "PASS",
+      "observed_value": "{'spacetime_cell': 500, 'information_fiber': 500, 'raw_event_stream': 1500, 'cell_spatial_coordinate_snapshot': 500, 'information_relative_coordinate_snapshot': 1500, 'preneural_node_state': 2500, 'dynamic_origin_anchor_state': 250, 'dynamic_latent_trajectory_state': 250, 'xin_residue_dynamics': 87, 'system_clock_entry': 10}",
+      "expected_value": "same as before"
+    },
+    {
+      "test_name": "table_exists_external_ledger_status_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_historical_issue_register_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_layer_interface_contract_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_layer_port_contract_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_o_candidate_bridge_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_p_predictive_support_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_pr_decomposition_binding_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_pr_restoration_run_manifest_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_pr_term_registry_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_r_counterstructure_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "table_exists_xi_boundary_guard_v022",
+      "status": "PASS",
+      "observed_value": "True",
+      "expected_value": "exists"
+    },
+    {
+      "test_name": "xi_direct_to_p_forbidden",
+      "status": "PASS",
+      "observed_value": "all forbidden",
+      "expected_value": "0 allowed"
+    },
+    {
+      "test_name": "xi_direct_to_r_forbidden",
+      "status": "PASS",
+      "observed_value": "all forbidden",
+      "expected_value": "0 allowed"
+    },
+    {
+      "test_name": "xi_guards_exist",
+      "status": "PASS",
+      "observed_value": "87",
+      "expected_value": ">0"
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "full_replay_missing",
+      "severity": "medium",
+      "resolution_status": "open",
+      "title": "Full raw perturbation replay remains incomplete"
+    },
+    {
+      "issue_id": "matrix_foam_substrate_missing",
+      "severity": "medium",
+      "resolution_status": "open",
+      "title": "Matrix/Foam substrate remains absent"
+    },
+    {
+      "issue_id": "online_recursion_absent",
+      "severity": "medium",
+      "resolution_status": "open",
+      "title": "Recursive system is still batch/offline"
+    },
+    {
+      "issue_id": "phenomenological_weighting",
+      "severity": "medium",
+      "resolution_status": "mitigated",
+      "title": "Legacy hand-tuned P/R scoring needed isolation"
+    },
+    {
+      "issue_id": "real_data_driver_absent",
+      "severity": "medium",
+      "resolution_status": "open",
+      "title": "Real physical data driver is not active"
+    },
+    {
+      "issue_id": "external_ledgers_empty",
+      "severity": "high",
+      "resolution_status": "resolved_diagnostic",
+      "title": "External ledger tables existed but were empty"
+    },
+    {
+      "issue_id": "layer_interfaces_implicit",
+      "severity": "high",
+      "resolution_status": "mitigated",
+      "title": "Layer handoffs were operational but not explicit enough"
+    },
+    {
+      "issue_id": "r_named_as_residual",
+      "severity": "high",
+      "resolution_status": "resolved_diagnostic",
+      "title": "R was previously too close to residual terminology"
+    },
+    {
+      "issue_id": "pr_xi_role_confusion",
+      "severity": "critical",
+      "resolution_status": "resolved_diagnostic",
+      "title": "P/R was at risk of being shadowed by Xi/Xin"
+    }
+  ],
+  "external_ledgers": [
+    {
+      "ledger_table": "external_anomaly_ledger",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    },
+    {
+      "ledger_table": "external_conserved_quantity_ledger",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    },
+    {
+      "ledger_table": "external_dissipation_ledger",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    },
+    {
+      "ledger_table": "external_entropy_ledger",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    },
+    {
+      "ledger_table": "external_isolation_report",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    },
+    {
+      "ledger_table": "external_noise_budget_ledger",
+      "row_count_before": 0,
+      "row_count_after": 10,
+      "activation_status": "diagnostically_populated"
+    }
+  ],
+  "pr_counts": {
+    "o_candidate_bridge_v022": 50,
+    "p_predictive_support_v022": 50,
+    "r_counterstructure_v022": 18,
+    "xi_boundary_guard_v022": 87,
+    "pr_decomposition_binding_v022": 50,
+    "p_status_counts": {
+      "not_supported": 14,
+      "predictively_supported": 18,
+      "weakly_supported": 18
+    },
+    "r_type_counts": {
+      "conservation_conflict+continuity_conflict+legacy_masking_break_signal+prediction_failure": 1,
+      "continuity_conflict+legacy_masking_break_signal+prediction_failure": 3,
+      "legacy_masking_break_signal+phase_conflict": 6,
+      "legacy_masking_break_signal+phase_conflict+prediction_failure": 2,
+      "legacy_masking_break_signal+prediction_failure": 2,
+      "phase_conflict": 4
+    }
+  }
+}

@@ -1,0 +1,6 @@
+maturity_level,maturity_rank,concept_count,total_evidence_rows
+BLUEPRINT_ONLY,0,5,0
+SCHEMA_ONLY,1,1,6
+MATERIALIZED_INDEX,2,13,30049
+DATA_POPULATED,3,8,3691
+NATIVE_RUN_GENERATED,5,29,24131

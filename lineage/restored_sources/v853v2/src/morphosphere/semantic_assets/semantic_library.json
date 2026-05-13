@@ -1,0 +1,164 @@
+{
+  "active_root": "morphosphere_mainline_root",
+  "term_layer": [
+    {
+      "term": "shell0",
+      "canonical_object": "stage1.surface_boundary_shell",
+      "aliases": [
+        "surface shell",
+        "boundary shell"
+      ],
+      "status": "active",
+      "rationale": "treat shell0 as a Stage-1 boundary object first, not a downstream placeholder burden"
+    },
+    {
+      "term": "family surface",
+      "canonical_object": "family_matrix_surface.runtime_plane",
+      "aliases": [
+        "family matrix surface",
+        "runtime face",
+        "completion surface"
+      ],
+      "status": "active",
+      "rationale": "family matrix surface is the canonical runtime structural plane for state, links, history, and evidence"
+    },
+    {
+      "term": "attribution packet",
+      "canonical_object": "compile_signal_packet",
+      "aliases": [
+        "compile packet",
+        "signal packet"
+      ],
+      "status": "active",
+      "rationale": "compile_signal_packet is the canonical external protocol packet"
+    },
+    {
+      "term": "reader",
+      "canonical_object": "archive.reader_reference",
+      "aliases": [
+        "summary reader",
+        "legacy reader"
+      ],
+      "status": "archive_only",
+      "rationale": "reader outputs are semantic replay sources, not active execution roots"
+    },
+    {
+      "term": "audit",
+      "canonical_object": "archive.audit_reference",
+      "aliases": [
+        "verdict",
+        "audit artifact"
+      ],
+      "status": "archive_only",
+      "rationale": "audit artifacts are preserved as semantic alignment sources"
+    },
+    {
+      "term": "origin_anchor_bundle",
+      "canonical_object": "family_matrix_surface.anchor_bundle",
+      "aliases": [
+        "anchor bundle"
+      ],
+      "status": "active",
+      "rationale": "anchor extraction remains part of runtime surface construction"
+    },
+    {
+      "term": "p/r band",
+      "canonical_object": "family_matrix_surface.pr_band_projection",
+      "aliases": [
+        "pband",
+        "rband"
+      ],
+      "status": "active",
+      "rationale": "P/R bands remain runtime projections on top of the family surface"
+    }
+  ],
+  "field_layer": [
+    {
+      "legacy_field": "motion_state_trace.motion_class",
+      "canonical_field": "Stage1ManifoldRecord.motion_class",
+      "relation": "equivalent",
+      "status": "active",
+      "rationale": "canonical motion semantics are carried by the manifold record"
+    },
+    {
+      "legacy_field": "readout_trace.translation_channel",
+      "canonical_field": "InterfaceBundleTensor.translation_signal",
+      "relation": "projected",
+      "status": "active",
+      "rationale": "translation readout is projected into bundle channels"
+    },
+    {
+      "legacy_field": "interface_trace.interface_bundles",
+      "canonical_field": "InterfaceBundleTensor.frames",
+      "relation": "equivalent",
+      "status": "active",
+      "rationale": "bundle tensor is the canonical structured handoff"
+    },
+    {
+      "legacy_field": "legacy summary verdict",
+      "canonical_field": "FamilySurfaceState.evidence.shell0_nature_assessment",
+      "relation": "projected",
+      "status": "archive_only",
+      "rationale": "old verdict-like outputs survive as evidence rows"
+    },
+    {
+      "legacy_field": "placeholder shell0 flag",
+      "canonical_field": "shell0_nature_assessment.nature",
+      "relation": "split",
+      "status": "active",
+      "rationale": "shell0 semantics are split into construction/physical/mixed assessment"
+    },
+    {
+      "legacy_field": "legacy boundary note",
+      "canonical_field": "stage1_boundary_solver_selection.selected_variant",
+      "relation": "projected",
+      "status": "active",
+      "rationale": "active Stage-1 boundary strategy is explicit and replayable"
+    }
+  ],
+  "case_layer": [
+    {
+      "case_id": "baseline",
+      "legacy_label": "raw_stage1_reference",
+      "canonical_case": "baseline",
+      "status": "active",
+      "rationale": "baseline remains a comparison case, not the active root"
+    },
+    {
+      "case_id": "translation",
+      "legacy_label": "translation_demo",
+      "canonical_case": "translation_family_probe",
+      "status": "active",
+      "rationale": "translation remains a canonical boundary case"
+    },
+    {
+      "case_id": "rotation",
+      "legacy_label": "rotation_demo",
+      "canonical_case": "rotation_family_probe",
+      "status": "active",
+      "rationale": "rotation remains a canonical boundary case"
+    },
+    {
+      "case_id": "boundary",
+      "legacy_label": "pde_fvm_shell",
+      "canonical_case": "stage1_solver::pde_fvm_shell",
+      "status": "active",
+      "rationale": "selected Stage-1 boundary solver becomes the active boundary case root"
+    },
+    {
+      "case_id": "surface_attribute_counterfactual",
+      "legacy_label": "surface_attribute",
+      "canonical_case": "counterfactual.surface_attribute",
+      "status": "archive_only",
+      "rationale": "retain this as a semantic replay case even when inactive"
+    }
+  ],
+  "source_assets": [
+    "contracts/shell0_nature_assessment.json",
+    "contracts/stage1_boundary_solver_selection.json",
+    "contracts/stage1_boundary_validation_comparison.json",
+    "family_matrix_surface/family_evidence.json",
+    "neural_mesh/compile_signal_trace.json"
+  ],
+  "note": "historical readers, audits, and compatibility summaries are retained as semantic assets; delete runtime redundancy only after semantic replay is aligned"
+}

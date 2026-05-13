@@ -1,0 +1,14 @@
+{
+  "auto_adoption_allowed": 0,
+  "calibration_mappings": 80,
+  "calibration_samples": 80,
+  "candidate_adoption_gates": 9,
+  "db_file": "outputs/morphosphere_candidate_adoption_v07_output_database.db",
+  "final_decision": "STAGED_PATCH_NOT_APPLIED",
+  "manual_review_required": 1,
+  "schema_version": "candidate_adoption_gate_real_data_calibration_v0.7",
+  "shell0_probes": 7,
+  "shell0_verdict": "mixed_or_indeterminate",
+  "v07_acceptance_fail": 0,
+  "v07_acceptance_pass": 10
+}

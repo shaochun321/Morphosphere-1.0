@@ -1,0 +1,91 @@
+{
+  "schema_version": "v2.5",
+  "source_baseline": "v2.4",
+  "output_db": "outputs/morphosphere_evidence_reconstruction_v25_output_database.db",
+  "sqlite_quick_check": "ok",
+  "counts": {
+    "information_point_v25": 4575,
+    "coordinate_transform_trace_v25": 4575,
+    "trajectory_window_trace_v25": 532,
+    "p_spacetime_measure_v25": 532,
+    "r_counter_measure_v25": 532,
+    "xi_residual_surface_v25": 532,
+    "attention_yield_event_v25": 262,
+    "decision_evidence_bundle_v25": 532,
+    "calculation_recipe_v25": 7
+  },
+  "runtime_sidecars": [
+    {
+      "artifact_id": "information_points_v25",
+      "path": "runtime_store/v25/information_points_v25.jsonl",
+      "row_count": 4575,
+      "size_bytes": 3940739,
+      "sha256": "3c7f0d6d2323ff08515f15dc3f2069659193345fa19cbb26cbd256e5f55b7ebd",
+      "artifact_role": "raw_points",
+      "sqlite_table": "information_point_v25",
+      "generated_at": "2026-05-02T18:46:33.675630+00:00"
+    },
+    {
+      "artifact_id": "coordinate_transform_trace_v25",
+      "path": "runtime_store/v25/coordinate_transform_trace_v25.jsonl",
+      "row_count": 4575,
+      "size_bytes": 4752880,
+      "sha256": "46ee28090e63411fc642adf5e566b4081806bc6a077a97cf0203fc2a80e4ae9f",
+      "artifact_role": "coordinate_payload",
+      "sqlite_table": "coordinate_transform_trace_v25",
+      "generated_at": "2026-05-02T18:46:33.783699+00:00"
+    },
+    {
+      "artifact_id": "trajectory_window_trace_v25",
+      "path": "runtime_store/v25/trajectory_window_trace_v25.jsonl",
+      "row_count": 532,
+      "size_bytes": 1125261,
+      "sha256": "5a48f167c837ace82d80ba02d95dc735710a4581162d6cde5530fa4cea7ab9a0",
+      "artifact_role": "trajectory_payload",
+      "sqlite_table": "trajectory_window_trace_v25",
+      "generated_at": "2026-05-02T18:46:33.808294+00:00"
+    },
+    {
+      "artifact_id": "p_measure_field_v25",
+      "path": "runtime_store/v25/p_measure_field_v25.jsonl",
+      "row_count": 532,
+      "size_bytes": 761069,
+      "sha256": "6118caaf4d1b856a434e847179f3b1477b3447a4f01c2c901d44619d927fe590",
+      "artifact_role": "p_payload",
+      "sqlite_table": "p_spacetime_measure_v25",
+      "generated_at": "2026-05-02T18:46:33.822309+00:00"
+    },
+    {
+      "artifact_id": "r_counter_field_v25",
+      "path": "runtime_store/v25/r_counter_field_v25.jsonl",
+      "row_count": 532,
+      "size_bytes": 745958,
+      "sha256": "c3b138731cde7b8c46c64e5f13991b675ad7a66b67f201b919ae99e01f990123",
+      "artifact_role": "r_payload",
+      "sqlite_table": "r_counter_measure_v25",
+      "generated_at": "2026-05-02T18:46:33.842261+00:00"
+    },
+    {
+      "artifact_id": "xi_residual_surface_v25",
+      "path": "runtime_store/v25/xi_residual_surface_v25.jsonl",
+      "row_count": 532,
+      "size_bytes": 1227671,
+      "sha256": "65971a33dcc12fadc72bee1dafe2ec509002d382cd4f27162cfd0262d6360468",
+      "artifact_role": "xi_payload",
+      "sqlite_table": "xi_residual_surface_v25",
+      "generated_at": "2026-05-02T18:46:33.858256+00:00"
+    },
+    {
+      "artifact_id": "evidence_bundle_v25",
+      "path": "runtime_store/v25/evidence_bundle_v25.jsonl",
+      "row_count": 532,
+      "size_bytes": 1294496,
+      "sha256": "0ba33b56a5d3061ae969b99e1089f640055d0f00b3c5aaf130a62d77718f90ca",
+      "artifact_role": "bundle_payload",
+      "sqlite_table": "decision_evidence_bundle_v25",
+      "generated_at": "2026-05-02T18:46:33.873277+00:00"
+    }
+  ],
+  "boundary": "diagnostic evidence reconstruction; not final biology; not scientific_run",
+  "db_sha256": "48fd72cc6594ea5eed9243309fcfbafaec24ed0eaefde07be0bee70964ffaf17"
+}

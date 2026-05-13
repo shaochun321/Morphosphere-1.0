@@ -1,0 +1,65 @@
+[
+  {
+    "label": "v853_physical",
+    "filename": "morphosphere_v853_physical (1).zip",
+    "size_bytes": 1295141,
+    "sha256": "f482f179f976a136928b9729a07ead5d308d1b3470b5731c19824d49a3775a78",
+    "embedded": false
+  },
+  {
+    "label": "v853_mainline",
+    "filename": "morphosphere_mainline_v853_validation_release.zip",
+    "size_bytes": 4130331,
+    "sha256": "a60fb588971c6227fd53f4b9648fb720f1770ca0e97e5b9ffcd80f16e3b84065",
+    "embedded": false
+  },
+  {
+    "label": "v01_state_separation",
+    "filename": "morphosphere_state_separation_v01_package.zip",
+    "size_bytes": 1136428,
+    "sha256": "f795076ec727d89598a5bac150fa6e4b400a8b44870a4810f1366703affd0615",
+    "embedded": false
+  },
+  {
+    "label": "v02_dynamic_recursive",
+    "filename": "morphosphere_dynamic_recursive_v02_package(1).zip",
+    "size_bytes": 2571249,
+    "sha256": "34144333e5bb2442b5fc892da00118e824b6434b1b22048ab695b460adf00cff",
+    "embedded": false
+  },
+  {
+    "label": "v05_device_neutral",
+    "filename": "morphosphere_device_neutral_v05_package(2).zip",
+    "size_bytes": 5028922,
+    "sha256": "6d625ac4b8a0aa3f1cd4c711be09960472d50ffceb360a0cf3b7c45b6d7e2b35",
+    "embedded": false
+  },
+  {
+    "label": "v08_shell0_closure",
+    "filename": "morphosphere_shell0_closure_v08_package(1).zip",
+    "size_bytes": 18830213,
+    "sha256": "6b5ce434db33ac6f869a0a397e24e9e19e5cf911597457f3a59e80f696205215",
+    "embedded": false
+  },
+  {
+    "label": "v24_ctc_source_verified",
+    "filename": "morphosphere_ctc_source_verified_v24_full_package(3).zip",
+    "size_bytes": 102311884,
+    "sha256": "400f5f19d4a7b76d82eeebec2eff610da8507fd2343475831fbea5bd7ca0f826",
+    "embedded": false
+  },
+  {
+    "label": "liying_cell10_reference",
+    "filename": "Liying-cell1.0方案(1).zip",
+    "size_bytes": 229049,
+    "sha256": "04f05827d885c3d34f8e8c574c9bb96d1fdcbe20eba5ac13fe1553fdf8818bce",
+    "embedded": false
+  },
+  {
+    "label": "v27_measure_field_original_short_package",
+    "filename": "m27.zip",
+    "size_bytes": 10879406,
+    "sha256": "2fb4303e819fba8f078f11834e8366a28f3eb274ffb116ac160648fc099922c6",
+    "embedded": false
+  }
+]

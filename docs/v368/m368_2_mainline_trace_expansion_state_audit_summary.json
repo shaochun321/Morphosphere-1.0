@@ -1,0 +1,11 @@
+{
+  "version": "v36.8.2_mainline_trace_expansion_state_audit",
+  "expanded_traces": 200,
+  "state_reason_rows": 200,
+  "masking_signatures": 1,
+  "attention_rows": 120,
+  "hyper_variational_rows": 120,
+  "readout_boundary_rows": 31,
+  "ctc02_windows": 291,
+  "acceptance_failed": 0
+}

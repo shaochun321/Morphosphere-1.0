@@ -1,0 +1,18 @@
+{
+  "$id": "https://morphosphere.local/schemas/analysis_window.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AnalysisWindow",
+  "type": "object",
+  "required": ["window_id", "clock_start", "clock_end", "window_center", "window_size", "window_stride"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "window_id": { "type": "string" },
+    "clock_start": { "type": "integer" },
+    "clock_end": { "type": "integer" },
+    "window_center": { "type": "integer" },
+    "window_size": { "type": "integer" },
+    "window_stride": { "type": "integer" },
+    "window_type": { "type": "string", "default": "standard" }
+  }
+}

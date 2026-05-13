@@ -1,0 +1,8 @@
+{
+  "version": "v36.5",
+  "definition_authority": "external_module_only",
+  "mainline_stores_definition": false,
+  "allowed_mainline_ref": "external_definition_ref",
+  "xin_direct_to_P_allowed": false,
+  "xin_to_T_reentry_allowed": true
+}

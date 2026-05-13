@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "version": "v37.4.12",
+    "date": "2026-05-08",
+    "batch": "batch3",
+    "run_id": "v37412_batch3_55521560",
+    "cells_per_source": 120,
+    "windows": 10,
+    "total_cells": 2400,
+    "elapsed_s": 0.99,
+    "db_size_kb": 9788.0
+  },
+  "integrity": {
+    "orphan_fibers": 0,
+    "orphan_bindings": 0,
+    "unbound_fibers": 0,
+    "invalid_transport_refs": 0,
+    "all_pass": true
+  },
+  "xi_lifecycle": {
+    "proto_candidate": {
+      "count": 14,
+      "total_mass": 1.8657,
+      "avg_persistence": 10.0
+    },
+    "quarantined": {
+      "count": 4,
+      "total_mass": 0.4256,
+      "avg_persistence": 10.0
+    }
+  },
+  "acceptance_checks": {
+    "db_integrity": "PASS",
+    "chain_completeness": "PASS",
+    "parallel_merge_all_pass": "PASS",
+    "hg_fhpms_complete": "PASS",
+    "fhpms_hyperedge_populated": "PASS",
+    "fhpms_transport_populated": "PASS",
+    "fhpms_reprojection_populated": "PASS",
+    "fhpms_hebbian_populated": "PASS",
+    "rlis_minkowski_populated": "PASS",
+    "rlis_lightcone_populated": "PASS",
+    "variational_full_coverage": "PASS",
+    "external_ledgers_populated": "PASS",
+    "legacy_observable_populated": "PASS",
+    "legacy_recursive_populated": "PASS",
+    "legacy_diagnostic_populated": "PASS",
+    "transport_adaptive": "PASS",
+    "no_writeback": "PASS"
+  },
+  "total_rows": 42760,
+  "populated_tables": 79,
+  "empty_tables": 26,
+  "transport_rejection_rate": 0.6648,
+  "variational_coverage": "2400/2400",
+  "empty_table_names": [
+    "analysis_window",
+    "boundary_elasticity_record",
+    "counterfactual_acceptance_report",
+    "diagnostic_telemetry_report",
+    "emergence_alert",
+    "failed_expectation_report",
+    "object_evidence_record",
+    "perturbation_effect_report",
+    "perturbation_run_manifest",
+    "preneural_geometry",
+    "preneural_pointset_slice",
+    "preneural_signal_window",
+    "proxy_density_report",
+    "raw_emergency_export_manifest",
+    "system_clock",
+    "threshold_sweep_record",
+    "transport_cost_matrix_record",
+    "transport_cost_matrix_report",
+    "transport_operator",
+    "v3672_guard_action_table",
+    "v3672_guard_regression_result",
+    "v3674_rmi_regression_gate",
+    "v853_release_artifact_manifest",
+    "v853_reproducibility_report",
+    "xi_residual_mass_report",
+    "xi_residue_mass_record"
+  ]
+}

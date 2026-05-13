@@ -1,0 +1,121 @@
+{
+  "artifact": "m366_upper_layer_empirical",
+  "integrity_check": "ok",
+  "counts": {
+    "trajectory_toprxin_profiles": 532,
+    "evidence_bundles": 532,
+    "role_transition_types": 24,
+    "attention_audits": 120,
+    "hyperedges": 120,
+    "hyperedge_incidence_rows": 855,
+    "variational_paths": 120,
+    "r_band_candidates": 90,
+    "xin_carriers": 31
+  },
+  "role_counts": [
+    {
+      "role_proxy": "XIN_RESIDUAL_PRESSURE",
+      "window_count": 201,
+      "percentage": 0.37781954887218044,
+      "empirical_mean_p": 0.5478062269961981,
+      "empirical_mean_r": 0.3005859729404908,
+      "empirical_mean_xin": 0.3179055039619399,
+      "meaning": "windows with high residual/phase conflict retained as Xin pressure"
+    },
+    {
+      "role_proxy": "LOW_OR_MIXED_SIGNAL",
+      "window_count": 137,
+      "percentage": 0.2575187969924812,
+      "empirical_mean_p": 0.5593048411538524,
+      "empirical_mean_r": 0.2822642407538566,
+      "empirical_mean_xin": 0.26313030806788157,
+      "meaning": "windows without one dominant upper-layer role proxy"
+    },
+    {
+      "role_proxy": "R_COUNTER_PRESSURE",
+      "window_count": 92,
+      "percentage": 0.17293233082706766,
+      "empirical_mean_p": 0.5374848624169065,
+      "empirical_mean_r": 0.33562779610980437,
+      "empirical_mean_xin": 0.26141505616471167,
+      "meaning": "windows where counter-evidence pressure is in the upper empirical quartile"
+    },
+    {
+      "role_proxy": "P_STABLE_SUPPORT",
+      "window_count": 65,
+      "percentage": 0.12218045112781954,
+      "empirical_mean_p": 0.6108474628375431,
+      "empirical_mean_r": 0.2764743747447827,
+      "empirical_mean_xin": 0.22242172906779953,
+      "meaning": "high-confidence stable support windows relative to this dataset"
+    },
+    {
+      "role_proxy": "P_R_MIXED_COMPETITION",
+      "window_count": 37,
+      "percentage": 0.06954887218045112,
+      "empirical_mean_p": 0.5825276020253727,
+      "empirical_mean_r": 0.3054148752792067,
+      "empirical_mean_xin": 0.27177341757890955,
+      "meaning": "windows where stable support and counter pressure both remain visible"
+    }
+  ],
+  "attention_verdicts": [
+    {
+      "label": "NEUTRAL",
+      "count": 79,
+      "share": 0.6583333333333333
+    },
+    {
+      "label": "EFFECTIVE",
+      "count": 26,
+      "share": 0.21666666666666667
+    },
+    {
+      "label": "INEFFECTIVE",
+      "count": 10,
+      "share": 0.08333333333333333
+    },
+    {
+      "label": "NOVELTY_DISCOVERED",
+      "count": 5,
+      "share": 0.041666666666666664
+    }
+  ],
+  "key_findings": [
+    {
+      "finding_id": "F001",
+      "statement": "The current bottom-to-middle layer recognizes 532 trajectory windows from 4,575 information points and splits each into P/R/Xin measures.",
+      "consequence": "The upper layer is not empty; it is a windowed recognition/separation system."
+    },
+    {
+      "finding_id": "F002",
+      "statement": "P is mostly candidate-level stable support, R is mostly low but measurable counter-pressure, and Xin is low/decaying but ledger-retained.",
+      "consequence": "Current run shows conservative residual retention rather than strong novelty outbreak."
+    },
+    {
+      "finding_id": "F003",
+      "statement": "v35 attention mostly returns NEUTRAL, with 26 EFFECTIVE and 5 NOVELTY_DISCOVERED cases.",
+      "consequence": "Attention layer is a resource-allocation/audit layer, not an action layer."
+    },
+    {
+      "finding_id": "F004",
+      "statement": "v35H hyperedges average >7 nodes and therefore express multi-subject binding rather than binary edges.",
+      "consequence": "High-order relation indexing exists, but bottom FK remains partially inferred."
+    },
+    {
+      "finding_id": "F005",
+      "statement": "v36.2 computes action proxies, stationarity defects, and Xin_var for 120 candidate paths; delta-Xin is only fallback.",
+      "consequence": "The upper layer changes information from local window readings into path-level ledger-scored candidates."
+    },
+    {
+      "finding_id": "F006",
+      "statement": "R-band/coupler layers build pseudo-continuity candidates and triage Xin into foreground/background/deferred/thermalized/external leakage classes.",
+      "consequence": "R is not merely negative evidence; it becomes continuity-seeking structure."
+    },
+    {
+      "finding_id": "F007",
+      "statement": "v36.5 preserves Xin as minimal carriers and external readout remains read-only with blocked backwrite attempts.",
+      "consequence": "Semantic interpretation is externalized and cannot rewrite mainline."
+    }
+  ]
+}

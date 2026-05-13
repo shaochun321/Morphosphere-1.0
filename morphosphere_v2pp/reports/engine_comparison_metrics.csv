@@ -1,0 +1,4 @@
+engine,weights,avg_weight,entropy,dead_nodes,exploded,survival_rate,adaptation_latency
+A_strata,856,0.047405,6.154,0,0,0.472,13
+B_inertia,855,0.051046,6.144,9,0,0.793,8
+C_hybrid,854,0.050509,6.170,0,0,0.558,13

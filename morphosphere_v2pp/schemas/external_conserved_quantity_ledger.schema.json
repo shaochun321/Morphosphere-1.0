@@ -1,0 +1,28 @@
+{
+  "$id": "morphosphere/schemas/external_conserved_quantity_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalConservedQuantityLedger",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id", "symmetry_id",
+    "quantity_name", "ledger_value_before", "ledger_value_after",
+    "source_term", "dissipation_term", "anomaly_term", "balance_residual"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "symmetry_id": {"type": "string"},
+    "quantity_name": {"type": "string"},
+    "ledger_value_before": {"type": "number"},
+    "ledger_value_after": {"type": "number"},
+    "source_term": {"type": "number"},
+    "dissipation_term": {"type": "number"},
+    "anomaly_term": {"type": "number"},
+    "balance_residual": {"type": "number"},
+    "evidence_ref": {"type": ["string", "null"]},
+    "linked_object_refs": {"type": "array", "items": {"type": "string"}, "default": []}
+  }
+}

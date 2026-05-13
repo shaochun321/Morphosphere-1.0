@@ -1,0 +1,11 @@
+check_id,check_name,status,observed_value,requirement,note
+acc_001,process windows materialized,PASS,1133,> 0,v36.6 process_window registry generated
+acc_002,trajectory evidence windows included,PASS,532,>= 500 expected from v25 materialized chain,底层 evidence / P-R-Xin windows present
+acc_003,hyperedge process windows included,PASS,120,>= 120,v35H hyperedges represented as process windows
+acc_004,hypernode backprojection generated,PASS,855,>= 855 incidence rows,Every incidence row should get an audit backprojection row
+acc_005,coordinate nonlocal proxy examples retained,PASS,50,> 0,Coordinate-far/process-linked examples available; proxy evidence only
+acc_006,semantic null guard held,PASS,1,semantic_null_guard=1; writes_mainline not enabled,No semantic labels introduced into process_window mainline
+acc_007,raw coordinate audit retained,PASS,1,raw_coordinate_audit_required=1,Coordinates are hidden from mainline interpretation but retained for audit
+acc_008,source facts not rewritten,PASS,0,source_facts_rewritten=0,Output DB is additive materialized index only
+acc_009,direct/proxy FK separated,PASS,"direct=0, proxy=855",do not claim direct FK when only proxy projection exists,v35H overlay lacks hard FK to base evidence; marked proxy
+acc_010,integrity check,PASS,ok,PRAGMA integrity_check=ok,Filled after final commit

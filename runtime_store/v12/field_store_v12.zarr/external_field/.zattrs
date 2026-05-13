@@ -1,0 +1,18 @@
+{
+  "axes": [
+    "clock_n",
+    "ix",
+    "iy",
+    "iz",
+    "channel"
+  ],
+  "channel_names": [
+    "pressure_proxy",
+    "shear_proxy",
+    "diffusion_proxy",
+    "phase",
+    "field_energy_proxy"
+  ],
+  "hdf5_status": "contract_only_not_materialized",
+  "source": "runtime_store/v11/external_field_tensor_v11.jsonl"
+}

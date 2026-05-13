@@ -1,0 +1,51 @@
+[
+  {
+    "original_concept": "continuous_information_energy_metric",
+    "cannot_adopt_reason": "no_continuous_physical_metric_base",
+    "downgraded_object": "v36_information_energy_metric_proxy",
+    "minimization_or_correction": "local ledger-scored proxy only",
+    "forbidden_interpretation": "mu_IE is not physical spacetime metric"
+  },
+  {
+    "original_concept": "differential_Xin_field",
+    "cannot_adopt_reason": "no_observable_continuous_xin_field",
+    "downgraded_object": "v36_delta_xin_field",
+    "minimization_or_correction": "fallback diagnostic finite-window delta",
+    "forbidden_interpretation": "not a true differential field"
+  },
+  {
+    "original_concept": "Ricci_curvature",
+    "cannot_adopt_reason": "no_smooth_manifold_or_PDE_base",
+    "downgraded_object": "v36_curvature_proxy",
+    "minimization_or_correction": "weighted local curvature-like audit",
+    "forbidden_interpretation": "not Ricci curvature"
+  },
+  {
+    "original_concept": "singularity",
+    "cannot_adopt_reason": "would overstate physical/geometric claim",
+    "downgraded_object": "v36_singularity_candidate",
+    "minimization_or_correction": "SNR and ledger-gated audit candidate",
+    "forbidden_interpretation": "not physical singularity"
+  },
+  {
+    "original_concept": "topological_surgery",
+    "cannot_adopt_reason": "deletion violates ledger conservation",
+    "downgraded_object": "v36_topological_heat_bath",
+    "minimization_or_correction": "reversible digest and ledger transfer",
+    "forbidden_interpretation": "not true topology surgery"
+  },
+  {
+    "original_concept": "coordinate_replacement",
+    "cannot_adopt_reason": "raw coordinates remain verification anchors",
+    "downgraded_object": "v36_metric_anchor_audit",
+    "minimization_or_correction": "anchor drift audit forbids replacement",
+    "forbidden_interpretation": "coordinates are not removed"
+  },
+  {
+    "original_concept": "semantic_motion_rest",
+    "cannot_adopt_reason": "semantic labels forbidden in mainline",
+    "downgraded_object": "external readout only",
+    "minimization_or_correction": "readout blocked from backwrite",
+    "forbidden_interpretation": "not semantic truth"
+  }
+]

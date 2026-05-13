@@ -1,0 +1,14 @@
+{
+  "c_metric": 1.0,
+  "c_D": 1.0,
+  "c_N": 0.6,
+  "c_A": 1.4,
+  "c_R": 0.8,
+  "c_Xi": 1.2,
+  "c_Noether": 1.7,
+  "c_W": 0.7,
+  "eta_metric_update": 0.05,
+  "path_softmax_beta": 0.9,
+  "theta_stationary": 0.012,
+  "top_k": 10.0
+}

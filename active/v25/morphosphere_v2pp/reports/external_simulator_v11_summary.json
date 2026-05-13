@@ -1,0 +1,15 @@
+{
+  "acceptance_passed": 34,
+  "acceptance_total": 34,
+  "cell_state_rows": 500,
+  "emitted_event_rows": 1500,
+  "field_rows": 640,
+  "hot_swap_allowed": false,
+  "mapping_rows": 1500,
+  "replay_scenarios": 10,
+  "run_id": "external_physical_simulator_adapter_v1.1",
+  "scientific_run": false,
+  "source_fact_rewrite_allowed": false,
+  "sqlite_role": "ledger_only",
+  "version": "v1.1"
+}

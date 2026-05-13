@@ -1,0 +1,26 @@
+{
+  "$id": "morphosphere/schemas/external_noise_budget_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalNoiseBudgetLedger",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "noise_budget_ext", "noise_budget_measurement", "noise_budget_windowing",
+    "noise_budget_transport", "noise_budget_boundary", "noise_budget_total"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "noise_budget_ext": {"type": "number"},
+    "noise_budget_measurement": {"type": "number"},
+    "noise_budget_windowing": {"type": "number"},
+    "noise_budget_transport": {"type": "number"},
+    "noise_budget_boundary": {"type": "number"},
+    "noise_budget_total": {"type": "number"},
+    "noise_source_manifest": {"type": ["string", "null"]},
+    "budget_unit_policy": {"type": "string", "default": "ledger_unit"}
+  }
+}

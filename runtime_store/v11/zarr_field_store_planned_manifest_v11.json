@@ -1,0 +1,11 @@
+{
+  "chunks": {
+    "clock": 1,
+    "x": 8,
+    "y": 8
+  },
+  "not_created_in_v11": true,
+  "path": "runtime_store/v11/zarr_field_store/",
+  "planned": true,
+  "reason": "future chunked N-dimensional external field runtime; JSONL kept for small portable package"
+}

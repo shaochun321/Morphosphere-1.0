@@ -1,0 +1,28 @@
+阶段一：启动“概念验证扫描”，用事实终结猜测
+目标：用数据回答理论构想是否具备工程基础，而不是继续推演。
+
+行动：立即编写 probe_v366_feasibility.py 脚本，对 v36.5 工程输出执行一次冷酷的、基于数据的可行性扫描。脚本需输出以下刚性检验的结果：
+
+超边基数检验
+
+SQL：查询 v35h_hyperedge_incidence 表。
+
+输出：平均每条超边关联多少个节点 (avg_node_count_per_hyperedges)。如果这个值小于 3，说明当前的超边大部分仍是简单的二元关系，不具备你理论构想中的“多主体非局域关系”基础。“超级超图”的建设就必须暂停，直到有足够的高阶交互数据。
+
+Xin Carrier 解耦检验
+
+SQL：联表查询 v365_xin_minimal_carrier_state 与 v365_external_xin_definition_ref。
+
+输出：统计 external_definition_ref IS NOT NULL 的比例。如果大部分 Xin 的 external_definition_ref 为空，说明“外部定义”机制有空转风险。若某个 Xin carrier 同时挂载了三个来源不同的、互不兼容的外部定义引用，说明“复调”的工程前提——“多解释并存”——已经存在且需要治理。
+
+非局域回投路径检验
+
+SQL：查询 v35_attention_path 表中的 node_sequence_json 和 hyperedge_refs。
+
+输出：检查是否存在“在 v35H 超边侧车中认为紧密关联，但其节点在 spacetime_cell 的坐标链中相距甚远”的例子。必须找到至少一个具体的、可引用的 ID 组合（例如 node_a_ref = 'xxx', node_b_ref = 'yyy'），作为“认知时空非局域关系偏离笛卡尔坐标”的铁证。如果找不到任何一个实例，这说明“非局域”概念对当前数据覆盖度而言仍是奢侈品。
+
+超边过载检验
+
+SQL：查询 v362_candidate_path_registry 或 v35_attention_path。
+
+输出：找出被超过 50 条不同路径或超边引用的节点。如果存在这样的“枢纽节点”，在复数域架构中，它们的碰撞将极其频繁，可能成为计算和审计的黑洞，需要被精确识别出来。

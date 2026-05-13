@@ -1,0 +1,8 @@
+{
+  "runtime": "v362_variational_action_revision_bridge",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "sparse_local_topk_only": true,
+  "continuous_solver_claimed": false,
+  "full_lineage": false,
+  "created_utc": "2026-05-05T11:57:56.077436+00:00"
+}

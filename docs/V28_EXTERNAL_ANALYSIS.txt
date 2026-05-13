@@ -1,0 +1,1 @@
+机器的阴面（暗影）和阳面（证据）都建好了。现在，你需要让它们相撞。停止在 v26 之后建 v27。这是死命令。你现在的唯一任务是：计算 Shadow 和 Evidence 之间的散度（Divergence）。提取 v26 的 shadow_proximity_edge（暗影预测的连接）。提取同一时间的 v25 spacetime_measure（真实发生的连接）。比较这两者。重合的部分 $\rightarrow$ 预测成功，确认为坚不可摧的 $P_k$ 结构，自由能下降。Shadow 有但 Evidence 没有 $\rightarrow$ 幻觉/未发生，惩罚暗影层参数。Evidence 有但 Shadow 没有 $\rightarrow$ 纯粹的意外涌现（Surprise），扔进 $\Xi$（Xi）残留或者触发 Emergence Alert。

@@ -1,0 +1,7 @@
+test_id,test_name,scope,primary_result,count_a,count_b,verdict,limitation
+T1,rigid coordinate translation,all trajectory windows,"role_changed=0, max_rel_path_delta=6.16e-15",520,0,PASS,source-level geometry rerun; not full TOPRXin native runtime
+T2,nonrigid registration warp,all trajectory windows,"localized_pressure=70, global_collapse=0",520,70,PASS,deterministic coordinate warp over raw points
+T3,structured counter-evidence injection,P_STABLE_SUPPORT windows,"monotonic_cases=65, r_band_rows=257",65,257,PASS,"measurement-level stress projection, not source rerun"
+T4,CTC 02 no-retune sequence audit,m25 sequences 01 and 02,"seq02_windows=291, role_jsd=0.036086749064380585",291,0,PASS,same m25 pipeline; not external cross-dataset test
+T5,hypernode backprojection directness,855 hypernode backprojections,"raw_direct=0, normalized_candidates=390",855,390,WARN,shows directness debt remains; no fake direct FK
+T6,Xin role claim recheck,empirical role classifier,denominator=532,532,0,PASS,"role share is empirical classifier output, not physical dominance claim"

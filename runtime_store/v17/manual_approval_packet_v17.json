@@ -1,0 +1,27 @@
+{
+  "blockers": [
+    "real_external_data_gate",
+    "human_approval_gate"
+  ],
+  "checks": [
+    "full replay battery",
+    "real external data PASS",
+    "source digest PASS",
+    "P/R-Xi boundary PASS",
+    "rollback plan present"
+  ],
+  "created_at": "2026-05-01T18:25:23+00:00",
+  "decision": "STAGED_NOT_PROMOTED",
+  "forbidden": [
+    "hot-swap",
+    "source fact rewrite",
+    "automatic adoption"
+  ],
+  "packet_id": "manual_approval_packet_v17",
+  "profile_id": "frozen_profile_candidate_v17_from_profilev06_68eb27c0757316645b",
+  "required_approvals": [
+    "project_owner",
+    "physical_data_reviewer",
+    "p_r_xi_boundary_reviewer"
+  ]
+}

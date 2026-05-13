@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "context_constraint_summary.schema.json",
+  "title": "ContextConstraintSummary",
+  "type": "object",
+  "required": ["schema_version", "node_id", "window_id", "boundary_distance", "boundary_mode"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "node_id": { "type": "integer" },
+    "window_id": { "type": "string" },
+    "boundary_distance": { "type": "number" },
+    "boundary_mode": { "type": "string" },
+    "contact_count": { "type": "integer" },
+    "support_radius": { "type": "number" },
+    "source_patch_ids": { "type": "array", "items": { "type": "integer" } }
+  }
+}

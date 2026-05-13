@@ -1,0 +1,7 @@
+{
+  "parent_version": "external_physical_simulator_adapter_v1.1",
+  "run_id": "zarr_hdf5_field_runtime_adapter_v1.2",
+  "scientific_run": false,
+  "sqlite_role": "ledger_only_not_runtime_engine",
+  "store_role": "chunked field runtime sidecar"
+}

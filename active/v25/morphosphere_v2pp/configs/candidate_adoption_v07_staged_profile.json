@@ -1,0 +1,37 @@
+{
+  "adoption_rules": [
+    "run full replay on external real data",
+    "resolve shell0 or keep shell0 explicitly suspended",
+    "preserve P/R before Xi",
+    "do not rewrite source facts",
+    "record human approval before mainline config promotion"
+  ],
+  "blockers": [
+    "external_real_data_required",
+    "shell0_unresolved",
+    "human_review_required"
+  ],
+  "candidate_profile_id": "profilev06_68eb27c0757316645b",
+  "may_apply_automatically": false,
+  "parameters": {
+    "accuracy_inverse_error": 0.3017195753959461,
+    "bias": -0.8429234267782103,
+    "conservation_score": 0.5779297076016287,
+    "continuity_score": 1.1407387105925464,
+    "device_energy_dissipation_neg": 0.5694063259151115,
+    "device_evidence_score": 0.11622892201387484,
+    "matrix_projection_confidence": 0.01522786995326131,
+    "matrix_projection_error_neg": 0.7794210592576755,
+    "memory_consistency_score": -0.004534986482828862,
+    "memory_coupling": 0.5006940239184292,
+    "met_gate_probability": -0.013510742884309725,
+    "phase_coherence_score": 1.024218724797222,
+    "phase_gate_score": -0.04395518878031249,
+    "r_counter_score_neg": 0.7507457878837712,
+    "xin_pressure_neg": 0.8252872752116328
+  },
+  "requires_human_review": true,
+  "run_id": "cadopt_v07_63cf059f2d94",
+  "schema_version": "candidate_adoption_gate_real_data_calibration_v0.7",
+  "status": "staged_patch_not_applied"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "artifact_id": "v28_evidence_edge",
+    "path": "runtime_store/v28/v28_evidence_edge.jsonl",
+    "row_count": 4489,
+    "size_bytes": 3349676,
+    "sha256": "a41cbdc4aaf28d09ba7d59ca78533b81d8933d72833aace317670bae91e86c48"
+  },
+  {
+    "artifact_id": "v28_shadow_edge",
+    "path": "runtime_store/v28/v28_shadow_edge.jsonl",
+    "row_count": 4489,
+    "size_bytes": 3100993,
+    "sha256": "fb8f8590ba4d864745afa90ee301aefb31afeae8423ebeb0cd2db90bef97cf72"
+  },
+  {
+    "artifact_id": "v28_shadow_evidence_alignment",
+    "path": "runtime_store/v28/v28_shadow_evidence_alignment.jsonl",
+    "row_count": 4489,
+    "size_bytes": 1991298,
+    "sha256": "a5e3e1adca8f547840addaa51a55a34af4340891c083d46e8c90a9b66e55127b"
+  },
+  {
+    "artifact_id": "v28_divergence_decomposition",
+    "path": "runtime_store/v28/v28_divergence_decomposition.jsonl",
+    "row_count": 4489,
+    "size_bytes": 2537935,
+    "sha256": "cf224ac351f583f1692d01ccbac2d65023bbd10f30ef88b154e5bac5ca3b0070"
+  },
+  {
+    "artifact_id": "v28_confirmed_p_structure",
+    "path": "runtime_store/v28/v28_confirmed_p_structure.jsonl",
+    "row_count": 4385,
+    "size_bytes": 2596882,
+    "sha256": "88e62a4636fdd1cca5a413824e8b9e75511f41d208367b14e7fe53c46175f1ed"
+  },
+  {
+    "artifact_id": "v28_shadow_overreach_penalty",
+    "path": "runtime_store/v28/v28_shadow_overreach_penalty.jsonl",
+    "row_count": 3783,
+    "size_bytes": 1713757,
+    "sha256": "45af123511ca8bcc60a491749a24af7ffad9736dff6deb576806988d92f21cc6"
+  },
+  {
+    "artifact_id": "v28_evidence_surprise_xi",
+    "path": "runtime_store/v28/v28_evidence_surprise_xi.jsonl",
+    "row_count": 26,
+    "size_bytes": 11002,
+    "sha256": "933336274cd3db827c5e533d8a70bbdc0b0a74e31dbc6e1e10635e67fe9e0940"
+  },
+  {
+    "artifact_id": "v28_emergence_alert_candidate",
+    "path": "runtime_store/v28/v28_emergence_alert_candidate.jsonl",
+    "row_count": 3,
+    "size_bytes": 1040,
+    "sha256": "0cd72281f48414fe0eca6ddc0d450042786e7404761b92d22e21bdf6cdc3d965"
+  }
+]

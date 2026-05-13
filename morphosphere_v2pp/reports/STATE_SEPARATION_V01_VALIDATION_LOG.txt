@@ -1,0 +1,23 @@
+Morphosphere state_separation_v0.1 build validation log
+
+SQLite integrity_check: ok
+v8.5.2 SQL acceptance: 21 / 21 PASS
+v8.5.3 behavioral acceptance: 21 / 21 PASS
+state_separation_v0.1 acceptance: 18 / 18 PASS
+state_separation_test_report: 12 / 12 PASS
+
+Key metrics:
+- raw_event_count: 1500
+- origin_anchor_count: 10
+- latent_trajectory_count: 5
+- accepted_bindings: 1498 / 1500
+- xin_residue_count: 2
+- reprojection_improvement_over_global: 0.551192
+- hidden_structure_detection_contrast: 0.699026
+- cross_modal_accepted_ratio: 1.000000
+
+Boundary:
+- diagnostic only
+- semantic_labels_allowed = false
+- scientific_run = false
+- not final biology

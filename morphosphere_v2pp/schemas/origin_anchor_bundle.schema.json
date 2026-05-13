@@ -1,0 +1,18 @@
+{
+  "$id": "https://morphosphere.local/schemas/origin_anchor_bundle.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OriginAnchorBundle",
+  "type": "object",
+  "required": ["origin_id", "o_surface_id", "supporting_p_ids"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "origin_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "supporting_p_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "stability_score": { "type": "number", "default": 0.0 }
+  }
+}

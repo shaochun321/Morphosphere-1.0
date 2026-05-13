@@ -1,0 +1,28 @@
+envelope_id,injection_location,intensity_label,masking_condition,sample_count,safe_count,rband_count,xin_localized_count,p_core_collapse_count,safe_rate,collapse_rate,mean_delta_p,mean_delta_r,mean_delta_xin,envelope_class,recommended_guard
+env18_000,P_boundary,low,failure,60,60,60,0,0,1.0,0.0,-0.027900000000000036,0.09610000000000002,0.027899999999999998,SAFE_ENVELOPE,allow with normal audit
+env18_001,P_boundary,low,normal,60,0,0,0,0,0.0,0.0,-0.018000000000000016,0.06199999999999999,0.017999999999999995,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_002,P_boundary,low,weakened,60,0,0,0,0,0.0,0.0,-0.022499999999999964,0.0775,0.0225,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_003,P_boundary,medium,failure,60,60,60,60,0,1.0,0.0,-0.06974999999999998,0.24025,0.06974999999999998,SAFE_ENVELOPE,allow with normal audit
+env18_004,P_boundary,medium,normal,60,60,60,0,0,1.0,0.0,-0.04500000000000004,0.155,0.04499999999999999,SAFE_ENVELOPE,allow with normal audit
+env18_005,P_boundary,medium,weakened,60,60,60,60,0,1.0,0.0,-0.05625000000000002,0.19375,0.056249999999999994,SAFE_ENVELOPE,allow with normal audit
+env18_006,P_boundary,high,failure,60,60,60,60,0,1.0,0.0,-0.12555,0.43245000000000006,0.12555,SAFE_ENVELOPE,allow with normal audit
+env18_007,P_boundary,high,normal,60,60,60,60,0,1.0,0.0,-0.08099999999999996,0.279,0.08100000000000002,SAFE_ENVELOPE,allow with normal audit
+env18_008,P_boundary,high,weakened,60,60,60,60,0,1.0,0.0,-0.10125000000000002,0.34875,0.10125,SAFE_ENVELOPE,allow with normal audit
+env18_009,P_core,low,failure,60,60,60,0,0,1.0,0.0,-0.06510000000000005,0.08525000000000002,0.018600000000000005,SAFE_ENVELOPE,allow with normal audit
+env18_010,P_core,low,normal,60,0,0,0,0,0.0,0.0,-0.04200000000000004,0.055,0.01200000000000001,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_011,P_core,low,weakened,60,0,0,0,0,0.0,0.0,-0.05249999999999999,0.06875,0.01500000000000001,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_012,P_core,medium,failure,60,8,60,0,52,0.1333,0.8667,-0.16275,0.21312500000000004,0.046499999999999986,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_013,P_core,medium,normal,60,60,60,0,0,1.0,0.0,-0.10499999999999998,0.1375,0.030000000000000002,SAFE_ENVELOPE,allow with normal audit
+env18_014,P_core,medium,weakened,60,40,60,0,20,0.6667,0.3333,-0.13124999999999998,0.171875,0.03749999999999999,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_015,P_core,high,failure,60,0,60,60,60,0.0,1.0,-0.29295,0.38362500000000005,0.08370000000000001,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_016,P_core,high,normal,60,0,60,60,60,0.0,1.0,-0.189,0.24750000000000003,0.054,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_017,P_core,high,weakened,60,0,60,60,60,0.0,1.0,-0.23625000000000002,0.309375,0.06750000000000002,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_018,outside_support,low,failure,60,0,0,0,0,0.0,0.0,-0.010850000000000026,0.043399999999999994,0.015500000000000014,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_019,outside_support,low,normal,60,0,0,0,0,0.0,0.0,-0.007000000000000006,0.028000000000000025,0.010000000000000009,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_020,outside_support,low,weakened,60,0,0,0,0,0.0,0.0,-0.008750000000000036,0.03500000000000001,0.012500000000000011,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_021,outside_support,medium,failure,60,0,0,0,0,0.0,0.0,-0.027124999999999955,0.10850000000000001,0.03875,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_022,outside_support,medium,normal,60,0,0,0,0,0.0,0.0,-0.01749999999999996,0.07,0.025000000000000005,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_023,outside_support,medium,weakened,60,0,0,0,0,0.0,0.0,-0.021874999999999978,0.08750000000000004,0.03125,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_024,outside_support,high,failure,60,0,0,0,0,0.0,0.0,-0.04882500000000001,0.19530000000000006,0.06975,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_025,outside_support,high,normal,60,0,0,0,0,0.0,0.0,-0.03149999999999997,0.12600000000000003,0.045,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard
+env18_026,outside_support,high,weakened,60,0,0,0,0,0.0,0.0,-0.03937500000000005,0.15750000000000003,0.056250000000000015,UNSAFE_COLLAPSE_REGION,block or downscale intensity; require P-core guard

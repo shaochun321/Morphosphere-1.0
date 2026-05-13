@@ -1,0 +1,24 @@
+{
+  "artifact": "m366_pass17_hardening_and_calibration",
+  "dbs": [
+    "m366_pass17_backprojection_hardening.db",
+    "m366_pass17_semantic_payload_audit.db",
+    "m366_pass17_source_rerun_calibration.db",
+    "m366_pass17_ctc02_upper_overlay.db",
+    "m366_pass17_hardening_summary.db"
+  ],
+  "backprojection_rows": 855,
+  "raw_native_direct_fk": 0,
+  "safe_L2_candidates": 855,
+  "semantic_text_columns": 633,
+  "semantic_quarantine_review_columns": 36,
+  "calibration_rows": 1620,
+  "safe_pressure_rows": 588,
+  "p_core_collapse_rows": 252,
+  "ctc02_overlay_rows": 532,
+  "boundaries": [
+    "L2 candidates not L3 native facts",
+    "projection not native runtime",
+    "readout/test text allowed outside core"
+  ]
+}

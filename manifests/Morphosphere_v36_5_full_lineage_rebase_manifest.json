@@ -1,0 +1,186 @@
+{
+  "artifact_name": "Morphosphere_v36_5_full_lineage_rebase",
+  "artifact_type": "FULL_LINEAGE_REBASE_CANDIDATE",
+  "includes_full_base": true,
+  "not_a_single_layer_overlay": true,
+  "components": [
+    {
+      "component_id": "base_v34",
+      "artifact_type": "FULL_BASE",
+      "source_artifact": "Morphosphere_v34.tar.zst",
+      "applied_status": "absorbed via v36.5 full tree base",
+      "notes": "v36.5 full tree already included v25-v34 lineage and v36.5 overlay; this rebase used it as the practical extracted base, then restored v35-v36.4 bridge layers."
+    },
+    {
+      "component_id": "bridge_rollup_v35_to_v36_4",
+      "artifact_type": "ENGINEERED_BRIDGE_ROLLUP",
+      "source_artifact": "Morphosphere_v35_to_v36_4_bridge_rollup.tar.zst",
+      "applied_status": "applied",
+      "notes": "Includes v35, v35H, v36, v36.1, v36.2, v36.3, v36.4 overlays. v35H was rebuilt and included to avoid download gap."
+    },
+    {
+      "component_id": "semantic_overlay_v36_5",
+      "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+      "source_artifact": "Morphosphere_v36_5.tar.zst",
+      "applied_status": "present",
+      "notes": "Semantic stripping / external readout overlay retained from extracted v36.5 full tree."
+    },
+    {
+      "component_id": "lineage_rules_v36_5_2",
+      "artifact_type": "LINEAGE_CONTROL_PACKAGE",
+      "source_artifact": "Morphosphere_v36_5_2_overlay_lineage_rules_control_pack.tar.zst",
+      "applied_status": "referenced",
+      "notes": "Rules enforced in manifest and boundary audits."
+    }
+  ],
+  "versions": [
+    {
+      "version_id": "v25",
+      "active_dir": "active/v25",
+      "db_path": "outputs/m25.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v26",
+      "active_dir": "active/v26",
+      "db_path": "outputs/m26.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v27",
+      "active_dir": "active/v27",
+      "db_path": "outputs/m27.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v28",
+      "active_dir": "active/v28",
+      "db_path": "outputs/m28.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v29",
+      "active_dir": "active/v29",
+      "db_path": "outputs/m29.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v30",
+      "active_dir": "active/v30",
+      "db_path": "outputs/m30.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v31",
+      "active_dir": "active/v31",
+      "db_path": "outputs/m31.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v32",
+      "active_dir": "active/v32",
+      "db_path": "outputs/m32.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v33",
+      "active_dir": "active/v33",
+      "db_path": "outputs/m33.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v34",
+      "active_dir": "active/v34",
+      "db_path": "outputs/m34.db",
+      "status": "present",
+      "origin": "base"
+    },
+    {
+      "version_id": "v35",
+      "active_dir": "active/v35",
+      "db_path": "outputs/m35.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v35H",
+      "active_dir": "active/v35H",
+      "db_path": "outputs/m35H.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36",
+      "active_dir": "active/v36",
+      "db_path": "outputs/m36.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36.1",
+      "active_dir": "active/v361",
+      "db_path": "outputs/m361.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36.2",
+      "active_dir": "active/v362",
+      "db_path": "outputs/m362.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36.3",
+      "active_dir": "active/v363",
+      "db_path": "outputs/m363.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36.4",
+      "active_dir": "active/v364",
+      "db_path": "outputs/m364.db",
+      "status": "present",
+      "origin": "bridge_rollup"
+    },
+    {
+      "version_id": "v36.5",
+      "active_dir": "active/v365",
+      "db_path": "outputs/m365.db",
+      "status": "present",
+      "origin": "semantic_overlay"
+    },
+    {
+      "version_id": "v36.5-full-rebase",
+      "active_dir": "active/v365_full_rebase",
+      "db_path": "outputs/m365_full_rebase.db",
+      "status": "present",
+      "origin": "rebase_metadata"
+    }
+  ],
+  "guardrails": [
+    "artifact_classification_full_lineage_rebase",
+    "v35H_download_gap_repaired_by_rollup",
+    "source_facts_rewritten",
+    "semantic_label_in_mainline",
+    "bridge_overlay_provenance_retained",
+    "full_base_present",
+    "no_native_hypergraph_db",
+    "continuous_physical_metric_claimed",
+    "Xin_direct_to_P_or_R"
+  ],
+  "local_run": [
+    "./RUN_EXAMPLES.sh",
+    "python3 active/v365_full_rebase/scripts/check_v365_full_rebase.py --db outputs/m365_full_rebase.db"
+  ]
+}

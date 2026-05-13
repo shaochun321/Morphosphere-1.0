@@ -1,0 +1,234 @@
+{
+  "recursive_manifest": {
+    "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+    "parent_state_run_id": "state_sep_v01_a6a2fdfd9e",
+    "source_run_id": "v85_diag_a5dabddb",
+    "recursive_version": "dynamic_recursive_v0.2",
+    "execution_mode": "diagnostic_recursive",
+    "scientific_run": 0,
+    "semantic_labels_allowed": 0,
+    "physical_first_assertion": "information structure is generated from spacetime-structured raw events; reverse spacetime inference is not enabled here",
+    "dynamic_recursion_assertion": "latent_trajectory, origin_anchor, Xin, and preneural state are updated across clock ticks and recursive iterations",
+    "clock_source_table": "system_clock_entry",
+    "clock_count": 10,
+    "iteration_count": 5,
+    "preneural_node_count": 2500,
+    "dynamic_trajectory_count": 250,
+    "xin_dynamic_count": 87,
+    "input_tables_json": "[\"raw_event_stream\", \"spacetime_cell\", \"information_fiber\", \"origin_anchor\", \"latent_trajectory\", \"trajectory_event_binding\", \"system_clock_entry\"]",
+    "prohibited_generation_tables_json": "[\"semantic_readout\", \"semantic_readout_surface\", \"object_hypothesis\", \"o_candidate_record\", \"pr_confirmation_graph_record\"]",
+    "created_at": "2026-04-30T05:32:53+00:00",
+    "notes": "dynamic recursive diagnostic prototype; no semantic labels; no scientific claims",
+    "forbidden_use": "semantic_labeling, scientific_run, final_biology, source_fact_rewrite, production_claim"
+  },
+  "counts": {
+    "cell_coordinate_snapshots": 500,
+    "information_relative_coordinates": 1500,
+    "preneural_node_states": 2500,
+    "preneural_edge_states": 5000,
+    "dynamic_origin_anchor_states": 250,
+    "dynamic_latent_trajectory_states": 250,
+    "topdown_feedback_signals": 2000,
+    "recursive_memory_traces": 2750,
+    "xin_residue_dynamics": 87
+  },
+  "iteration_reports": [
+    {
+      "iteration_n": 0,
+      "avg_prediction_error": 0.10947264225575351,
+      "avg_continuity_score": 0.9625437090942252,
+      "avg_conservation_score": 0.9348276140344894,
+      "avg_phase_coherence_score": 0.7838235038208134,
+      "avg_xin_residual_mass": 0.11179563436524251,
+      "free_energy_proxy": 0.528131718551171
+    },
+    {
+      "iteration_n": 1,
+      "avg_prediction_error": 0.09044899889642172,
+      "avg_continuity_score": 0.9688679549153392,
+      "avg_conservation_score": 0.9348276140344894,
+      "avg_phase_coherence_score": 0.783995187444946,
+      "avg_xin_residual_mass": 0.1015916800703758,
+      "free_energy_proxy": 0.49393878459595597
+    },
+    {
+      "iteration_n": 2,
+      "avg_prediction_error": 0.07844498554568151,
+      "avg_continuity_score": 0.9728820542157323,
+      "avg_conservation_score": 0.9348276140344894,
+      "avg_phase_coherence_score": 0.7840690757688574,
+      "avg_xin_residual_mass": 0.09337271121155047,
+      "free_energy_proxy": 0.47086066009090977
+    },
+    {
+      "iteration_n": 3,
+      "avg_prediction_error": 0.06967833168591216,
+      "avg_continuity_score": 0.9758295817718087,
+      "avg_conservation_score": 0.9348276140344894,
+      "avg_phase_coherence_score": 0.7840908352738698,
+      "avg_xin_residual_mass": 0.0860293153956186,
+      "free_energy_proxy": 0.4528828327265095
+    },
+    {
+      "iteration_n": 4,
+      "avg_prediction_error": 0.06283318694631893,
+      "avg_continuity_score": 0.9781431851398007,
+      "avg_conservation_score": 0.9348276140344894,
+      "avg_phase_coherence_score": 0.7841018807270932,
+      "avg_xin_residual_mass": 0.07914722744145071,
+      "free_energy_proxy": 0.4378632644046581
+    }
+  ],
+  "xin_states": [
+    {
+      "dynamic_state": "decaying",
+      "count": 62,
+      "min_residue_mass": 0.055263713526743856,
+      "max_residue_mass": 0.21139394268445777,
+      "avg_residue_mass": 0.11759930295510006
+    },
+    {
+      "dynamic_state": "held",
+      "count": 2,
+      "min_residue_mass": 0.22086785318474159,
+      "max_residue_mass": 0.2431284343168352,
+      "avg_residue_mass": 0.2319981437507884
+    },
+    {
+      "dynamic_state": "proto_origin_candidate",
+      "count": 1,
+      "min_residue_mass": 0.2689132595768128,
+      "max_residue_mass": 0.2689132595768128,
+      "avg_residue_mass": 0.2689132595768128
+    },
+    {
+      "dynamic_state": "reintegrated",
+      "count": 22,
+      "min_residue_mass": 0.12043354051270042,
+      "max_residue_mass": 0.18215319719430925,
+      "avg_residue_mass": 0.1376286862661679
+    }
+  ],
+  "metric_weights": [
+    {
+      "iteration_n": 0,
+      "weight_continuity": 0.05742408609321484,
+      "weight_conservation": 0.012609354375700998,
+      "weight_phase": 0.873562942833103,
+      "weight_memory": 0.006327574982862562,
+      "weight_xin_penalty": 0.05007604171511861,
+      "derivation_rule": "inverse_variance_weighting_over_recursive_residuals_no_fixed_pr_sigmoid"
+    },
+    {
+      "iteration_n": 1,
+      "weight_continuity": 0.06763851178109227,
+      "weight_conservation": 0.011123264913151609,
+      "weight_phase": 0.7955222912191746,
+      "weight_memory": 0.07253739543348152,
+      "weight_xin_penalty": 0.0531785366531,
+      "derivation_rule": "inverse_variance_weighting_over_recursive_residuals_no_fixed_pr_sigmoid"
+    },
+    {
+      "iteration_n": 2,
+      "weight_continuity": 0.07748854967024046,
+      "weight_conservation": 0.010009976076270993,
+      "weight_phase": 0.7226784091877833,
+      "weight_memory": 0.13245166181768633,
+      "weight_xin_penalty": 0.05737140324801902,
+      "derivation_rule": "inverse_variance_weighting_over_recursive_residuals_no_fixed_pr_sigmoid"
+    },
+    {
+      "iteration_n": 3,
+      "weight_continuity": 0.0869366531219773,
+      "weight_conservation": 0.009061767601209358,
+      "weight_phase": 0.656105248094132,
+      "weight_memory": 0.18538910048601054,
+      "weight_xin_penalty": 0.06250723069667088,
+      "derivation_rule": "inverse_variance_weighting_over_recursive_residuals_no_fixed_pr_sigmoid"
+    },
+    {
+      "iteration_n": 4,
+      "weight_continuity": 0.09564844389691105,
+      "weight_conservation": 0.008216627459275297,
+      "weight_phase": 0.5951258352833526,
+      "weight_memory": 0.23230882927672075,
+      "weight_xin_penalty": 0.0687002640837402,
+      "derivation_rule": "inverse_variance_weighting_over_recursive_residuals_no_fixed_pr_sigmoid"
+    }
+  ],
+  "reprojection_reports": [
+    {
+      "reprojection_id": "rrp_b47a20140866601ef8",
+      "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+      "iteration_n": 0,
+      "baseline_error": 5.033912344288649,
+      "recursive_trajectory_error": 2.9730461589397827,
+      "improvement_over_baseline": 0.4093965179364066,
+      "passed": 1,
+      "notes": "recursive trajectory centroids reconstruct source 3D cell geometry better than one global anchor baseline",
+      "created_at": "2026-04-30T05:32:53+00:00"
+    },
+    {
+      "reprojection_id": "rrp_a50f21035bd3890bf0",
+      "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+      "iteration_n": 1,
+      "baseline_error": 5.033912344288649,
+      "recursive_trajectory_error": 2.9730245126159014,
+      "improvement_over_baseline": 0.409400818035892,
+      "passed": 1,
+      "notes": "recursive trajectory centroids reconstruct source 3D cell geometry better than one global anchor baseline",
+      "created_at": "2026-04-30T05:32:53+00:00"
+    },
+    {
+      "reprojection_id": "rrp_067611cc52060084b6",
+      "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+      "iteration_n": 2,
+      "baseline_error": 5.033912344288649,
+      "recursive_trajectory_error": 2.9730176097541636,
+      "improvement_over_baseline": 0.40940218930763167,
+      "passed": 1,
+      "notes": "recursive trajectory centroids reconstruct source 3D cell geometry better than one global anchor baseline",
+      "created_at": "2026-04-30T05:32:53+00:00"
+    },
+    {
+      "reprojection_id": "rrp_047e0c14687a0ce8cb",
+      "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+      "iteration_n": 3,
+      "baseline_error": 5.033912344288649,
+      "recursive_trajectory_error": 2.97302125465641,
+      "improvement_over_baseline": 0.40940146523816107,
+      "passed": 1,
+      "notes": "recursive trajectory centroids reconstruct source 3D cell geometry better than one global anchor baseline",
+      "created_at": "2026-04-30T05:32:53+00:00"
+    },
+    {
+      "reprojection_id": "rrp_349f51ff7d9511cbe9",
+      "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+      "iteration_n": 4,
+      "baseline_error": 5.033912344288649,
+      "recursive_trajectory_error": 2.973021729432638,
+      "improvement_over_baseline": 0.40940137092260775,
+      "passed": 1,
+      "notes": "recursive trajectory centroids reconstruct source 3D cell geometry better than one global anchor baseline",
+      "created_at": "2026-04-30T05:32:53+00:00"
+    }
+  ],
+  "clock_binding": {
+    "binding_id": "clockbind_11011b45465e",
+    "recursive_run_id": "dynrec_v02_5dd10f0aa3",
+    "source_run_id": "v85_diag_a5dabddb",
+    "clock_source_table": "system_clock_entry",
+    "min_clock_n": 0,
+    "max_clock_n": 9,
+    "clock_count": 10,
+    "min_dt_s": 0.01,
+    "max_dt_s": 0.01,
+    "used_by_tables_json": "[\"preneural_node_state\", \"dynamic_origin_anchor_state\", \"dynamic_latent_trajectory_state\", \"xin_residue_dynamics\"]",
+    "assertion": "system_clock_entry is the explicit time source for recursive dynamics; empty system_clock is not used as source-of-truth",
+    "created_at": "2026-04-30T05:32:53+00:00"
+  },
+  "recursive_acceptance": {
+    "total": 20,
+    "passed": 20
+  }
+}

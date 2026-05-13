@@ -1,0 +1,19 @@
+{
+  "$id": "https://morphosphere.local/schemas/t_seed_replay_packet.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TSeedReplayPacket",
+  "type": "object",
+  "required": ["seed_id", "transition_id", "source_p_ids"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "seed_id": { "type": "string" },
+    "transition_id": { "type": "string" },
+    "source_p_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "allowed_drive_envelope": { "type": "string", "default": "" },
+    "expected_region": { "type": "string", "default": "" }
+  }
+}

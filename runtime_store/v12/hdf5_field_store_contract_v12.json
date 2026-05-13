@@ -1,0 +1,11 @@
+{
+  "allowed_to_mutate_source_facts": false,
+  "planned_datasets": [
+    "/external_field",
+    "/clock",
+    "/channel_names"
+  ],
+  "reason": "keep package dependency-free and avoid binary h5py runtime requirement",
+  "source_zarr_store": "field_store_v12.zarr",
+  "status": "contract_only_not_materialized_in_this_package"
+}

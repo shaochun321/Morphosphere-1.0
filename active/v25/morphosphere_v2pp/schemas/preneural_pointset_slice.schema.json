@@ -1,0 +1,30 @@
+{
+  "$id": "https://morphosphere.local/schemas/preneural_pointset_slice.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PreNeuralPointSetSlice",
+  "type": "object",
+  "required": ["slice_id", "window_id"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "slice_id": { "type": "string" },
+    "window_id": { "type": "string" },
+    "geometry_node_ids": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": { "type": "integer" },
+        "minItems": 2,
+        "maxItems": 2
+      }
+    },
+    "signal_windows_refs": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

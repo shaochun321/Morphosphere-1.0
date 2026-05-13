@@ -1,0 +1,26 @@
+{
+  "channels": [
+    "pressure_proxy",
+    "shear_proxy",
+    "diffusion_proxy",
+    "phase",
+    "field_energy_proxy"
+  ],
+  "chunk_count": 10,
+  "hdf5_status": "contract_only_not_materialized",
+  "hot_swap_allowed": false,
+  "run_id": "zarr_hdf5_field_runtime_adapter_v1.2",
+  "scientific_run": false,
+  "shape": [
+    10,
+    8,
+    8,
+    1,
+    5
+  ],
+  "source_fact_rewrite_allowed": false,
+  "sqlite_quick_check": "ok",
+  "sqlite_role": "ledger_only_not_runtime_engine",
+  "stored_acceptance": "12 / 12 PASS",
+  "version": "v1.2"
+}

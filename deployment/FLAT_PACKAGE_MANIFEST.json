@@ -1,0 +1,16 @@
+{
+  "package_name": "Morphosphere_v37_0_native_runtime_prototype_flat_complete",
+  "package_type": "flat_complete_no_nested_archives",
+  "contains_nested_tar_zst_or_zip": false,
+  "base_tree": "Morphosphere_v36_6_complete_deploy_pass14 extracted tree",
+  "overlay_series": ["v366", "v367", "v368", "v370"],
+  "key_metrics": {
+    "v368_mainline_windows": 532,
+    "v368_transition_edges": 446,
+    "v367_native_anchor_facts": 855,
+    "v367_rmi_default_index_rows": 11530,
+    "v370_runtime_samples": 80,
+    "v370_stage_traces": 960
+  },
+  "boundary": "offline materialized integration plus native-runtime prototype; not online runtime"
+}

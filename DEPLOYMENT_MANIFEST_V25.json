@@ -1,0 +1,25 @@
+{
+  "package": "morphosphere_v25_full_chain",
+  "boundary": "diagnostic evidence reconstruction; not final biology; not strict scientific_run",
+  "sqlite_quick_check": "ok",
+  "counts": {
+    "information_point_v25": 4575,
+    "coordinate_transform_trace_v25": 4575,
+    "trajectory_window_trace_v25": 532,
+    "calculation_recipe_v25": 7,
+    "p_spacetime_measure_v25": 532,
+    "r_counter_measure_v25": 532,
+    "xi_residual_surface_v25": 532,
+    "attention_yield_event_v25": 262,
+    "decision_evidence_bundle_v25": 532,
+    "evidence_runtime_artifact_manifest_v25": 7
+  },
+  "db_sha256": "48fd72cc6594ea5eed9243309fcfbafaec24ed0eaefde07be0bee70964ffaf17",
+  "source_zip_sha256": "1a7bd9a7d1d10c4122c7782427b437246fb69cc3322a975485c04e206f64fc2c",
+  "split_strategy": {
+    "ms25_core.zip": "code/docs/scripts/configs/schemas/data; no DB/runtime/source zip",
+    "ms25_db_*.zip": "SQLite output databases including v25 ledger and preserved v13-v24/v18 output DBs",
+    "ms25_runtime.zip": "runtime_store including v25 JSONL evidence payloads",
+    "ms25_src.part*": "split raw CTC source ZIP"
+  }
+}

@@ -1,0 +1,40 @@
+PASS table_exists_recursive_system_run_manifest: observed=True expected=table exists
+PASS table_exists_clock_binding_record: observed=True expected=table exists
+PASS table_exists_cell_spatial_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_information_relative_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_preneural_node_state: observed=True expected=table exists
+PASS table_exists_preneural_edge_state: observed=True expected=table exists
+PASS table_exists_dynamic_origin_anchor_state: observed=True expected=table exists
+PASS table_exists_dynamic_latent_trajectory_state: observed=True expected=table exists
+PASS table_exists_trajectory_transition_edge: observed=True expected=table exists
+PASS table_exists_topdown_feedback_signal: observed=True expected=table exists
+PASS table_exists_xin_residue_dynamics: observed=True expected=table exists
+PASS table_exists_recursive_memory_trace: observed=True expected=table exists
+PASS table_exists_recursive_metric_weight_state: observed=True expected=table exists
+PASS table_exists_dynamic_free_energy_trace: observed=True expected=table exists
+PASS table_exists_recursive_iteration_report: observed=True expected=table exists
+PASS table_exists_recursive_reprojection_report: observed=True expected=table exists
+PASS table_exists_recursive_acceptance_report: observed=True expected=table exists
+PASS manifest_exists: observed=present expected=present
+PASS version_dynamic_recursive_v02: observed=dynamic_recursive_v0.2 expected=dynamic_recursive_v0.2
+PASS execution_mode_diagnostic_recursive: observed=diagnostic_recursive expected=diagnostic_recursive
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS clock_source_system_clock_entry: observed=system_clock_entry expected=system_clock_entry
+PASS iterations_at_least_5: observed=5 expected=>=5
+PASS input_tables_do_not_include_semantic: observed=["raw_event_stream", "spacetime_cell", "information_fiber", "origin_anchor", "latent_trajectory", "trajectory_event_binding", "system_clock_entry"] expected=no semantic/O/P generation tables
+PASS stored_acceptance_all_pass: observed=20/20 expected=all stored recursive checks pass
+PASS clock_binding_recorded: observed=1 expected=1
+PASS cell_coordinate_snapshot_count_matches: observed=500/500 expected=match
+PASS information_coordinate_snapshot_count_matches: observed=1500/1500 expected=match
+PASS preneural_node_states_present: observed=2500 expected=>0
+PASS preneural_edge_states_present: observed=5000 expected=>0
+PASS dynamic_trajectory_states_present: observed=250 expected=>0
+PASS topdown_feedback_present: observed=2000 expected=>0
+PASS xin_multistate: observed=4 expected=>=3
+PASS prediction_error_not_worse: observed=0.109473->0.062833 expected=<=105%
+PASS xin_mass_not_worse: observed=0.111796->0.079147 expected=<=105%
+PASS free_energy_not_worse: observed=0.528132->0.437863 expected=<=105%
+PASS reprojection_beats_baseline: observed=0.409401 expected=>0.30
+PASS metric_weight_rows_present: observed=5 expected=>=5
+dynamic_recursive_v0.2 acceptance: 39/39 PASS

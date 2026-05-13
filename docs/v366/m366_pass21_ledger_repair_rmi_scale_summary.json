@@ -1,0 +1,16 @@
+{
+  "pass": "21",
+  "name": "Ledger Binding Repair + RMI Scale Benchmark",
+  "db": "/mnt/data/m366_pass21_ledger_repair_rmi_scale.db",
+  "integrity": "ok",
+  "ledger_facts": 855,
+  "ledger_refs_populated": 855,
+  "ledger_repaired_from_pr_xin": 7,
+  "operational_fk_pass": 855,
+  "strict_external_entropy_hits": 848,
+  "mixed_rmi_candidates": 5765,
+  "h1_false_neighbor_groups": 64,
+  "h3_false_neighbor_groups": 0,
+  "acceptance_failed": [],
+  "acceptance_warn": []
+}

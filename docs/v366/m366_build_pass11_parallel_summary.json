@@ -1,0 +1,35 @@
+{
+  "pass": "pass11_parallel_processing",
+  "run_type": "parallel materialized build lanes, not native sync runtime",
+  "lanes": 5,
+  "native_skeleton_steps": 15,
+  "trace_samples": 20,
+  "stress_cases": 12,
+  "empirical_findings": 10,
+  "coverage_delta_items": 56,
+  "counts": {
+    "information_points": 4575,
+    "trajectory_profiles": 532,
+    "evidence_bundles": 532,
+    "attention_audits": 120,
+    "hyperedges": 120,
+    "incidence_rows": 855,
+    "variational_paths": 120,
+    "r_bands": 90,
+    "coupler_decisions": 40,
+    "xin_carriers": 31,
+    "process_windows": 1633,
+    "process_window_members": 22128,
+    "coverage_items": 56
+  },
+  "acceptance": {
+    "pass11_parallel_lanes_defined": "PASS",
+    "native_runtime_not_overclaimed": "PASS",
+    "stress_suite_not_overclaimed": "PASS",
+    "external_module_boundary_preserved": "PASS",
+    "stage2_bypass_preserved": "PASS",
+    "coverage_maturity_preserved": "PASS",
+    "quick_full_contract_preserved": "PASS"
+  },
+  "created_at": "2026-05-06T12:05:59.986552Z"
+}

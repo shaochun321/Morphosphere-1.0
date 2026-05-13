@@ -1,0 +1,276 @@
+{
+  "timestamp": "2026-05-09T13:18:22.325279+00:00",
+  "total_elapsed_s": 6.14,
+  "structure": {
+    "migrations": 21,
+    "source_modules": 43,
+    "runners": 11,
+    "pipeline_engine_lines": 1276
+  },
+  "pipeline_runs": {
+    "run_v37412_20260508_batch4.py": {
+      "success": true,
+      "elapsed": 1.54,
+      "acceptance": true
+    },
+    "run_v37412_20260509_batch5.py": {
+      "success": true,
+      "elapsed": 1.89,
+      "acceptance": true
+    },
+    "run_v37415_20260509_batch6.py": {
+      "success": true,
+      "elapsed": 2.31,
+      "acceptance": true
+    }
+  },
+  "database_analysis": {
+    "v37412_20260508_batch4.db": {
+      "integrity": "ok",
+      "total_rows": 42850,
+      "tables_populated": 79,
+      "db_size_kb": 9960.0,
+      "pr_distribution": {
+        "P_frozen": 8,
+        "R_frozen": 8,
+        "mask_supported": 20
+      },
+      "hebbian": {
+        "count": 34,
+        "avg": 0.1686,
+        "max": 0.4477
+      },
+      "transport": {
+        "total": 6534,
+        "accepted": 2250,
+        "cross_domain": 90
+      },
+      "rlis": {
+        "events": 36,
+        "gamma_avg": 0.75,
+        "delta_f_splits": 18
+      },
+      "v37415": {
+        "v37415_round_registry": 0,
+        "v37415_round_prx_decomposition": 0,
+        "v37415_round_rlis_split": 0,
+        "v37415_round_counter_mask_response": 0,
+        "v37415_round_hg_fhpms_state": 0,
+        "v37415_round_bottom_motion_constraint": 0,
+        "v37415_round_potential_subsidy_state": 0,
+        "v37415_round_xin_ledger_conservation": 0,
+        "v37415_round_drift_metric": 0,
+        "v37415_round_convergence_audit": 0,
+        "v37415_round_version_manifest": 0,
+        "prx_final": []
+      }
+    },
+    "v37412_20260509_batch5.db": {
+      "integrity": "ok",
+      "total_rows": 51654,
+      "tables_populated": 81,
+      "db_size_kb": 11908.0,
+      "pr_distribution": {
+        "P_frozen": 12,
+        "R_frozen": 12,
+        "mask_supported": 20
+      },
+      "hebbian": {
+        "count": 42,
+        "avg": 0.1886,
+        "max": 0.5227
+      },
+      "transport": {
+        "total": 7986,
+        "accepted": 2750,
+        "cross_domain": 110
+      },
+      "rlis": {
+        "events": 44,
+        "gamma_avg": 0.72,
+        "delta_f_splits": 22
+      },
+      "v37415": {
+        "v37415_round_registry": 0,
+        "v37415_round_prx_decomposition": 0,
+        "v37415_round_rlis_split": 0,
+        "v37415_round_counter_mask_response": 0,
+        "v37415_round_hg_fhpms_state": 0,
+        "v37415_round_bottom_motion_constraint": 0,
+        "v37415_round_potential_subsidy_state": 0,
+        "v37415_round_xin_ledger_conservation": 0,
+        "v37415_round_drift_metric": 0,
+        "v37415_round_convergence_audit": 0,
+        "v37415_round_version_manifest": 0,
+        "prx_final": []
+      }
+    },
+    "v37415_20260509_batch6.db": {
+      "integrity": "ok",
+      "total_rows": 52335,
+      "tables_populated": 92,
+      "db_size_kb": 12052.0,
+      "pr_distribution": {
+        "P_frozen": 12,
+        "R_frozen": 12,
+        "mask_supported": 20
+      },
+      "hebbian": {
+        "count": 42,
+        "avg": 0.1886,
+        "max": 0.5227
+      },
+      "transport": {
+        "total": 7986,
+        "accepted": 2750,
+        "cross_domain": 110
+      },
+      "rlis": {
+        "events": 44,
+        "gamma_avg": 0.72,
+        "delta_f_splits": 22
+      },
+      "v37415": {
+        "v37415_round_registry": 5,
+        "v37415_round_prx_decomposition": 110,
+        "v37415_round_rlis_split": 110,
+        "v37415_round_counter_mask_response": 110,
+        "v37415_round_hg_fhpms_state": 110,
+        "v37415_round_bottom_motion_constraint": 110,
+        "v37415_round_potential_subsidy_state": 110,
+        "v37415_round_xin_ledger_conservation": 5,
+        "v37415_round_drift_metric": 5,
+        "v37415_round_convergence_audit": 1,
+        "v37415_round_version_manifest": 5,
+        "convergence": {
+          "verdict": "CONVERGED",
+          "final_drift": 0.0,
+          "true_xin": 0,
+          "r_core": 22,
+          "p_band": 22,
+          "unresolved": 0
+        },
+        "prx_final": [
+          {
+            "dominant": "p_core",
+            "count": 22,
+            "p_c": 0.257,
+            "p_b": 0.137,
+            "r_c": 0.164,
+            "r_b": 0.118,
+            "m_b": 0.121,
+            "x": 0.102,
+            "u": 0.101
+          }
+        ],
+        "xin_conservation": {
+          "gap": 0.4137,
+          "true": 0,
+          "background": 22,
+          "pseudo": 0
+        },
+        "potential_subsidy": {
+          "phi_pre_avg": 1.5371,
+          "f_eff_avg": 0.5389,
+          "phi_hebb_avg": 0.3771,
+          "phi_hyper_avg": 0.44
+        }
+      }
+    }
+  },
+  "evolution": {
+    "total_rows": [
+      42850,
+      51654,
+      52335
+    ],
+    "tables_populated": [
+      79,
+      81,
+      92
+    ],
+    "P_frozen": [
+      8,
+      12,
+      12
+    ],
+    "R_frozen": [
+      8,
+      12,
+      12
+    ],
+    "hebbian_max": [
+      0.4477,
+      0.5227,
+      0.5227
+    ],
+    "hebbian_avg": [
+      0.1686,
+      0.1886,
+      0.1886
+    ],
+    "transport_accepted": [
+      2250,
+      2750,
+      2750
+    ],
+    "cross_domain": [
+      90,
+      110,
+      110
+    ],
+    "xi_total": [
+      18,
+      22,
+      22
+    ],
+    "gate_pass": [
+      8,
+      12,
+      12
+    ],
+    "rlis_gamma_avg": [
+      0.75,
+      0.72,
+      0.72
+    ],
+    "db_size_kb": [
+      9960.0,
+      11908.0,
+      12052.0
+    ]
+  },
+  "architecture_checks": {
+    "integrity_v37412_20260508_batch4.db": "PASS",
+    "integrity_v37412_20260509_batch5.db": "PASS",
+    "integrity_v37415_20260509_batch6.db": "PASS",
+    "P_frozen_v37412_20260509_batch5.db": "PASS",
+    "P_frozen_v37415_20260509_batch6.db": "PASS",
+    "R_frozen_v37412_20260509_batch5.db": "PASS",
+    "R_frozen_v37415_20260509_batch6.db": "PASS",
+    "hebbian_strong_v37412_20260509_batch5.db": "PASS",
+    "hebbian_strong_v37415_20260509_batch6.db": "PASS",
+    "cross_domain_v37412_20260509_batch5.db": "PASS",
+    "cross_domain_v37415_20260509_batch6.db": "PASS",
+    "gate_pass_v37412_20260508_batch4.db": "PASS",
+    "gate_pass_v37412_20260509_batch5.db": "PASS",
+    "gate_pass_v37415_20260509_batch6.db": "PASS",
+    "rlis_v37412_20260508_batch4.db": "PASS",
+    "rlis_v37412_20260509_batch5.db": "PASS",
+    "rlis_v37415_20260509_batch6.db": "PASS",
+    "v37415_convergence": "PASS",
+    "v37415_r_core_exists": "PASS",
+    "v37415_p_band_exists": "PASS",
+    "v37415_xin_conservation": "PASS",
+    "critical_tables_v37412_20260508_batch4.db": "PASS",
+    "critical_tables_v37412_20260509_batch5.db": "PASS",
+    "critical_tables_v37415_20260509_batch6.db": "PASS",
+    "row_growth_monotonic": "PASS"
+  },
+  "summary": {
+    "all_runners_pass": true,
+    "architecture_pass_rate": "25/25",
+    "all_architecture_pass": true,
+    "overall_verdict": "FULL PASS"
+  }
+}

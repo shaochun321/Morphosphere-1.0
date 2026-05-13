@@ -1,0 +1,13 @@
+run_acceptance_sql.py: 0 }
+run_v853_behavioral_acceptance.py: 0 }
+run_state_separation_acceptance.py: 0 }
+run_dynamic_recursive_acceptance.py: 0 dynamic_recursive_v0.2 acceptance: 39/39 PASS
+run_pr_restoration_acceptance_v022.py: 0 pr_restoration_v0.2.2 acceptance: 34/34 PASS
+run_online_sensorium_acceptance_v03.py: 0 online_sensorium_v0.3 acceptance: 56/56 PASS
+run_matrix_foam_acceptance_v04.py: 0 matrix_foam_physical_driver_v0.4 acceptance: 52/52 PASS
+run_device_neutral_acceptance_v05.py: 0 device_neutral_preneural_edge_v0.5 acceptance: 74/74 PASS
+run_active_inference_acceptance_v06.py: 0 SUMMARY 26/26 PASS
+run_candidate_adoption_acceptance_v07.py: 0 SUMMARY 43/43 PASS
+run_shell0_closure_acceptance_v08.py: 0 SUMMARY 43/43 PASS
+run_realdata_review_acceptance_v09.py: 0 SUMMARY: 32/32 PASS
+run_runtime_ledger_split_acceptance_v10.py: 0 runtime_ledger_split_v1.0 acceptance: 32 / 32 PASS

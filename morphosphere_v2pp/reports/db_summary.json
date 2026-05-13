@@ -1,0 +1,311 @@
+{
+  "db_path": "v85_full_diagnostic_run.db",
+  "integrity_check": "ok",
+  "tables": {
+    "run_manifest": 1,
+    "system_clock_entry": 10,
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "transport_current_edge": 900,
+    "o_candidate_record": 18,
+    "object_hypothesis": 18,
+    "xi_residue_record": 9,
+    "xi_decay_policy": 9,
+    "relation_entropy_record": 9,
+    "proxy_provenance": 8,
+    "diagnostic_telemetry_report": 1,
+    "v85_to_mainline_crosswalk": 14,
+    "raw_emergency_export_manifest": 1,
+    "perturbation_run_manifest": 2,
+    "perturbation_effect_report": 12,
+    "threshold_sweep_record": 22,
+    "failed_expectation_report": 0,
+    "transport_cost_matrix_record": 1800,
+    "xi_residue_mass_record": 18,
+    "v853_reproducibility_report": 2,
+    "v853_release_artifact_manifest": 7
+  },
+  "manifest": [
+    {
+      "run_id": "v85_diag_a5dabddb",
+      "execution_mode": "diagnostic_full",
+      "cell_count": 50,
+      "physical_cell_count": 50,
+      "window_count": 10,
+      "spacetime_cell_count": 500,
+      "calibration_profile": "basic_physics_v1",
+      "schema_version": "v8.5.2"
+    }
+  ],
+  "fiber_spike_rate": [
+    {
+      "total": 500,
+      "positive": 212,
+      "distinct_values": 213,
+      "min_spike_rate": 0.0,
+      "max_spike_rate": 91.00795648001572,
+      "avg_spike_rate": 26.84155658430028
+    }
+  ],
+  "transport": [
+    {
+      "total": 900,
+      "accepted_states": 2,
+      "distinct_weights": 899,
+      "accepted_rows": 447,
+      "rejected_rows": 453,
+      "min_total_cost": 0.3221054384249293,
+      "max_total_cost": 3.7173518376328727
+    }
+  ],
+  "o_candidate_modes": [
+    {
+      "formation_mode": "derived_minimal",
+      "count": 18
+    }
+  ],
+  "xi_states": [
+    {
+      "current_state": "decaying",
+      "count": 2
+    },
+    {
+      "current_state": "discard_after_audit",
+      "count": 2
+    },
+    {
+      "current_state": "held",
+      "count": 1
+    },
+    {
+      "current_state": "proto_candidate",
+      "count": 2
+    },
+    {
+      "current_state": "quarantined",
+      "count": 2
+    }
+  ],
+  "relation_entropy": [
+    {
+      "total": 9,
+      "distinct_entropy": 9,
+      "min_entropy": 4.206128359134056,
+      "max_entropy": 4.322169142376458
+    }
+  ],
+  "proxy_provenance_targets": [
+    {
+      "target_field": "O_pass_through_proxy",
+      "proxy_type": "fallback",
+      "replacement_condition": "remove after derived O formation is complete"
+    },
+    {
+      "target_field": "adaptation_state",
+      "proxy_type": "placeholder",
+      "replacement_condition": "replace with adaptation dynamics"
+    },
+    {
+      "target_field": "calcium_concentration",
+      "proxy_type": "placeholder",
+      "replacement_condition": "replace with calcium dynamics"
+    },
+    {
+      "target_field": "diagnostic_dynamic_driver",
+      "proxy_type": "diagnostic",
+      "replacement_condition": "replace with validated electromechanical driver"
+    },
+    {
+      "target_field": "diagnostic_thresholds",
+      "proxy_type": "diagnostic",
+      "replacement_condition": "calibrate against accepted validation set"
+    },
+    {
+      "target_field": "geometry.*",
+      "proxy_type": "synthetic",
+      "replacement_condition": "replace with real segmented/physical coordinates"
+    },
+    {
+      "target_field": "information_fiber.*",
+      "proxy_type": "placeholder",
+      "replacement_condition": "replace with empirically calibrated ion-channel model or recorded physical data"
+    },
+    {
+      "target_field": "synthetic_emergence_alert",
+      "proxy_type": "synthetic",
+      "replacement_condition": "replace with real emergence evaluator input"
+    }
+  ],
+  "crosswalk": [
+    {
+      "error": "no such column: mainline_concept",
+      "sql": "SELECT diagnostic_table, mainline_concept, mapping_status, allowed_use, forbidden_use FROM v85_to_mainline_crosswalk ORDER BY diagnostic_table"
+    }
+  ],
+  "v853_effects": [
+    {
+      "perturbation_type": "boundary_flip",
+      "target_metric": "rejected_transport_fraction",
+      "baseline_value": 0.5033333333333333,
+      "perturbed_value": 0.6533333333333333,
+      "delta_value": 0.15000000000000002,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "geometry_shift",
+      "target_metric": "mean_geometry_cost",
+      "baseline_value": 0.757375790095422,
+      "perturbed_value": 0.9573757900954221,
+      "delta_value": 0.20000000000000007,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "masking_injection",
+      "target_metric": "mean_o_support_score",
+      "baseline_value": 0.7200000000000001,
+      "perturbed_value": 0.6200000000000001,
+      "delta_value": -0.09999999999999998,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "signal_shuffle",
+      "target_metric": "relation_normalized_entropy",
+      "baseline_value": 0.924201935583517,
+      "perturbed_value": 1.0,
+      "delta_value": 0.07579806441648296,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "threshold_sweep",
+      "target_metric": "threshold_sweep_sensitivity",
+      "baseline_value": 0.0,
+      "perturbed_value": 0.20222222222222225,
+      "delta_value": 0.20222222222222225,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "xi_pressure_injection",
+      "target_metric": "xi_quarantine_pressure",
+      "baseline_value": 0.2222222222222222,
+      "perturbed_value": 0.4222222222222222,
+      "delta_value": 0.2,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "boundary_flip",
+      "target_metric": "rejected_transport_fraction",
+      "baseline_value": 0.5033333333333333,
+      "perturbed_value": 0.6533333333333333,
+      "delta_value": 0.15000000000000002,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "geometry_shift",
+      "target_metric": "mean_geometry_cost",
+      "baseline_value": 0.757375790095422,
+      "perturbed_value": 0.9573757900954221,
+      "delta_value": 0.20000000000000007,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "masking_injection",
+      "target_metric": "mean_o_support_score",
+      "baseline_value": 0.7200000000000001,
+      "perturbed_value": 0.6200000000000001,
+      "delta_value": -0.09999999999999998,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "signal_shuffle",
+      "target_metric": "relation_normalized_entropy",
+      "baseline_value": 0.924201935583517,
+      "perturbed_value": 1.0,
+      "delta_value": 0.07579806441648296,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "threshold_sweep",
+      "target_metric": "threshold_sweep_sensitivity",
+      "baseline_value": 0.0,
+      "perturbed_value": 0.20222222222222225,
+      "delta_value": 0.20222222222222225,
+      "passed": 1
+    },
+    {
+      "perturbation_type": "xi_pressure_injection",
+      "target_metric": "xi_quarantine_pressure",
+      "baseline_value": 0.2222222222222222,
+      "perturbed_value": 0.4222222222222222,
+      "delta_value": 0.2,
+      "passed": 1
+    }
+  ],
+  "threshold_sweep": [
+    {
+      "sweep_dimension": "transport_temperature",
+      "metric_name": "transport_weight_entropy",
+      "rows": 6,
+      "min_metric": 0.9212971797309222,
+      "max_metric": 0.968816133906925
+    },
+    {
+      "sweep_dimension": "transport_threshold",
+      "metric_name": "rejected_transport_fraction",
+      "rows": 8,
+      "min_metric": 0.3233333333333333,
+      "max_metric": 0.5255555555555556
+    },
+    {
+      "sweep_dimension": "xi_penalty",
+      "metric_name": "mean_o_posterior_score",
+      "rows": 8,
+      "min_metric": 0.6985307421523079,
+      "max_metric": 0.7665706426692465
+    }
+  ],
+  "failed_expectations": [],
+  "release_artifacts": [
+    {
+      "artifact_role": "alignment_migration",
+      "artifact_path": "migrations/015_v853_alignment_exports.sql",
+      "size_bytes": 2065,
+      "sha256": "dd13be04cf1a5f2ac5920bf154f6705cfc57e79ea8e5b2713af77c4f5c25ba9c"
+    },
+    {
+      "artifact_role": "behavioral_acceptance",
+      "artifact_path": "scripts/run_v853_behavioral_acceptance.py",
+      "size_bytes": 4547,
+      "sha256": "3312926bc6877ec87ab4c456451c68be6e3178d93401ff1331526668218d056e"
+    },
+    {
+      "artifact_role": "quickstart",
+      "artifact_path": "QUICKSTART_V853.md",
+      "size_bytes": 2419,
+      "sha256": "df3775d727a53cfa423a131916bf279d7662aaf46e94f06bac80ee4dc775974c"
+    },
+    {
+      "artifact_role": "release_notes",
+      "artifact_path": "FINAL_RELEASE_NOTES_V853.md",
+      "size_bytes": 3264,
+      "sha256": "9be0e09ffc1b33b4fb394fe26904534348ef7ea4026f2c542f4550d225fc6329"
+    },
+    {
+      "artifact_role": "validation_config",
+      "artifact_path": "configs/v853_validation.json",
+      "size_bytes": 1443,
+      "sha256": "1c51bdfbc79a5fba5b222597333121c5e37817808bc65e33aee28e6126e458c1"
+    },
+    {
+      "artifact_role": "validation_report",
+      "artifact_path": "reports/V853_VALIDATION_REPORT.md",
+      "size_bytes": 1294,
+      "sha256": "1b125d16bc5b504eab451a594daa0d35cb4062c618481546e20d4ea80dfadb82"
+    },
+    {
+      "artifact_role": "validation_summary",
+      "artifact_path": "reports/v853_validation_summary.json",
+      "size_bytes": 2002,
+      "sha256": "d812853e9447b630ebecb290fbe6af7970784c3267a1fd236a7d663555c34827"
+    }
+  ]
+}

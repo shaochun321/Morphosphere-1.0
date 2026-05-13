@@ -1,0 +1,11 @@
+SQLite integrity_check: ok
+[v852_acceptance_v05] PASS
+  "passed": 21,
+[v853_behavioral_acceptance_v05] PASS
+  "passed": 21,
+[state_separation_acceptance_v05] PASS
+  "passed": 18,
+[dynamic_recursive_acceptance_v05] PASS
+dynamic_recursive_v0.2 acceptance: 39/39 PASS
+[pr_restoration_acceptance_v05] PASS
+pr_restoration_v0.2.2 acceptance: 34/34 PASS

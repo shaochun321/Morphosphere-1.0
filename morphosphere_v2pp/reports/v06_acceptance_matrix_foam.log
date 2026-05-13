@@ -1,0 +1,53 @@
+PASS table_exists_matrix_foam_run_manifest_v04: observed=True expected=exists
+PASS table_exists_substrate_material_region_v04: observed=True expected=exists
+PASS table_exists_cell_matrix_contact_v04: observed=True expected=exists
+PASS table_exists_foam_edge_state_v04: observed=True expected=exists
+PASS table_exists_substrate_stress_tensor_v04: observed=True expected=exists
+PASS table_exists_physical_data_source_manifest_v04: observed=True expected=exists
+PASS table_exists_physical_sample_stream_v04: observed=True expected=exists
+PASS table_exists_physical_driver_mapping_v04: observed=True expected=exists
+PASS table_exists_mechanotransduction_event_v04: observed=True expected=exists
+PASS table_exists_substrate_to_raw_event_projection_v04: observed=True expected=exists
+PASS table_exists_matrix_foam_replay_result_v04: observed=True expected=exists
+PASS table_exists_matrix_foam_acceptance_report_v04: observed=True expected=exists
+PASS table_exists_matrix_foam_artifact_manifest_v04: observed=True expected=exists
+PASS manifest_exists: observed=present expected=present
+PASS execution_mode: observed=diagnostic_append_only_matrix_foam_physical_driver expected=diagnostic_append_only_matrix_foam_physical_driver
+PASS not_scientific_run: observed=0 expected=0
+PASS clock_source: observed=system_clock_entry expected=system_clock_entry
+PASS source_fact_counts_unchanged: observed={'before': {'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}, 'after': {'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}} expected=same
+PASS live_source_counts_match_manifest: observed={'spacetime_cell': 500, 'information_fiber': 500, 'raw_event_stream': 1500, 'cell_spatial_coordinate_snapshot': 500, 'information_relative_coordinate_snapshot': 1500, 'system_clock_entry': 10} expected={'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}
+PASS material_regions_four: observed=4 expected=>=4
+PASS contacts_match_spacetime_cells: observed=500 expected=500
+PASS foam_edges_dense: observed=1470 expected=>= 2 * spacetime_cell
+PASS stress_tensor_per_cell: observed=500 expected=500
+PASS physical_samples_present: observed=80 expected=>= clock_count * 4
+PASS met_events_present: observed=400 expected=>= physical samples
+PASS projections_present: observed=400 expected== MET events
+PASS pr_xi_boundary_asserted: observed=P/R remains canonical decomposition before Xi; matrix foam may feed evidence but cannot create direct Xi->P/R expected=contains P/R remains
+PASS physical_source_manifest_exists: observed=present expected=present
+PASS fixture_or_external_driver_mode: observed=deterministic_fixture_csv_plus_external_csv_ready expected=known driver mode
+PASS no_experimental_truth_claim: observed=0 expected=0
+PASS driver_read_only_boundary: observed=read-only physical driver input; may be replaced by real CSV with same schema expected=contains read-only
+PASS physical_sample_count_matches_manifest: observed=80 expected=80
+PASS material_region_names_include_foam: observed=['matrix_core', 'elastic_shell', 'shear_band', 'foam_crosslink'] expected=include foam_crosslink
+PASS material_region_names_include_shear: observed=['matrix_core', 'elastic_shell', 'shear_band', 'foam_crosslink'] expected=include shear_band
+PASS foam_edge_types_three: observed=['membrane_contact', 'foam_crosslink', 'contractile_spoke'] expected=>=3 edge types
+PASS phase_supporting_edges_present: observed=phase-supporting edges expected=>0
+PASS met_gate_in_unit_range: observed=(0.31018807836114975, 1.0, 0.8277989440091802) expected=0 <= min <= max <= 1
+PASS met_gate_nonuniform: observed=(0.31018807836114975, 1.0, 0.8277989440091802) expected=range > 0.05
+PASS projection_confidence_positive: observed=0.7984856894433845 expected=>0.45
+PASS projection_no_source_rewrite: observed=0 expected=0
+PASS replay_scenarios_count: observed=9 expected=>=9
+PASS all_replay_scenarios_pass: observed={'baseline_substrate': 1, 'force_noise_10': 1, 'force_noise_30': 1, 'substrate_softening': 1, 'substrate_stiffening': 1, 'shear_wave_injection': 1, 'sensor_dropout': 1, 'matrix_edge_ablation': 1, 'external_csv_schema_check': 1} expected=all passed
+PASS xi_pressure_increases_with_force_noise: observed={'force_noise_10': 0.1078, 'force_noise_30': 0.1644} expected=30% > 10%
+PASS p_stability_decreases_with_force_noise: observed={'force_noise_10': 0.9115119586527523, 'force_noise_30': 0.8163094947618923} expected=30% < 10%
+PASS edge_ablation_degrades_integrity: observed={'baseline': 0.964, 'ablation': 0.62131} expected=ablation < baseline
+PASS shear_wave_raises_counterstructure: observed=0.2056 expected=>0.18
+PASS v03_no_xi_direct_to_p: observed=all zero expected=0
+PASS v03_no_xi_direct_to_r: observed=all zero expected=0
+PASS v022_no_xi_direct_to_p: observed=all zero expected=0
+PASS v022_no_xi_direct_to_r: observed=all zero expected=0
+PASS artifact_manifest_present: observed=3 expected=>=3
+PASS stored_acceptance_all_pass: observed=51/51 expected=all pass
+matrix_foam_physical_driver_v0.4 acceptance: 52/52 PASS

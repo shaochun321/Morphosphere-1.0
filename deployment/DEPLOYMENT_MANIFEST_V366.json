@@ -1,0 +1,21 @@
+{
+  "artifact_name": "Morphosphere_v36_6_full_chain_process_window_deployable_pass2",
+  "artifact_type": "FULL_CHAIN_PROCESS_WINDOW_DEPLOYABLE_WITH_PASS2",
+  "created_at": "2026-05-06T03:53:21.198485+00:00",
+  "source_facts_rewritten": 0,
+  "semantic_writeback_allowed": 0,
+  "core_entrypoints": [
+    "RUN_DEPLOY_CHECKS.sh",
+    "RUN_CORE_DB_INTEGRITY.sh",
+    "RUN_V366_SUMMARY.sh",
+    "RUN_V366_PASS2_CHECKS.sh"
+  ],
+  "optional_entrypoints": [
+    "RUN_FULL_OPTIONAL_CHECKS.sh"
+  ],
+  "pass2_dbs": [
+    "outputs/v366/m366_improvement_pass2.db",
+    "outputs/v366/m366_process_window_pass2.db"
+  ],
+  "pass2_counts": null
+}

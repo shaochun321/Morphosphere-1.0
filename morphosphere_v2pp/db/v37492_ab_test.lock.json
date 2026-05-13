@@ -1,0 +1,567 @@
+{
+  "database": "v37492_ab_test.db",
+  "sha256": "ef3e7a929d93384e4ccfa05c0fa012e14bc09e2cda0b67de0e32da812c37e0b8",
+  "size_bytes": 7417856,
+  "total_tables": 139,
+  "total_rows": 27443,
+  "locked_at": "2026-05-13T11:20:36.612167+00:00",
+  "version": "v37.4.91",
+  "tables": {
+    "ab_stress_metrics": {
+      "row_count": 24,
+      "schema": "CREATE TABLE ab_stress_metrics (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    engine_id TEXT,\n    stream_id TEXT,\n    metric_name TEXT,\n    metric_value REAL,\n    split_role TEXT,\n    generated_at TEXT\n)"
+    },
+    "analysis_window": {
+      "row_count": 0,
+      "schema": "CREATE TABLE analysis_window (\n    window_id TEXT PRIMARY KEY,\n    clock_start INTEGER NOT NULL,\n    clock_end INTEGER NOT NULL,\n    window_center INTEGER NOT NULL,\n    window_size INTEGER NOT NULL,\n    window_stride INTEGER NOT NULL,\n    window_type TEXT DEFAULT 'standard'\n)"
+    },
+    "boundary_elasticity_record": {
+      "row_count": 0,
+      "schema": "CREATE TABLE boundary_elasticity_record (\n    boundary_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    elasticity_score REAL NOT NULL,\n    elasticity_type TEXT DEFAULT 'standard',\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "cell_graph_state": {
+      "row_count": 11,
+      "schema": "CREATE TABLE cell_graph_state (\n    clock_n INTEGER PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    num_cells INTEGER NOT NULL,\n    state_json TEXT NOT NULL, -- Contains vectors like v_hair_cell\n    provenance_hash TEXT DEFAULT '',\n    FOREIGN KEY(clock_n) REFERENCES system_clock(clock_n)\n)"
+    },
+    "counterfactual_acceptance_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE counterfactual_acceptance_report (\n    acceptance_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    check_name TEXT NOT NULL,\n    expected_direction TEXT NOT NULL,\n    actual_direction TEXT NOT NULL,\n    passed INTEGER NOT NULL,\n    diagnostic_message TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "d_sigma_v_phi_log": {
+      "row_count": 255,
+      "schema": "CREATE TABLE d_sigma_v_phi_log (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    engine_id TEXT,\n    tick INTEGER,\n    phase TEXT,\n    d_sigma_t REAL,\n    phi_t REAL,\n    phi_prev REAL,\n    v_phi REAL,\n    clock_delta REAL DEFAULT 1.0,\n    source_delta REAL DEFAULT 0.0,\n    reproj_delta REAL DEFAULT 0.0,\n    phi_displacement REAL DEFAULT 0.0,\n    rlis_delta REAL DEFAULT 0.0,\n    churn_delta REAL DEFAULT 0.0,\n    created_at TEXT\n)"
+    },
+    "diagnostic_telemetry_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE diagnostic_telemetry_report (\n    report_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    total_rows_written INTEGER DEFAULT 0,\n    rows_by_table_json TEXT DEFAULT '{}',\n    write_amplification_ratio REAL DEFAULT 0.0,\n    masking_cost_ms REAL DEFAULT 0.0,\n    confirmation_update_cost_ms REAL DEFAULT 0.0,\n    transport_cost_ms REAL DEFAULT 0.0,\n    export_bundle_size_bytes INTEGER DEFAULT 0,\n    hot_path_cost_estimate TEXT DEFAULT '',\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "emergence_alert": {
+      "row_count": 0,
+      "schema": "CREATE TABLE emergence_alert (\n    alert_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    alert_type TEXT NOT NULL DEFAULT 'real_emergence',\n    trigger_window_start INTEGER DEFAULT 0,\n    trigger_window_end INTEGER DEFAULT 0,\n    related_o_candidates_json TEXT DEFAULT '[]',\n    related_pr_candidates_json TEXT DEFAULT '[]',\n    related_xi_ids_json TEXT DEFAULT '[]',\n    basic_conditions_json TEXT DEFAULT '[]',\n    strong_trigger_conditions_json TEXT DEFAULT '[]',\n    severity TEXT DEFAULT 'low',\n    recommended_action TEXT DEFAULT 'no_action',\n    forbidden_actions_acknowledged INTEGER DEFAULT 1,\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "engine_state": {
+      "row_count": 18,
+      "schema": "CREATE TABLE engine_state (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    engine_id TEXT,\n    phase TEXT,\n    tick INTEGER,\n    weight_count INTEGER,\n    avg_weight REAL,\n    max_weight REAL,\n    entropy REAL,\n    basin_depth_avg REAL,\n    dead_nodes INTEGER DEFAULT 0,\n    fast_state_json TEXT,\n    slow_state_json TEXT,\n    prior_state_json TEXT,\n    created_at TEXT\n)"
+    },
+    "external_anomaly_ledger": {
+      "row_count": 24,
+      "schema": "CREATE TABLE external_anomaly_ledger (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    anomaly_type TEXT NOT NULL,\n    anomaly_score REAL NOT NULL,\n    possible_sources JSON,\n    linked_object_refs JSON,\n    evidence_ref TEXT\n)"
+    },
+    "external_conserved_quantity_ledger": {
+      "row_count": 24,
+      "schema": "CREATE TABLE external_conserved_quantity_ledger (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    symmetry_id TEXT NOT NULL,\n    quantity_name TEXT NOT NULL,\n    ledger_value_before REAL NOT NULL,\n    ledger_value_after REAL NOT NULL,\n    source_term REAL NOT NULL,\n    dissipation_term REAL NOT NULL,\n    anomaly_term REAL NOT NULL,\n    balance_residual REAL NOT NULL,\n    evidence_ref TEXT,\n    linked_object_refs JSON\n)"
+    },
+    "external_dissipation_ledger": {
+      "row_count": 24,
+      "schema": "CREATE TABLE external_dissipation_ledger (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    coarse_graining_dissipation REAL NOT NULL,\n    boundary_dissipation REAL NOT NULL,\n    numerical_dissipation REAL NOT NULL,\n    dissipation_total REAL NOT NULL,\n    evidence_ref TEXT,\n    dissipation_variant TEXT DEFAULT 'v1_minimal'\n)"
+    },
+    "external_entropy_ledger": {
+      "row_count": 24,
+      "schema": "CREATE TABLE external_entropy_ledger (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    transport_entropy REAL NOT NULL,\n    candidate_fragment_entropy REAL NOT NULL,\n    origin_support_entropy REAL NOT NULL,\n    residual_accumulation_entropy REAL NOT NULL,\n    external_entropy_total REAL NOT NULL,\n    calculation_variant TEXT NOT NULL,\n    evidence_ref TEXT,\n    transport_ref TEXT\n)"
+    },
+    "external_isolation_report": {
+      "row_count": 22,
+      "schema": "CREATE TABLE external_isolation_report (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    related_T_ref TEXT,\n    related_O_ref TEXT,\n    related_P_refs JSON,\n    related_R_refs JSON,\n    related_origin_ref TEXT,\n    external_free_energy REAL NOT NULL,\n    balance_summary TEXT NOT NULL,\n    recommended_validation_path TEXT,\n    linked_ledger_refs JSON\n)"
+    },
+    "external_noise_budget_ledger": {
+      "row_count": 24,
+      "schema": "CREATE TABLE external_noise_budget_ledger (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    noise_budget_ext REAL NOT NULL,\n    noise_budget_measurement REAL NOT NULL,\n    noise_budget_windowing REAL NOT NULL,\n    noise_budget_transport REAL NOT NULL,\n    noise_budget_boundary REAL NOT NULL,\n    noise_budget_total REAL NOT NULL,\n    noise_source_manifest TEXT,\n    budget_unit_policy TEXT DEFAULT 'ledger_unit'\n)"
+    },
+    "failed_expectation_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE failed_expectation_report (\n    failure_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    check_name TEXT NOT NULL,\n    expected_behavior TEXT NOT NULL,\n    observed_behavior TEXT NOT NULL,\n    severity TEXT NOT NULL,\n    action_required TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "family_recursive_surface_index": {
+      "row_count": 22,
+      "schema": "CREATE TABLE family_recursive_surface_index (\n    surface_id TEXT PRIMARY KEY,\n    clock_n INTEGER NOT NULL,\n    transition_ids_json TEXT NOT NULL,\n    shell0_verdict TEXT DEFAULT 'unknown'\n, maturity_flag TEXT DEFAULT 'candidate', suspension_status TEXT DEFAULT 'ACTIVE', aggregation_role TEXT DEFAULT 'index_root', origin_anchor_id TEXT DEFAULT NULL, t_seed_id TEXT DEFAULT NULL)"
+    },
+    "fhpms_distance_spacetime_potential": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_distance_spacetime_potential (\n    potential_id TEXT PRIMARY KEY,\n    block_id TEXT NOT NULL,\n    phi_d REAL NOT NULL DEFAULT 0.0, -- distance-spacetime measure potential\n    phi_p REAL NOT NULL DEFAULT 0.0, -- P anchor absorption/stability potential\n    phi_r REAL NOT NULL DEFAULT 0.0, -- R counter-band counter-pressure potential\n    phi_x REAL NOT NULL DEFAULT 0.0, -- Xin residual walk potential\n    phi_l REAL NOT NULL DEFAULT 0.0, -- ledger sync potential\n    phi_m REAL NOT NULL DEFAULT 0.0, -- masking/shield potential\n    phi_h REAL NOT NULL DEFAULT 0.0, -- hyperedge binding potential\n    created_at TEXT NOT NULL,\n    FOREIGN KEY(block_id) REFERENCES fhpms_spacetime_process_block(block_id)\n)"
+    },
+    "fhpms_fiber_connection_transport": {
+      "row_count": 20,
+      "schema": "CREATE TABLE fhpms_fiber_connection_transport (\n    transport_id TEXT PRIMARY KEY,\n    from_block_id TEXT NOT NULL,\n    to_block_id TEXT NOT NULL,\n    transport_matrix_ref TEXT,\n    transport_cost REAL NOT NULL,\n    residual_after_transport REAL NOT NULL,\n    p_absorbed REAL DEFAULT 0.0,\n    r_resolved REAL DEFAULT 0.0,\n    xin_generated REAL DEFAULT 0.0,\n    unresolved_generated REAL DEFAULT 0.0,\n    ledger_sync_strength REAL DEFAULT 0.0,\n    created_at TEXT NOT NULL\n)"
+    },
+    "fhpms_hebbian_association_weight": {
+      "row_count": 20,
+      "schema": "CREATE TABLE fhpms_hebbian_association_weight (\n    weight_id TEXT PRIMARY KEY,\n    from_entity_id TEXT NOT NULL,\n    to_entity_id TEXT NOT NULL,\n    association_type TEXT NOT NULL,\n    weight_value REAL NOT NULL,\n    hebbian_gate_status TEXT, -- gated conditions like high Gamma sync\n    created_at TEXT NOT NULL\n)"
+    },
+    "fhpms_hyperedge_fiber_binding": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_hyperedge_fiber_binding (\n    hyperedge_id TEXT PRIMARY KEY,\n    block_refs_json TEXT NOT NULL,\n    p_anchor_refs_json TEXT,\n    r_band_refs_json TEXT,\n    xin_carrier_refs_json TEXT,\n    ledger_refs_json TEXT,\n    masking_refs_json TEXT,\n    attention_refs_json TEXT,\n    envelope_refs_json TEXT,\n    origin_anchor_refs_json TEXT,\n    binding_strength REAL NOT NULL,\n    arity INTEGER NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "fhpms_origin_anchor_trace": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_origin_anchor_trace (\n    origin_anchor_id TEXT PRIMARY KEY,\n    raw_event_refs_json TEXT,\n    coordinate_audit_refs_json TEXT,\n    external_envelope_refs_json TEXT,\n    ledger_refs_json TEXT,\n    bottom_input_refs_json TEXT,\n    t_seed_refs_json TEXT,\n    reprojection_status TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "fhpms_prx_fiber_state": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_prx_fiber_state (\n    fiber_state_id TEXT PRIMARY KEY,\n    block_id TEXT NOT NULL,\n    p_measure REAL NOT NULL DEFAULT 0.0,\n    r_measure REAL NOT NULL DEFAULT 0.0,\n    x_measure REAL NOT NULL DEFAULT 0.0,\n    u_measure REAL NOT NULL DEFAULT 0.0, -- unresolved/heat-bath\n    created_at TEXT NOT NULL,\n    FOREIGN KEY(block_id) REFERENCES fhpms_spacetime_process_block(block_id)\n)"
+    },
+    "fhpms_reprojection_trace": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_reprojection_trace (\n    trace_id TEXT PRIMARY KEY,\n    block_id TEXT NOT NULL,\n    origin_anchor_id TEXT NOT NULL,\n    t_start REAL,\n    t_end REAL,\n    x_proxy REAL,\n    y_proxy REAL,\n    z_proxy REAL,\n    coordinate_frame TEXT,\n    bottom_ref TEXT,\n    projection_confidence REAL,\n    granularity_level TEXT,\n    loss_reason TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "fhpms_spacetime_process_block": {
+      "row_count": 22,
+      "schema": "CREATE TABLE fhpms_spacetime_process_block (\n    block_id TEXT PRIMARY KEY,\n    process_window_id TEXT NOT NULL,\n    time_start REAL NOT NULL,\n    time_end REAL NOT NULL,\n    support_domain_ref TEXT,\n    kernel_ref TEXT,\n    bandwidth_ref TEXT,\n    external_envelope_ref TEXT,\n    ledger_ref TEXT,\n    origin_anchor_id TEXT,\n    coordinate_audit_ref TEXT,\n    projection_granularity TEXT,\n    projection_confidence REAL,\n    bottom_ref TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "information_fiber": {
+      "row_count": 2880,
+      "schema": "CREATE TABLE information_fiber (\n    fiber_id         TEXT PRIMARY KEY,\n    cell_uid         TEXT NOT NULL REFERENCES spacetime_cell(cell_uid),\n    V_mean           REAL DEFAULT 0.0,\n    V_slope          REAL DEFAULT 0.0,\n    release_proxy    REAL DEFAULT 0.0,\n    afferent_current REAL DEFAULT 0.0,\n    spike_rate       REAL DEFAULT 0.0,\n    spike_regularity REAL DEFAULT 0.0,\n    timing_precision REAL DEFAULT 0.0,\n    adaptation_state REAL DEFAULT 0.0,\n    signal_uncertainty REAL DEFAULT 0.0,\n    compression_loss REAL DEFAULT 0.0,\n    source_signal_refs_json TEXT DEFAULT '{}',\n    calibration_profile TEXT DEFAULT 'diagnostic',\n    provenance_hash  TEXT DEFAULT ''\n)"
+    },
+    "masking_counterevidence_record": {
+      "row_count": 88,
+      "schema": "CREATE TABLE masking_counterevidence_record (\n    record_id        TEXT PRIMARY KEY,\n    hypothesis_id    TEXT NOT NULL,\n    masking_type     TEXT NOT NULL,\n    baseline_score   REAL DEFAULT 0.0,\n    perturbed_score  REAL DEFAULT 0.0,\n    verdict          TEXT DEFAULT 'inconclusive',\n    details          TEXT DEFAULT '',\n    run_id           TEXT NOT NULL,\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "maturity_gate_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE maturity_gate_record (\n    gate_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    target_object_type TEXT NOT NULL DEFAULT 'P_candidate',\n    target_ref TEXT NOT NULL,\n    from_status TEXT NOT NULL DEFAULT 'candidate',\n    to_status TEXT NOT NULL DEFAULT 'provisional',\n    required_evidence_json TEXT DEFAULT '{}',\n    provided_evidence_json TEXT DEFAULT '{}',\n    missing_evidence_json TEXT DEFAULT '{}',\n    gate_result TEXT NOT NULL DEFAULT 'blocked',\n    failure_reason TEXT DEFAULT NULL,\n    reviewer TEXT DEFAULT 'system',\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "measure_coordinate": {
+      "row_count": 6,
+      "schema": "CREATE TABLE measure_coordinate (\n    record_id TEXT PRIMARY KEY,\n    event_id TEXT NOT NULL,\n    transition_cost REAL NOT NULL DEFAULT 0.0,\n    drift_cost REAL NOT NULL DEFAULT 0.0,\n    gamma_desync_cost REAL NOT NULL DEFAULT 0.0,\n    xin_residual_cost REAL NOT NULL DEFAULT 0.0,\n    potential_displacement_cost REAL NOT NULL DEFAULT 0.0,\n    cross_slice_churn_cost REAL NOT NULL DEFAULT 0.0,\n    magnitude_disturbance_cost REAL NOT NULL DEFAULT 0.0,\n    semantic_leakage_flag INTEGER NOT NULL DEFAULT 0,\n    created_at TEXT NOT NULL\n)"
+    },
+    "o_candidate_record": {
+      "row_count": 44,
+      "schema": "CREATE TABLE o_candidate_record (\n    candidate_id TEXT PRIMARY KEY,\n    candidate_type TEXT NOT NULL DEFAULT 'candidate_p',  -- candidate_p/candidate_r/candidate_origin/candidate_boundary/candidate_xi\n    stage_k INTEGER NOT NULL,\n    field_surface_id TEXT NOT NULL,\n    o_surface_id TEXT DEFAULT NULL,\n    member_node_ids_json TEXT NOT NULL DEFAULT '[]',\n    support_score REAL DEFAULT 0.0,\n    transport_support_score REAL DEFAULT 0.0,\n    replay_support_score REAL DEFAULT 0.0,\n    boundary_penalty REAL DEFAULT 0.0,\n    solver_converged INTEGER DEFAULT 0,\n    maturity_flag TEXT NOT NULL DEFAULT 'scaffold',  -- scaffold/candidate/freezable/frozen\n    source_hypothesis_id TEXT DEFAULT NULL,\n    created_at TEXT DEFAULT NULL\n, formation_mode TEXT DEFAULT 'pass_through_proxy', metadata_json TEXT DEFAULT '{}')"
+    },
+    "o_candidate_surface": {
+      "row_count": 44,
+      "schema": "CREATE TABLE o_candidate_surface (\n    candidate_surface_id TEXT PRIMARY KEY,\n    field_surface_id TEXT NOT NULL,\n    clusters_json TEXT NOT NULL,\n    FOREIGN KEY(field_surface_id) REFERENCES o_field_surface(field_id)\n)"
+    },
+    "o_field_surface": {
+      "row_count": 44,
+      "schema": "CREATE TABLE o_field_surface (\n    field_id TEXT PRIMARY KEY,\n    t_surface_id TEXT NOT NULL,\n    field_matrix_json TEXT NOT NULL,\n    FOREIGN KEY(t_surface_id) REFERENCES t_surface(t_surface_id)\n)"
+    },
+    "object_evidence_record": {
+      "row_count": 0,
+      "schema": "CREATE TABLE object_evidence_record (\n    evidence_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    candidate_id TEXT NOT NULL,\n    baseline_support_score REAL NOT NULL,\n    perturbed_support_score REAL NOT NULL,\n    evidence_terms_json TEXT NOT NULL,\n    posterior_score_proxy REAL NOT NULL,\n    forbidden_use TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "object_hypothesis": {
+      "row_count": 44,
+      "schema": "CREATE TABLE object_hypothesis (\n    hypothesis_id    TEXT PRIMARY KEY,\n    hypothesis_type  TEXT NOT NULL CHECK(hypothesis_type IN\n        ('P_candidate','R_candidate','origin_candidate','boundary_candidate',\n         'proto_structure','xi_proto','refuted_candidate')),\n    stage_k          INTEGER NOT NULL,\n    run_id           TEXT NOT NULL,\n    status           TEXT DEFAULT 'candidate' CHECK(status IN\n        ('O_candidate','PR_candidate','mask_supported','recursion_eligible',\n         'compute_committed','science_certified','refuted','suspended',\n         'xi_carried','emergence_alerted','candidate')),\n    member_cell_uids_json TEXT DEFAULT '[]',\n    spatial_support_json  TEXT DEFAULT '[]',\n    temporal_support_json TEXT DEFAULT '[]',\n    support_score    REAL DEFAULT 0.0,\n    source_decomposition_ref TEXT DEFAULT ''\n)"
+    },
+    "observable_surface": {
+      "row_count": 22,
+      "schema": "CREATE TABLE observable_surface (\n    o_surface_id TEXT PRIMARY KEY,\n    stage_k INTEGER NOT NULL,\n    t_surface_id TEXT NOT NULL,\n    field_surface_id TEXT NOT NULL,\n    candidate_surface_id TEXT NOT NULL,\n    FOREIGN KEY(t_surface_id) REFERENCES t_surface(t_surface_id),\n    FOREIGN KEY(field_surface_id) REFERENCES o_field_surface(field_id),\n    FOREIGN KEY(candidate_surface_id) REFERENCES o_candidate_surface(candidate_surface_id)\n)"
+    },
+    "occupancy_measure": {
+      "row_count": 264,
+      "schema": "CREATE TABLE occupancy_measure (\n    measure_id       TEXT PRIMARY KEY,\n    hypothesis_id    TEXT NOT NULL REFERENCES object_hypothesis(hypothesis_id),\n    cell_uid         TEXT NOT NULL REFERENCES spacetime_cell(cell_uid),\n    membership_mass  REAL DEFAULT 0.0,\n    membership_entropy REAL DEFAULT 0.0,\n    occupancy_rank   INTEGER DEFAULT 0,\n    transport_support REAL DEFAULT 0.0,\n    signal_support   REAL DEFAULT 0.0,\n    geometry_support REAL DEFAULT 0.0,\n    masking_support  REAL DEFAULT 0.0,\n    replay_support   REAL DEFAULT 0.0,\n    boundary_support REAL DEFAULT 0.0,\n    counterevidence_mass REAL DEFAULT 0.0,\n    artifact_penalty REAL DEFAULT 0.0,\n    core_margin_label TEXT DEFAULT 'unknown' CHECK(core_margin_label IN ('core','margin','unknown'))\n)"
+    },
+    "occupancy_state": {
+      "row_count": 22,
+      "schema": "CREATE TABLE occupancy_state (\n    occupancy_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    occupancy_distribution_json TEXT NOT NULL,\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "origin_anchor_bundle": {
+      "row_count": 22,
+      "schema": "CREATE TABLE origin_anchor_bundle (\n    origin_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    supporting_p_ids_json TEXT NOT NULL,\n    stability_score REAL DEFAULT 0.0,\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "other_boundary_separation_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE other_boundary_separation_record (\n    relation_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    separation_distance REAL NOT NULL,\n    relation_type TEXT DEFAULT 'unknown',\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "p_band_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE p_band_record (\n    p_band_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    core_margin_type TEXT NOT NULL,\n    member_node_ids_json TEXT NOT NULL,\n    coherence_score REAL DEFAULT 0.0,\n    replay_support REAL DEFAULT 0.0,\n    origin_anchor_id TEXT DEFAULT '',\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "perturbation_effect_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE perturbation_effect_report (\n    effect_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    perturbation_type TEXT NOT NULL,\n    target_metric TEXT NOT NULL,\n    baseline_value REAL NOT NULL,\n    perturbed_value REAL NOT NULL,\n    delta_value REAL NOT NULL,\n    expected_direction TEXT NOT NULL,\n    actual_direction TEXT NOT NULL,\n    passed INTEGER NOT NULL,\n    evidence_json TEXT NOT NULL,\n    forbidden_interpretation TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "perturbation_run_manifest": {
+      "row_count": 0,
+      "schema": "CREATE TABLE perturbation_run_manifest (\n    perturbation_run_id TEXT PRIMARY KEY,\n    base_run_id TEXT NOT NULL,\n    validation_version TEXT NOT NULL,\n    execution_mode TEXT NOT NULL,\n    perturbation_profile TEXT NOT NULL,\n    config_json TEXT NOT NULL,\n    allowed_use TEXT NOT NULL,\n    forbidden_use TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "pr_confirmation_graph_record": {
+      "row_count": 44,
+      "schema": "CREATE TABLE pr_confirmation_graph_record (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    hypothesis_id TEXT NOT NULL,\n    hypothesis_type TEXT NOT NULL DEFAULT 'P_candidate',\n    current_node TEXT NOT NULL DEFAULT 'O_candidate',\n    previous_node TEXT DEFAULT NULL,\n    o_field_surface_id TEXT DEFAULT NULL,\n    o_candidate_surface_id TEXT DEFAULT NULL,\n    o_candidate_lineage_id TEXT DEFAULT NULL,\n    masking_trial_count INTEGER DEFAULT 0,\n    masking_support_count INTEGER DEFAULT 0,\n    masking_refute_count INTEGER DEFAULT 0,\n    replay_pass_count INTEGER DEFAULT 0,\n    boundary_variant_count INTEGER DEFAULT 0,\n    transport_support_score REAL DEFAULT 0.0,\n    occupancy_persistence_length INTEGER DEFAULT 0,\n    xi_pressure REAL DEFAULT 0.0,\n    emergence_alert_id TEXT DEFAULT NULL,\n    created_at TEXT DEFAULT NULL,\n    updated_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (hypothesis_id) REFERENCES object_hypothesis(hypothesis_id)\n)"
+    },
+    "pr_graph_transition_record": {
+      "row_count": 88,
+      "schema": "CREATE TABLE pr_graph_transition_record (\n    transition_id    TEXT PRIMARY KEY,\n    hypothesis_id    TEXT NOT NULL REFERENCES object_hypothesis(hypothesis_id),\n    from_state       TEXT NOT NULL,\n    to_state         TEXT NOT NULL,\n    run_id           TEXT NOT NULL,\n    conditions_met_json TEXT DEFAULT '{}',\n    evidence_refs_json TEXT DEFAULT '[]',\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "preneural_geometry": {
+      "row_count": 0,
+      "schema": "CREATE TABLE preneural_geometry (\n    node_id INTEGER PRIMARY KEY,\n    patch_ids_json TEXT NOT NULL,\n    position_x REAL NOT NULL,\n    position_y REAL NOT NULL,\n    position_z REAL NOT NULL,\n    normal_x REAL NOT NULL,\n    normal_y REAL NOT NULL,\n    normal_z REAL NOT NULL,\n    area_weight REAL DEFAULT 1.0\n, boundary_distance REAL DEFAULT 0.0, support_radius REAL DEFAULT 1.0, neighbor_ids_json TEXT DEFAULT '[]', source_patch_ids_json TEXT DEFAULT '[]')"
+    },
+    "preneural_pointset_slice": {
+      "row_count": 0,
+      "schema": "CREATE TABLE preneural_pointset_slice (\n    slice_id TEXT PRIMARY KEY,\n    window_id TEXT NOT NULL,\n    geometry_node_ids_json TEXT NOT NULL,\n    edges_json TEXT NOT NULL,\n    signal_windows_refs_json TEXT NOT NULL, provenance_hash TEXT DEFAULT '', stage_k INTEGER DEFAULT 0,\n    FOREIGN KEY(window_id) REFERENCES analysis_window(window_id)\n)"
+    },
+    "preneural_signal_window": {
+      "row_count": 0,
+      "schema": "CREATE TABLE preneural_signal_window (\n    window_id TEXT NOT NULL,\n    node_id INTEGER NOT NULL,\n    features_json TEXT NOT NULL,\n    energy_level REAL DEFAULT 0.0, V_mean REAL DEFAULT 0.0, V_slope REAL DEFAULT 0.0, release_proxy REAL DEFAULT 0.0, afferent_current REAL DEFAULT 0.0, spike_rate REAL DEFAULT 0.0, spike_regularity REAL DEFAULT 0.0, timing_precision REAL DEFAULT 0.0, adaptation_state REAL DEFAULT 0.0,\n    PRIMARY KEY(window_id, node_id),\n    FOREIGN KEY(window_id) REFERENCES analysis_window(window_id),\n    FOREIGN KEY(node_id) REFERENCES preneural_geometry(node_id)\n)"
+    },
+    "process_window": {
+      "row_count": 6,
+      "schema": "CREATE TABLE process_window (\n    window_id TEXT PRIMARY KEY,\n    event_id TEXT,\n    origin_anchor TEXT,\n    reprojection_hash TEXT,\n    cell_count INTEGER DEFAULT 0,\n    window_duration_ticks INTEGER DEFAULT 0,\n    created_at TEXT\n)"
+    },
+    "promotion_decision": {
+      "row_count": 1,
+      "schema": "CREATE TABLE promotion_decision (\n    decision_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    candidate_engine TEXT,\n    decision TEXT,           -- PROMOTE / KEEP_AS_CANDIDATE / REJECT / KEEP_A\n    rationale TEXT,\n    compute_overhead_pct REAL,\n    holdout_metric_delta REAL,\n    chaos_survival_delta REAL,\n    novelty_latency_delta REAL,\n    false_lockin_flag INTEGER DEFAULT 0,\n    singularity_count INTEGER DEFAULT 0,\n    collapse_count INTEGER DEFAULT 0,\n    created_at TEXT\n)"
+    },
+    "proxy_density_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE proxy_density_report (\n    report_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    run_type TEXT NOT NULL DEFAULT 'diagnostic_run',\n    total_fields_checked INTEGER DEFAULT 0,\n    proxy_fields_count INTEGER DEFAULT 0,\n    proxy_density REAL DEFAULT 0.0,\n    critical_path_proxy_density REAL DEFAULT 0.0,\n    geometry_proxy_density REAL DEFAULT 0.0,\n    transport_proxy_density REAL DEFAULT 0.0,\n    pr_proxy_density REAL DEFAULT 0.0,\n    ledger_proxy_density REAL DEFAULT 0.0,\n    allowed_budget REAL DEFAULT 0.8,\n    overload_gate_triggered INTEGER DEFAULT 0,\n    downgrade_run_type_to TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "proxy_provenance": {
+      "row_count": 2,
+      "schema": "CREATE TABLE proxy_provenance (\n    proxy_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    target_field TEXT NOT NULL,\n    proxy_type TEXT NOT NULL DEFAULT 'placeholder',\n    proxy_reason TEXT DEFAULT '',\n    source_assumption TEXT DEFAULT '',\n    maturity_status TEXT DEFAULT 'active',\n    replacement_condition TEXT DEFAULT '',\n    forbidden_interpretation TEXT DEFAULT 'scientific_conclusion,final_pr_certification',\n    created_by TEXT DEFAULT 'system',\n    created_at TEXT DEFAULT NULL,\n    review_due TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "r_band_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE r_band_record (\n    r_band_id TEXT PRIMARY KEY,\n    o_surface_id TEXT NOT NULL,\n    margin_outer_type TEXT NOT NULL,\n    residual_reason TEXT NOT NULL,\n    routing_target TEXT DEFAULT '',\n    upgrade_conditions_json TEXT NOT NULL,\n    FOREIGN KEY(o_surface_id) REFERENCES observable_surface(o_surface_id)\n)"
+    },
+    "raw_emergency_export_manifest": {
+      "row_count": 0,
+      "schema": "CREATE TABLE raw_emergency_export_manifest (\n    export_id TEXT PRIMARY KEY,\n    export_type TEXT NOT NULL DEFAULT 'real_emergence',\n    emergence_alert_id TEXT NOT NULL,\n    trigger_conditions_json TEXT DEFAULT '[]',\n    run_id TEXT NOT NULL,\n    window_start INTEGER DEFAULT 0,\n    window_end INTEGER DEFAULT 0,\n    K_scope_json TEXT DEFAULT '[0]',\n    production_log_allowed INTEGER DEFAULT 0,\n    scientific_use_allowed INTEGER DEFAULT 0,\n    cleanup_policy TEXT DEFAULT 'archive_after_review',\n    forbidden_actions_acknowledged INTEGER DEFAULT 1,\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (emergence_alert_id) REFERENCES emergence_alert(alert_id)\n)"
+    },
+    "recursive_transition_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE recursive_transition_record (\n    transition_id TEXT PRIMARY KEY,\n    from_stage_k INTEGER NOT NULL,\n    to_stage_kplus1 INTEGER NOT NULL,\n    source_p_ids_json TEXT NOT NULL,\n    triggering_r_ids_json TEXT NOT NULL,\n    origin_id TEXT NOT NULL,\n    seed_id TEXT NOT NULL,\n    transition_confidence REAL DEFAULT 0.0,\n    continuity_score REAL DEFAULT 0.0\n)"
+    },
+    "relation_entropy_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE relation_entropy_record (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    relation_type TEXT NOT NULL DEFAULT 'transport_entropy',\n    subject_group TEXT NOT NULL DEFAULT '',\n    object_group TEXT NOT NULL DEFAULT '',\n    support_cells_json TEXT DEFAULT '[]',\n    support_windows_json TEXT DEFAULT '[]',\n    entropy_value REAL DEFAULT 0.0,\n    normalized_entropy REAL DEFAULT 0.0,\n    effective_sample_size INTEGER DEFAULT 0,\n    calibration_profile TEXT DEFAULT 'default_v83',\n    allowed_use TEXT DEFAULT 'audit,diagnostic,comparison',\n    forbidden_use TEXT DEFAULT 'freeze_pr,select_omega,generate_tseed,mainline_truth',\n    created_at TEXT DEFAULT NULL, entropy_source_distribution TEXT DEFAULT '[]',\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "replay_alignment_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE replay_alignment_record (\n    alignment_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    v6_surface_id TEXT NOT NULL,\n    legacy_record_id TEXT NOT NULL,\n    alignment_score REAL DEFAULT 0.0,\n    divergence_reason TEXT DEFAULT ''\n)"
+    },
+    "rlis_audit_light_cone": {
+      "row_count": 0,
+      "schema": "CREATE TABLE rlis_audit_light_cone (\n    cone_id TEXT PRIMARY KEY,\n    apex_event_id TEXT NOT NULL,\n    forward_cone_refs_json TEXT,\n    backward_cone_refs_json TEXT,\n    spacelike_exterior_refs_json TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "rlis_delta_f_split": {
+      "row_count": 22,
+      "schema": "CREATE TABLE rlis_delta_f_split (\n    split_id TEXT PRIMARY KEY,\n    variation_id TEXT NOT NULL,\n    delta_f_p REAL NOT NULL DEFAULT 0.0,\n    delta_f_r REAL NOT NULL DEFAULT 0.0,\n    delta_f_x REAL NOT NULL DEFAULT 0.0,\n    delta_f_m REAL NOT NULL DEFAULT 0.0,\n    delta_f_u REAL NOT NULL DEFAULT 0.0,\n    created_at TEXT NOT NULL,\n    FOREIGN KEY(variation_id) REFERENCES rlis_free_energy_variation(variation_id)\n)"
+    },
+    "rlis_free_energy_variation": {
+      "row_count": 22,
+      "schema": "CREATE TABLE rlis_free_energy_variation (\n    variation_id TEXT PRIMARY KEY,\n    ledger_event_id TEXT NOT NULL,\n    internal_energy_proxy REAL,\n    entropy_proxy REAL,\n    free_energy_total REAL NOT NULL,\n    delta_f REAL NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "rlis_gamma_sync_binding": {
+      "row_count": 22,
+      "schema": "CREATE TABLE rlis_gamma_sync_binding (\n    sync_id TEXT PRIMARY KEY,\n    ledger_event_id TEXT NOT NULL,\n    process_window_id TEXT NOT NULL,\n    gamma_strength REAL NOT NULL, -- sync intensity\n    sync_verdict TEXT NOT NULL, -- strict_hit, forbidden\n    created_at TEXT NOT NULL\n)"
+    },
+    "rlis_ledger_event_spacetime": {
+      "row_count": 22,
+      "schema": "CREATE TABLE rlis_ledger_event_spacetime (\n    ledger_event_id TEXT PRIMARY KEY,\n    ledger_time REAL NOT NULL,\n    x_proj REAL,\n    y_proj REAL,\n    z_proj REAL,\n    async_phase REAL,\n    proper_time_interval REAL,\n    external_envelope_ref TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "rlis_minkowski_audit_interval": {
+      "row_count": 20,
+      "schema": "CREATE TABLE rlis_minkowski_audit_interval (\n    audit_interval_id TEXT PRIMARY KEY,\n    event_1_id TEXT NOT NULL,\n    event_2_id TEXT NOT NULL,\n    interval_squared REAL NOT NULL, -- s_L^2\n    information_speed_limit REAL, -- c_I\n    causal_status TEXT NOT NULL, -- timelike, spacelike, lightlike\n    created_at TEXT NOT NULL\n)"
+    },
+    "run_manifest": {
+      "row_count": 1,
+      "schema": "CREATE TABLE run_manifest (\n    run_id TEXT PRIMARY KEY,\n    rules_version TEXT NOT NULL DEFAULT 'v8.3',\n    schema_version TEXT NOT NULL DEFAULT 'v8.3',\n    calibration_profile TEXT NOT NULL DEFAULT 'default_v83',\n    execution_mode TEXT NOT NULL DEFAULT 'diagnostic',\n    input_source TEXT DEFAULT NULL,\n    cell_count INTEGER DEFAULT 0,\n    window_count INTEGER DEFAULT 0,\n    created_at TEXT NOT NULL,\n    notes TEXT DEFAULT NULL\n, physical_cell_count INTEGER DEFAULT 0, spacetime_cell_count INTEGER DEFAULT 0, extra_json TEXT DEFAULT '{}')"
+    },
+    "self_reference_event": {
+      "row_count": 3,
+      "schema": "CREATE TABLE self_reference_event (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    self_reference_event_id TEXT,\n    engine_id TEXT,\n    internal_state_dependencies TEXT,\n    external_event_dependency TEXT,\n    external_hit_count INTEGER DEFAULT 0,\n    internal_only_activation_count INTEGER DEFAULT 0,\n    rlis_sync_state TEXT,\n    xin_residual_state REAL DEFAULT 0.0,\n    tick INTEGER,\n    created_at TEXT\n)"
+    },
+    "semantic_readout_surface": {
+      "row_count": 22,
+      "schema": "CREATE TABLE semantic_readout_surface (\n    readout_id TEXT PRIMARY KEY,\n    surface_id TEXT NOT NULL,\n    dominant_family_label TEXT NOT NULL,\n    onset_category TEXT DEFAULT 'unknown',\n    readout_confidence REAL DEFAULT 0.0,\n    FOREIGN KEY(surface_id) REFERENCES family_recursive_surface_index(surface_id)\n)"
+    },
+    "solver_diagnostics": {
+      "row_count": 22,
+      "schema": "CREATE TABLE solver_diagnostics (\n    diag_id TEXT PRIMARY KEY,\n    stage_k INTEGER NOT NULL,\n    window_id TEXT NOT NULL,\n    diagnostics_json TEXT NOT NULL\n, maturity_gate_passed INTEGER DEFAULT 0, solver_convergence_detail TEXT DEFAULT NULL)"
+    },
+    "source_event": {
+      "row_count": 3,
+      "schema": "CREATE TABLE source_event (\n    event_id TEXT PRIMARY KEY,\n    source_id TEXT NOT NULL,\n    split_role TEXT NOT NULL DEFAULT 'calibration',  -- calibration|validation|holdout|live\n    event_time TEXT NOT NULL,\n    payload_hash TEXT NOT NULL DEFAULT '',\n    raw_ref TEXT DEFAULT '',\n    external_real_data INTEGER NOT NULL DEFAULT 0,   -- 1=external, 0=synthetic/fixture\n    source_url TEXT DEFAULT '',\n    license_or_policy TEXT DEFAULT '',\n    created_at TEXT NOT NULL\n)"
+    },
+    "spacetime_cell": {
+      "row_count": 2880,
+      "schema": "CREATE TABLE spacetime_cell (\n    cell_uid         TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    stage_k          INTEGER NOT NULL,\n    window_id        TEXT NOT NULL,\n    node_id          INTEGER NOT NULL,\n    clock_start      INTEGER DEFAULT 0,\n    clock_end        INTEGER DEFAULT 1,\n    x                REAL DEFAULT 0.0,\n    y                REAL DEFAULT 0.0,\n    z                REAL DEFAULT 0.0,\n    normal_x         REAL DEFAULT 0.0,\n    normal_y         REAL DEFAULT 0.0,\n    normal_z         REAL DEFAULT 1.0,\n    boundary_distance REAL DEFAULT 0.0,\n    support_radius   REAL DEFAULT 1.0,\n    source_patch_ids_json  TEXT DEFAULT '[]',\n    topology_neighbors_json TEXT DEFAULT '[]',\n    coordinate_frame_id TEXT DEFAULT 'preneural_local',\n    provenance_hash  TEXT DEFAULT ''\n)"
+    },
+    "spacetime_fiber_binding": {
+      "row_count": 2880,
+      "schema": "CREATE TABLE spacetime_fiber_binding (\n    binding_id       TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    clock_n          INTEGER DEFAULT 0,\n    window_id        TEXT NOT NULL,\n    spacetime_cell_id TEXT NOT NULL REFERENCES spacetime_cell(cell_uid),\n    information_fiber_id TEXT NOT NULL REFERENCES information_fiber(fiber_id),\n    source_cell_ids_json TEXT DEFAULT '[]',\n    source_patch_ids_json TEXT DEFAULT '[]',\n    binding_type     TEXT DEFAULT 'direct' CHECK(binding_type IN ('direct','aggregated','proxy','inferred')),\n    proxy_provenance_id TEXT,\n    calibration_profile TEXT DEFAULT 'diagnostic',\n    provenance_hash  TEXT DEFAULT ''\n)"
+    },
+    "sqlite_sequence": {
+      "row_count": 7,
+      "schema": "CREATE TABLE sqlite_sequence(name,seq)"
+    },
+    "system_clock": {
+      "row_count": 0,
+      "schema": "CREATE TABLE system_clock (\n    clock_n INTEGER PRIMARY KEY,\n    dt_seconds REAL NOT NULL DEFAULT 0.001,\n    run_id TEXT NOT NULL,\n    wall_clock_created_at REAL NOT NULL,\n    tick_hash TEXT DEFAULT ''\n)"
+    },
+    "system_clock_entry": {
+      "row_count": 12,
+      "schema": "CREATE TABLE system_clock_entry (\n    clock_n INTEGER NOT NULL,\n    run_id TEXT NOT NULL,\n    time_s REAL NOT NULL DEFAULT 0.0,\n    dt_s REAL NOT NULL DEFAULT 0.001,\n    clock_hash TEXT DEFAULT '',\n    schema_version TEXT NOT NULL DEFAULT 'v8.3',\n    PRIMARY KEY (run_id, clock_n),\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "t_seed_replay_packet": {
+      "row_count": 22,
+      "schema": "CREATE TABLE t_seed_replay_packet (\n    seed_id TEXT PRIMARY KEY,\n    transition_id TEXT NOT NULL,\n    source_p_ids_json TEXT NOT NULL,\n    allowed_drive_envelope TEXT DEFAULT '',\n    expected_region TEXT DEFAULT '',\n    FOREIGN KEY(transition_id) REFERENCES recursive_transition_record(transition_id)\n)"
+    },
+    "t_surface": {
+      "row_count": 24,
+      "schema": "CREATE TABLE t_surface (\n    t_surface_id TEXT PRIMARY KEY,\n    stage_k INTEGER NOT NULL,\n    slice_ids_json TEXT NOT NULL,\n    transport_ids_json TEXT NOT NULL\n, transport_mode TEXT DEFAULT 'connected')"
+    },
+    "threshold_sweep_record": {
+      "row_count": 0,
+      "schema": "CREATE TABLE threshold_sweep_record (\n    sweep_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    sweep_dimension TEXT NOT NULL,\n    sweep_value REAL NOT NULL,\n    metric_name TEXT NOT NULL,\n    metric_value REAL NOT NULL,\n    baseline_value REAL NOT NULL,\n    delta_value REAL NOT NULL,\n    evidence_json TEXT NOT NULL,\n    forbidden_interpretation TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "topological_inertia_event": {
+      "row_count": 66,
+      "schema": "CREATE TABLE topological_inertia_event (\n    record_id TEXT PRIMARY KEY,\n    engine_id TEXT NOT NULL,\n    tick INTEGER NOT NULL,\n    event_id TEXT NOT NULL DEFAULT '',\n    class_id TEXT NOT NULL DEFAULT '',\n    from_entity TEXT NOT NULL DEFAULT '',\n    to_entity TEXT NOT NULL DEFAULT '',\n    phi REAL NOT NULL DEFAULT 0.0,\n    m_eff REAL NOT NULL DEFAULT 0.0,\n    delta_w REAL NOT NULL DEFAULT 0.0,\n    external_hits INTEGER NOT NULL DEFAULT 0,\n    internal_only_hits INTEGER NOT NULL DEFAULT 0,\n    recent_xin_residual REAL NOT NULL DEFAULT 0.0,\n    contradiction_penalty REAL NOT NULL DEFAULT 0.0,\n    a_t_gate REAL NOT NULL DEFAULT 1.0,\n    mass_clipped INTEGER NOT NULL DEFAULT 0,\n    singularity_flag INTEGER NOT NULL DEFAULT 0,\n    collapse_flag INTEGER NOT NULL DEFAULT 0,\n    created_at TEXT NOT NULL\n)"
+    },
+    "transformation_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE transformation_record (\n    id INTEGER PRIMARY KEY AUTOINCREMENT,\n    schema_version TEXT NOT NULL,\n    run_id TEXT NOT NULL,\n    stage_k_id TEXT NOT NULL,\n    window_id TEXT NOT NULL,\n    transform_id TEXT NOT NULL,\n    domain_object_refs JSON NOT NULL,\n    codomain_object_refs JSON NOT NULL,\n    loss_metrics JSON NOT NULL,\n    unit_policy_followed BOOLEAN DEFAULT 1\n)"
+    },
+    "transport_cost_matrix_record": {
+      "row_count": 0,
+      "schema": "CREATE TABLE transport_cost_matrix_record (\n    record_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    base_run_id TEXT NOT NULL,\n    window_from TEXT NOT NULL,\n    window_to TEXT NOT NULL,\n    source_uid TEXT NOT NULL,\n    target_uid TEXT NOT NULL,\n    geometry_cost REAL NOT NULL,\n    signal_cost REAL NOT NULL,\n    boundary_cost REAL NOT NULL,\n    source_cost REAL NOT NULL,\n    total_cost REAL NOT NULL,\n    candidate_rank INTEGER NOT NULL,\n    accepted INTEGER NOT NULL,\n    transport_weight REAL NOT NULL,\n    evidence_json TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "transport_cost_matrix_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE transport_cost_matrix_report (\n    report_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    stage_k INTEGER NOT NULL,\n    candidate_count INTEGER NOT NULL,\n    mean_geometry_cost REAL NOT NULL,\n    mean_signal_cost REAL NOT NULL,\n    mean_boundary_cost REAL NOT NULL,\n    mean_transport_weight REAL NOT NULL,\n    rejected_fraction REAL NOT NULL,\n    source_distribution_json TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "transport_current_edge": {
+      "row_count": 7876,
+      "schema": "CREATE TABLE transport_current_edge (\n    edge_id          TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    from_cell_uid    TEXT NOT NULL REFERENCES spacetime_cell(cell_uid),\n    to_cell_uid      TEXT NOT NULL REFERENCES spacetime_cell(cell_uid),\n    transport_weight REAL DEFAULT 0.0,\n    current_mass     REAL DEFAULT 0.0,\n    geometry_cost    REAL DEFAULT 0.0,\n    normal_cost      REAL DEFAULT 0.0,\n    boundary_cost    REAL DEFAULT 0.0,\n    signal_cost      REAL DEFAULT 0.0,\n    source_patch_overlap REAL DEFAULT 0.0,\n    fragility_penalty REAL DEFAULT 0.0,\n    accepted         INTEGER DEFAULT 1,\n    transport_variant TEXT DEFAULT 'mainline',\n    cycle_consistency_local REAL DEFAULT 0.0,\n    boundary_crossing_penalty REAL DEFAULT 0.0,\n    signal_drift     REAL DEFAULT 0.0,\n    gating_failure_reason TEXT DEFAULT '',\n    provenance_hash  TEXT DEFAULT '',\n    total_cost       REAL DEFAULT 0.0\n)"
+    },
+    "transport_gating_failure_report": {
+      "row_count": 5236,
+      "schema": "CREATE TABLE transport_gating_failure_report (\n    failure_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    from_cell_uid TEXT NOT NULL,\n    to_cell_uid TEXT NOT NULL,\n    total_cost REAL DEFAULT 0.0,\n    theta_transport REAL DEFAULT 0.0,\n    reason TEXT DEFAULT '',\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "transport_operator": {
+      "row_count": 0,
+      "schema": "CREATE TABLE transport_operator (\n    transport_id TEXT PRIMARY KEY,\n    from_slice_id TEXT NOT NULL,\n    to_slice_id TEXT NOT NULL,\n    mapping_matrix_json TEXT NOT NULL,\n    transport_error REAL DEFAULT 0.0\n, survival_ratio REAL DEFAULT 0.0, branching_ratio REAL DEFAULT 0.0, merge_ratio REAL DEFAULT 0.0, cycle_consistency REAL DEFAULT 0.0, boundary_crossing_penalty REAL DEFAULT 0.0, transport_distortion REAL DEFAULT 0.0, source_patch_retention REAL DEFAULT 0.0, signal_drift_after_transport REAL DEFAULT 0.0)"
+    },
+    "v361_euler_lagrange_residual": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v361_euler_lagrange_residual (\n    residual_id      TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    window_id        TEXT NOT NULL,\n    cell_uid         TEXT NOT NULL,\n    el_residual_norm REAL DEFAULT 0.0,\n    boundary_term    REAL DEFAULT 0.0,\n    constraint_violation REAL DEFAULT 0.0,\n    xin_variational  REAL DEFAULT 0.0,  -- the actual variational Xin\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v361_information_energy_metric": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v361_information_energy_metric (\n    metric_id        TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    cell_uid_a       TEXT NOT NULL,\n    cell_uid_b       TEXT NOT NULL,\n    d_IE             REAL DEFAULT 0.0,  -- information-energy distance\n    path_length      INTEGER DEFAULT 0,\n    path_cost        REAL DEFAULT 0.0,\n    -- V36 §4.4 CONSTRAINT: mu_IE != real physics metric\n    is_physics_metric INTEGER DEFAULT 0 CHECK(is_physics_metric = 0),\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v361_lagrangian_term": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v361_lagrangian_term (\n    term_id          TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    window_id        TEXT NOT NULL,\n    cell_uid         TEXT NOT NULL,\n    term_name        TEXT NOT NULL,\n    term_value       REAL DEFAULT 0.0,\n    coefficient      REAL DEFAULT 1.0,\n    -- V8.5 governance: coefficient is meta-proxy, not physical constant\n    is_meta_proxy    INTEGER DEFAULT 1,\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v361_relation_readout_proxy": {
+      "row_count": 66,
+      "schema": "CREATE TABLE v361_relation_readout_proxy (\n    proxy_id         TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    cell_uid_a       TEXT NOT NULL,\n    cell_uid_b       TEXT NOT NULL,\n    relation_type    TEXT DEFAULT 'unknown' CHECK(relation_type IN\n        ('approaching','receding','stationary','oscillating','unknown')),\n    d_IE_value       REAL DEFAULT 0.0,\n    confidence       REAL DEFAULT 0.0,\n    -- V8.5: STRICTLY READ-ONLY, no semantic label writeback\n    can_write_semantic_label INTEGER DEFAULT 0 CHECK(can_write_semantic_label = 0),\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v361_variational_state_vector": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v361_variational_state_vector (\n    state_id         TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    window_id        TEXT NOT NULL,\n    cell_uid         TEXT NOT NULL,\n    -- V36.1 §3.1: State components\n    phi_info         REAL DEFAULT 0.0,  -- information density\n    phi_geo          REAL DEFAULT 0.0,  -- geometric curvature proxy\n    phi_transport    REAL DEFAULT 0.0,  -- transport current magnitude\n    phi_boundary     REAL DEFAULT 0.0,  -- boundary interaction\n    phi_signal       REAL DEFAULT 0.0,  -- signal field strength\n    phi_occupancy    REAL DEFAULT 0.0,  -- occupancy measure\n    -- Derived\n    state_norm       REAL DEFAULT 0.0,\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v366_coordinate_hidden_measure_binding": {
+      "row_count": 480,
+      "schema": "CREATE TABLE v366_coordinate_hidden_measure_binding (\n    binding_id         TEXT PRIMARY KEY,\n    pw_id              TEXT NOT NULL,\n    run_id             TEXT NOT NULL,\n    from_cell_uid      TEXT NOT NULL,\n    to_cell_uid        TEXT NOT NULL,\n    -- Measure proxies (coordinate-free)\n    mu_spacetime       REAL NOT NULL DEFAULT 0.0,  -- μ_ST spacetime measure proxy\n    mu_information_energy REAL NOT NULL DEFAULT 0.0, -- μ_IE information-energy metric proxy\n    -- Audit scaffold (coordinates preserved for evidence chain)\n    raw_distance_3d    REAL DEFAULT 0.0,\n    raw_coord_from_json TEXT DEFAULT '[]',\n    raw_coord_to_json   TEXT DEFAULT '[]',\n    -- Process context\n    transport_edge_ref TEXT DEFAULT NULL,\n    hyperedge_ref      TEXT DEFAULT NULL,\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (pw_id) REFERENCES v366_process_window_registry(pw_id),\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v366_external_envelope_ref": {
+      "row_count": 24,
+      "schema": "CREATE TABLE v366_external_envelope_ref (\n    envelope_id        TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    source_adapter_id  TEXT NOT NULL,\n    envelope_type      TEXT NOT NULL DEFAULT 'continuous_field',\n    -- Reality constraints\n    spatial_extent_json TEXT NOT NULL DEFAULT '{}',\n    temporal_extent_json TEXT NOT NULL DEFAULT '{}',\n    noise_budget        REAL DEFAULT 0.0,\n    dissipation_budget  REAL DEFAULT 0.0,\n    anomaly_budget      REAL DEFAULT 0.0,\n    -- Ledger accounting\n    energy_in           REAL DEFAULT 0.0,\n    energy_out          REAL DEFAULT 0.0,\n    ledger_closure_gap  REAL DEFAULT 0.0,\n    created_at          TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v366_process_hyperedge_relation": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v366_process_hyperedge_relation (\n    hyperedge_id       TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    -- Members (sparse COO style)\n    member_pw_ids_json TEXT NOT NULL DEFAULT '[]',\n    member_hypothesis_ids_json TEXT DEFAULT '[]',\n    member_xi_ids_json TEXT DEFAULT '[]',\n    member_envelope_ids_json TEXT DEFAULT '[]',\n    -- Relation properties\n    relation_type      TEXT NOT NULL DEFAULT 'transport_linked',\n    incidence_weight   REAL DEFAULT 1.0,\n    locality_type      TEXT DEFAULT 'coordinate_nonlocal_but_process_linked',\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v366_process_window_registry": {
+      "row_count": 24,
+      "schema": "CREATE TABLE v366_process_window_registry (\n    pw_id              TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    source_adapter_id  TEXT NOT NULL,\n    window_k           INTEGER NOT NULL,\n    -- I: information payload / measure contribution\n    information_payload_hash TEXT NOT NULL DEFAULT '',\n    information_cell_count   INTEGER NOT NULL DEFAULT 0,\n    information_fiber_count  INTEGER NOT NULL DEFAULT 0,\n    -- T: time span / ordering\n    time_window_start  INTEGER NOT NULL DEFAULT 0,\n    time_window_end    INTEGER NOT NULL DEFAULT 0,\n    time_ordering_index INTEGER NOT NULL DEFAULT 0,\n    -- S: support domain / kernel / bandwidth\n    space_support_domain_json TEXT NOT NULL DEFAULT '{}',\n    space_kernel_type   TEXT NOT NULL DEFAULT 'local_neighborhood',\n    space_bandwidth     REAL NOT NULL DEFAULT 1.0,\n    -- Π: process operators / recursion trace\n    process_operator_chain_json TEXT NOT NULL DEFAULT '[]',\n    process_recursion_depth     INTEGER NOT NULL DEFAULT 0,\n    -- E: external input envelope ref\n    envelope_ref       TEXT DEFAULT NULL,\n    -- L: external ledger balance ref\n    ledger_balance_ref TEXT DEFAULT NULL,\n    ledger_free_energy_proxy REAL DEFAULT 0.0,\n    -- metadata\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v366_semantic_null_guard": {
+      "row_count": 24,
+      "schema": "CREATE TABLE v366_semantic_null_guard (\n    guard_id           TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    pw_id              TEXT NOT NULL,\n    semantic_write_attempted INTEGER DEFAULT 0,\n    semantic_write_blocked   INTEGER DEFAULT 0,\n    guard_verdict      TEXT NOT NULL DEFAULT 'CLEAN',\n    checked_tables_json TEXT NOT NULL DEFAULT '[]',\n    violation_details_json TEXT DEFAULT NULL,\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (pw_id) REFERENCES v366_process_window_registry(pw_id)\n)"
+    },
+    "v366_source_adapter_envelope": {
+      "row_count": 2,
+      "schema": "CREATE TABLE v366_source_adapter_envelope (\n    adapter_id         TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    adapter_name       TEXT NOT NULL,\n    adapter_type       TEXT NOT NULL,  -- 'cell_sphere_3d' or 'cell_2d_real'\n    geometry_model     TEXT NOT NULL,  -- '3d_sphere' or '2d_plane'\n    signal_model       TEXT NOT NULL,  -- 'electromechanical' or 'calcium_dynamics'\n    cell_count         INTEGER NOT NULL DEFAULT 300,\n    coordinate_frame   TEXT NOT NULL DEFAULT 'adapter_local',\n    scale_contract_json TEXT NOT NULL DEFAULT '{}',\n    window_policy_json  TEXT NOT NULL DEFAULT '{}',\n    proxy_provenance_id TEXT DEFAULT NULL,\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v366_xin_carrier_minimal_binding": {
+      "row_count": 22,
+      "schema": "CREATE TABLE v366_xin_carrier_minimal_binding (\n    xin_binding_id     TEXT PRIMARY KEY,\n    run_id             TEXT NOT NULL,\n    xi_residue_id      TEXT NOT NULL,\n    -- Minimal carrier fields (no ontological interpretation)\n    source_T_refs_json TEXT DEFAULT '[]',\n    process_window_refs_json TEXT DEFAULT '[]',\n    support_domain_json TEXT DEFAULT '{}',\n    residual_mass_proxy REAL DEFAULT 0.0,\n    ledger_ref         TEXT DEFAULT NULL,\n    envelope_ref       TEXT DEFAULT NULL,\n    reentry_policy     TEXT DEFAULT 'hold_for_audit',\n    attention_priority REAL DEFAULT 0.0,\n    -- External classification ref (semantic readout only)\n    external_definition_ref TEXT DEFAULT NULL,\n    created_at         TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (xi_residue_id) REFERENCES xi_residue_record(residue_id)\n)"
+    },
+    "v3672_guard_action_table": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v3672_guard_action_table (\n    action_id                TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    source_adapter_id        TEXT DEFAULT NULL,\n    rule_id                  TEXT NOT NULL,\n    triggered_by             TEXT NOT NULL DEFAULT 'system',\n    input_value              REAL DEFAULT 0.0,\n    resolved_action          TEXT NOT NULL DEFAULT 'AUDIT',\n    outcome                  TEXT DEFAULT NULL,\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (rule_id) REFERENCES v3672_safe_stress_envelope_rule(rule_id)\n)"
+    },
+    "v3672_guard_regression_result": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v3672_guard_regression_result (\n    regression_id            TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    total_rules_checked      INTEGER DEFAULT 0,\n    rules_passed             INTEGER DEFAULT 0,\n    coordinate_invariance_ci TEXT DEFAULT 'PENDING',\n    overall_verdict          TEXT DEFAULT 'PENDING',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3672_safe_stress_envelope_rule": {
+      "row_count": 13,
+      "schema": "CREATE TABLE v3672_safe_stress_envelope_rule (\n    rule_id                  TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    stress_category          TEXT NOT NULL,  -- 'P_core', 'P_boundary', 'outside_support'\n    intensity_level          TEXT NOT NULL,  -- 'low', 'medium', 'high', 'collapse_prone', 'failure'\n    guard_action             TEXT NOT NULL,  -- 'ALLOW', 'ALLOW_WITH_AUDIT', 'AUDIT', 'DOWNSCALE', 'BLOCK_BY_DEFAULT'\n    threshold_min            REAL DEFAULT 0.0,\n    threshold_max            REAL DEFAULT 1.0,\n    description              TEXT DEFAULT '',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3673_mainline_semantic_free_view_manifest": {
+      "row_count": 6,
+      "schema": "CREATE TABLE v3673_mainline_semantic_free_view_manifest (\n    view_id                  TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    target_table             TEXT NOT NULL,\n    excluded_columns_json    TEXT NOT NULL DEFAULT '[]',\n    semantic_residue_count   INTEGER DEFAULT 0,\n    verdict                  TEXT NOT NULL DEFAULT 'CLEAN',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3673_semantic_backwrite_regression": {
+      "row_count": 1,
+      "schema": "CREATE TABLE v3673_semantic_backwrite_regression (\n    regression_id            TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    attempted_backwrites     INTEGER DEFAULT 0,\n    blocked_backwrites       INTEGER DEFAULT 0,\n    verdict                  TEXT NOT NULL DEFAULT 'PASS',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3673_semantic_quarantine_sidecar": {
+      "row_count": 36,
+      "schema": "CREATE TABLE v3673_semantic_quarantine_sidecar (\n    sidecar_id               TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    source_table             TEXT NOT NULL,\n    source_row_id            TEXT NOT NULL,\n    field_name               TEXT NOT NULL,\n    quarantined_text         TEXT DEFAULT '',\n    semantic_write_allowed   INTEGER DEFAULT 0,\n    migration_reason         TEXT DEFAULT 'mainline_semantic_free_policy',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3674_rmi_hash_index": {
+      "row_count": 206,
+      "schema": "CREATE TABLE v3674_rmi_hash_index (\n    hash_id                  TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    hash_variant             TEXT NOT NULL,  -- 'H1', 'H2', 'H3'\n    source_type              TEXT NOT NULL,  -- 'spacetime_cell', 'information_fiber', 'transport_edge', 'hypothesis'\n    source_id                TEXT NOT NULL,\n    hash_value               TEXT NOT NULL,\n    collision_group          INTEGER DEFAULT 0,\n    production_use_allowed   INTEGER DEFAULT 1,\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v3674_rmi_regression_gate": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v3674_rmi_regression_gate (\n    gate_id                  TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    h2_populated             INTEGER DEFAULT 0,\n    h3_populated             INTEGER DEFAULT 0,\n    h1_disabled_for_production INTEGER DEFAULT 1,\n    h3_false_neighbor_groups INTEGER DEFAULT 0,\n    coordinate_invariance_ci TEXT DEFAULT 'PENDING',\n    inherited_gates_pass     INTEGER DEFAULT 0,\n    overall_verdict          TEXT DEFAULT 'PENDING',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v367_anchor_validation_result": {
+      "row_count": 440,
+      "schema": "CREATE TABLE v367_anchor_validation_result (\n    validation_id            TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    anchor_id                TEXT NOT NULL,\n    information_point_hit    INTEGER DEFAULT 0,\n    trajectory_window_hit    INTEGER DEFAULT 0,\n    evidence_bundle_hit      INTEGER DEFAULT 0,\n    ledger_hit               INTEGER DEFAULT 0,\n    coordinate_invariance_ok INTEGER DEFAULT 0,\n    overall_verdict          TEXT NOT NULL DEFAULT 'PENDING',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id),\n    FOREIGN KEY (anchor_id) REFERENCES v367_native_anchor_fact(anchor_id)\n)"
+    },
+    "v367_native_anchor_fact": {
+      "row_count": 440,
+      "schema": "CREATE TABLE v367_native_anchor_fact (\n    anchor_id                TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    source_adapter_id        TEXT DEFAULT NULL,\n    -- Anchor bindings\n    information_point_ref    TEXT NOT NULL,\n    trajectory_window_ref    TEXT NOT NULL,\n    evidence_bundle_ref      TEXT NOT NULL,\n    coordinate_transform_ref TEXT DEFAULT NULL,\n    pr_hypothesis_ref        TEXT DEFAULT NULL,\n    xi_carrier_ref           TEXT DEFAULT NULL,\n    ledger_ref               TEXT DEFAULT NULL,\n    dark_grid_zone_ref       TEXT DEFAULT NULL,\n    provenance_hash          TEXT NOT NULL DEFAULT '',\n    -- Legacy compatibility\n    direct_fk_available      INTEGER DEFAULT 1,\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v367_release_gate": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v367_release_gate (\n    gate_id                  TEXT PRIMARY KEY,\n    run_id                   TEXT NOT NULL,\n    v3671_anchor_pass        INTEGER DEFAULT 0,\n    v3672_guard_pass         INTEGER DEFAULT 0,\n    v3673_quarantine_pass    INTEGER DEFAULT 0,\n    v3674_rmi_pass           INTEGER DEFAULT 0,\n    legacy_db_mutated        INTEGER DEFAULT 0,\n    online_native_claimed    INTEGER DEFAULT 0,\n    overall_verdict          TEXT NOT NULL DEFAULT 'PENDING',\n    release_notes            TEXT DEFAULT '',\n    created_at               TEXT DEFAULT NULL,\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "v368_free_energy_routing": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v368_free_energy_routing (\n    routing_id       TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    window_id        TEXT NOT NULL,\n    delta_f_ext      REAL DEFAULT 0.0,\n    gamma_sync       REAL DEFAULT 1.0,\n    pi_P             REAL DEFAULT 0.2,\n    pi_R             REAL DEFAULT 0.2,\n    pi_X             REAL DEFAULT 0.2,\n    pi_M             REAL DEFAULT 0.2,\n    pi_U             REAL DEFAULT 0.2,\n    alloc_P          REAL DEFAULT 0.0,\n    alloc_R          REAL DEFAULT 0.0,\n    alloc_X          REAL DEFAULT 0.0,\n    alloc_M          REAL DEFAULT 0.0,\n    alloc_U          REAL DEFAULT 0.0,\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v36_delta_xin_field": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v36_delta_xin_field (\n    field_id         TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    cell_uid         TEXT NOT NULL,\n    stage_k          INTEGER DEFAULT 0,\n    xin_value        REAL DEFAULT 0.0,\n    xin_type         TEXT DEFAULT 'variational' CHECK(xin_type IN\n        ('variational','finite_difference','proxy','unresolved')),\n    source_term      TEXT DEFAULT '',\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v36_dissipative_source_registry": {
+      "row_count": 66,
+      "schema": "CREATE TABLE v36_dissipative_source_registry (\n    source_id        TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    cell_uid         TEXT NOT NULL,\n    source_type      TEXT DEFAULT 'unknown' CHECK(source_type IN\n        ('geometric_curvature','signal_gradient','transport_friction',\n         'boundary_interaction','numerical_viscosity','unknown')),\n    dissipation_rate REAL DEFAULT 0.0,\n    is_steady_state  INTEGER DEFAULT 0,\n    confidence       REAL DEFAULT 0.0,\n    window_id        TEXT DEFAULT '',\n    created_at       TEXT DEFAULT ''\n)"
+    },
+    "v37415_round_bottom_motion_constraint": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_bottom_motion_constraint (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    support_drift REAL,\n    kernel_change REAL,\n    bandwidth_change REAL,\n    motion_velocity REAL,\n    fit_score REAL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_convergence_audit": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_convergence_audit (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    total_rounds INTEGER,\n    final_drift REAL,\n    converged INTEGER,\n    true_xin_count INTEGER,\n    r_core_count INTEGER,\n    p_band_count INTEGER,\n    unresolved_count INTEGER,\n    xin_conservation_ok INTEGER,\n    formula_candidate TEXT,\n    verdict TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_counter_mask_response": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_counter_mask_response (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    p_shield REAL,\n    r_pressure REAL,\n    m_tension REAL,\n    r_continuity REAL,\n    d_process REAL,\n    r_core_indicator INTEGER,\n    r_band_indicator INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_drift_metric": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_drift_metric (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    rho_drift REAL,\n    df_drift REAL,\n    kernel_drift REAL,\n    total_drift REAL,\n    converged INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_hg_fhpms_state": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_hg_fhpms_state (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    memory_p_anchor REAL,\n    memory_r_band REAL,\n    memory_x_random REAL,\n    hebbian_strength REAL,\n    hyperedge_count INTEGER,\n    potential_subsidy REAL,\n    fiber_measure_json TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_potential_subsidy_state": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_potential_subsidy_state (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    phi_hebb REAL,\n    phi_hyper REAL,\n    phi_prx REAL,\n    phi_ledger REAL,\n    phi_pre_total REAL,\n    f_raw REAL,\n    f_effective REAL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_prx_decomposition": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_prx_decomposition (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    adapter_name TEXT,\n    p_core REAL NOT NULL,\n    p_band REAL NOT NULL,\n    r_core REAL NOT NULL,\n    r_band REAL NOT NULL,\n    m_band REAL NOT NULL,\n    x_true REAL NOT NULL,\n    u_unresolved REAL NOT NULL,\n    score_p_core REAL,\n    score_p_band REAL,\n    score_r_core REAL,\n    score_r_band REAL,\n    score_m_band REAL,\n    score_x_true REAL,\n    score_u REAL,\n    dominant_component TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_registry": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_registry (\n    round_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    formula_candidate TEXT,\n    total_windows INTEGER,\n    total_cells INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_rlis_split": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_rlis_split (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    window_k INTEGER NOT NULL,\n    df_p_core REAL,\n    df_p_band REAL,\n    df_r_core REAL,\n    df_r_band REAL,\n    df_m_band REAL,\n    df_x REAL,\n    df_u REAL,\n    df_total REAL,\n    gamma_sync REAL,\n    strict_hit INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_version_manifest": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_version_manifest (\n    manifest_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    schema_version TEXT,\n    formula_version TEXT,\n    lambda_rlis REAL,\n    lambda_cm REAL,\n    lambda_fhpms REAL,\n    lambda_bottom REAL,\n    notes TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37415_round_xin_ledger_conservation": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37415_round_xin_ledger_conservation (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_id TEXT NOT NULL,\n    x_start REAL,\n    x_inflow REAL,\n    x_absorbed_p REAL,\n    x_resolved_r REAL,\n    x_dissipated REAL,\n    x_heat_bath REAL,\n    x_end REAL,\n    conservation_gap REAL,\n    chi_x_weight REAL,\n    xin_background_count INTEGER,\n    xin_true_count INTEGER,\n    xin_pseudo_count INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37417_candidate_drift_analysis": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37417_candidate_drift_analysis (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    candidate_code TEXT NOT NULL,\n    rho_drift_from_prev REAL,\n    j_total_change REAL,\n    rank_change INTEGER,\n    prev_rank INTEGER,\n    curr_rank INTEGER,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37417_formula_candidate_registry": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37417_formula_candidate_registry (\n    candidate_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    candidate_code TEXT NOT NULL,\n    candidate_name TEXT NOT NULL,\n    lambda_rlis REAL, lambda_cm REAL, lambda_fhpms REAL, lambda_bottom REAL, lambda_math REAL,\n    description TEXT, created_at TEXT NOT NULL\n)"
+    },
+    "v37417_formula_evolution_summary": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37417_formula_evolution_summary (\n    summary_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    total_rounds INTEGER,\n    final_winner TEXT,\n    winner_stability_pct REAL,\n    rank_volatility REAL,\n    convergence_round INTEGER,\n    formula_switches INTEGER,\n    verdict TEXT,\n    analysis_json TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37417_round_candidate_evaluation": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37417_round_candidate_evaluation (\n    eval_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    candidate_code TEXT NOT NULL,\n    j_motion_fit REAL, j_prx_stability REAL, j_xin_conservation REAL,\n    j_r_core REAL, j_p_band REAL,\n    j_unresolved REAL, j_drift REAL, j_writeback_risk REAL,\n    j_total REAL,\n    p_core_avg REAL, p_band_avg REAL, r_core_avg REAL, r_band_avg REAL,\n    m_band_avg REAL, x_true_avg REAL, u_avg REAL,\n    selected INTEGER DEFAULT 0,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37417_round_selection_history": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37417_round_selection_history (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    round_number INTEGER NOT NULL,\n    selected_candidate TEXT NOT NULL,\n    j_total_selected REAL,\n    runner_up_candidate TEXT,\n    j_total_runner_up REAL,\n    margin REAL,\n    selection_reason TEXT,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v37421_em_converged_params": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37421_em_converged_params (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    total_iterations INTEGER,\n    final_j REAL,\n    converged INTEGER DEFAULT 0,\n    lambda_l REAL,\n    lambda_c REAL,\n    lambda_h REAL,\n    lambda_b REAL,\n    w_motion REAL,\n    w_prx REAL,\n    w_xin_cons REAL,\n    w_r_core REAL,\n    w_p_band REAL,\n    params_json TEXT,\n    created_at TEXT\n)"
+    },
+    "v37421_em_iteration_log": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37421_em_iteration_log (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    iteration INTEGER,\n    j_total REAL,\n    delta_j REAL,\n    lambda_l REAL,\n    lambda_c REAL,\n    lambda_h REAL,\n    lambda_b REAL,\n    w_motion REAL,\n    w_prx REAL,\n    w_xin_cons REAL,\n    w_r_core REAL,\n    w_p_band REAL,\n    converged INTEGER DEFAULT 0,\n    created_at TEXT\n)"
+    },
+    "v37421_hebbian_reward_log": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37421_hebbian_reward_log (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    round_number INTEGER,\n    reward_signal REAL,\n    delta_j REAL,\n    motion_accuracy REAL,\n    avg_weight_change REAL,\n    reward_direction TEXT,\n    created_at TEXT\n)"
+    },
+    "v37421_motion_prx_coupling": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v37421_motion_prx_coupling (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    window_k INTEGER,\n    adapter_name TEXT,\n    detected_regime TEXT,\n    regime_confidence REAL,\n    p_core_score REAL,\n    p_band_score REAL,\n    r_core_score REAL,\n    r_band_score REAL,\n    m_band_score REAL,\n    x_true_score REAL,\n    u_score REAL,\n    created_at TEXT\n)"
+    },
+    "v37450_ab_config": {
+      "row_count": 2,
+      "schema": "CREATE TABLE v37450_ab_config (\n    config_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    m_max REAL,                -- 惯性质量上限\n    alpha REAL,                -- 惯性系数\n    decay_epsilon REAL,        -- 全局衰减率\n    oja_lambda REAL,           -- Oja 衰减系数\n    eta REAL,                  -- 学习率\n    strata_absorb_interval INTEGER, -- 机械分层吸收周期\n    noise_storm_ticks INTEGER,\n    regime_shift_ticks INTEGER,\n    warmup_ticks INTEGER,\n    created_at TEXT\n)"
+    },
+    "v37450_ab_metric_log": {
+      "row_count": 15,
+      "schema": "CREATE TABLE v37450_ab_metric_log (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    engine TEXT,\n    tick INTEGER,\n    phase TEXT,                -- 'warmup', 'noise_storm', 'regime_shift', 'normal'\n    p_core_survival_rate REAL, -- 指标1: 噪音风暴下P-Core存活率\n    adaptation_latency REAL,   -- 指标2: 新规律响应延迟(Tick数)\n    compute_overhead_ms REAL,  -- 指标3: 计算开销\n    weight_entropy REAL,       -- Shannon entropy of weight distribution\n    dead_node_count INTEGER,   -- M(Φ) > 0.9 * M_max 的节点数\n    exploded_count INTEGER,    -- ΔW > 1.0 的更新截断次数\n    avg_weight REAL,\n    max_weight REAL,\n    min_weight REAL,\n    total_weights INTEGER,\n    created_at TEXT\n)"
+    },
+    "v37450_ab_verdict": {
+      "row_count": 1,
+      "schema": "CREATE TABLE v37450_ab_verdict (\n    verdict_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    winner TEXT,               -- 'A_strata', 'B_inertia', or 'DRAW'\n    -- 指标1: P-Core 存活率\n    survival_a REAL,\n    survival_b REAL,\n    survival_winner TEXT,\n    -- 指标2: 概念响应延迟\n    latency_a REAL,\n    latency_b REAL,\n    latency_winner TEXT,\n    -- 指标3: 计算开销\n    overhead_a_ms REAL,\n    overhead_b_ms REAL,\n    overhead_winner TEXT,\n    -- 综合\n    wins_a INTEGER,\n    wins_b INTEGER,\n    rationale TEXT,\n    created_at TEXT\n)"
+    },
+    "v37450_ab_weight_mirror": {
+      "row_count": 1914,
+      "schema": "CREATE TABLE v37450_ab_weight_mirror (\n    record_id TEXT PRIMARY KEY,\n    run_id TEXT,\n    engine TEXT,               -- 'A_strata' or 'B_inertia'\n    from_entity_id TEXT,\n    to_entity_id TEXT,\n    weight_value REAL,\n    inertia_mass REAL,         -- M(Φ) for engine B, 1.0 for engine A\n    cumulative_potential REAL,  -- Φ: accumulated xin impacts\n    layer TEXT,                -- 'fast' or 'slow' (for engine A)\n    tick INTEGER,\n    created_at TEXT\n)"
+    },
+    "v853_release_artifact_manifest": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v853_release_artifact_manifest (\n    artifact_id TEXT PRIMARY KEY,\n    release_version TEXT NOT NULL,\n    artifact_role TEXT NOT NULL,\n    artifact_path TEXT NOT NULL,\n    size_bytes INTEGER NOT NULL,\n    sha256 TEXT NOT NULL,\n    included_in_package INTEGER NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v853_reproducibility_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE v853_reproducibility_report (\n    report_id TEXT PRIMARY KEY,\n    current_perturbation_run_id TEXT NOT NULL,\n    previous_perturbation_run_id TEXT,\n    baseline_fingerprint TEXT NOT NULL,\n    effect_signature_hash TEXT NOT NULL,\n    max_abs_delta REAL NOT NULL,\n    compared_metric_count INTEGER NOT NULL,\n    tolerance REAL NOT NULL,\n    passed INTEGER NOT NULL,\n    diagnostic_message TEXT NOT NULL,\n    forbidden_use TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "v85_to_mainline_crosswalk": {
+      "row_count": 14,
+      "schema": "CREATE TABLE v85_to_mainline_crosswalk (\n    diagnostic_table TEXT PRIMARY KEY,\n    prior_mainline_concept TEXT NOT NULL,\n    semantic_role TEXT NOT NULL,\n    source_of_truth TEXT NOT NULL,\n    allowed_use TEXT NOT NULL,\n    forbidden_use TEXT NOT NULL,\n    intentionally_empty_when TEXT DEFAULT '',\n    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP\n)"
+    },
+    "xi_decay_policy": {
+      "row_count": 22,
+      "schema": "CREATE TABLE xi_decay_policy (\n    xi_id TEXT PRIMARY KEY,\n    run_id TEXT NOT NULL,\n    current_state TEXT NOT NULL DEFAULT 'held',\n    mass_current REAL DEFAULT 0.0,\n    mass_previous REAL DEFAULT 0.0,\n    decay_rate REAL DEFAULT 0.1,\n    persistence_window_count INTEGER DEFAULT 0,\n    relation_support_score REAL DEFAULT 0.0,\n    occupancy_support_score REAL DEFAULT 0.0,\n    carryover_allowed INTEGER DEFAULT 1,\n    discard_after_audit_allowed INTEGER DEFAULT 0,\n    audit_reason TEXT DEFAULT NULL,\n    created_at TEXT DEFAULT NULL,\n    FOREIGN KEY (xi_id) REFERENCES xi_residue_record(residue_id),\n    FOREIGN KEY (run_id) REFERENCES run_manifest(run_id)\n)"
+    },
+    "xi_residual_mass_report": {
+      "row_count": 0,
+      "schema": "CREATE TABLE xi_residual_mass_report (\n    report_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    residue_type TEXT NOT NULL,\n    baseline_residue_mass REAL NOT NULL,\n    perturbed_residue_mass REAL NOT NULL,\n    expected_state_pressure TEXT NOT NULL,\n    source_failure_type TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "xi_residue_mass_record": {
+      "row_count": 0,
+      "schema": "CREATE TABLE xi_residue_mass_record (\n    record_id TEXT PRIMARY KEY,\n    perturbation_run_id TEXT NOT NULL,\n    base_run_id TEXT NOT NULL,\n    xi_uid TEXT NOT NULL,\n    residue_type TEXT NOT NULL,\n    source_failure_type TEXT NOT NULL,\n    residue_mass REAL NOT NULL,\n    source_hypothesis_refs_json TEXT NOT NULL,\n    spatial_support_cell_uids_json TEXT NOT NULL,\n    temporal_support_window_ids_json TEXT NOT NULL,\n    current_state TEXT NOT NULL,\n    transition_reason TEXT NOT NULL,\n    created_at TEXT NOT NULL\n)"
+    },
+    "xi_residue_record": {
+      "row_count": 22,
+      "schema": "CREATE TABLE xi_residue_record (\n    xi_id            TEXT PRIMARY KEY,\n    run_id           TEXT NOT NULL,\n    source_hypothesis_id TEXT,\n    xi_type          TEXT DEFAULT 'unknown' CHECK(xi_type IN\n        ('stochastic_noise','unresolved_memory','proto_structure',\n         'boundary_uncertain','numerical_residue','unknown')),\n    xi_state         TEXT DEFAULT 'held' CHECK(xi_state IN\n        ('held','decaying','proto_candidate','promoted',\n         'quarantined','discarded_after_audit')),\n    mass_current     REAL DEFAULT 1.0,\n    mass_previous    REAL DEFAULT 1.0,\n    decay_rate       REAL DEFAULT 0.15,\n    persistence_window_count INTEGER DEFAULT 0,\n    relation_support_score REAL DEFAULT 0.0,\n    occupancy_support_score REAL DEFAULT 0.0,\n    carryover_allowed INTEGER DEFAULT 1,\n    audit_reason     TEXT DEFAULT '',\n    created_at       TEXT DEFAULT '',\n    updated_at       TEXT DEFAULT ''\n)"
+    }
+  }
+}

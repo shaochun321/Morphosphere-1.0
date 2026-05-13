@@ -1,0 +1,25 @@
+{
+  "auto_adoption_allowed": false,
+  "baseline_profile_id": "profilev06_5f0ee89d6343fc001d",
+  "blockers": [
+    "external_real_data_required",
+    "human_review_required",
+    "shell0_unresolved"
+  ],
+  "calibration_is_fixture": true,
+  "calibration_mapped_count": 80,
+  "calibration_met_alignment": 0.8398510193452253,
+  "calibration_sample_count": 80,
+  "candidate_profile_id": "profilev06_68eb27c0757316645b",
+  "final_decision": "STAGED_PATCH_NOT_APPLIED",
+  "holdout_improvement": 0.04824579060206087,
+  "manual_review_required": true,
+  "patch_path": "morphosphere_v2pp/configs/candidate_adoption_v07_staged_profile.json",
+  "patch_sha256": "996f0f073d2b58c7a5980e90086c3b20713173081c9853b27cd1f2384279043d",
+  "run_id": "cadopt_v07_63cf059f2d94",
+  "schema_version": "candidate_adoption_gate_real_data_calibration_v0.7",
+  "shell0_physical_boundary_attribution": 0.23571428571428577,
+  "shell0_project_structure_attribution": 0.8820000000000001,
+  "shell0_verdict": "mixed_or_indeterminate",
+  "train_improvement": 0.098646794004501
+}

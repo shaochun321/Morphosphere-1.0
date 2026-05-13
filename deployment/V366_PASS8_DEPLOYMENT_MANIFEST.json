@@ -1,0 +1,8 @@
+{
+  "version": "v36.6_pass8",
+  "purpose": "blueprint-aligned full-chain full-data run boundary cleanup",
+  "full_chain_full_data_run": true,
+  "online_life_runtime": false,
+  "core_db": "outputs/v366/m366_build_pass8.db",
+  "classification": ["blueprint_core", "materialized_full_chain_data", "external_module", "test_operability_surface", "advisory_engineering_suggestion"]
+}

@@ -1,0 +1,4 @@
+engine,survival_rate,false_p_rate,noise_to_heat_rate
+A_strata,0.4715,N/A,N/A
+B_inertia,0.7927,0.0000,1.0000
+C_hybrid,0.5581,N/A,N/A

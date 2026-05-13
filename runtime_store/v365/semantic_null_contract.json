@@ -1,0 +1,14 @@
+{
+  "version": "v36.5",
+  "mainline_forbidden_fields": [
+    "semantic_label",
+    "meaning",
+    "truth_label",
+    "object_name",
+    "behavior_type",
+    "biological_state",
+    "final_interpretation"
+  ],
+  "mainline_allowed_role": "carrier_measure_support_ledger_only",
+  "external_readout_can_write_mainline": false
+}

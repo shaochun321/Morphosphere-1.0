@@ -1,0 +1,26 @@
+DB: /mnt/data/morphosphere_pr_restoration_v022_package/outputs/morphosphere_pr_restoration_v022_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] execution_mode_diagnostic_full: [('diagnostic_full',)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] no_invalid_confirmation_transitions: [(0,)]
+[PASS] no_masking_supported_synonym: [(0,)]
+[PASS] spike_rate_positive: [(212,)]
+[PASS] spike_rate_nonuniform: [(213,)]
+[PASS] transport_accepted_rejected: [(2,)]
+[PASS] transport_weight_nonuniform: [(899,)]
+[PASS] boundary_or_signal_nonzero: [(900,)]
+[PASS] derived_o_candidate: [(18,)]
+[PASS] o_support_scores: [(18,)]
+[PASS] xi_lifecycle_multi_state: [(5,)]
+[PASS] xi_non_unknown_types: [(9,)]
+[PASS] xi_support_domains: [(9,)]
+[PASS] relation_entropy_nonuniform: [(9,)]
+[PASS] relation_entropy_distribution_recorded: [(9,)]
+[PASS] proxy_provenance_complete_minimum: [(8,)]
+[PASS] manifest_counts_distinguished: [(50, 10, 500)]
+[PASS] telemetry_present: [(1,)]
+[PASS] synthetic_emergence_isolated: [(1,)]
+{
+  "passed": 21,
+  "failed": []
+}

@@ -1,0 +1,6 @@
+check_id,check_name,status,observed,required,notes
+pass3_001,preneural_supplement_promoted,PASS,500,>=500,Pass2 preneural supplement is now part of main process_window registry.
+pass3_002,stage2_bypass_legitimacy_separated,PASS,1633/1633,route legitimacy must be independent from Stage2 direct path,Legal Stage2 bypass is marked intentional when T/O/P/R/Xin-storage-ledger substrate exists.
+pass3_003,materialization_confidence_renamed,PASS,"high=120, medium=671, low=842",confidence classes not strong/weak wording,Avoids confusing evidence materialization with importance/truth.
+pass3_004,hypernode_direct_fk_not_overstated,PASS,"direct=390, total=855",direct < total unless all targets proven,Remaining unresolved nodes stay blocked/proxy rather than faked direct.
+pass3_005,source_and_semantic_boundaries,PASS,source_facts_rewritten=0; semantic_writeback_allowed=0,both zero,Boundary inherited from pass2 and v36.5.

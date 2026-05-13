@@ -1,0 +1,45 @@
+{
+  "version": "v38",
+  "timestamp": "2026-05-14 23:05:12",
+  "bayesian_accuracy": {
+    "mean": 0.8797,
+    "std": 0.0218,
+    "per_seed": [
+      0.8644,
+      0.8814,
+      0.8983,
+      0.8983,
+      0.8983,
+      0.8644,
+      0.8475,
+      0.9153,
+      0.8644,
+      0.8644
+    ]
+  },
+  "legacy_accuracy": {
+    "mean": 0.739,
+    "std": 0.029
+  },
+  "random_accuracy": {
+    "mean": 0.1492,
+    "std": 0.0833
+  },
+  "bayesian_vs_legacy": {
+    "t": 15.4127,
+    "p": 0.0,
+    "cohens_d": 5.4795
+  },
+  "bayesian_vs_random": {
+    "t": 30.7422,
+    "p": 0.0,
+    "cohens_d": 11.9923
+  },
+  "checklist_pass_rate": "12/12",
+  "all_pass": true,
+  "architecture": {
+    "signal_transform": "HebbianSignalTransform (W_signal 6×7)",
+    "transform_chain": "ΔF/F → sig_features(6d) → z_t(7d) → Φ(t) → d_σ_t → disp_proxy",
+    "hebbian_update_rule": "Oja: ΔW = η·f_i·(z_j - W·f_i)"
+  }
+}

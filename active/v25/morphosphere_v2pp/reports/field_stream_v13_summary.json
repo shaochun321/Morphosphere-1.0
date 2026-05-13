@@ -1,0 +1,9 @@
+{
+  "version": "v1.3",
+  "events": 640,
+  "bridge_rows": 640,
+  "pr_rows": 50,
+  "replay_rows": 8,
+  "acceptance_passed": 18,
+  "acceptance_total": 18
+}

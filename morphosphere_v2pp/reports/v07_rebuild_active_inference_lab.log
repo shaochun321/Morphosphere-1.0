@@ -1,0 +1,19 @@
+{
+  "adoption_status": "candidate_not_adopted",
+  "baseline_holdout_loss": 0.05252528314714506,
+  "baseline_train_loss": 0.1023197963511602,
+  "best_profile_id": "profilev06_68eb27c0757316645b",
+  "feature_count": 15,
+  "fitted_holdout_loss": 0.004279492545084186,
+  "fitted_train_loss": 0.0036730023466591964,
+  "holdout_count": 10,
+  "holdout_improvement": 0.04824579060206087,
+  "mainline_adoption_allowed": false,
+  "run_id": "ailab_v06_084575aae42d",
+  "sample_count": 50,
+  "schema_version": "active_inference_system_identification_external_lab_v0.6",
+  "source_digest_status": true,
+  "source_fact_rewrite_allowed": false,
+  "train_count": 40,
+  "train_improvement": 0.098646794004501
+}

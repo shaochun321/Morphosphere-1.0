@@ -1,0 +1,33 @@
+{
+  "matrix_run_id": "mxfoam_v04_7a26fae5946e",
+  "version": "matrix_foam_physical_driver_v0.4",
+  "execution_mode": "diagnostic_append_only_matrix_foam_physical_driver",
+  "source_fact_counts_before": {
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "raw_event_stream": 1500,
+    "cell_spatial_coordinate_snapshot": 500,
+    "information_relative_coordinate_snapshot": 1500,
+    "system_clock_entry": 10
+  },
+  "source_fact_counts_after": {
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "raw_event_stream": 1500,
+    "cell_spatial_coordinate_snapshot": 500,
+    "information_relative_coordinate_snapshot": 1500,
+    "system_clock_entry": 10
+  },
+  "material_region_count": 4,
+  "cell_matrix_contact_count": 500,
+  "foam_edge_count": 1470,
+  "stress_tensor_count": 500,
+  "physical_sample_count": 80,
+  "mechanotransduction_event_count": 400,
+  "projection_count": 400,
+  "mean_met_gate_probability": 0.8277989440091802,
+  "mean_projection_error": 8.849164150246988,
+  "fixture_used": 1,
+  "physical_csv": "morphosphere_v2pp/data/physical_fixture_v04.csv",
+  "boundary": "diagnostic proxy substrate; no scientific run; source facts unchanged"
+}

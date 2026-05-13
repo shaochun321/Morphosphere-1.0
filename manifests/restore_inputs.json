@@ -1,0 +1,65 @@
+[
+  {
+    "label": "v853p",
+    "source_zip": "morphosphere_v853_physical (1).zip",
+    "path": "lin/v853p",
+    "python_files": 105,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v853v2",
+    "source_zip": "morphosphere_mainline_v853_validation_release.zip",
+    "path": "lin/v853v2",
+    "python_files": 35,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v853pp",
+    "source_zip": "morphosphere_mainline_v853_validation_release.zip",
+    "path": "lin/v853pp",
+    "python_files": 104,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v01",
+    "source_zip": "morphosphere_state_separation_v01_package(1).zip",
+    "path": "lin/v01",
+    "python_files": 105,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v02",
+    "source_zip": "morphosphere_dynamic_recursive_v02_package(2).zip",
+    "path": "lin/v02",
+    "python_files": 105,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v05",
+    "source_zip": "morphosphere_device_neutral_v05_package(3).zip",
+    "path": "lin/v05",
+    "python_files": 105,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v08",
+    "source_zip": "morphosphere_shell0_closure_v08_package(1).zip",
+    "path": "lin/v08",
+    "python_files": 105,
+    "status": "restored_legacy_audit"
+  },
+  {
+    "label": "v24",
+    "source_zip": "morphosphere_ctc_source_verified_v24_full_package(3).zip",
+    "path": "lin/v24",
+    "python_files": 29,
+    "status": "active_history_reference"
+  },
+  {
+    "label": "v25",
+    "source_zip": "ms25_core.zip",
+    "path": "lin/v25",
+    "python_files": 29,
+    "status": "active_history_reference"
+  }
+]

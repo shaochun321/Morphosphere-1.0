@@ -1,0 +1,106 @@
+{
+  "version": "v36.8_mainline_consolidated_final",
+  "db": "m368_mainline_consolidated_final.db",
+  "report": "m368_mainline_consolidated_final_report.md",
+  "counts": {
+    "mainline_trace_full": 532,
+    "mainline_transition_edge": 446,
+    "native_anchor_fact": 855,
+    "safe_stress_envelope_rule": 27,
+    "semantic_quarantine_sidecar": 36,
+    "rmi_default_hash_index": 11530,
+    "external_readout_boundary_detail": 31
+  },
+  "gates": [
+    {
+      "gate": "mainline_trace_full_coverage",
+      "status": "PASS",
+      "observed": "532",
+      "required": "532",
+      "note": "Full trajectory-window mainline traces should be consolidated."
+    },
+    {
+      "gate": "continuous_transition_edges",
+      "status": "PASS",
+      "observed": "446",
+      "required": " >= 400",
+      "note": "Continuous transition graph retained."
+    },
+    {
+      "gate": "native_anchor_validation",
+      "status": "PASS",
+      "observed": "855/855",
+      "required": "855/855",
+      "note": "All required native anchor materialized refs hit."
+    },
+    {
+      "gate": "strict_external_entropy_hit",
+      "status": "WARN",
+      "observed": "848/855",
+      "required": "855/855",
+      "note": "Known 7-row strict ledger warning retained; operational refs cover all."
+    },
+    {
+      "gate": "safe_stress_guard_rules",
+      "status": "PASS",
+      "observed": "27",
+      "required": "27",
+      "note": "Safe stress guard config consolidated."
+    },
+    {
+      "gate": "semantic_quarantine_sidecar",
+      "status": "PASS",
+      "observed": "36",
+      "required": "36",
+      "note": "Semantic quarantine sidecar retained."
+    },
+    {
+      "gate": "rmi_default_index_rows",
+      "status": "PASS",
+      "observed": "11530",
+      "required": "11530",
+      "note": "H2/H3 default RMI index retained."
+    },
+    {
+      "gate": "rmi_h2_h3_false_neighbor",
+      "status": "PASS",
+      "observed": "0",
+      "required": "0",
+      "note": "Default RMI variants must have zero false-neighbor groups in current mixed space."
+    },
+    {
+      "gate": "external_readout_boundary",
+      "status": "PASS",
+      "observed": "31",
+      "required": "31",
+      "note": "Readout boundary detail retained."
+    }
+  ],
+  "remaining_debt": [
+    {
+      "debt": "7 native anchors have operational ledger refs but not strict historical external entropy event hits",
+      "severity": "WARN",
+      "status": "Known and isolated",
+      "next_action": "Keep WARN or synthesize sidecar events with provenance in a later release."
+    },
+    {
+      "debt": "Masking influence is still signature-level plus stress-calibration, not full causal proof",
+      "severity": "MEDIUM",
+      "status": "Partially addressed",
+      "next_action": "Run source-level randomized counter/masking interventions if needed."
+    },
+    {
+      "debt": "CTC02 upper behavior is same-formula projection/native-shaped replay, not full v35-v36.6 native rerun",
+      "severity": "MEDIUM",
+      "status": "Partially addressed",
+      "next_action": "Build a small full-native replay harness if future work resumes."
+    },
+    {
+      "debt": "Online Native Runtime remains out of scope",
+      "severity": "BLOCKER_FOR_V37_ONLINE",
+      "status": "Not claimed",
+      "next_action": "Only after final baseline release should v37.0 runtime prototype begin."
+    }
+  ],
+  "integrity": "ok"
+}

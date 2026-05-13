@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "version": "v37.4.12",
+    "date": "2026-05-08",
+    "batch": "batch2",
+    "run_id": "v37412_batch2_ca00c363",
+    "cells_per_source": 120,
+    "windows": 10,
+    "total_cells": 2400,
+    "elapsed_s": 0.95,
+    "db_size_kb": 8844.0,
+    "enhanced": "P0-P4"
+  },
+  "integrity": {
+    "orphan_fibers": 0,
+    "orphan_bindings": 0,
+    "unbound_fibers": 0,
+    "invalid_transport_refs": 0,
+    "all_pass": true
+  },
+  "xi_lifecycle": {
+    "proto_candidate": {
+      "count": 14,
+      "total_mass": 1.8657,
+      "avg_persistence": 10.0
+    },
+    "quarantined": {
+      "count": 4,
+      "total_mass": 0.4256,
+      "avg_persistence": 10.0
+    }
+  },
+  "acceptance_checks": {
+    "db_integrity": "PASS",
+    "blueprint_contract_present": "PASS",
+    "parallel_branches_present": "PASS",
+    "all_X_inside_Y": "PASS",
+    "finite_k_guard": "PASS",
+    "chain_completeness": "PASS",
+    "flow_completeness": "PASS",
+    "parallel_merge_audit": "PASS",
+    "hg_fhpms_branch_present": "PASS",
+    "rlis_branch_present": "PASS",
+    "hebbian_branch_present": "PASS",
+    "reprojection_branch_present": "PASS",
+    "no_writeback": "PASS",
+    "v375_not_entered": "PASS",
+    "fhpms_hyperedge_populated": "PASS",
+    "rlis_minkowski_populated": "PASS",
+    "rlis_lightcone_populated": "PASS",
+    "variational_full_coverage": "PASS",
+    "external_ledgers_populated": "PASS"
+  },
+  "parallel_validation": {
+    "total": 18,
+    "pass": 18
+  },
+  "total_rows": 38092,
+  "variational_coverage": "2400/2400"
+}

@@ -1,0 +1,150 @@
+## v8.5.2 SQL acceptance
+return_code=0
+
+STDOUT:
+DB: /mnt/data/morphosphere_dynamic_recursive_v02_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] execution_mode_diagnostic_full: [('diagnostic_full',)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] no_invalid_confirmation_transitions: [(0,)]
+[PASS] no_masking_supported_synonym: [(0,)]
+[PASS] spike_rate_positive: [(212,)]
+[PASS] spike_rate_nonuniform: [(213,)]
+[PASS] transport_accepted_rejected: [(2,)]
+[PASS] transport_weight_nonuniform: [(899,)]
+[PASS] boundary_or_signal_nonzero: [(900,)]
+[PASS] derived_o_candidate: [(18,)]
+[PASS] o_support_scores: [(18,)]
+[PASS] xi_lifecycle_multi_state: [(5,)]
+[PASS] xi_non_unknown_types: [(9,)]
+[PASS] xi_support_domains: [(9,)]
+[PASS] relation_entropy_nonuniform: [(9,)]
+[PASS] relation_entropy_distribution_recorded: [(9,)]
+[PASS] proxy_provenance_complete_minimum: [(8,)]
+[PASS] manifest_counts_distinguished: [(50, 10, 500)]
+[PASS] telemetry_present: [(1,)]
+[PASS] synthetic_emergence_isolated: [(1,)]
+{
+  "passed": 21,
+  "failed": []
+}
+
+STDERR:
+
+
+
+## v8.5.3 behavioral acceptance
+return_code=0
+
+STDOUT:
+DB: /mnt/data/morphosphere_dynamic_recursive_v02_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] v853_manifest_present: [(2,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] six_perturbations_recorded: [(6,)]
+[PASS] all_effects_passed: [(0,)]
+[PASS] counterfactual_acceptance_passed: [(0,)]
+[PASS] failed_expectations_visible_and_empty_when_passed: [(0, 0)]
+[PASS] signal_shuffle_entropy_increases: [(0.07579806441648296,)]
+[PASS] geometry_shift_cost_increases: [(0.20000000000000007,)]
+[PASS] boundary_flip_rejection_increases: [(0.15000000000000002,)]
+[PASS] masking_injection_o_support_decreases: [(-0.09999999999999998,)]
+[PASS] xi_pressure_increases: [(0.2,)]
+[PASS] threshold_sweep_nonflat: [(22, 0.6454828005735918)]
+[PASS] transport_cost_matrix_exported: [(18,)]
+[PASS] transport_cost_matrix_record_exported: [(1800,)]
+[PASS] object_evidence_terms_exported: [(36,)]
+[PASS] xi_residual_mass_exported: [(8,)]
+[PASS] xi_residue_mass_record_exported: [(18,)]
+[PASS] reproducibility_report_present: [(2,)]
+[PASS] reproducibility_latest_compared_and_passed: [(18, 0.0, 1e-09, 1)]
+[PASS] artifact_manifest_exported: [(7,)]
+{
+  "passed": 21,
+  "total": 21,
+  "failed": []
+}
+
+STDERR:
+
+
+
+## state_separation_v0.1 acceptance
+return_code=0
+
+STDOUT:
+DB: /mnt/data/morphosphere_dynamic_recursive_v02_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] state_manifest_present: [(1,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] physical_first_assertion_recorded: [(1,)]
+[PASS] raw_events_present: [(1500,)]
+[PASS] raw_events_multi_channel: [(3,)]
+[PASS] origin_anchors_present: [(10,)]
+[PASS] latent_trajectories_nonsemantic: [(5,)]
+[PASS] trajectory_scores_nonzero: [(0.972324596040456, 0.7674656377729635, 0.794382862996861, 0.889661525612145)]
+[PASS] trajectory_bindings_present: [(1500, 1498)]
+[PASS] xin_residue_retained: [(2,)]
+[PASS] reprojection_passed: [(1,)]
+[PASS] noise_sweep_complete: [(4,)]
+[PASS] noise_sweep_not_collapsed_10pct: [(0.8865306122448979,)]
+[PASS] noise_xin_increases: [(0.206703608780134, 0.3112648332699299)]
+[PASS] hidden_structure_probe_passed: [(1,)]
+[PASS] cross_modal_binding_passed: [(1.0,)]
+[PASS] all_state_tests_passed: [(0,)]
+{
+  "passed": 18,
+  "failed": []
+}
+
+STDERR:
+
+
+
+## dynamic_recursive_v0.2 acceptance
+return_code=0
+
+STDOUT:
+PASS table_exists_recursive_system_run_manifest: observed=True expected=table exists
+PASS table_exists_clock_binding_record: observed=True expected=table exists
+PASS table_exists_cell_spatial_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_information_relative_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_preneural_node_state: observed=True expected=table exists
+PASS table_exists_preneural_edge_state: observed=True expected=table exists
+PASS table_exists_dynamic_origin_anchor_state: observed=True expected=table exists
+PASS table_exists_dynamic_latent_trajectory_state: observed=True expected=table exists
+PASS table_exists_trajectory_transition_edge: observed=True expected=table exists
+PASS table_exists_topdown_feedback_signal: observed=True expected=table exists
+PASS table_exists_xin_residue_dynamics: observed=True expected=table exists
+PASS table_exists_recursive_memory_trace: observed=True expected=table exists
+PASS table_exists_recursive_metric_weight_state: observed=True expected=table exists
+PASS table_exists_dynamic_free_energy_trace: observed=True expected=table exists
+PASS table_exists_recursive_iteration_report: observed=True expected=table exists
+PASS table_exists_recursive_reprojection_report: observed=True expected=table exists
+PASS table_exists_recursive_acceptance_report: observed=True expected=table exists
+PASS manifest_exists: observed=present expected=present
+PASS version_dynamic_recursive_v02: observed=dynamic_recursive_v0.2 expected=dynamic_recursive_v0.2
+PASS execution_mode_diagnostic_recursive: observed=diagnostic_recursive expected=diagnostic_recursive
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS clock_source_system_clock_entry: observed=system_clock_entry expected=system_clock_entry
+PASS iterations_at_least_5: observed=5 expected=>=5
+PASS input_tables_do_not_include_semantic: observed=["raw_event_stream", "spacetime_cell", "information_fiber", "origin_anchor", "latent_trajectory", "trajectory_event_binding", "system_clock_entry"] expected=no semantic/O/P generation tables
+PASS stored_acceptance_all_pass: observed=20/20 expected=all stored recursive checks pass
+PASS clock_binding_recorded: observed=1 expected=1
+PASS cell_coordinate_snapshot_count_matches: observed=500/500 expected=match
+PASS information_coordinate_snapshot_count_matches: observed=1500/1500 expected=match
+PASS preneural_node_states_present: observed=2500 expected=>0
+PASS preneural_edge_states_present: observed=5000 expected=>0
+PASS dynamic_trajectory_states_present: observed=250 expected=>0
+PASS topdown_feedback_present: observed=2000 expected=>0
+PASS xin_multistate: observed=4 expected=>=3
+PASS prediction_error_not_worse: observed=0.109473->0.062833 expected=<=105%
+PASS xin_mass_not_worse: observed=0.111796->0.079147 expected=<=105%
+PASS free_energy_not_worse: observed=0.528132->0.437863 expected=<=105%
+PASS reprojection_beats_baseline: observed=0.409401 expected=>0.30
+PASS metric_weight_rows_present: observed=5 expected=>=5
+dynamic_recursive_v0.2 acceptance: 39/39 PASS
+
+STDERR:
+

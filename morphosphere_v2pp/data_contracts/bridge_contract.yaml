@@ -1,0 +1,68 @@
+bridge_contracts:
+  - bridge_id: transport_pilot_bridge
+    from_module: active_exec.preneural.transport
+    to_module: external_transitional.transport_pilot_ot_cpd
+    allowed_reads:
+      - PreNeuralPointSetSlice
+      - GeometryNode
+      - SignalWindow
+      - topology_snapshot
+    allowed_outputs:
+      - transport_candidate_report
+      - transport_weight_matrix
+      - cycle_consistency_report
+      - transport_failure_report
+    forbidden_writes:
+      - transport_operator mainline table
+      - P_k
+      - R_k
+      - Omega_k
+      - mainline stitching truth
+    review_date: 2026-12-31
+    sunset_date: null
+    promotion_condition: stable on hard cases, replay-consistent, no contract violation
+    retirement_condition: high maintenance, induces semantic drift, cannot explain cycle consistencies
+
+  - bridge_id: pr_pilot_bridge
+    from_module: active_exec.stage2_object.decomposition
+    to_module: external_transitional.pr_decomposition_pilot_glsr
+    allowed_reads:
+      - O_field_surface
+      - transport_candidate_report
+      - PreNeuralPointSetSlice refs
+    allowed_outputs:
+      - p_candidate_report
+      - r_candidate_report
+      - threshold_sensitivity_report
+      - solver_stability_report
+    forbidden_writes:
+      - p_band_record
+      - r_band_record
+      - origin_anchor_bundle
+      - semantic labels
+    review_date: 2026-12-31
+    sunset_date: null
+    promotion_condition: stable candidate behavior, bounded threshold sensitivity, verified against baseline
+    retirement_condition: unpredictable flips, high noise, semantic leakage
+
+  - bridge_id: ledger_pilot_bridge
+    from_module: contracts.external_ledgers
+    to_module: external_transitional.noether_entropy_ledger_pilot
+    allowed_reads:
+      - O_field_surface
+      - P_k
+      - Transport Operator metrics
+    allowed_outputs:
+      - external_conserved_quantity_report
+      - external_entropy_report
+      - external_noise_budget_report
+      - external_anomaly_report
+      - external_isolation_report
+    forbidden_writes:
+      - Any mainline object truth
+      - Any band / origin / seed object
+      - Any semantic truth
+    review_date: 2026-12-31
+    sunset_date: null
+    promotion_condition: variational closure completed
+    retirement_condition: fails to provide useful anomaly/isolation flags

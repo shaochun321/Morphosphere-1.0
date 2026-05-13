@@ -1,0 +1,23 @@
+{
+  "$id": "morphosphere/schemas/transformation_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TransformationRecord",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "transform_id", "domain_object_refs", "codomain_object_refs",
+    "loss_metrics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "transform_id": {"type": "string"},
+    "domain_object_refs": {"type": "array", "items": {"type": "string"}},
+    "codomain_object_refs": {"type": "array", "items": {"type": "string"}},
+    "loss_metrics": {"type": "object", "additionalProperties": {"type": "number"}},
+    "unit_policy_followed": {"type": "boolean", "default": true}
+  }
+}

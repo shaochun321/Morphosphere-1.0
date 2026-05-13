@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "version": "v37.4.12",
+    "batch": "batch5",
+    "run_id": "v37412_batch5_64e32b64",
+    "elapsed_s": 1.66,
+    "db_size_kb": 11856.0
+  },
+  "memory": {
+    "P_frozen": 12,
+    "R_frozen": 12,
+    "maturity_pass": 12,
+    "node_distribution": {
+      "P_frozen": 12,
+      "R_frozen": 12,
+      "mask_supported": 20
+    }
+  },
+  "hebbian": {
+    "count": 42,
+    "avg": 0.1886,
+    "min": 0.029,
+    "max": 0.5227,
+    "assoc_types": {
+      "frozen_reinforced": {
+        "count": 18,
+        "avg_w": 0.3818
+      },
+      "shadow_guidance": {
+        "count": 22,
+        "avg_w": 0.0365
+      },
+      "temporal_continuity": {
+        "count": 2,
+        "avg_w": 0.122
+      }
+    }
+  },
+  "xi_closure": {
+    "discarded": 4,
+    "recycled": 2,
+    "demoted": 2
+  },
+  "generalization": {
+    "cross_domain_edges": 110,
+    "intra_edges": 7876
+  },
+  "acceptance_checks": {
+    "db_integrity": "PASS",
+    "chain_completeness": "PASS",
+    "P_frozen_exists": "PASS",
+    "R_frozen_exists": "PASS",
+    "maturity_gate_passes": "PASS",
+    "cross_domain_edges": "PASS",
+    "hebbian_strengthened": "PASS",
+    "xi_lifecycle_closed": "PASS",
+    "variational_full_coverage": "PASS",
+    "fhpms_complete": "PASS",
+    "rlis_complete": "PASS",
+    "no_writeback": "PASS"
+  },
+  "total_rows": 51654,
+  "populated_tables": 81,
+  "empty_tables": 35
+}

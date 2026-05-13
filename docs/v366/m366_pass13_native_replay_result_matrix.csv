@@ -1,0 +1,15 @@
+scenario_id,transition_class,count,pct
+baseline,stable_retained,70,1.0
+coordinate_jitter,observe_retain_shift,7,0.1
+coordinate_jitter,stable_retained,63,0.9
+counter_boost,P_or_stable_to_R_focus,66,0.942857
+counter_boost,stable_retained,4,0.057143
+masking_failure,P_or_stable_to_R_focus,24,0.342857
+masking_failure,observe_retain_shift,13,0.185714
+masking_failure,stable_retained,33,0.471429
+semantic_attack,semantic_backwrite_blocked,70,1.0
+support_dropout,P_or_stable_to_R_focus,1,0.014286
+support_dropout,observe_retain_shift,13,0.185714
+support_dropout,stable_retained,56,0.8
+xin_spike,R_or_P_to_Xin_escalation,69,0.985714
+xin_spike,stable_retained,1,0.014286

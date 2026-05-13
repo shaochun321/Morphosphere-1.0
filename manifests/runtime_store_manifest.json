@@ -1,0 +1,307 @@
+[
+  {
+    "path": "runtime_store/v10/cell_state_tensor_v10.jsonl",
+    "bytes": 244344,
+    "sha256": "3e973c940edc6f4bf7c578dff394a3aa2630a978ed60747ed0c008ad47a6132c"
+  },
+  {
+    "path": "runtime_store/v10/clock_index_v10.json",
+    "bytes": 1237,
+    "sha256": "c3d0a44ee501f2193f5f606f08d55c0c25c630f663101bd10ca7aa723a41be89"
+  },
+  {
+    "path": "runtime_store/v10/pr_xi_fast_index_v10.json",
+    "bytes": 170,
+    "sha256": "d1ae1c83c22d8f8fbda86a699b156f62157c59a8b8f67ae6d55b80bb5616b2c8"
+  },
+  {
+    "path": "runtime_store/v10/raw_event_tensor_v10.jsonl",
+    "bytes": 706584,
+    "sha256": "87d1430bbba995ac70f6c0c4919b6284c93d44674ab07c3c14a604aff1736391"
+  },
+  {
+    "path": "runtime_store/v11/external_cell_state_tensor_v11.jsonl",
+    "bytes": 189411,
+    "sha256": "fef14250ba6ca8408af52cdaefb3f6880428a14c8a8bcac879d337aaa6078498"
+  },
+  {
+    "path": "runtime_store/v11/external_emitted_event_tensor_v11.jsonl",
+    "bytes": 560237,
+    "sha256": "2c6d61fc89f3d564224395ea131236e10ea55d2d73f99cbf37538a0ad49436a7"
+  },
+  {
+    "path": "runtime_store/v11/external_field_tensor_v11.jsonl",
+    "bytes": 186744,
+    "sha256": "11710ad5371aaa229011ba98038b78d912967af1fda54b6fdf2145efca73baf3"
+  },
+  {
+    "path": "runtime_store/v11/external_simulator_config_v11.json",
+    "bytes": 489,
+    "sha256": "133183c4de2e97b72bdfd5bb09cee3c6415af245eb4f88ef83c0a34e7a173e2e"
+  },
+  {
+    "path": "runtime_store/v11/external_to_raw_event_mapping_v11.jsonl",
+    "bytes": 546248,
+    "sha256": "61f114d1180278d7df2f11121049437e1f7298abbe979665dda7cd7e5d01bccc"
+  },
+  {
+    "path": "runtime_store/v11/zarr_field_store_planned_manifest_v11.json",
+    "bytes": 264,
+    "sha256": "749b390863e0afba653453a595869dbbdf45ca3b50a8ac024fc363acf04b64bd"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/.zattrs",
+    "bytes": 245,
+    "sha256": "e3064e2236df3b6f7e5a277c298935295b00a6efc6cafc488c1998b2932d1b43"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/.zgroup",
+    "bytes": 22,
+    "sha256": "7c578b275a7ccb234a2427d173bed71c9e7dc5d413052265b68ab5f9b2812ff3"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/.zarray",
+    "bytes": 254,
+    "sha256": "af51efe8ed54c5c00ef2cabb6bdef2db9570e0df7bd1f754b283fd15ec58cf5a"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/.zattrs",
+    "bytes": 322,
+    "sha256": "58c11e644b0efe51f7efa3c7ab0d22b95f9b1c3f2fd088d1fb1a3525bfb5fb63"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/0.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "3ae09943b55f3368863c457a794e426744943e0cf0b559ed97656acd3ca4c19d"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/1.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "05a96d1910b7e4ed3e2c288f7d64b60ed24acb6dc62efd5fdd76c85629fb544e"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/2.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "9de293e9b6f44e48cbb865d86f576171da750b1819cc851790b68bf05a331bc9"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/3.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "c2c8be5c964ef1abf74f41de04bfd028c2dbd941f22a043fb773a2cd669496fe"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/4.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "7de2253f40b23e99e6348cc9ab7c8802c3fc6329e88153c11170d0283c0c5dbf"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/5.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "6b69fc0ab56c64c401cf257b0ad469b8672a402211b6d3eb023c0828bc88fad4"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/6.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "e56019dd454a0f44b4a998da2608eab4d2e978f7dfa36cf1b800e6168508908f"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/7.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "2493deda6f44ce7dff730db8943d2402318e79d60ac3c5e4a28f58bac02d6e3c"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/8.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "c1be1d829d54d36eaf12a1c88a3300154f93737a37da3f913978dbbf22aab58e"
+  },
+  {
+    "path": "runtime_store/v12/field_store_v12.zarr/external_field/9.0.0.0.0",
+    "bytes": 2560,
+    "sha256": "94b4741e03e7f6aa03be45a0bb3b3f7a3c785bf6a511645c63892b93984140ad"
+  },
+  {
+    "path": "runtime_store/v12/hdf5_field_store_contract_v12.json",
+    "bytes": 327,
+    "sha256": "bbae7701f1f2dad2c5e461667fb7e938bbf1d71e3b9dbc9381c99b382b2dd068"
+  },
+  {
+    "path": "runtime_store/v13/field_stream_bridge_sample_v13.jsonl",
+    "bytes": 15196,
+    "sha256": "4f36814ce0d1645a96c8370b70e5c3e38803a144e061effe682e46fcfcf4be7d"
+  },
+  {
+    "path": "runtime_store/v13/field_stream_event_sample_v13.jsonl",
+    "bytes": 13853,
+    "sha256": "28507c080c88f1d274ede4754fa222bf816c53f7fb5d981bd7f281a6558a14db"
+  },
+  {
+    "path": "runtime_store/v13/field_stream_reader_manifest_v13.json",
+    "bytes": 340,
+    "sha256": "da31a3ff3e9b35cbd8808e010ca234e3d59a794413d5d6fc8f21d6fcfcaa3f9b"
+  },
+  {
+    "path": "runtime_store/v13/stream_manifest_v13.json",
+    "bytes": 168,
+    "sha256": "1baa305000ff329e77468b6b1a3015453b7762917f82d708601bee986d93094c"
+  },
+  {
+    "path": "runtime_store/v13/streaming_pr_response_v13.jsonl",
+    "bytes": 9505,
+    "sha256": "68008bdf1f47c14e07303a3f803a790060bceeee0ee5bfd4acb61190a75b21f5"
+  },
+  {
+    "path": "runtime_store/v14/backpressure_tick_state_v14.jsonl",
+    "bytes": 3191,
+    "sha256": "ea6ac385751c18126ed11a1f70118d533f22ccbf11de43764e2f89f28591d999"
+  },
+  {
+    "path": "runtime_store/v14/queue_dispatch_sample_v14.jsonl",
+    "bytes": 38581,
+    "sha256": "d4bbaaaeeae3af40f5af4dab92a8b47f981eee58dbe14513de76d5c5682fc8ca"
+  },
+  {
+    "path": "runtime_store/v14/queue_event_sample_v14.jsonl",
+    "bytes": 45589,
+    "sha256": "a90faacceabde17b2bd24c720121f0c5c984d7d0982769787632b8f89fd29e20"
+  },
+  {
+    "path": "runtime_store/v14/queue_pr_xi_response_v14.jsonl",
+    "bytes": 13403,
+    "sha256": "e3747231fa435739cc3665bb25ee466eda32b03d619bc55e1404a13ee0617e3a"
+  },
+  {
+    "path": "runtime_store/v14/streaming_queue_manifest_v14.json",
+    "bytes": 274,
+    "sha256": "ae555131ab39742fbba9858f9cb4bedaa1e5197ab96f2682d3f85f5675f24836"
+  },
+  {
+    "path": "runtime_store/v15/cross_modal_bindings_v15.jsonl",
+    "bytes": 17640,
+    "sha256": "1397dbde37eb11a0f37d68627913e30a6683b347e388b8a6cb337363d0b1075d"
+  },
+  {
+    "path": "runtime_store/v15/fused_sensor_events_v15.jsonl",
+    "bytes": 15400,
+    "sha256": "987e31d45b76707a41de42f6b91bae7fd5bf526845ed61ec957447f6e5b0dbda"
+  },
+  {
+    "path": "runtime_store/v15/fusion_pr_xi_response_v15.jsonl",
+    "bytes": 9581,
+    "sha256": "2a267221523bff50fe3a331e9472acda8958d126028562ec7c87af99fe4b6674"
+  },
+  {
+    "path": "runtime_store/v15/multirate_runtime_manifest_v15.json",
+    "bytes": 199,
+    "sha256": "714a62c2edbcd032637f30d6ee6576a047d31862513e1a5c06575f183f6c65ad"
+  },
+  {
+    "path": "runtime_store/v15/multirate_sensor_samples_v15.jsonl",
+    "bytes": 39883,
+    "sha256": "5d050134c12bc981ff9eb60f78cfe1117d2073d674b3bed08d8132e7010b7061"
+  },
+  {
+    "path": "runtime_store/v15/sync_frames_v15.jsonl",
+    "bytes": 2081,
+    "sha256": "c0c7d84c2f016045bd3ad2f39559a521f39afec06a316dd2f64763faa28cddae"
+  },
+  {
+    "path": "runtime_store/v16/calibration_recommendations_v16.json",
+    "bytes": 1353,
+    "sha256": "4b3c9f4a86c63bf2ad28f60d6c9bb7b775894d85d2b9d0e84c189e2a1050a240"
+  },
+  {
+    "path": "runtime_store/v16/domain_memory_v16.jsonl",
+    "bytes": 3147,
+    "sha256": "a85ff57527a616b4e0edc077c98455737386e201f44a3ba7b933b420a72348d2"
+  },
+  {
+    "path": "runtime_store/v16/fusion_memory_trace_sample_v16.jsonl",
+    "bytes": 22155,
+    "sha256": "2f4cb1b4c2dc0e0cfbbd2e1f1c74daee0afc9aac5c885f842b46d57314155071"
+  },
+  {
+    "path": "runtime_store/v16/memory_manifest_v16.json",
+    "bytes": 440,
+    "sha256": "720b665f2cbab3ac54afc111a6bffe41e829c5c050423e18b6d59688904c2722"
+  },
+  {
+    "path": "runtime_store/v16/phase_bias_memory_v16.jsonl",
+    "bytes": 1816,
+    "sha256": "83684c4b34a63f6fedcba2b347c12ccf3f746ad8c526ab5a038e80f17c460af2"
+  },
+  {
+    "path": "runtime_store/v17/manual_approval_packet_v17.json",
+    "bytes": 652,
+    "sha256": "a38671e06365b93ae66eb37b835c32f6bb7d6aa24b046b80f7eda27f069f739e"
+  },
+  {
+    "path": "runtime_store/v17/promotion_decision_v17.json",
+    "bytes": 766,
+    "sha256": "8bfd698d50ddbb0033c3127d507da4a4c98dc06269884151ae28d4a65bfa89c3"
+  },
+  {
+    "path": "runtime_store/v17/rollback_plan_v17.json",
+    "bytes": 433,
+    "sha256": "1c33938a857f18d407baf22aca108c599ce8efc7a0a379e8f8582a5643e66e99"
+  },
+  {
+    "path": "runtime_store/v18/baseline_profile_v18.json",
+    "bytes": 351,
+    "sha256": "cf0d8a8b48d6489993db974aad1edd04943253e3f75a666a0c1974d9ceaff6ae"
+  },
+  {
+    "path": "runtime_store/v18/candidate_profile_v18.json",
+    "bytes": 1128,
+    "sha256": "f3e1118f46e3a08b49f027acf01e7936e5d94e64747c29b8dfe7ab9e222b5272"
+  },
+  {
+    "path": "runtime_store/v18/frozen_sandbox_decision_v18.json",
+    "bytes": 410,
+    "sha256": "aa3108b813ceeb81f9cf99409ad541d628a0fb4872abe0a9930361f6e875db3a"
+  },
+  {
+    "path": "runtime_store/v21/ctc_download_extraction_summary_v21.json",
+    "bytes": 329,
+    "sha256": "4b058dc81589653a12ddd38ee8536ee00d5e8744ef63bd060a6c59ba1c44e034"
+  },
+  {
+    "path": "runtime_store/v24/ctc_source_verified_summary_v24.json",
+    "bytes": 1057,
+    "sha256": "d18f2f81cdf17536ab020324d79fbda36e05d8aab145e2483ac95f197c2161c4"
+  },
+  {
+    "path": "runtime_store/v25/coordinate_transform_trace_v25.jsonl",
+    "bytes": 4752880,
+    "sha256": "46ee28090e63411fc642adf5e566b4081806bc6a077a97cf0203fc2a80e4ae9f"
+  },
+  {
+    "path": "runtime_store/v25/evidence_bundle_v25.jsonl",
+    "bytes": 1294496,
+    "sha256": "0ba33b56a5d3061ae969b99e1089f640055d0f00b3c5aaf130a62d77718f90ca"
+  },
+  {
+    "path": "runtime_store/v25/information_points_v25.jsonl",
+    "bytes": 3940739,
+    "sha256": "3c7f0d6d2323ff08515f15dc3f2069659193345fa19cbb26cbd256e5f55b7ebd"
+  },
+  {
+    "path": "runtime_store/v25/p_measure_field_v25.jsonl",
+    "bytes": 761069,
+    "sha256": "6118caaf4d1b856a434e847179f3b1477b3447a4f01c2c901d44619d927fe590"
+  },
+  {
+    "path": "runtime_store/v25/r_counter_field_v25.jsonl",
+    "bytes": 745958,
+    "sha256": "c3b138731cde7b8c46c64e5f13991b675ad7a66b67f201b919ae99e01f990123"
+  },
+  {
+    "path": "runtime_store/v25/trajectory_window_trace_v25.jsonl",
+    "bytes": 1125261,
+    "sha256": "5a48f167c837ace82d80ba02d95dc735710a4581162d6cde5530fa4cea7ab9a0"
+  },
+  {
+    "path": "runtime_store/v25/xi_residual_surface_v25.jsonl",
+    "bytes": 1227671,
+    "sha256": "65971a33dcc12fadc72bee1dafe2ec509002d382cd4f27162cfd0262d6360468"
+  }
+]

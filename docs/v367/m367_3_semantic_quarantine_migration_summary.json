@@ -1,0 +1,16 @@
+{
+  "version": "v36.7.3",
+  "db": "/mnt/data/m367_3_semantic_quarantine_migration.db",
+  "integrity": "ok",
+  "quarantine_sidecar_rows": 36,
+  "migration_audit_rows": 36,
+  "semantic_free_view_manifests": 22,
+  "allowed_text_surface_rows": 203,
+  "semantic_regressions": {
+    "v365_backwrite_blocker": "PASS",
+    "pass12_semantic_attack": "PASS",
+    "pass13_semantic_attack": "PASS"
+  },
+  "acceptance_failed": [],
+  "destructive_legacy_mutation": 0
+}

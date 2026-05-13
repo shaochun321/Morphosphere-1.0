@@ -1,0 +1,9 @@
+{
+  "version": "v36.7.4",
+  "h2_index_rows": 5765,
+  "h3_index_rows": 5765,
+  "total_default_index_rows": 11530,
+  "coordinate_invariance_ci": "PASS",
+  "legacy_db_mutated": false,
+  "online_runtime_claimed": false
+}

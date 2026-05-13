@@ -1,0 +1,24 @@
+{
+  "package": "Morphosphere_v35_engineered_bridge_overlay",
+  "package_kind": "overlay",
+  "apply_to": "existing v34 or later Morphosphere tree",
+  "not_full_lineage_tarball": true,
+  "file_count": 13,
+  "total_bytes": 362777,
+  "boundaries": {
+    "source_facts_rewritten": 0,
+    "hot_swap_allowed": 0,
+    "real_action_authorized": 0,
+    "attention_sandbox_only": 1,
+    "xi_direct_to_pr_allowed": 0,
+    "native_hypergraph_db_enabled": 0,
+    "semantic_label_in_mainline": 0
+  },
+  "key_outputs": [
+    "outputs/m35.db",
+    "active/v35/scripts/check_v35.py",
+    "active/v35/scripts/query_v35.py",
+    "APPLY_TO_EXISTING_TREE.sh"
+  ],
+  "filetree_sha256": "db9463079ed7d59606d258b9188a96df3f91011be331d44ba7bef392e1affa7a"
+}

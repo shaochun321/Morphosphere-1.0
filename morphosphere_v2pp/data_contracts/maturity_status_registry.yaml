@@ -1,0 +1,86 @@
+# Morphosphere V8.5 Maturity Status Registry
+# Defines all valid object maturity statuses and their transitions.
+# V8.5 §4: P/R Confirmation Graph replaces linear state machine.
+
+version: v8.5
+updated: 2026-04-25
+
+# ═══ V8.5 Confirmation Graph Nodes ═══
+confirmation_graph_nodes:
+  O_candidate:
+    description: "O field surface structural candidate"
+    entry_from: [o_field_surface]
+    exit_to: [PR_candidate, suspended, refuted]
+
+  PR_candidate:
+    description: "P/R proposer assignment candidate"
+    entry_from: [O_candidate]
+    exit_to: [mask_supported, refuted, suspended, xi_carried]
+
+  mask_supported:
+    description: "Survived low-cost masking counterevidence"
+    entry_from: [PR_candidate]
+    exit_to: [recursion_eligible, refuted, suspended, xi_carried, emergence_alerted]
+
+  recursion_eligible:
+    description: "Eligible for recursive carry or lightweight resource scheduling"
+    entry_from: [mask_supported]
+    exit_to: [compute_committed, suspended, xi_carried]
+
+  compute_committed:
+    description: "Compute resource allocation basis"
+    entry_from: [recursion_eligible]
+    exit_to: [science_certified, suspended]
+
+  science_certified:
+    description: "Multi-run, multi-replay, multi-boundary validated for scientific interpretation"
+    entry_from: [compute_committed]
+    exit_to: []  # terminal
+
+  refuted:
+    description: "Counter-evidenced, no persistence, no scale support, no Xi carry-over"
+    entry_from: [O_candidate, PR_candidate, mask_supported]
+    exit_to: []  # terminal
+
+  suspended:
+    description: "Insufficient evidence, preserved but not promoted"
+    entry_from: [O_candidate, PR_candidate, mask_supported, recursion_eligible, compute_committed]
+    exit_to: [PR_candidate, xi_carried]  # can re-enter
+
+  xi_carried:
+    description: "Routed to Xi unresolved residue carrier"
+    entry_from: [PR_candidate, mask_supported, recursion_eligible, suspended]
+    exit_to: [O_candidate]  # only via O_candidate re-entry, never direct P/R
+
+  emergence_alerted:
+    description: "Triggered emergence alert channel"
+    entry_from: [mask_supported]
+    exit_to: [PR_candidate, xi_carried, suspended]  # after fast review
+
+# ═══ V8.3 Legacy Status Mapping ═══
+v83_to_v85_mapping:
+  candidate: PR_candidate
+  provisional: mask_supported
+  masked_validated: recursion_eligible
+  frozen: compute_committed
+  certified: science_certified
+
+# ═══ Xi Lifecycle States (V8.5 §7.1) ═══
+xi_lifecycle_states:
+  held: "Retained for observation"
+  decaying: "Default exponential decay active"
+  proto_candidate: "Shows cross-window/cross-scale persistence"
+  promoted: "Promoted to O_candidate (never direct P/R)"
+  quarantined: "Isolated for review"
+  discarded_after_audit: "Removed with audit trail"
+
+# ═══ Masking Verdicts (V8.5 §5.2) ═══
+masking_verdicts:
+  supports_confirmation: "Support continued confirmation"
+  weakens_confirmation: "Weakens candidate credibility"
+  refutes_candidate: "Counter-evidence the candidate"
+  inconclusive: "Insufficient evidence"
+  escalate_to_replay: "Worth entering replay queue"
+  escalate_to_boundary: "Boundary-sensitive, enter boundary-first queue"
+  downgrade_to_xi: "Unresolved but should not be discarded"
+  trigger_emergence_alert: "Non-linear emergence signs detected"

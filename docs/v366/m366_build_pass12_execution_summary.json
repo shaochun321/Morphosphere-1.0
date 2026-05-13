@@ -1,0 +1,72 @@
+{
+  "artifact": "pass12_recovery_execution",
+  "db": "m366_build_pass12_execution.db",
+  "integrity": "ok",
+  "trajectory_windows": 532,
+  "stress_projection_rows": 3192,
+  "native_skeleton_rows": 3724,
+  "sample_full_traces": 20,
+  "stress_matrix": [
+    {
+      "stress_id": "S1",
+      "stress_name": "coordinate jitter",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 1,
+      "r_or_p_to_xin_projected": 0,
+      "stable_retained": 531,
+      "boundary_blocked": 0,
+      "interpretation": "coordinate perturbation should mostly retain stable P/R/Xin assignment"
+    },
+    {
+      "stress_id": "S2",
+      "stress_name": "support dropout",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 23,
+      "r_or_p_to_xin_projected": 0,
+      "stable_retained": 509,
+      "boundary_blocked": 0,
+      "interpretation": "support removal tests whether P support becomes R challenge"
+    },
+    {
+      "stress_id": "S3",
+      "stress_name": "counter-evidence boost",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 513,
+      "r_or_p_to_xin_projected": 0,
+      "stable_retained": 19,
+      "boundary_blocked": 0,
+      "interpretation": "boosted counter evidence should trigger R on most windows"
+    },
+    {
+      "stress_id": "S4",
+      "stress_name": "Xin residual spike",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 1,
+      "r_or_p_to_xin_projected": 462,
+      "stable_retained": 69,
+      "boundary_blocked": 0,
+      "interpretation": "residual spike tests whether unclosed residual enters Xin"
+    },
+    {
+      "stress_id": "S5",
+      "stress_name": "masking failure",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 450,
+      "r_or_p_to_xin_projected": 67,
+      "stable_retained": 15,
+      "boundary_blocked": 0,
+      "interpretation": "masking failure exposes R and some Xin pressure"
+    },
+    {
+      "stress_id": "S6",
+      "stress_name": "semantic backwrite attack",
+      "trajectory_windows": 532,
+      "p_to_r_projected": 0,
+      "r_or_p_to_xin_projected": 0,
+      "stable_retained": 0,
+      "boundary_blocked": 532,
+      "interpretation": "external semantic backwrite must be blocked"
+    }
+  ],
+  "boundary": "offline deterministic projections; no source mutation; no native synchronous runtime claimed"
+}

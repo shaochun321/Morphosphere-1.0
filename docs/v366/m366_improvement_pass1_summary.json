@@ -1,0 +1,79 @@
+{
+  "artifact": "m366_improvement_pass1",
+  "created_at": "2026-05-06T03:27:46.522934+00:00",
+  "db": "/mnt/data/m366_improvement_pass1.db",
+  "db_sha256": "f4699fd0c887efb8f33b79f628aca77992c79295096e3347c45e130587a7c040",
+  "integrity_check": "ok",
+  "counts": {
+    "stage2_object_surface_materialization_audit": 532,
+    "preneural_interface_operator_trace": 500,
+    "counter_masking_coverage_audit": 532,
+    "hypernode_direct_fk_upgrade_candidate": 855,
+    "process_window_quality_score": 1133
+  },
+  "stage2_risk": [
+    {
+      "bypass_risk_class": "medium_bypass_risk_v25_derived_o_without_stage2_fk",
+      "n": 532
+    }
+  ],
+  "preneural_status": [
+    {
+      "interface_status": "resolved_stage1_to_preneural_operator_trace",
+      "n": 500
+    }
+  ],
+  "counter_masking_coverage": [
+    {
+      "coverage_class": "category_level_masking_coverage",
+      "n": 532
+    }
+  ],
+  "hypernode_fk_upgrade_classes": [
+    {
+      "upgrade_class": "blocked_requires_source_ref_normalization",
+      "n": 223
+    },
+    {
+      "upgrade_class": "bottom_candidate_needs_source_ref_normalization",
+      "n": 243
+    },
+    {
+      "upgrade_class": "ledger_candidate_needs_window_fk",
+      "n": 112
+    },
+    {
+      "upgrade_class": "mask_candidate_needs_source_ref_normalization",
+      "n": 113
+    },
+    {
+      "upgrade_class": "overlay_to_overlay_direct_candidate",
+      "n": 35
+    },
+    {
+      "upgrade_class": "requires_stage2_macro_object_surface_materialization",
+      "n": 129
+    }
+  ],
+  "process_window_quality": [
+    {
+      "quality_class": "strong_materialized_window",
+      "n": 640
+    },
+    {
+      "quality_class": "usable_materialized_window",
+      "n": 43
+    },
+    {
+      "quality_class": "weak_materialized_window",
+      "n": 450
+    }
+  ],
+  "key_findings": [
+    "Stage-2 O candidate refs exist for trajectory windows, but direct base object-surface FK is absent for v25-derived o25 IDs.",
+    "Preneural/interface bundle is not absent: 500 spacetime-fiber bindings trace into information_fiber and preneural_node_state, with edge/synaptic sidecars available.",
+    "Counter-evidence chains have category-level masking refs, but concrete mask object coverage is not direct for the v25 R-chain rows.",
+    "Hypernode backprojection still requires source_ref normalization; this pass creates an upgrade plan without fabricating direct FK.",
+    "Process windows are usable, but upper overlay windows remain weaker than evidence/trajectory windows where measure/ledger/backprojection are incomplete."
+  ]
+}

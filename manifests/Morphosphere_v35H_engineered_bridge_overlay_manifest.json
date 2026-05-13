@@ -1,0 +1,50 @@
+{
+  "artifact": "Morphosphere_v35H_engineered_bridge_overlay",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "rebuilt": true,
+  "includes_full_base": false,
+  "not_a_full_lineage": true,
+  "generated_at": "2026-05-05T15:39:22.855689Z",
+  "files": [
+    {
+      "path": "APPLY_TO_EXISTING_TREE.sh",
+      "size": 501,
+      "sha256": "277a2d54bdf272a2158c7fd5c483371059b5babea420d24b8eee846e41f51b5a"
+    },
+    {
+      "path": "RUN_EXAMPLES.sh",
+      "size": 278,
+      "sha256": "534cab96beebd44e9a766a07bc9b7424fe2c19a508b2b94507b7696ce5ce54d6"
+    },
+    {
+      "path": "active/v35H/scripts/audit_v35H_gc.py",
+      "size": 372,
+      "sha256": "e0c193bab1db2dc467cea02857f291f8b7791767806268125586226543132da7"
+    },
+    {
+      "path": "active/v35H/scripts/check_v35H.py",
+      "size": 723,
+      "sha256": "9af6865a5355aa5bf213eecc13d4eb417e84bf5e284d6503e605ec914fc15eb5"
+    },
+    {
+      "path": "active/v35H/scripts/query_v35H.py",
+      "size": 496,
+      "sha256": "5ff9698da6ce3f5646c3f4d7ef768d9beae5d13c5fdc11530b87e83da52daa83"
+    },
+    {
+      "path": "docs/Morphosphere_v35H_engineered_bridge_overlay_report.md",
+      "size": 1137,
+      "sha256": "947b7fecb0a9adea3f3d56181bba4aaf29f1309614561cf4587986f3facd248a"
+    },
+    {
+      "path": "outputs/m35H.db",
+      "size": 270336,
+      "sha256": "6ad9833b2c90703716000212fca78f9939a7ecab20fd56a6e6a544988bffcad2"
+    },
+    {
+      "path": "runtime_store/v35H/incidence_sidecar/hyperedge_incidence_coo.csv",
+      "size": 31217,
+      "sha256": "77c46b2ef357877361c2fed45132ca05d7c0b45873577a9ea6b4607471adddbc"
+    }
+  ]
+}

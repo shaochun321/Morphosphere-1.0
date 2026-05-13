@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "version": "v37.4.12",
+    "batch": "batch4",
+    "run_id": "v37412_batch4_97e4a912",
+    "elapsed_s": 1.32,
+    "db_size_kb": 9908.0
+  },
+  "memory": {
+    "P_frozen": 8,
+    "maturity_pass": 8,
+    "node_distribution": {
+      "P_frozen": 8,
+      "R_frozen": 8,
+      "mask_supported": 20
+    }
+  },
+  "generalization": {
+    "cross_domain_edges": 90,
+    "intra_edges": 6444
+  },
+  "acceptance_checks": {
+    "db_integrity": "PASS",
+    "chain_completeness": "PASS",
+    "P_frozen_exists": "PASS",
+    "maturity_gate_passes": "PASS",
+    "cross_domain_edges": "PASS",
+    "variational_full_coverage": "PASS",
+    "fhpms_complete": "PASS",
+    "rlis_complete": "PASS",
+    "no_writeback": "PASS"
+  },
+  "total_rows": 42850,
+  "populated_tables": 79,
+  "empty_tables": 37
+}

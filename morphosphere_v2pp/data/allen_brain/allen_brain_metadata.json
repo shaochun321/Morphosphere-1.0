@@ -1,0 +1,15 @@
+{
+  "experiment_id": 500964514,
+  "targeted_structure": "VISp",
+  "imaging_depth_um": 175,
+  "n_cells": 214,
+  "n_timepoints_original": 114097,
+  "n_timepoints_saved": 3003,
+  "subsample_step": 38,
+  "data_source": "Allen Brain Observatory",
+  "data_url": "https://observatory.brain-map.org/visualcoding/experiment/500964514",
+  "license": "Allen Institute Terms of Use (non-commercial research)",
+  "doi": "10.1038/s41586-019-1346-5",
+  "downloaded_at": "2026-05-14 22:41:53",
+  "allensdk_version": "2.16.2"
+}

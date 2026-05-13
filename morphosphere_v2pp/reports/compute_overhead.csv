@@ -1,0 +1,7 @@
+metric,value
+events_per_second,353.8
+candidate_overhead_pct,15.0
+memory_peak_mb,9.5
+stress_slowdown_ratio,4.40
+sqlite_write_count,1992
+elapsed_seconds,13.19

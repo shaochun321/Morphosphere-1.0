@@ -1,0 +1,30 @@
+{
+  "version": "device_neutral_preneural_edge_v0.5",
+  "neuromorphic_run_id": "nedge_v05_84c5492aa393",
+  "parent_matrix_run_id": "mxfoam_v04_7a26fae5946e",
+  "device_model_count": 4,
+  "synaptic_edge_count": 1470,
+  "edge_tick_state_count": 1470,
+  "plasticity_update_count": 1470,
+  "event_projection_count": 400,
+  "membrane_state_count": 500,
+  "pr_evidence_count": 50,
+  "replay_result_count": 10,
+  "source_fact_counts_before": {
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "raw_event_stream": 1500,
+    "cell_spatial_coordinate_snapshot": 500,
+    "information_relative_coordinate_snapshot": 1500,
+    "system_clock_entry": 10
+  },
+  "source_fact_counts_after": {
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "raw_event_stream": 1500,
+    "cell_spatial_coordinate_snapshot": 500,
+    "information_relative_coordinate_snapshot": 1500,
+    "system_clock_entry": 10
+  },
+  "boundary": "simulated device-neutral; no hardware claim; no source fact rewrite; P/R before Xi"
+}

@@ -1,0 +1,143 @@
+{
+  "confusion_matrix": {
+    "stationary": {
+      "stationary": 17
+    },
+    "slow_drift": {
+      "slow_drift": 12
+    },
+    "oscillation": {
+      "fast_drift": 6,
+      "oscillation": 4,
+      "diffusion": 2
+    },
+    "fast_drift": {
+      "fast_drift": 6
+    },
+    "jump": {
+      "jump": 1,
+      "stationary": 5
+    },
+    "diffusion": {
+      "oscillation": 3,
+      "diffusion": 2,
+      "fast_drift": 1
+    }
+  },
+  "feature_distributions": {
+    "stationary": {
+      "mean": 0.0266,
+      "std": 0.0023,
+      "min": 0.0222,
+      "max": 0.0297
+    },
+    "slow_drift": {
+      "mean": 0.0706,
+      "std": 0.0032,
+      "min": 0.064,
+      "max": 0.0746
+    },
+    "oscillation": {
+      "mean": 0.2543,
+      "std": 0.0069,
+      "min": 0.2457,
+      "max": 0.2642
+    },
+    "fast_drift": {
+      "mean": 0.23,
+      "std": 0.0093,
+      "min": 0.2143,
+      "max": 0.2397
+    },
+    "jump": {
+      "mean": 0.7807,
+      "std": 0.165,
+      "min": 0.5319,
+      "max": 1.0751
+    },
+    "diffusion": {
+      "mean": 0.1958,
+      "std": 0.0133,
+      "min": 0.1728,
+      "max": 0.2163
+    }
+  },
+  "feature_overlaps": {
+    "stationary_vs_slow_drift": 0.0,
+    "stationary_vs_oscillation": 0.0,
+    "stationary_vs_fast_drift": 0.0,
+    "stationary_vs_jump": 0.0,
+    "stationary_vs_diffusion": 0.0,
+    "slow_drift_vs_oscillation": 0.0,
+    "slow_drift_vs_fast_drift": 0.0,
+    "slow_drift_vs_jump": 0.0,
+    "slow_drift_vs_diffusion": 0.0,
+    "oscillation_vs_fast_drift": 0.0,
+    "oscillation_vs_jump": 0.0,
+    "oscillation_vs_diffusion": 0.0,
+    "fast_drift_vs_jump": 0.0,
+    "fast_drift_vs_diffusion": 0.0,
+    "jump_vs_diffusion": 0.0
+  },
+  "error_patterns": {
+    "oscillation -> fast_drift": 6,
+    "jump -> stationary": 5,
+    "diffusion -> oscillation": 3,
+    "diffusion -> fast_drift": 1,
+    "oscillation -> diffusion": 2
+  },
+  "baseline_trajectory": [
+    0.712,
+    0.814,
+    0.898,
+    0.898,
+    0.932,
+    0.898
+  ],
+  "enhanced_trajectory": [
+    0.831,
+    0.864,
+    0.932,
+    1.0,
+    0.932,
+    1.0
+  ],
+  "baseline_regime_first": {
+    "stationary": 1.0,
+    "slow_drift": 1.0,
+    "fast_drift": 1.0,
+    "oscillation": 0.333,
+    "jump": 0.167,
+    "diffusion": 0.333
+  },
+  "baseline_regime_last": {
+    "stationary": 1.0,
+    "slow_drift": 1.0,
+    "fast_drift": 1.0,
+    "oscillation": 0.917,
+    "jump": 1.0,
+    "diffusion": 0.167
+  },
+  "enhanced_regime_first": {
+    "stationary": 1.0,
+    "slow_drift": 0.917,
+    "fast_drift": 1.0,
+    "oscillation": 0.5,
+    "jump": 1.0,
+    "diffusion": 0.5
+  },
+  "enhanced_regime_last": {
+    "stationary": 1.0,
+    "slow_drift": 1.0,
+    "fast_drift": 1.0,
+    "oscillation": 1.0,
+    "jump": 1.0,
+    "diffusion": 1.0
+  },
+  "verdict": {
+    "recursive_helps": true,
+    "enhancement_helps": true,
+    "best_accuracy": 1.0
+  },
+  "elapsed_s": 0.25
+}

@@ -1,0 +1,24 @@
+{
+  "profile_id": "v853_validation_perturbation_v2_alignment",
+  "deterministic_seed": 853,
+  "reproducibility_tolerance": 1e-09,
+  "validation_version": "v8.5.3",
+  "execution_mode": "diagnostic_full",
+  "biological_claim": false,
+  "scientific_run": false,
+  "allowed_use": ["diagnostic", "validation", "perturbation", "counterfactual_acceptance"],
+  "forbidden_use": ["scientific_run", "final_biology", "production_log", "v8.6_or_v9_claim", "production_threshold_update"],
+  "perturbations": [
+    {"type": "signal_shuffle", "target_metric": "relation_normalized_entropy", "expected_direction": "increase", "strength": 0.12},
+    {"type": "geometry_shift", "target_metric": "mean_geometry_cost", "expected_direction": "increase", "strength": 0.20},
+    {"type": "boundary_flip", "target_metric": "rejected_transport_fraction", "expected_direction": "increase", "strength": 0.15},
+    {"type": "masking_injection", "target_metric": "mean_o_support_score", "expected_direction": "decrease", "strength": 0.10},
+    {"type": "xi_pressure_injection", "target_metric": "xi_quarantine_pressure", "expected_direction": "increase", "strength": 0.20},
+    {"type": "threshold_sweep", "target_metric": "threshold_sweep_sensitivity", "expected_direction": "increase", "strength": 0.0}
+  ],
+  "threshold_sweep": {
+    "transport_thresholds": [1.1, 1.3, 1.55, 1.8],
+    "temperatures": [0.55, 0.85, 1.25],
+    "xi_penalties": [0.0, 0.1, 0.2, 0.35]
+  }
+}

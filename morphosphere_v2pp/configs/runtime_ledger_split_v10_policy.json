@@ -1,0 +1,17 @@
+{
+  "frozen_profile_required": true,
+  "full_replay_required": true,
+  "hot_swap_allowed": false,
+  "human_review_required": true,
+  "protected_boundary": "P/R before Xi; Xi cannot directly become P or R",
+  "real_external_data_required": true,
+  "runtime_store_format_current": "jsonl/json",
+  "runtime_store_format_future": [
+    "zarr",
+    "hdf5",
+    "tensor_backend",
+    "pde_fem_adapter"
+  ],
+  "sqlite_role": "ledger_only",
+  "version": "runtime_ledger_split_external_adapter_v1.0"
+}

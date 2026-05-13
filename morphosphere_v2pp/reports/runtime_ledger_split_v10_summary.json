@@ -1,0 +1,48 @@
+{
+  "candidate_status": "STAGED_NOT_APPLIED_RUNTIME_SPLIT_READY_PENDING_REAL_DATA",
+  "cell_state_records": 500,
+  "clock_count": 10,
+  "external_gate_status": "BLOCKED_PENDING_REAL_EXTERNAL_DATA",
+  "hot_swap_allowed": false,
+  "protected_source_tables": [
+    "spacetime_cell",
+    "information_fiber",
+    "raw_event_stream",
+    "cell_spatial_coordinate_snapshot",
+    "information_relative_coordinate_snapshot",
+    "system_clock_entry",
+    "p_predictive_support_v022",
+    "r_counterstructure_v022",
+    "xi_boundary_guard_v022",
+    "external_physical_sample_v09",
+    "external_sample_cell_mapping_v09"
+  ],
+  "raw_event_records": 1500,
+  "run_id": "runtime_ledger_split_v10",
+  "runtime_store": "/mnt/data/work_v10_py/morphosphere_runtime_ledger_v10_package/runtime_store/v10",
+  "scientific_run": false,
+  "sqlite_role": "ledger_only",
+  "store_files": {
+    "store_cell_state_v10": {
+      "bytes": 244344,
+      "path": "runtime_store/v10/cell_state_tensor_v10.jsonl",
+      "sha256": "3e973c940edc6f4bf7c578dff394a3aa2630a978ed60747ed0c008ad47a6132c"
+    },
+    "store_clock_index_v10": {
+      "bytes": 1237,
+      "path": "runtime_store/v10/clock_index_v10.json",
+      "sha256": "c3d0a44ee501f2193f5f606f08d55c0c25c630f663101bd10ca7aa723a41be89"
+    },
+    "store_pr_xi_fast_index_v10": {
+      "bytes": 170,
+      "path": "runtime_store/v10/pr_xi_fast_index_v10.json",
+      "sha256": "d1ae1c83c22d8f8fbda86a699b156f62157c59a8b8f67ae6d55b80bb5616b2c8"
+    },
+    "store_raw_event_v10": {
+      "bytes": 706584,
+      "path": "runtime_store/v10/raw_event_tensor_v10.jsonl",
+      "sha256": "87d1430bbba995ac70f6c0c4919b6284c93d44674ab07c3c14a604aff1736391"
+    }
+  },
+  "version": "runtime_ledger_split_external_adapter_v1.0"
+}

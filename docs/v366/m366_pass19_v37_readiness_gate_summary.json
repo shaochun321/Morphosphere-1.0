@@ -1,0 +1,30 @@
+{
+  "pass": "Pass19: v37 Readiness Gate + Native Writer Hardening",
+  "db": "/mnt/data/m366_pass19_v37_readiness_gate.db",
+  "integrity": "ok",
+  "v37_clause_count": 9,
+  "readiness_by_level": {
+    "BLOCKED_BY_NATIVE_RUNTIME": 1,
+    "BLUEPRINT_ONLY": 1,
+    "PROTOTYPE_ONLY": 2,
+    "READY_NOW": 1,
+    "READY_WITH_DOWNGRADE": 4
+  },
+  "native_writer_fact_rows": 100,
+  "native_backprojection_fact_rows": 100,
+  "rmi_collision_groups_by_variant": {
+    "H1": 3
+  },
+  "rmi_false_neighbor_risk_by_variant": {
+    "H1": 3
+  },
+  "guard_actions": {
+    "ALLOW_WITH_AUDIT": 9,
+    "BLOCK_BY_DEFAULT": 18
+  },
+  "coordinate_ci_status": "PASS",
+  "acceptance": {
+    "PASS": 7
+  },
+  "claim_boundary": "readiness gate and downgrade implementation; not v37 online native runtime"
+}

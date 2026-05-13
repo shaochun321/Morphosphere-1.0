@@ -1,0 +1,10 @@
+{
+  "version": "streaming_queue_backpressure_runtime_v1.4",
+  "source": "field_stream_event_v13",
+  "queue_capacity": 96,
+  "dispatch_rate_per_tick": 56,
+  "event_count": 640,
+  "dispatch_count": 504,
+  "drop_count": 88,
+  "boundary": "runtime sidecar; sqlite ledger only"
+}

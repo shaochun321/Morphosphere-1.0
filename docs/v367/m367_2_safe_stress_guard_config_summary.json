@@ -1,0 +1,26 @@
+{
+  "version": "v36.7.2_safe_stress_guard_config",
+  "db": "/mnt/data/m367_2_safe_stress_guard_config.db",
+  "integrity": "ok",
+  "rules_total": 27,
+  "guard_action_counts": {
+    "ALLOW_WITH_AUDIT": 9,
+    "AUDIT": 8,
+    "BLOCK_BY_DEFAULT": 9,
+    "DOWNSCALE": 1
+  },
+  "source_envelope_class_counts": {
+    "SAFE_ENVELOPE": 9,
+    "UNSAFE_COLLAPSE_REGION": 18
+  },
+  "acceptance": {
+    "all_pass18_envelopes_loaded": "PASS",
+    "guard_regression_match": "PASS",
+    "p_core_high_blocked": "PASS",
+    "p_boundary_safe_allowed": "PASS",
+    "outside_high_blocked": "PASS",
+    "coordinate_invariance_ci_inherited": "PASS",
+    "legacy_db_mutation_absent": "PASS"
+  },
+  "boundary": "runtime-config overlay, not realtime online fuse; legacy DBs not mutated"
+}

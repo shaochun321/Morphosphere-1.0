@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run_manifest.schema.json",
+  "title": "RunManifest",
+  "type": "object",
+  "required": ["run_id", "schema_version", "rules_version", "execution_mode", "created_at"],
+  "additionalProperties": false,
+  "properties": {
+    "run_id": { "type": "string" },
+    "rules_version": { "type": "string" },
+    "schema_version": { "type": "string" },
+    "calibration_profile": { "type": "string" },
+    "execution_mode": { "type": "string" },
+    "input_source": { "type": ["string", "null"] },
+    "cell_count": {
+      "type": "integer",
+      "description": "Deprecated compatibility count; prefer physical_cell_count and spacetime_cell_count."
+    },
+    "physical_cell_count": {
+      "type": "integer",
+      "description": "Number of physical stage-1 cells in PhysicalCellGraphState."
+    },
+    "window_count": { "type": "integer" },
+    "spacetime_cell_count": {
+      "type": "integer",
+      "description": "Number of derived diagnostic spacetime/runtime carrier rows."
+    },
+    "created_at": { "type": "string", "format": "date-time" },
+    "notes": { "type": ["string", "null"] },
+    "extra_json": {
+      "type": "string",
+      "description": "JSON metadata for manifest count semantics and crosswalk references."
+    }
+  }
+}

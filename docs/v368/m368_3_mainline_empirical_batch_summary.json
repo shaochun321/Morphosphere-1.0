@@ -1,0 +1,21 @@
+{
+  "version": "v36.8.3_mainline_empirical_batch",
+  "db": "/mnt/data/m368_3_mainline_empirical_batch.db",
+  "full_trace_windows": 532,
+  "transition_edges": 446,
+  "transition_classes": 16,
+  "role_distribution": {
+    "P_STABLE_SUPPORT": 65,
+    "LOW_OR_MIXED_SIGNAL": 137,
+    "XIN_RESIDUAL_PRESSURE": 201,
+    "R_COUNTER_PRESSURE": 92,
+    "P_R_MIXED_COMPETITION": 37
+  },
+  "masking_diversion_buckets": 10,
+  "ctc_upper_metrics": 6,
+  "module_contribution_rows": 11,
+  "external_readout_rows": 31,
+  "external_readout_writes_mainline": 0,
+  "acceptance_failed": [],
+  "db_integrity": "ok"
+}

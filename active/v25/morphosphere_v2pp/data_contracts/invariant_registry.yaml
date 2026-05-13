@@ -1,0 +1,40 @@
+invariant_registry:
+  - invariant_id: provenance_continuity
+    description: Every derived object must retain a traversable provenance chain to its source objects.
+    applies_to: [all_core_transforms]
+    violation_severity: critical
+
+  - invariant_id: source_patch_traceability
+    description: Every point-set or frozen object must be traceable to source patches and, via patches, to source cells.
+    applies_to: [patch_to_preneural_geometry, geometry_plus_signal_to_pointset, o_to_frozen_objects]
+    violation_severity: critical
+
+  - invariant_id: topology_integrity
+    description: Structural encodings may summarize topology but must not invent or silently drop declared adjacency without loss registration.
+    applies_to: [geometry_plus_signal_to_pointset, pointset_to_o_field_surface]
+    violation_severity: high
+
+  - invariant_id: transport_auditability
+    description: Every accepted transport edge must be reproducible from declared geometry, topology, overlap, and signal similarity metrics.
+    applies_to: [TransportOperator, pointset_to_o_field_surface]
+    violation_severity: critical
+
+  - invariant_id: semantic_no_writeback
+    description: Semantic or compat layers are projection-only and may never write into core tables.
+    applies_to: [SemanticReadoutSurface, legacy_projectors]
+    violation_severity: critical
+
+  - invariant_id: external_ledger_no_writeback
+    description: External ledger objects may reference core objects but may never mutate or freeze them.
+    applies_to: [all_external_ledgers]
+    violation_severity: critical
+
+  - invariant_id: explicit_loss_budget
+    description: Every non-reversible transform must declare a loss budget and corresponding audit path.
+    applies_to: [all_non_reversible_transforms]
+    violation_severity: high
+
+  - invariant_id: no_unregistered_cross_layer_shortcuts
+    description: Any cross-layer extraction not present in transform_registry is forbidden by default.
+    applies_to: [all_pipeline_steps]
+    violation_severity: critical

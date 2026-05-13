@@ -1,0 +1,20 @@
+{
+  "$id": "https://morphosphere.local/schemas/candidate_field.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateField",
+  "type": "object",
+  "required": ["field_id", "t_surface_id", "field_matrix"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "field_id": { "type": "string" },
+    "t_surface_id": { "type": "string" },
+    "field_matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": { "type": "number" }
+      }
+    }
+  }
+}

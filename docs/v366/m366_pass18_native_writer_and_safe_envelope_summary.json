@@ -1,0 +1,16 @@
+{
+  "pass": "18",
+  "db": "/mnt/data/m366_pass18_native_writer_and_safe_envelope.db",
+  "integrity": "ok",
+  "native_writer_prototype_rows": 100,
+  "safe_envelope_rows": 9,
+  "p_core_guard_rules": 1,
+  "semantic_quarantine_rows": 36,
+  "ctc02_replay_samples": 60,
+  "ctc02_stage_trace_rows": 600,
+  "boundaries": [
+    "prototype native-writer emissions are not retroactive raw FK facts",
+    "semantic quarantine is sidecar plan; no destructive mutation of legacy DBs",
+    "CTC02 replay is native-shaped over upper projection, not full native runtime"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "continuous_signal_summary.schema.json",
+  "title": "ContinuousSignalSummary",
+  "type": "object",
+  "required": ["schema_version", "node_id", "window_id", "V_mean", "V_slope", "adaptation_state"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "node_id": { "type": "integer" },
+    "window_id": { "type": "string" },
+    "V_mean": { "type": "number" },
+    "V_slope": { "type": "number" },
+    "adaptation_state": { "type": "number" },
+    "release_proxy": { "type": "number" },
+    "afferent_current": { "type": "number" }
+  }
+}

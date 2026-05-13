@@ -1,0 +1,12 @@
+{
+  "version": "v36_metric_bridge_overlay",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "includes_full_base": false,
+  "not_a_full_lineage": true,
+  "runtime_role": "metric_proxy_and_xin_curvature_gate_sidecar",
+  "sqlite_db": "outputs/m36.db",
+  "semantic_label_in_mainline": false,
+  "physical_metric_claimed": false,
+  "delta_xin_fallback_only": true,
+  "created_at": "2026-05-05T10:04:53.055672+00:00"
+}

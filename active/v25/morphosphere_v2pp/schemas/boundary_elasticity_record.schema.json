@@ -1,0 +1,15 @@
+{
+  "$id": "https://morphosphere.local/schemas/boundary_elasticity_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BoundaryElasticityRecord",
+  "type": "object",
+  "required": ["boundary_id", "o_surface_id", "elasticity_score"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "boundary_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "elasticity_score": { "type": "number" },
+    "elasticity_type": { "type": "string", "default": "standard" }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "table_row_counts": {
+    "run_manifest": 1,
+    "spacetime_cell": 3000,
+    "information_fiber": 3000,
+    "spacetime_fiber_binding": 3000,
+    "transport_current_edge": 5400,
+    "object_hypothesis": 36,
+    "occupancy_measure": 216,
+    "pr_graph_transition_record": 72,
+    "masking_counterevidence_record": 72,
+    "xi_residue_record": 18,
+    "v368_free_energy_routing": 0
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$id": "https://morphosphere.local/schemas/observable_surface.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ObservableSurface",
+  "type": "object",
+  "required": ["o_surface_id", "stage_k", "t_surface_id", "field_surface_id", "candidate_surface_id"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "o_surface_id": { "type": "string" },
+    "stage_k": { "type": "integer" },
+    "t_surface_id": { "type": "string" },
+    "field_surface_id": { "type": "string" },
+    "candidate_surface_id": { "type": "string" }
+  }
+}

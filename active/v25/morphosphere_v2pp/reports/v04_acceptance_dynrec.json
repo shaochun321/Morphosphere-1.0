@@ -1,0 +1,240 @@
+{
+  "passed": 39,
+  "total": 39,
+  "results": [
+    {
+      "test_name": "table_exists_recursive_system_run_manifest",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_clock_binding_record",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_cell_spatial_coordinate_snapshot",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_information_relative_coordinate_snapshot",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_preneural_node_state",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_preneural_edge_state",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_dynamic_origin_anchor_state",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_dynamic_latent_trajectory_state",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_trajectory_transition_edge",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_topdown_feedback_signal",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_xin_residue_dynamics",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_recursive_memory_trace",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_recursive_metric_weight_state",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_dynamic_free_energy_trace",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_recursive_iteration_report",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_recursive_reprojection_report",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "table_exists_recursive_acceptance_report",
+      "passed": true,
+      "observed": true,
+      "expected": "table exists"
+    },
+    {
+      "test_name": "manifest_exists",
+      "passed": true,
+      "observed": "present",
+      "expected": "present"
+    },
+    {
+      "test_name": "version_dynamic_recursive_v02",
+      "passed": true,
+      "observed": "dynamic_recursive_v0.2",
+      "expected": "dynamic_recursive_v0.2"
+    },
+    {
+      "test_name": "execution_mode_diagnostic_recursive",
+      "passed": true,
+      "observed": "diagnostic_recursive",
+      "expected": "diagnostic_recursive"
+    },
+    {
+      "test_name": "not_scientific_run",
+      "passed": true,
+      "observed": 0,
+      "expected": "0"
+    },
+    {
+      "test_name": "semantic_labels_disallowed",
+      "passed": true,
+      "observed": 0,
+      "expected": "0"
+    },
+    {
+      "test_name": "clock_source_system_clock_entry",
+      "passed": true,
+      "observed": "system_clock_entry",
+      "expected": "system_clock_entry"
+    },
+    {
+      "test_name": "iterations_at_least_5",
+      "passed": true,
+      "observed": 5,
+      "expected": ">=5"
+    },
+    {
+      "test_name": "input_tables_do_not_include_semantic",
+      "passed": true,
+      "observed": "[\"raw_event_stream\", \"spacetime_cell\", \"information_fiber\", \"origin_anchor\", \"latent_trajectory\", \"trajectory_event_binding\", \"system_clock_entry\"]",
+      "expected": "no semantic/O/P generation tables"
+    },
+    {
+      "test_name": "stored_acceptance_all_pass",
+      "passed": true,
+      "observed": "20/20",
+      "expected": "all stored recursive checks pass"
+    },
+    {
+      "test_name": "clock_binding_recorded",
+      "passed": true,
+      "observed": 1,
+      "expected": "1"
+    },
+    {
+      "test_name": "cell_coordinate_snapshot_count_matches",
+      "passed": true,
+      "observed": "500/500",
+      "expected": "match"
+    },
+    {
+      "test_name": "information_coordinate_snapshot_count_matches",
+      "passed": true,
+      "observed": "1500/1500",
+      "expected": "match"
+    },
+    {
+      "test_name": "preneural_node_states_present",
+      "passed": true,
+      "observed": 2500,
+      "expected": ">0"
+    },
+    {
+      "test_name": "preneural_edge_states_present",
+      "passed": true,
+      "observed": 5000,
+      "expected": ">0"
+    },
+    {
+      "test_name": "dynamic_trajectory_states_present",
+      "passed": true,
+      "observed": 250,
+      "expected": ">0"
+    },
+    {
+      "test_name": "topdown_feedback_present",
+      "passed": true,
+      "observed": 2000,
+      "expected": ">0"
+    },
+    {
+      "test_name": "xin_multistate",
+      "passed": true,
+      "observed": 4,
+      "expected": ">=3"
+    },
+    {
+      "test_name": "prediction_error_not_worse",
+      "passed": true,
+      "observed": "0.109473->0.062833",
+      "expected": "<=105%"
+    },
+    {
+      "test_name": "xin_mass_not_worse",
+      "passed": true,
+      "observed": "0.111796->0.079147",
+      "expected": "<=105%"
+    },
+    {
+      "test_name": "free_energy_not_worse",
+      "passed": true,
+      "observed": "0.528132->0.437863",
+      "expected": "<=105%"
+    },
+    {
+      "test_name": "reprojection_beats_baseline",
+      "passed": true,
+      "observed": "0.409401",
+      "expected": ">0.30"
+    },
+    {
+      "test_name": "metric_weight_rows_present",
+      "passed": true,
+      "observed": 5,
+      "expected": ">=5"
+    }
+  ]
+}

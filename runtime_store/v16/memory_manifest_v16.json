@@ -1,0 +1,13 @@
+{
+  "version": "sensor_fusion_memory_drift_calibration_v1.6",
+  "clock_domain_memory_rows": 7,
+  "phase_bias_memory_rows": 5,
+  "fusion_memory_trace_rows": 50,
+  "calibration_recommendations": 3,
+  "avg_memory_confidence": 0.7519717534878904,
+  "avg_p_support_memory": 0.7419687722392996,
+  "avg_xi_pressure_memory": 0.27512553595772676,
+  "hot_swap_allowed": false,
+  "candidate_auto_apply_allowed": false,
+  "sqlite_role": "ledger_only"
+}

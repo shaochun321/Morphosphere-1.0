@@ -1,0 +1,44 @@
+suspension_registry:
+  - id: ext-ledger-variational-closure
+    layer: external_ledger
+    status: IMPLEMENTED
+    reason: Discrete continuity equation and graph divergence mathematically realized.
+    placeholder: gauge_fixed_ledger_potential + balance laws
+    unsuspend_conditions:
+      - q_m state surfaces defined
+      - j_m flow surfaces defined
+      - continuity constraint implemented
+      - dual/dissipation structure validated
+
+  - id: transport-pilot-mainline-promotion
+    layer: external_transitional
+    status: SUSPENDED_MAINLINE_PROMOTION
+    reason: OT/CPD pilot useful but not yet proven as mainline authority
+    placeholder: report-only bridge
+    unsuspend_conditions:
+      - stable on hard cases
+      - replay-consistent
+      - no contract violation
+      - explicit rollback plan
+
+  - id: pr-pilot-mainline-promotion
+    layer: external_transitional
+    status: SUSPENDED_MAINLINE_PROMOTION
+    reason: pilot decomposition may assist but cannot yet define bands
+    placeholder: candidate reports only
+    unsuspend_conditions:
+      - stable candidate behavior
+      - threshold sensitivity bounded
+      - no semantic leakage
+      - validated against baseline mainline proposer
+
+  - id: full-shell0-resolution
+    layer: boundary_first
+    status: SUSPENDED_PRESENT
+    reason: shell0 has formal seat but remains unresolved high-risk boundary issue
+    placeholder: CI + research dual track
+    unsuspend_conditions:
+      - multi-resolution stability
+      - multi-boundary stability
+      - contact ablation consistency
+      - no semantic uplift before closure

@@ -1,0 +1,7 @@
+stress_id,stress_name,trajectory_windows,p_to_r_projected,r_or_p_to_xin_projected,stable_retained,boundary_blocked,interpretation
+S1,coordinate jitter,532,1,0,531,0,coordinate perturbation should mostly retain stable P/R/Xin assignment
+S2,support dropout,532,23,0,509,0,support removal tests whether P support becomes R challenge
+S3,counter-evidence boost,532,513,0,19,0,boosted counter evidence should trigger R on most windows
+S4,Xin residual spike,532,1,462,69,0,residual spike tests whether unclosed residual enters Xin
+S5,masking failure,532,450,67,15,0,masking failure exposes R and some Xin pressure
+S6,semantic backwrite attack,532,0,0,0,532,external semantic backwrite must be blocked

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "event_signal_summary.schema.json",
+  "title": "EventSignalSummary",
+  "type": "object",
+  "required": ["schema_version", "node_id", "window_id", "spike_rate", "spike_regularity", "timing_precision"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "node_id": { "type": "integer" },
+    "window_id": { "type": "string" },
+    "spike_rate": { "type": "number" },
+    "spike_regularity": { "type": "number" },
+    "timing_precision": { "type": "number" },
+    "burst_count": { "type": "integer" },
+    "inter_spike_cv": { "type": "number" }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "$id": "morphosphere/schemas/external_entropy_ledger.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExternalEntropyLedger",
+  "type": "object",
+  "required": [
+    "schema_version", "run_id", "stage_k_id", "window_id",
+    "transport_entropy", "candidate_fragment_entropy", "origin_support_entropy",
+    "residual_accumulation_entropy", "external_entropy_total", "calculation_variant"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "run_id": {"type": "string"},
+    "stage_k_id": {"type": "string"},
+    "window_id": {"type": "string"},
+    "transport_entropy": {"type": "number"},
+    "candidate_fragment_entropy": {"type": "number"},
+    "origin_support_entropy": {"type": "number"},
+    "residual_accumulation_entropy": {"type": "number"},
+    "external_entropy_total": {"type": "number"},
+    "calculation_variant": {"type": "string"},
+    "evidence_ref": {"type": ["string", "null"]},
+    "transport_ref": {"type": ["string", "null"]}
+  }
+}

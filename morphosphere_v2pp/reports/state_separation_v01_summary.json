@@ -1,0 +1,85 @@
+{
+  "state_run_id": "state_sep_v01_a6a2fdfd9e",
+  "version": "state_separation_v0.1",
+  "source_db": "morphosphere_v853_basic_physics_output_database.db",
+  "output_db": "morphosphere_state_separation_v01_output_database.db",
+  "raw_event_count": 1500,
+  "channels": {
+    "bioelectric_proxy": 500,
+    "kinematic_flow": 500,
+    "phase_clock": 500
+  },
+  "origin_anchor_count": 10,
+  "latent_trajectory_count": 5,
+  "trajectory_score_avg": {
+    "continuity": 0.972324596040456,
+    "conservation": 0.7674656377729635,
+    "phase_coherence": 0.794382862996861,
+    "reconstruction": 0.889661525612145,
+    "residual_mass": 0.13577503735156254
+  },
+  "event_binding": {
+    "count": 1500,
+    "accepted": 1498,
+    "avg_binding_weight": 0.6372491226930905
+  },
+  "xin_residue": {
+    "count": 2,
+    "avg_residue_mass": 0.6050194319987277
+  },
+  "reprojection": {
+    "baseline_error": 25.36043932766735,
+    "trajectory_error": 11.381968379232132,
+    "improvement_over_global": 0.5511919871666102,
+    "passed": true
+  },
+  "noise_sweep": [
+    {
+      "noise_level": 0.05,
+      "coassignment_stability": 0.9028571428571428,
+      "xin_residue_mass_proxy": 0.206703608780134,
+      "passed": true
+    },
+    {
+      "noise_level": 0.1,
+      "coassignment_stability": 0.8865306122448979,
+      "xin_residue_mass_proxy": 0.2331832006168687,
+      "passed": true
+    },
+    {
+      "noise_level": 0.2,
+      "coassignment_stability": 0.8587755102040816,
+      "xin_residue_mass_proxy": 0.28344850673931765,
+      "passed": true
+    },
+    {
+      "noise_level": 0.3,
+      "coassignment_stability": 0.8718367346938776,
+      "xin_residue_mass_proxy": 0.3112648332699299,
+      "passed": true
+    }
+  ],
+  "hidden_structure_probe": {
+    "within_correlation": 0.7545357472912487,
+    "outside_correlation": 0.055509440956134914,
+    "detection_contrast": 0.6990263063351139,
+    "detected_as": "xi_proto_candidate",
+    "passed": true
+  },
+  "cross_modal_binding": {
+    "probe_count": 15,
+    "avg_phase_coherence": 0.9252977802924228,
+    "accepted_ratio": 1.0
+  },
+  "state_acceptance": {
+    "passed": 12,
+    "total": 12
+  },
+  "scientific_run": false,
+  "semantic_labels_allowed": false,
+  "caveats": [
+    "This is diagnostic state separation, not final biology.",
+    "It does not prove semantic emergence.",
+    "It does not yet implement a full recurrent neural system or real sensor physics."
+  ]
+}

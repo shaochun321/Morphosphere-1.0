@@ -1,0 +1,26 @@
+{
+  "$id": "https://morphosphere.local/schemas/recursive_transition_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RecursiveTransitionRecord",
+  "type": "object",
+  "required": ["transition_id", "from_stage_k", "to_stage_kplus1", "origin_id", "seed_id"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "transition_id": { "type": "string" },
+    "from_stage_k": { "type": "integer" },
+    "to_stage_kplus1": { "type": "integer" },
+    "source_p_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "triggering_r_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "origin_id": { "type": "string" },
+    "seed_id": { "type": "string" },
+    "transition_confidence": { "type": "number", "default": 0.0 },
+    "continuity_score": { "type": "number", "default": 0.0 }
+  }
+}

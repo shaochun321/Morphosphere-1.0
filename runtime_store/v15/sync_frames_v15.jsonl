@@ -1,0 +1,10 @@
+{"frame_id":"frame15_00","system_clock_n":0,"system_time_s":0.0,"domain_count":7,"samples_used":6,"max_abs_lag_ms":0.25,"mean_abs_lag_ms":0.041666666666666664,"sync_confidence":0.9958333333333333}
+{"frame_id":"frame15_01","system_clock_n":1,"system_time_s":0.01,"domain_count":7,"samples_used":6,"max_abs_lag_ms":8.076655103996135,"mean_abs_lag_ms":1.7558814403310974,"sync_confidence":0.8244118559668903}
+{"frame_id":"frame15_02","system_clock_n":2,"system_time_s":0.02,"domain_count":7,"samples_used":6,"max_abs_lag_ms":1.9233448960038653,"mean_abs_lag_ms":0.5319164770277076,"sync_confidence":0.9468083522972293}
+{"frame_id":"frame15_03","system_clock_n":3,"system_time_s":0.03,"domain_count":7,"samples_used":6,"max_abs_lag_ms":5.086259068914085,"mean_abs_lag_ms":1.2782024196531891,"sync_confidence":0.8721797580346811}
+{"frame_id":"frame15_04","system_clock_n":4,"system_time_s":0.04,"domain_count":7,"samples_used":6,"max_abs_lag_ms":4.913740931085917,"mean_abs_lag_ms":1.0126169174158028,"sync_confidence":0.8987383082584197}
+{"frame_id":"frame15_05","system_clock_n":5,"system_time_s":0.05,"domain_count":7,"samples_used":6,"max_abs_lag_ms":1.550093194935799,"mean_abs_lag_ms":0.5259171909026347,"sync_confidence":0.9474082809097365}
+{"frame_id":"frame15_06","system_clock_n":6,"system_time_s":0.06,"domain_count":7,"samples_used":6,"max_abs_lag_ms":5.8701298687359325,"mean_abs_lag_ms":1.0513214141308473,"sync_confidence":0.8948678585869153}
+{"frame_id":"frame15_07","system_clock_n":7,"system_time_s":0.07,"domain_count":7,"samples_used":6,"max_abs_lag_ms":4.129870131264076,"mean_abs_lag_ms":1.0513524781387422,"sync_confidence":0.8948647521861258}
+{"frame_id":"frame15_08","system_clock_n":8,"system_time_s":0.08,"domain_count":7,"samples_used":6,"max_abs_lag_ms":1.5737791215361536,"mean_abs_lag_ms":0.43243878507610395,"sync_confidence":0.9567561214923896}
+{"frame_id":"frame15_09","system_clock_n":9,"system_time_s":0.09,"domain_count":7,"samples_used":6,"max_abs_lag_ms":8.426220878463841,"mean_abs_lag_ms":1.826794414490032,"sync_confidence":0.8173205585509968}

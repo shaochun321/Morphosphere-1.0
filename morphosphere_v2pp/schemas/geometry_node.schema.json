@@ -1,0 +1,26 @@
+{
+  "$id": "https://morphosphere.local/schemas/geometry_node.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GeometryNode",
+  "type": "object",
+  "required": ["node_id", "position", "surface_normal"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "node_id": { "type": "integer" },
+    "patch_ids": { "type": "array", "items": { "type": "integer" } },
+    "position": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "surface_normal": {
+      "type": "array",
+      "items": { "type": "number" },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "area_weight": { "type": "number", "default": 1.0 }
+  }
+}

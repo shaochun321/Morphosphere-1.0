@@ -1,0 +1,21 @@
+{
+  "$id": "https://morphosphere.local/schemas/primary_band_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrimaryBandRecord",
+  "type": "object",
+  "required": ["p_band_id", "o_surface_id", "core_margin_type", "member_node_ids"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "p_band_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "core_margin_type": { "type": "string" },
+    "member_node_ids": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "coherence_score": { "type": "number", "default": 0.0 },
+    "replay_support": { "type": "number", "default": 0.0 },
+    "origin_anchor_id": { "type": "string" }
+  }
+}

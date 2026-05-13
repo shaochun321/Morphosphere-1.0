@@ -1,0 +1,6 @@
+{
+  "version": "v36.5",
+  "envelope_required": true,
+  "continuous_field_assumption": "proxy/envelope constraint only",
+  "internal_recursion_is_not_external_reality": true
+}

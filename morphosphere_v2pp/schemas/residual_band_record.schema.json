@@ -1,0 +1,20 @@
+{
+  "$id": "https://morphosphere.local/schemas/residual_band_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ResidualBandRecord",
+  "type": "object",
+  "required": ["r_band_id", "o_surface_id", "margin_outer_type", "residual_reason"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "r_band_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "margin_outer_type": { "type": "string" },
+    "residual_reason": { "type": "string" },
+    "routing_target": { "type": "string" },
+    "upgrade_conditions": {
+      "type": "object",
+      "additionalProperties": { "type": "number" }
+    }
+  }
+}

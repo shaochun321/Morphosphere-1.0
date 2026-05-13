@@ -1,0 +1,11 @@
+{
+  "version": "ctc_download_extraction_v2.1",
+  "primary_dataset": "Fluo-N2DH-GOWT1",
+  "real_data_gate": "BLOCKED_PENDING_REAL_CTC_DOWNLOAD_OR_UPLOAD",
+  "bundle_contains_real_dataset_zip": false,
+  "tools": [
+    "download_ctc_dataset_v21.py",
+    "extract_ctc_centroids_v21.py",
+    "run_ctc_download_extraction_v21.py"
+  ]
+}

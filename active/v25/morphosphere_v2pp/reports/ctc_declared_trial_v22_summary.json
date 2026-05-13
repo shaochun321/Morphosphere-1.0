@@ -1,0 +1,12 @@
+{
+  "version": "ctc_declared_real_trial_orchestrator_v2.2",
+  "input_csv": "morphosphere_v2pp/data/ctc_centroids_real_v24.csv",
+  "rows": 4575,
+  "tracks": 86,
+  "mapped_tracks": 86,
+  "declared_real_external_effective": true,
+  "attempted_false_real_blocked": false,
+  "realdata_gate": "PASS_REAL_EXTERNAL_DECLARED",
+  "source_facts_rewritten": false,
+  "p_r_before_xi_preserved": true
+}

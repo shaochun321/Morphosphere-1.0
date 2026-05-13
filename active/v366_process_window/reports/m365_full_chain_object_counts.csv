@@ -1,0 +1,16 @@
+layer_name,materialized_table,object_count,distinct_source_refs,notes
+source_data,source_data_inventory,1,1,actual source inventory from information points
+information_point,source_to_information_point,4575,4575,real information points
+information_point_3d4d_backprojection,information_point_3d4d_backprojection,4575,4575,requested 3D/4D backprojection layer
+information_point_to_trajectory,information_point_to_trajectory,13941,4575,point-window membership links
+trajectory_to_o_pr_r_xin,trajectory_to_o_pr_r_xin,532,532,P/R/Xin window decisions
+counter_evidence_chain,counter_evidence_chain_materialized,532,532,requested counter-evidence chain layer
+masking_layer,masking_layer_materialized,52,52,requested masking layer
+external_entropy_ledger,external_entropy_ledger_materialized,4489,4489,v34 external entropy ledger rows
+preneural,preneural_materialized,50,50,online/preneneural O/P/R/Xi materialization
+attention,attention_materialized,120,120,v35 attention proposals/audits
+hyperedge,hyperedge_materialized,120,120,v35H hyperedges
+hyperedge_incidence,hyperedge_incidence_materialized,855,747,v35H incidence rows
+variational_path,variational_path_materialized,120,120,v36.2 action paths
+spacetime_band_coupler,spacetime_band_coupler_materialized,210,210,v36.3/36.4 bands/coupler
+xin_carrier_external_readout,xin_carrier_external_readout_materialized,31,31,v36.5 carrier/readout layer

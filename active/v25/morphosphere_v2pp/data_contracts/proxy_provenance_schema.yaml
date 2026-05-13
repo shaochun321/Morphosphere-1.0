@@ -1,0 +1,51 @@
+# Morphosphere V8.5 Proxy Provenance Schema
+# V8.5 §14: Proxy is not fraud — it is explicitly marked temporary fill.
+
+version: v8.5
+updated: 2026-04-25
+
+proxy_types:
+  - synthetic       # Generated test data
+  - surrogate       # Replacement from related measurement
+  - mock            # Empty/constant placeholder
+  - pilot           # External pilot algorithm output
+  - inferred        # Derived from indirect evidence
+  - placeholder     # Structural placeholder, no data
+
+required_fields:
+  proxy_id: string
+  target_field: string
+  proxy_type: enum[synthetic, surrogate, mock, pilot, inferred, placeholder]
+  proxy_reason: string
+  source_assumption: string
+  maturity_status: string
+  replacement_condition: string
+  forbidden_interpretation: string
+  created_by: string
+  created_at: string
+  review_due: string
+
+forbidden_interpretations:
+  - scientific_conclusion
+  - final_pr_certification
+  - physical_truth_claim
+  - true_geometry_claim
+  - true_thermodynamic_claim
+
+# Proxy Density Budget (V8.5 §14.4)
+proxy_density_budget:
+  diagnostic_run:
+    allowed_level: high
+    ruling: "Usable for skeleton power-on, not for scientific interpretation"
+  construction_run:
+    allowed_level: medium
+    ruling: "Usable for module integration verification"
+  calibration_run:
+    allowed_level: restricted
+    ruling: "Critical path proxy must be declared per-item"
+  scientific_run:
+    allowed_level: very_low
+    ruling: "Run cannot be upgraded to scientifically credible if critical proxy too high"
+  publication_run:
+    allowed_level: near_zero
+    ruling: "Proxy must be individually explained with replacement or validation evidence"

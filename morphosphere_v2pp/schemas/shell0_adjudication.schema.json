@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "shell0_adjudication.schema.json",
+  "title": "Shell0Adjudication",
+  "type": "object",
+  "required": ["schema_version", "run_id", "adjudication_id", "resolution_method", "verdict"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "run_id": { "type": "string" },
+    "adjudication_id": { "type": "string" },
+    "node_ids": { "type": "array", "items": { "type": "integer" } },
+    "resolution_method": { "type": "string", "enum": ["boundary_first", "multi_resolution", "multi_boundary", "contact_ablation"] },
+    "verdict": { "type": "string", "enum": ["resolved", "unresolved", "mixed_or_indeterminate"] },
+    "confidence": { "type": "number" },
+    "evidence_refs": { "type": "array", "items": { "type": "string" } }
+  }
+}

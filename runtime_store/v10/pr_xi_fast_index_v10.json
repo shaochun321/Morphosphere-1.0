@@ -1,0 +1,7 @@
+{
+  "p_support": 50,
+  "r_counterstructure": 18,
+  "role": "runtime_fast_lookup_not_source_of_truth",
+  "run_id": "runtime_ledger_split_v10",
+  "xi_boundary_guard": 87
+}

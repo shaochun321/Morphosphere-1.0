@@ -1,0 +1,7 @@
+{
+  "version": "multi_rate_clock_sync_sensor_fusion_v1.5",
+  "canonical_clock": "system_clock_entry",
+  "semantic_labels_allowed": false,
+  "sqlite_role": "ledger_only",
+  "hot_swap_allowed": false
+}

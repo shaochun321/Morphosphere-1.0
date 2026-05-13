@@ -1,0 +1,65 @@
+{
+  "artifact": "Morphosphere_v36_6_complete_deploy_pass14",
+  "created_at_epoch": 1778072302,
+  "package_type": "complete_full_materialized_plus_pass13_native_replay",
+  "run_type": "materialized_integration_plus_native_shaped_replay",
+  "contains_full_base_outputs": true,
+  "contains_runtime_store": true,
+  "contains_pass13_replay": true,
+  "boundaries": {
+    "online_native_life_runtime_claimed": false,
+    "true_pde_continuous_field_claimed": false,
+    "semantic_writeback_allowed": false,
+    "source_facts_rewritten": false
+  },
+  "key_files": [
+    {
+      "path": "outputs/m25.db",
+      "exists": true,
+      "bytes": 27594752,
+      "sha256": "48fd72cc6594ea5eed9243309fcfbafaec24ed0eaefde07be0bee70964ffaf17"
+    },
+    {
+      "path": "outputs/m34.db",
+      "exists": true,
+      "bytes": 93016064,
+      "sha256": "daa6442402f2541519155a3d0ebde8f23f47537388fbee36b9c92fc6eda6c227"
+    },
+    {
+      "path": "outputs/m365_full_rebase.db",
+      "exists": true,
+      "bytes": 45056,
+      "sha256": "beb107ec4760cb7c532c913c147378f35ff3226e4f9a82f24d1549187916d570"
+    },
+    {
+      "path": "outputs/v366/m365_full_chain_materialized.db",
+      "exists": true,
+      "bytes": 12443648,
+      "sha256": "940add37a324cd5e3265ac7974bb2327e79563161d310960cd813b590b69b53f"
+    },
+    {
+      "path": "outputs/v366/m366_process_window_pass3.db",
+      "exists": true,
+      "bytes": 11624448,
+      "sha256": "34cbe0c3592a9b8690ed56ac7641bef9792015f9f9ca886c2b6c7c7ef2ccc1de"
+    },
+    {
+      "path": "outputs/v366/m366_implementation_coverage_audit.db",
+      "exists": true,
+      "bytes": 81920,
+      "sha256": "8bc0ce6a05f14f210d562217b56ba96b43fe6bd9cf3c008e512bd6950e47ed30"
+    },
+    {
+      "path": "outputs/v366/m366_build_pass12_execution.db",
+      "exists": true,
+      "bytes": 1892352,
+      "sha256": "2894c19a166042a9ac27f01213adb859adb395adadd7283f3627626d7b6a14cd"
+    },
+    {
+      "path": "outputs/v366/m366_build_pass13_native_replay.db",
+      "exists": true,
+      "bytes": 3526656,
+      "sha256": "18a0cbe224c5fa42588a0f1fbf8cc577e4836c00c15d18f3bc33eb818191cc37"
+    }
+  ]
+}

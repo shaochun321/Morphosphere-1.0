@@ -1,0 +1,153 @@
+{
+  "out_db": "/mnt/data/m365_full_chain_materialized.db",
+  "created_utc": "2026-05-06T02:39:10Z",
+  "source_root": "/mnt/data/Morphosphere_v36_5_full_lineage_rebase",
+  "counts": {
+    "source_data": 4576,
+    "information_point_3d4d_backprojection": 4575,
+    "trajectory_T_window": 13941,
+    "O_P_R_Xin_measure": 532,
+    "counter_evidence_chain": 532,
+    "masking_layer": 52,
+    "preneural_tick_layer": 50,
+    "runtime_store_and_evidence_bundle": 678,
+    "external_entropy_ledger": 4489,
+    "attention_governance": 120,
+    "hyperedge_incidence": 975,
+    "variational_action_xin": 120,
+    "r_spacetime_band_and_coupler": 210,
+    "xin_carrier_external_readout": 31
+  },
+  "object_counts": {
+    "source_data": 1,
+    "information_point": 4575,
+    "information_point_3d4d_backprojection": 4575,
+    "information_point_to_trajectory": 13941,
+    "trajectory_to_o_pr_r_xin": 532,
+    "counter_evidence_chain": 532,
+    "masking_layer": 52,
+    "external_entropy_ledger": 4489,
+    "preneural": 50,
+    "attention": 120,
+    "hyperedge": 120,
+    "hyperedge_incidence": 855,
+    "variational_path": 120,
+    "spacetime_band_coupler": 210,
+    "xin_carrier_external_readout": 31
+  },
+  "audits": [
+    {
+      "audit_id": "audit_001_information_points",
+      "audit_scope": "source",
+      "status": "PASS",
+      "observed": "4575",
+      "expected": ">0",
+      "blocking": 1,
+      "detail": "information_point_v25 rows materialized"
+    },
+    {
+      "audit_id": "audit_002_3d4d_backprojection",
+      "audit_scope": "information_point_3d4d_backprojection",
+      "status": "PASS",
+      "observed": "4575/4575",
+      "expected": "one transform per information point",
+      "blocking": 0,
+      "detail": "z_nonzero_count=0; source is 2D CTC with z0 policy but 4D schema including time exists"
+    },
+    {
+      "audit_id": "audit_003_point_to_trajectory",
+      "audit_scope": "trajectory",
+      "status": "PASS",
+      "observed": "13941",
+      "expected": "> information point count due sliding windows",
+      "blocking": 0,
+      "detail": "point-to-window links parsed from trajectory_window_trace_v25.point_ids_json"
+    },
+    {
+      "audit_id": "audit_004_pr_xin_decisions",
+      "audit_scope": "O/P/R/Xin",
+      "status": "PASS",
+      "observed": "532",
+      "expected": "532",
+      "blocking": 0,
+      "detail": "P/R/Xin materialized per P window with evidence bundles"
+    },
+    {
+      "audit_id": "audit_005_counter_evidence",
+      "audit_scope": "counter_evidence_chain",
+      "status": "PASS",
+      "observed": "532",
+      "expected": ">0",
+      "blocking": 1,
+      "detail": "requested counter-evidence chain layer"
+    },
+    {
+      "audit_id": "audit_006_masking_layer",
+      "audit_scope": "masking_layer",
+      "status": "PASS",
+      "observed": "52",
+      "expected": ">0",
+      "blocking": 1,
+      "detail": "requested masking layer from base and v35"
+    },
+    {
+      "audit_id": "audit_007_external_entropy",
+      "audit_scope": "external_entropy_ledger",
+      "status": "PASS",
+      "observed": "4489",
+      "expected": ">0",
+      "blocking": 1,
+      "detail": "v34 external entropy events materialized"
+    },
+    {
+      "audit_id": "audit_008_attention",
+      "audit_scope": "attention",
+      "status": "PASS",
+      "observed": "120",
+      "expected": "120",
+      "blocking": 0,
+      "detail": "v35 attention proposals with audit/performance"
+    },
+    {
+      "audit_id": "audit_009_hyperedge_arity",
+      "audit_scope": "hyperedge",
+      "status": "PASS",
+      "observed": "7.125",
+      "expected": ">=3",
+      "blocking": 0,
+      "detail": "v35H incidence arity preserved"
+    },
+    {
+      "audit_id": "audit_010_semantic_backwrite",
+      "audit_scope": "v36.5",
+      "status": "PASS",
+      "observed": "0",
+      "expected": "0 writes_mainline",
+      "blocking": 1,
+      "detail": "external readout remains read-only"
+    },
+    {
+      "audit_id": "audit_011_direct_upper_fk",
+      "audit_scope": "cross_layer",
+      "status": "WARN",
+      "observed": "upper overlay refs are stage-level/synthetic in places",
+      "expected": "direct FK from v35H/v36.x to v25 raw points",
+      "blocking": 0,
+      "detail": "materialization stores exact base chain and honest upper-stage continuation; v36.6 should add process_window and hypernode_spacetime_backprojection"
+    }
+  ],
+  "db_sizes": {
+    "base_m34": 93016064,
+    "m25": 27594752,
+    "m26": 32313344,
+    "m35": 266240,
+    "m35H": 270336,
+    "m36": 172032,
+    "m361": 184320,
+    "m362": 192512,
+    "m363": 225280,
+    "m364": 266240,
+    "m365": 217088,
+    "rebase": 45056
+  }
+}

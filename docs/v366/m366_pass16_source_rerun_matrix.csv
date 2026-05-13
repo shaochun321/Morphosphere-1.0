@@ -1,0 +1,6 @@
+scenario_id,result_count,role_changed_count,p_to_r_count,to_xin_count,stable_retained_count,max_abs_rel_path_delta,mean_delta_p,mean_delta_r,mean_delta_xin,p_core_collapse_count,verdict
+baseline,120,0,0,0,120,0.0,0.0,0.0,0.0,0,INFO
+rigid_translation,120,0,0,0,120,2.0315815093733095e-15,0.0,0.0,0.0,0,PASS
+source_counter_edge_injection,480,418,394,20,62,6.8218098824318165,-0.19994059639913053,0.3344789304087313,0.11467014069068711,60,WARN
+support_dropout_source,120,87,67,19,33,0.6112225078227493,-0.0867460551224452,0.13011908268366779,0.0920476330734671,1,WARN
+xin_discontinuity_source_spike,120,86,6,80,34,3.1097966917833206,-0.2493664682883207,0.36305440447051457,0.3562168639335874,15,WARN

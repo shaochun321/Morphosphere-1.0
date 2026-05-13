@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "v85_to_mainline_crosswalk.schema.json",
+  "title": "V85ToMainlineCrosswalk",
+  "type": "object",
+  "required": [
+    "diagnostic_table",
+    "prior_mainline_concept",
+    "semantic_role",
+    "source_of_truth",
+    "allowed_use",
+    "forbidden_use"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "diagnostic_table": { "type": "string" },
+    "prior_mainline_concept": { "type": "string" },
+    "semantic_role": {
+      "type": "string",
+      "enum": ["source", "derived", "proxy_or_derived", "report_only", "derived_or_intentionally_empty"]
+    },
+    "source_of_truth": { "type": "string" },
+    "allowed_use": { "type": "string" },
+    "forbidden_use": { "type": "string" },
+    "intentionally_empty_when": { "type": "string" },
+    "created_at": { "type": "string" }
+  }
+}

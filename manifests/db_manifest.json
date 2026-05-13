@@ -1,0 +1,79 @@
+[
+  {
+    "path": "outputs/history_v24/morphosphere_ctc_declared_trial_v22_output_database.db",
+    "bytes": 16719872,
+    "sha256": "ed98ffa7f9a723828b21b81d2aa3b9e6d5c5e01d9619f0853c587c196e90f108",
+    "sqlite_quick_check": "ok",
+    "table_count": 332
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_ctc_extraction_v21_output_database.db",
+    "bytes": 339968,
+    "sha256": "602cad0f040f0e909f4a293f0ca962463c1c33bed7b72243039a0a34d9d7d583",
+    "sqlite_quick_check": "ok",
+    "table_count": 21
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_ctc_real_source_v24_output_database.db",
+    "bytes": 16719872,
+    "sha256": "ce569eca27f0c9a1a583bad7afeed1fee98c9f3f22e9cef5889d00d817c57a22",
+    "sqlite_quick_check": "ok",
+    "table_count": 332
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_ctc_source_verified_v24_output_database.db",
+    "bytes": 16814080,
+    "sha256": "86c69673fc76919d27288e30c52878d644a839e0b367b552fe3013cbe39d354a",
+    "sqlite_quick_check": "ok",
+    "table_count": 337
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_field_stream_v13_output_database.db",
+    "bytes": 15839232,
+    "sha256": "c634329f9c7d1f3e1b3cf6ac8def28cbeb3da754196143fd02d92803d8f1020e",
+    "sqlite_quick_check": "ok",
+    "table_count": 251
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_frozen_promotion_v17_output_database.db",
+    "bytes": 16478208,
+    "sha256": "62c636b03734417c42e9d5735063bd34a8bd44b89eea63767b590982e801150d",
+    "sqlite_quick_check": "ok",
+    "table_count": 302
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_frozen_sandbox_v18_output_database.db",
+    "bytes": 16572416,
+    "sha256": "746a347a3f29ba7caa5a9a8bf5bcb28027568d815a6040cb863b4a653f54bcf3",
+    "sqlite_quick_check": "ok",
+    "table_count": 313
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_full_core_v18_output_database.db",
+    "bytes": 16572416,
+    "sha256": "746a347a3f29ba7caa5a9a8bf5bcb28027568d815a6040cb863b4a653f54bcf3",
+    "sqlite_quick_check": "ok",
+    "table_count": 313
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_multirate_sync_v15_output_database.db",
+    "bytes": 16273408,
+    "sha256": "9de08d7f8c2a41433f6952039af72780e3c55cfa61b94ac9596d6a73fa556988",
+    "sqlite_quick_check": "ok",
+    "table_count": 279
+  },
+  {
+    "path": "outputs/history_v24/morphosphere_sensor_fusion_memory_v16_output_database.db",
+    "bytes": 16367616,
+    "sha256": "c5a32791568a968bee881af43382c2d838b7081688dbc4dd11f7f244d7ce5180",
+    "sqlite_quick_check": "ok",
+    "table_count": 289
+  },
+  {
+    "path": "outputs/morphosphere_evidence_reconstruction_v25_output_database.db",
+    "bytes": 27594752,
+    "sha256": "48fd72cc6594ea5eed9243309fcfbafaec24ed0eaefde07be0bee70964ffaf17",
+    "sqlite_quick_check": "ok",
+    "table_count": 348
+  }
+]

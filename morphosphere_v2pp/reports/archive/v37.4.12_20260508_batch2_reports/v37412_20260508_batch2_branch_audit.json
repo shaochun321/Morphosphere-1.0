@@ -1,0 +1,578 @@
+[
+  {
+    "window": 1,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.87,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 2,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.84,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 3,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.81,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 4,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.78,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 5,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.75,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 6,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.72,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 7,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.69,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 8,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.66,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 9,
+    "adapter": "cell_sphere_3d",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.63,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 1,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.87,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 2,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.84,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 3,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.81,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 4,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.78,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 5,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.75,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 6,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.72,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 7,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.69,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 8,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.66,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  },
+  {
+    "window": 9,
+    "adapter": "cell_2d_real",
+    "branches": {
+      "B0_FHPMS": {
+        "steps": 3,
+        "all_inside_Y": true,
+        "writeback": false
+      },
+      "B1_RLIS": {
+        "gamma": 0.63,
+        "audit_only": true,
+        "writeback": false
+      },
+      "B2_Hebbian": {
+        "gate_open": true,
+        "target": "HG-FHPMS_only",
+        "writeback": false
+      },
+      "B3_Reprojection": {
+        "coarse_projection": true,
+        "writeback": false
+      }
+    },
+    "merge": {
+      "all_X_inside_Y": true,
+      "no_writeback": true,
+      "finite_k": true,
+      "v375_not_entered": true,
+      "verdict": "PASS"
+    }
+  }
+]

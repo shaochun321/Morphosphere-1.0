@@ -1,0 +1,75 @@
+{
+  "release": "v8.5.3-hardening",
+  "diagnostic_only": true,
+  "no_v86_or_v9": true,
+  "scientific_run": false,
+  "checks": [
+    {
+      "check": "integrity_check",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "v852_acceptance_state_present",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "v853_perturbations_recorded",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "v853_all_effects_passed",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "v853_counterfactuals_passed",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "reproducibility_latest_compared_and_passed",
+      "passed": true,
+      "detail": {
+        "compared_metric_count": 15,
+        "max_abs_delta": 0.0,
+        "tolerance": 1e-09,
+        "passed": 1
+      }
+    },
+    {
+      "check": "artifact_manifest_exported",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "not_scientific_run",
+      "passed": true,
+      "detail": true
+    }
+  ],
+  "passed": 8,
+  "total": 8,
+  "counts": {
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "transport_current_edge": 900,
+    "perturbation_run_manifest": 2,
+    "perturbation_effect_report": 10,
+    "counterfactual_acceptance_report": 10,
+    "v853_reproducibility_report": 2,
+    "v853_release_artifact_manifest": 6
+  },
+  "latest_reproducibility_report": [
+    "v853_val_9787c88b",
+    "v853_val_20905f0f",
+    "48c97015af640f86ace4d12e92e7b2fa0a40a996e495ca02b02651ebea3c25fa",
+    "06ced99bf197ab3ee28c1503fae030ec8acf07a603d9be5eca3930728e7df7cc",
+    15,
+    0.0,
+    1e-09,
+    1
+  ]
+}

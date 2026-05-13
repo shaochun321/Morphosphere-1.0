@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-05-06T04:31:09.635346+00:00",
+  "out_db": "/mnt/data/m366_process_window_pass3.db",
+  "improvement_db": "/mnt/data/m366_improvement_pass3.db",
+  "integrity": "ok",
+  "improvement_integrity": "ok",
+  "counts": {
+    "process_window_registry_pass3_total": 1633,
+    "preneural_interface_process_windows": 500,
+    "process_window_members_total": 22128,
+    "route_legitimacy_rows": 1633,
+    "materialization_confidence_rows": 1633,
+    "high_materialization_confidence": 120,
+    "medium_materialization_confidence": 671,
+    "low_materialization_confidence": 842,
+    "hypernode_direct_fk_after_normalization": 390
+  },
+  "materialization_confidence": {
+    "high_materialization_confidence": 120,
+    "low_materialization_confidence": 842,
+    "medium_materialization_confidence": 671
+  },
+  "stage2_route_status": {
+    "hybrid_route": 330,
+    "intentional_bypass_to_toprxin": 532,
+    "overlay_governance_route": 271,
+    "stage1_preneural_interface_direct": 500
+  },
+  "combined_operational_class": {
+    "architecturally_valid_needs_more_materialization": 1113,
+    "operationally_ready_materialized_route": 520
+  },
+  "acceptance": [
+    {
+      "check_id": "pass3_001",
+      "check_name": "preneural_supplement_promoted",
+      "status": "PASS",
+      "observed": "500",
+      "required": ">=500",
+      "notes": "Pass2 preneural supplement is now part of main process_window registry."
+    },
+    {
+      "check_id": "pass3_002",
+      "check_name": "stage2_bypass_legitimacy_separated",
+      "status": "PASS",
+      "observed": "1633/1633",
+      "required": "route legitimacy must be independent from Stage2 direct path",
+      "notes": "Legal Stage2 bypass is marked intentional when T/O/P/R/Xin-storage-ledger substrate exists."
+    },
+    {
+      "check_id": "pass3_003",
+      "check_name": "materialization_confidence_renamed",
+      "status": "PASS",
+      "observed": "high=120, medium=671, low=842",
+      "required": "confidence classes not strong/weak wording",
+      "notes": "Avoids confusing evidence materialization with importance/truth."
+    },
+    {
+      "check_id": "pass3_004",
+      "check_name": "hypernode_direct_fk_not_overstated",
+      "status": "PASS",
+      "observed": "direct=390, total=855",
+      "required": "direct < total unless all targets proven",
+      "notes": "Remaining unresolved nodes stay blocked/proxy rather than faked direct."
+    },
+    {
+      "check_id": "pass3_005",
+      "check_name": "source_and_semantic_boundaries",
+      "status": "PASS",
+      "observed": "source_facts_rewritten=0; semantic_writeback_allowed=0",
+      "required": "both zero",
+      "notes": "Boundary inherited from pass2 and v36.5."
+    }
+  ]
+}

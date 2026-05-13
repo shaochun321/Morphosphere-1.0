@@ -1,0 +1,80 @@
+quantity_catalog:
+  - quantity_id: position_xyz
+    layer: CORE_PHYSICS
+    class: physical_quantities
+    unit_policy: length_real
+    source_objects: [CellGraphState]
+    allowed_targets: [PatchGraph, PreNeuralGeometry]
+    forbidden_targets: [SemanticReadoutSurface, ExternalEntropyLedger_direct]
+
+  - quantity_id: membrane_potential
+    layer: CORE_PHYSICS
+    class: physical_quantities
+    unit_policy: voltage_real
+    source_objects: [CellGraphState]
+    allowed_targets: [PreNeuralSignalWindow]
+    forbidden_targets: [P_k, R_k, semantic_label]
+
+  - quantity_id: release_rate
+    layer: CORE_PHYSICS
+    class: physical_quantities
+    unit_policy: mechanism_rate_real
+    source_objects: [CellGraphState]
+    allowed_targets: [PatchGraph, PreNeuralSignalWindow]
+    forbidden_targets: [P_k_direct, R_k_direct]
+
+  - quantity_id: spike_times_recent
+    layer: CORE_PHYSICS
+    class: physical_quantities
+    unit_policy: event_time_real
+    source_objects: [CellGraphState]
+    allowed_targets: [PreNeuralSignalWindow]
+    forbidden_targets: [P_k_direct, semantic_label]
+
+  - quantity_id: signal_window_summary
+    layer: CORE_OBJECT
+    class: hybrid_signal_summaries
+    unit_policy: derived_declared
+    source_objects: [PreNeuralSignalWindow]
+    allowed_targets: [PreNeuralPointSetSlice, O_field_surface]
+    forbidden_targets: [semantic_label, legacy_verdict]
+
+  - quantity_id: topology_edges
+    layer: CORE_OBJECT
+    class: structural_field_quantities
+    unit_policy: dimensionless_structural
+    source_objects: [PreNeuralPointSetSlice, TransportOperator]
+    allowed_targets: [T_k, O_field_surface, ExternalEntropyLedger]
+    forbidden_targets: [SemanticReadoutSurface_writeback]
+
+  - quantity_id: coherence_score
+    layer: CORE_OBJECT
+    class: structural_field_quantities
+    unit_policy: dimensionless_structural
+    source_objects: [O_field_surface]
+    allowed_targets: [O_candidate_surface, P_k_freezing]
+    forbidden_targets: [CellGraphState, PreNeuralSignalWindow]
+
+  - quantity_id: contradiction_score
+    layer: CORE_OBJECT
+    class: structural_field_quantities
+    unit_policy: dimensionless_structural
+    source_objects: [O_field_surface]
+    allowed_targets: [O_candidate_surface, R_k_freezing, ExternalAnomalyLedger]
+    forbidden_targets: [CellGraphState, SemanticReadoutSurface_writeback]
+
+  - quantity_id: transport_entropy
+    layer: LEDGER_EXTERNAL
+    class: external_diagnostic_quantities
+    unit_policy: nat_or_ledger_unit_declared
+    source_objects: [TransportOperator, PreNeuralPointSetSlice]
+    allowed_targets: [ExternalEntropyLedger, ExternalIsolationReport]
+    forbidden_targets: [P_k, R_k, Omega_k, T_seed]
+
+  - quantity_id: external_free_energy
+    layer: LEDGER_EXTERNAL
+    class: external_diagnostic_quantities
+    unit_policy: ledger_energy_only
+    source_objects: [ExternalEntropyLedger, ExternalDissipationLedger, ExternalNoiseBudgetLedger]
+    allowed_targets: [ExternalIsolationReport]
+    forbidden_targets: [CellGraphState, P_k, R_k, Omega_k, T_seed]

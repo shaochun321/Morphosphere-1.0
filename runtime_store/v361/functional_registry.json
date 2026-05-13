@@ -1,0 +1,46 @@
+[
+  {
+    "functional_id": "F361A",
+    "functional_name": "external_ledger_action_basic",
+    "status": "active",
+    "scope": "confirmed-hyperedge-neighborhood",
+    "mathematical_intent": "discrete action over top-k T/O/P/R/Xin paths",
+    "engineering_downgrade": "S_IE_proxy over windowed candidate paths",
+    "forbidden_interpretation": "not a physical action; not proof of least action",
+    "coefficient_count": 7,
+    "meta_proxy_required": 1
+  },
+  {
+    "functional_id": "F361B",
+    "functional_name": "noether_weighted_action",
+    "status": "experimental",
+    "scope": "ledger-audited residual neighborhoods",
+    "mathematical_intent": "adds Noether-style closure residual to action proxy",
+    "engineering_downgrade": "scored only in sandbox, no mainline write",
+    "forbidden_interpretation": "not a conservation theorem",
+    "coefficient_count": 8,
+    "meta_proxy_required": 1
+  },
+  {
+    "functional_id": "F361C",
+    "functional_name": "capacity_aware_action",
+    "status": "suspended",
+    "scope": "external leakage candidate neighborhoods",
+    "mathematical_intent": "would include capacity deficit term",
+    "engineering_downgrade": "held until capacity audit exists",
+    "forbidden_interpretation": "not Shannon capacity",
+    "coefficient_count": 9,
+    "meta_proxy_required": 1
+  },
+  {
+    "functional_id": "F361D",
+    "functional_name": "pde_ghost_probe_action",
+    "status": "suspended",
+    "scope": "PDE-like ghost candidates",
+    "mathematical_intent": "would include PDE closure proxy",
+    "engineering_downgrade": "held until external module request interface",
+    "forbidden_interpretation": "not a PDE solver",
+    "coefficient_count": 9,
+    "meta_proxy_required": 1
+  }
+]

@@ -1,0 +1,30 @@
+Wrote reports/release_db_summary.json
+{
+  "integrity_check": "ok",
+  "tables": {
+    "run_manifest": 1,
+    "system_clock_entry": 10,
+    "spacetime_cell": 500,
+    "information_fiber": 500,
+    "transport_current_edge": 900,
+    "o_candidate_record": 18,
+    "object_hypothesis": 18,
+    "xi_residue_record": 9,
+    "xi_decay_policy": 9,
+    "relation_entropy_record": 9,
+    "proxy_provenance": 8,
+    "diagnostic_telemetry_report": 1,
+    "v85_to_mainline_crosswalk": 14,
+    "raw_emergency_export_manifest": 1,
+    "perturbation_run_manifest": 2,
+    "perturbation_effect_report": 12,
+    "threshold_sweep_record": 22,
+    "failed_expectation_report": 0,
+    "transport_cost_matrix_record": 1800,
+    "xi_residue_mass_record": 18,
+    "v853_reproducibility_report": 2,
+    "v853_release_artifact_manifest": 7
+  }
+}
+
+--- STDERR ---

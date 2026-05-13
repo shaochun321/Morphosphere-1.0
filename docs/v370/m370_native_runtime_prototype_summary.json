@@ -1,0 +1,22 @@
+{
+  "version": "v37.0_native_runtime_prototype",
+  "db": "/mnt/data/m370_native_runtime_prototype.db",
+  "integrity": "ok",
+  "run_id": "v37_0_native_runtime_prototype_run_0001",
+  "sample_count": 80,
+  "stage_count": 12,
+  "stage_rows": 960,
+  "role_distribution": {
+    "MIXED": 22,
+    "P": 25,
+    "R": 8,
+    "XIN": 25
+  },
+  "rmi_hits": 80,
+  "rmi_false_neighbor_flags": 0,
+  "readout_rows": 80,
+  "semantic_write_sum": 0,
+  "acceptance_failed": 0,
+  "acceptance_warn": 0,
+  "boundary": "offline native prototype; no online native runtime; no legacy mutation"
+}

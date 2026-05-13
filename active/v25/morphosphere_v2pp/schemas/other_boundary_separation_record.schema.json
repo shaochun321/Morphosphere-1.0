@@ -1,0 +1,15 @@
+{
+  "$id": "https://morphosphere.local/schemas/other_boundary_separation_record.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OtherBoundaryRelationRecord",
+  "type": "object",
+  "required": ["relation_id", "o_surface_id", "separation_distance"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "relation_id": { "type": "string" },
+    "o_surface_id": { "type": "string" },
+    "separation_distance": { "type": "number" },
+    "relation_type": { "type": "string", "default": "unknown" }
+  }
+}

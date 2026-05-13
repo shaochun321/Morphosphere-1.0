@@ -1,0 +1,14 @@
+{
+  "version": "field_stream_reader_sensorium_adapter_v1.3",
+  "source_runtime": "runtime_store/v12/field_store_v12.zarr",
+  "chunk_count": 10,
+  "event_count": 640,
+  "channels": [
+    "pressure_proxy",
+    "shear_proxy",
+    "diffusion_proxy",
+    "phase",
+    "field_energy_proxy"
+  ],
+  "sqlite_role": "ledger_only_not_runtime_engine"
+}

@@ -1,0 +1,91 @@
+{
+  "version": "v37419_issue_fixes",
+  "elapsed_s": 1.9,
+  "checks": [
+    {
+      "name": "Xin conservation gap < 0.05",
+      "value": "3.552713678800501e-15",
+      "pass": true
+    },
+    {
+      "name": "Gamma avg > 0.80",
+      "value": "0.8246944378830325",
+      "pass": true
+    },
+    {
+      "name": "Low sync warnings < 20%",
+      "value": "0.0",
+      "pass": true
+    },
+    {
+      "name": "P-band 'band' type exists",
+      "value": "10",
+      "pass": true
+    },
+    {
+      "name": "R routing beyond xi_boundary",
+      "value": "True",
+      "pass": true
+    },
+    {
+      "name": "R margin beyond 'margin'",
+      "value": "18",
+      "pass": true
+    },
+    {
+      "name": "PRX converged",
+      "value": "CONVERGED",
+      "pass": true
+    },
+    {
+      "name": "P_frozen >= 8",
+      "value": "12",
+      "pass": true
+    },
+    {
+      "name": "R_frozen >= 8",
+      "value": "12",
+      "pass": true
+    },
+    {
+      "name": "Total rows > 40000",
+      "value": "52330",
+      "pass": true
+    },
+    {
+      "name": "R-core windows > 0",
+      "value": "22",
+      "pass": true
+    },
+    {
+      "name": "P-band windows > 0",
+      "value": "22",
+      "pass": true
+    }
+  ],
+  "passed": 12,
+  "total": 12,
+  "verdict": "ALL PASS",
+  "improvements": {
+    "xin_conservation_gap": {
+      "before": 0.41,
+      "after": 0.0
+    },
+    "gamma_avg": {
+      "before": 0.72,
+      "after": 0.8247
+    },
+    "low_sync_warnings": {
+      "before": "32/44 (73%)",
+      "after": "0/44 (0%)"
+    },
+    "p_band_types": {
+      "before": "100% core",
+      "after": "core=12, band=10"
+    },
+    "r_routing": {
+      "before": "100% xi_boundary",
+      "after": "r_band_active=6, r_core_resolved=12, xi_boundary=4"
+    }
+  }
+}

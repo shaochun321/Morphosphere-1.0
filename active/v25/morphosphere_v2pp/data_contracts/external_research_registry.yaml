@@ -1,0 +1,80 @@
+# Morphosphere V8.5 External Research Registry
+# V8.5 §9: Research modules are isolated but not decoration.
+
+version: v8.5
+updated: 2026-04-25
+
+# ═══ System Layers (V8.5 §2) ═══
+system_layers:
+  CORE_MAINLINE:
+    write_access: true
+    outputs: [mainline_objects, formal_tables, SPMS_core_records]
+    promotion: not_applicable
+
+  EXTERNAL_TRANSITIONAL:
+    write_access: false  # no mainline write
+    outputs: [candidate, report, calibration_suggestion, failure_trace]
+    promotion: can_be_reviewed_for_mainline
+
+  EXTERNAL_RESEARCH_SUPPORT:
+    write_access: false
+    outputs: [research_report, metric_file, visualization, risk_note]
+    promotion: cannot_promote_directly  # must apply for transitional proposal
+
+  ARCHIVE_LEGACY:
+    write_access: false
+    outputs: [compat_report, field_map, replay_hint]
+    promotion: never
+
+  THEORY_SANDBOX:
+    write_access: false
+    outputs: [theory_notes, hypotheses, formulas]
+    promotion: never
+
+# ═══ Registered Research Modules ═══
+registered_modules: []
+  # Example entry:
+  # - module_id: research_ot_cpd
+  #   name: "Optimal Transport / CPD Pilot"
+  #   layer: EXTERNAL_TRANSITIONAL
+  #   status: active
+  #   allowed_outputs: [candidate, report]
+  #   forbidden_actions: [write_mainline, freeze_pr, select_omega]
+  #   review_due: "2026-06-01"
+  #   sunset_policy: "Retire if no hard-data improvement after 3 calibration runs"
+
+# ═══ Slow Promotion Lane (V8.5 §12.2) ═══
+slow_promotion_steps:
+  - research_report
+  - human_review
+  - decision_note
+  - external_transitional_proposal
+  - bridge_contract
+  - transitional_trial
+  - promotion_review
+
+# ═══ Data Diode Rules (V8.5 §9.1) ═══
+allowed_data_flow:
+  - from: CORE_MAINLINE
+    to: EXTERNAL_TRANSITIONAL
+    via: research_export_bundle
+  - from: EXTERNAL_TRANSITIONAL
+    to: EXTERNAL_RESEARCH_SUPPORT
+    via: research_export_bundle
+
+forbidden_data_flow:
+  - from: EXTERNAL_RESEARCH_SUPPORT
+    to: CORE_MAINLINE
+    action: write_mainline_object
+  - from: EXTERNAL_RESEARCH_SUPPORT
+    to: CORE_MAINLINE
+    action: threshold_change
+  - from: EXTERNAL_RESEARCH_SUPPORT
+    to: CORE_MAINLINE
+    action: pr_confirmation
+  - from: EXTERNAL_RESEARCH_SUPPORT
+    to: CORE_MAINLINE
+    action: omega_selection
+  - from: EXTERNAL_RESEARCH_SUPPORT
+    to: CORE_MAINLINE
+    action: t_seed_generation

@@ -1,0 +1,92 @@
+[
+  {
+    "path": "morphosphere_v2pp/src/morphosphere",
+    "status": "active_v25",
+    "note": "current active evidence reconstruction baseline"
+  },
+  {
+    "path": "lin/*/src/morphosphere/external_ledgers",
+    "status": "adapter_candidate",
+    "note": "restored; not auto-active"
+  },
+  {
+    "path": "lin/*/src/morphosphere/contracts",
+    "status": "legacy_audit",
+    "note": "restored source lineage"
+  },
+  {
+    "path": "lin/*/src/morphosphere/validation",
+    "status": "legacy_audit",
+    "note": "restored source lineage"
+  },
+  {
+    "path": "lin/*/src/morphosphere/mainline",
+    "status": "legacy_audit",
+    "note": "restored source lineage"
+  },
+  {
+    "path": "lin/*/src/morphosphere/archive_access",
+    "status": "legacy_audit",
+    "note": "restored source lineage"
+  },
+  {
+    "path": "lin/*/src/morphosphere/legacy",
+    "status": "legacy_audit",
+    "note": "restored source lineage"
+  },
+  {
+    "path": "lin/*/src/morphosphere/active_exec",
+    "status": "legacy_audit",
+    "note": "restored but not auto-active"
+  },
+  {
+    "path": "lin/*/src/morphosphere/core",
+    "status": "adapter_candidate",
+    "note": "restored; requires adapter gate"
+  },
+  {
+    "path": "lin/*/src/morphosphere/ledger",
+    "status": "adapter_candidate",
+    "note": "restored; requires adapter gate"
+  },
+  {
+    "path": "lin/*/src/morphosphere/mechanics",
+    "status": "adapter_candidate",
+    "note": "restored; requires adapter gate"
+  },
+  {
+    "path": "lin/*/src/morphosphere/preneural",
+    "status": "adapter_candidate",
+    "note": "restored; requires adapter gate"
+  },
+  {
+    "path": "lin/*/src/morphosphere/trajectory",
+    "status": "adapter_candidate",
+    "note": "restored; requires adapter gate"
+  },
+  {
+    "path": "lin/*/src/morphosphere/shell0",
+    "status": "deprecated_boundary",
+    "note": "restored for history; not active"
+  },
+  {
+    "path": "morphosphere/stage1_physics",
+    "status": "not_found_in_uploaded_artifacts",
+    "note": "exact legacy directory name was not present in uploaded packages"
+  },
+  {
+    "path": "morphosphere/stage2_object",
+    "status": "not_found_in_uploaded_artifacts",
+    "note": "exact legacy directory name was not present in uploaded packages"
+  },
+  {
+    "path": "morphosphere/runtime/spms",
+    "status": "not_found_in_uploaded_artifacts",
+    "note": "exact legacy directory name was not present in uploaded packages"
+  },
+  {
+    "path": "morphosphere/solvers",
+    "status": "not_found_in_uploaded_artifacts",
+    "note": "exact legacy directory name was not present in uploaded packages"
+  }
+]

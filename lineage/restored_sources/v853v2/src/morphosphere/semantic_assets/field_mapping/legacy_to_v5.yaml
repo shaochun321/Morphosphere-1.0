@@ -1,0 +1,180 @@
+# Morphosphere Legacy-to-V5 Field Mapping
+# Generated from v1.7.1 source analysis
+# Status: active | projected | split | archive_only | deprecated
+
+# ══════════════════════════════════════════════════════════════════════
+# OBJECT CORE RECORDS (v1 schemas/object_core_records.py → v5 trajectory/)
+# ══════════════════════════════════════════════════════════════════════
+
+object_core:
+  # v1: PBand(family, score, anchor_bundle_id)
+  # v5: PrimaryBandRecord(p_id, member_node_ids, coherence_score, ...)
+  - legacy_field: "PBand.family"
+    v5_field: "NONE — semantic label, deferred to semantic_readout"
+    relation: "removed_from_core"
+    status: "deprecated"
+    rationale: "v5 P/R is neutral; family labels live in semantic_readout only"
+
+  - legacy_field: "PBand.score"
+    v5_field: "PrimaryBandRecord.coherence_score"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "PBand.anchor_bundle_id"
+    v5_field: "PrimaryBandRecord.origin_anchor_id"
+    relation: "renamed"
+    status: "active"
+
+  # v1: RBand(family, score, reason)
+  # v5: ResidualBandRecord(r_id, member_node_ids, residual_reason, ...)
+  - legacy_field: "RBand.family"
+    v5_field: "NONE — semantic label, deferred to semantic_readout"
+    relation: "removed_from_core"
+    status: "deprecated"
+
+  - legacy_field: "RBand.score"
+    v5_field: "ResidualBandRecord.contradiction_score"
+    relation: "projected"
+    status: "active"
+
+  - legacy_field: "RBand.reason"
+    v5_field: "ResidualBandRecord.residual_reason"
+    relation: "equivalent"
+    status: "active"
+
+  # v1: AnchorBundle(bundle_id, shell_index, sector, strength, source_time)
+  # v5: OriginAnchorBundle(origin_id, supporting_p_ids, observability_score, ...)
+  - legacy_field: "AnchorBundle.bundle_id"
+    v5_field: "OriginAnchorBundle.origin_id"
+    relation: "renamed"
+    status: "active"
+
+  - legacy_field: "AnchorBundle.shell_index"
+    v5_field: "NONE — shell index is not part of v5 origin"
+    relation: "removed"
+    status: "deprecated"
+    rationale: "origin is no longer shell-indexed"
+
+  - legacy_field: "AnchorBundle.strength"
+    v5_field: "OriginAnchorBundle.observability_score"
+    relation: "projected"
+    status: "active"
+
+  # v1: TransitionRecord(time, previous_family, dominant_family, contradiction_score)
+  # v5: RecursiveTransitionRecord(transition_id, from_stage_k, to_stage_kplus1, ...)
+  - legacy_field: "TransitionRecord.previous_family"
+    v5_field: "NONE — semantic label"
+    relation: "removed_from_core"
+    status: "deprecated"
+
+  - legacy_field: "TransitionRecord.dominant_family"
+    v5_field: "NONE — semantic label"
+    relation: "removed_from_core"
+    status: "deprecated"
+
+  - legacy_field: "TransitionRecord.contradiction_score"
+    v5_field: "RecursiveTransitionRecord.continuity_score"
+    relation: "projected"
+    status: "active"
+
+  # v1: TSeed(dominant_family, bounded_score, source)
+  # v5: TSeedReplayPacket(seed_id, source_p_ids, source_r_ids, ...)
+  - legacy_field: "TSeed.dominant_family"
+    v5_field: "NONE — semantic label"
+    relation: "removed_from_core"
+    status: "deprecated"
+
+  - legacy_field: "TSeed.bounded_score"
+    v5_field: "TSeedReplayPacket.allowed_drive_envelope"
+    relation: "projected"
+    status: "active"
+
+  # v1: BoundaryElasticityRecord(shell_index, boundary_type, thickness, ...)
+  # v5: BoundaryElasticityRecord(record_id, p_id, r_id, elasticity_score, ...)
+  - legacy_field: "BoundaryElasticityRecord.shell_index"
+    v5_field: "NONE"
+    relation: "removed"
+    status: "deprecated"
+
+  - legacy_field: "BoundaryElasticityRecord.classification"
+    v5_field: "BoundaryElasticityRecord.perturbation_type"
+    relation: "renamed"
+    status: "active"
+
+# ══════════════════════════════════════════════════════════════════════
+# STATE OBJECTS (v1 cells/state.py → v5 core/cell_graph_state.py)
+# ══════════════════════════════════════════════════════════════════════
+
+state:
+  - legacy_field: "CellState.positions"
+    v5_field: "CellGraphState.positions"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "CellState.velocities"
+    v5_field: "CellGraphState.velocities"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "float time"
+    v5_field: "CellGraphState.clock_n + CellGraphState.time"
+    relation: "split"
+    status: "active"
+    rationale: "v5 uses integer clock_n as canonical index; float time is convenience"
+
+# ══════════════════════════════════════════════════════════════════════
+# PIPELINE (v1 pipeline.py → v5 active_exec/pipeline.py)
+# ══════════════════════════════════════════════════════════════════════
+
+pipeline:
+  - legacy_field: "RefactoredPipelineResult.dominant_family"
+    v5_field: "PipelineResult.dominant_mode (via semantic_readout)"
+    relation: "projected"
+    status: "active"
+    rationale: "semantic label deferred to post-hoc readout"
+
+  - legacy_field: "RefactoredPipelineResult.shell0_verdict"
+    v5_field: "PipelineResult.shell0_verdict"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "RefactoredPipelineResult.shell0_nature"
+    v5_field: "Shell0Determination.verdict"
+    relation: "equivalent"
+    status: "active"
+
+# ══════════════════════════════════════════════════════════════════════
+# SEMANTIC ASSETS (v1 semantic_assets/library.py → v5 semantic_assets/)
+# ══════════════════════════════════════════════════════════════════════
+
+semantic:
+  - legacy_field: "SemanticTerm.term"
+    v5_field: "semantic_assets/term_registry (read-only)"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "FieldAlignment entries"
+    v5_field: "semantic_assets/field_mapping/legacy_to_v5.yaml (this file)"
+    relation: "superseded"
+    status: "active"
+
+  - legacy_field: "CaseAlignment entries"
+    v5_field: "semantic_assets/replay_index.json"
+    relation: "superseded"
+    status: "active"
+
+# ══════════════════════════════════════════════════════════════════════
+# SHELL0 (v1 cell_sphere/shell0_*.py → v5 shell0/boundary_hypothesis.py)
+# ══════════════════════════════════════════════════════════════════════
+
+shell0:
+  - legacy_field: "Shell0Diagnoser.diagnose()"
+    v5_field: "quick_shell0_check() + determine_shell0()"
+    relation: "equivalent"
+    status: "active"
+
+  - legacy_field: "Shell0NatureAssessor.assess()"
+    v5_field: "determine_shell0() CI/Research tiers"
+    relation: "expanded"
+    status: "active"
+    rationale: "v5 adds multi-resolution CI validation"

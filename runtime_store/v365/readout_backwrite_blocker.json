@@ -1,0 +1,14 @@
+{
+  "version": "v36.5",
+  "blocked_targets": [
+    "source facts",
+    "P/R/Xin mainline",
+    "proxy registry",
+    "external ledger base facts"
+  ],
+  "allowed_targets": [
+    "v365_external_semantic_readout_result",
+    "v365_semantic_contamination_audit",
+    "v365_readout_backwrite_block_event"
+  ]
+}

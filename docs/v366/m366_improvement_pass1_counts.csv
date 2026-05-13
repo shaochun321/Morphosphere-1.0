@@ -1,0 +1,6 @@
+object_name,object_count,note
+counter_masking_coverage_audit,532,generated in pass1
+hypernode_direct_fk_upgrade_candidate,855,generated in pass1
+preneural_interface_operator_trace,500,generated in pass1
+process_window_quality_score,1133,generated in pass1
+stage2_object_surface_materialization_audit,532,generated in pass1

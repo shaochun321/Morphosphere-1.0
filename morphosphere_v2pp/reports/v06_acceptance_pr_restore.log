@@ -1,0 +1,35 @@
+PASS table_exists_historical_issue_register_v022: observed=True expected=exists
+PASS table_exists_layer_interface_contract_v022: observed=True expected=exists
+PASS table_exists_layer_port_contract_v022: observed=True expected=exists
+PASS table_exists_pr_term_registry_v022: observed=True expected=exists
+PASS table_exists_o_candidate_bridge_v022: observed=True expected=exists
+PASS table_exists_p_predictive_support_v022: observed=True expected=exists
+PASS table_exists_r_counterstructure_v022: observed=True expected=exists
+PASS table_exists_xi_boundary_guard_v022: observed=True expected=exists
+PASS table_exists_pr_decomposition_binding_v022: observed=True expected=exists
+PASS table_exists_external_ledger_status_v022: observed=True expected=exists
+PASS table_exists_pr_restoration_run_manifest_v022: observed=True expected=exists
+PASS table_exists_pr_restoration_acceptance_report_v022: observed=True expected=exists
+PASS manifest_exists: observed=present expected=present
+PASS execution_mode_append_only: observed=diagnostic_append_only_pr_restoration expected=diagnostic_append_only_pr_restoration
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS source_fact_counts_unchanged_in_manifest: observed={'cell_spatial_coordinate_snapshot': 500, 'dynamic_latent_trajectory_state': 250, 'dynamic_origin_anchor_state': 250, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'preneural_node_state': 2500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10, 'xin_residue_dynamics': 87} expected=same as before
+PASS live_source_fact_counts_match_manifest: observed={'spacetime_cell': 500, 'information_fiber': 500, 'raw_event_stream': 1500, 'cell_spatial_coordinate_snapshot': 500, 'information_relative_coordinate_snapshot': 1500, 'preneural_node_state': 2500, 'dynamic_origin_anchor_state': 250, 'dynamic_latent_trajectory_state': 250, 'xin_residue_dynamics': 87, 'system_clock_entry': 10} expected=manifest after counts
+PASS open_issues_retained: observed=4 expected=>=3
+PASS interfaces_declared: observed=13 expected=>=12
+PASS o_bridge_count_positive: observed=50 expected=>0
+PASS p_support_count_matches_o: observed={'P': 50, 'O': 50} expected=P = O
+PASS r_counter_count_positive: observed=18 expected=>0
+PASS xi_guard_count_positive: observed=87 expected=>0
+PASS R_is_counterstructure_not_residual: observed={'canonical_name': 'Refutational Counter-Structure', 'role_definition': 'A structured counter-evidence state for an O candidate: prediction failure, continuity conflict, conservation conflict, phase conflict, support competition or masking break.'} expected=R canonical_name contains Counter-Structure and not Residual
+PASS Xi_is_residue_carrier: observed={'canonical_name': 'Unresolved Residue Carrier', 'role_definition': 'A protected store for information not currently explained by P or structured as R; it is preserved, decayed, quarantined or considered for re-entry through O candidate formation.'} expected=Xi/Xin canonical_name contains Residue
+PASS no_xi_direct_to_p: observed=all forbidden expected=0 allowed
+PASS no_xi_direct_to_r: observed=all forbidden expected=0 allowed
+PASS all_R_rows_forbid_equivalence_to_Xi: observed=18 expected=all R rows include forbidden equivalence
+PASS chain_order_contracts_present: observed=present expected=4 contracts
+PASS external_ledgers_populated: observed={'external_entropy_ledger': 10, 'external_conserved_quantity_ledger': 10, 'external_dissipation_ledger': 10, 'external_noise_budget_ledger': 10, 'external_anomaly_ledger': 10, 'external_isolation_report': 10} expected=all > 0
+PASS external_ledger_status_reported: observed=6 expected=>=6
+PASS legacy_pr_graph_kept_separate: observed={'legacy': 18, 'new_P': 50} expected=legacy and restored tables both present
+PASS stored_acceptance_all_pass: observed=29/29 expected=all pass
+pr_restoration_v0.2.2 acceptance: 34/34 PASS

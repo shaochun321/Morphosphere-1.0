@@ -1,0 +1,22 @@
+{
+  "boundary": {
+    "hot_swap_allowed": false,
+    "source_fact_rewrite_allowed": false,
+    "sqlite_role": "ledger_only"
+  },
+  "parameters": {
+    "damping_proxy": 0.18,
+    "diffusion_proxy": 0.41,
+    "field_grid": [
+      8,
+      8
+    ],
+    "met_gain": 0.62,
+    "phase_delay": 0.035,
+    "stiffness_proxy": 0.73
+  },
+  "run_id": "external_physical_simulator_adapter_v1.1",
+  "scientific_run": false,
+  "simulator_kind": "local_mass_spring_diffusion_proxy",
+  "version": "v1.1"
+}

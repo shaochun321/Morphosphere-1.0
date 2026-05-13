@@ -1,0 +1,16 @@
+{
+  "$id": "https://morphosphere.local/schemas/semantic_readout.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SemanticReadoutSurface",
+  "type": "object",
+  "required": ["readout_id", "surface_id", "dominant_family_label"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "readout_id": { "type": "string" },
+    "surface_id": { "type": "string" },
+    "dominant_family_label": { "type": "string" },
+    "onset_category": { "type": "string", "default": "unknown" },
+    "readout_confidence": { "type": "number", "default": 0.0 }
+  }
+}

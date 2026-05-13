@@ -1,0 +1,17 @@
+{
+  "version": "multi_rate_clock_sync_sensor_fusion_v1.5",
+  "base": "field_stream_reader_sensorium_adapter_v1.3 + repaired streaming queue v1.4",
+  "clock_domains": 7,
+  "sensor_sample_count": 122,
+  "sync_frame_count": 10,
+  "cross_modal_binding_count": 50,
+  "fused_event_count": 50,
+  "replay_scenario_count": 10,
+  "boundaries": [
+    "no_source_fact_rewrite",
+    "sqlite_ledger_only",
+    "no_hot_swap",
+    "semantic_label_free",
+    "p_r_before_xi"
+  ]
+}

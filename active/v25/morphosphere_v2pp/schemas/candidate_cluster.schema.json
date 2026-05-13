@@ -1,0 +1,18 @@
+{
+  "$id": "https://morphosphere.local/schemas/candidate_cluster.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CandidateCluster",
+  "type": "object",
+  "required": ["cluster_id", "field_id", "node_indices"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "cluster_id": { "type": "string" },
+    "field_id": { "type": "string" },
+    "node_indices": {
+      "type": "array",
+      "items": { "type": "integer" }
+    },
+    "cluster_score": { "type": "number", "default": 0.0 }
+  }
+}

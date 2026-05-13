@@ -1,0 +1,3612 @@
+[
+  {
+    "path": "lin/v01/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "136552490fa801570e104df48a959de1ccb65acb24740df4774eb6f095a1e6f7",
+    "bytes": 12958
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "aba16027e2eb1d377fcfc58c621d804ccb9203ba2cf77bf7b5bf11fdc160e852",
+    "bytes": 11867
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "18e9b6bb5185066f8e38a616aac38cff640a20e17052c6e3b8732e670f7c3e05",
+    "bytes": 21189
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/basic_physics_runner.py",
+    "sha256": "da02dac721a189b986ebcc09b52ac52995b83e4f94ed37608b4ffe9d67c2e477",
+    "bytes": 5545
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v01/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v01/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v01/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v01/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v01/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v01/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v01/src/morphosphere/cli.py",
+    "sha256": "6a2090e6e8ceadf2216a743d996cecd9371a15daf9e49a1d380cbefb55423f0d",
+    "bytes": 3131
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v01/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v01/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v01/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v01/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v01/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v01/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v01/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v01/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v01/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v01/src/morphosphere/validation/v853.py",
+    "sha256": "29f29027bb0579a68247bfe17747766e3ca6172d945c54037149b2fb2f8c5e23",
+    "bytes": 30994
+  },
+  {
+    "path": "lin/v02/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "136552490fa801570e104df48a959de1ccb65acb24740df4774eb6f095a1e6f7",
+    "bytes": 12958
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "aba16027e2eb1d377fcfc58c621d804ccb9203ba2cf77bf7b5bf11fdc160e852",
+    "bytes": 11867
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "18e9b6bb5185066f8e38a616aac38cff640a20e17052c6e3b8732e670f7c3e05",
+    "bytes": 21189
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/basic_physics_runner.py",
+    "sha256": "da02dac721a189b986ebcc09b52ac52995b83e4f94ed37608b4ffe9d67c2e477",
+    "bytes": 5545
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v02/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v02/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v02/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v02/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v02/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v02/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v02/src/morphosphere/cli.py",
+    "sha256": "6a2090e6e8ceadf2216a743d996cecd9371a15daf9e49a1d380cbefb55423f0d",
+    "bytes": 3131
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v02/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v02/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v02/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v02/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v02/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v02/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v02/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v02/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v02/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v02/src/morphosphere/validation/v853.py",
+    "sha256": "29f29027bb0579a68247bfe17747766e3ca6172d945c54037149b2fb2f8c5e23",
+    "bytes": 30994
+  },
+  {
+    "path": "lin/v05/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "136552490fa801570e104df48a959de1ccb65acb24740df4774eb6f095a1e6f7",
+    "bytes": 12958
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "aba16027e2eb1d377fcfc58c621d804ccb9203ba2cf77bf7b5bf11fdc160e852",
+    "bytes": 11867
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "18e9b6bb5185066f8e38a616aac38cff640a20e17052c6e3b8732e670f7c3e05",
+    "bytes": 21189
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/basic_physics_runner.py",
+    "sha256": "da02dac721a189b986ebcc09b52ac52995b83e4f94ed37608b4ffe9d67c2e477",
+    "bytes": 5545
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v05/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v05/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v05/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v05/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v05/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v05/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v05/src/morphosphere/cli.py",
+    "sha256": "6a2090e6e8ceadf2216a743d996cecd9371a15daf9e49a1d380cbefb55423f0d",
+    "bytes": 3131
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v05/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v05/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v05/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v05/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v05/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v05/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v05/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v05/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v05/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v05/src/morphosphere/validation/v853.py",
+    "sha256": "29f29027bb0579a68247bfe17747766e3ca6172d945c54037149b2fb2f8c5e23",
+    "bytes": 30994
+  },
+  {
+    "path": "lin/v08/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "136552490fa801570e104df48a959de1ccb65acb24740df4774eb6f095a1e6f7",
+    "bytes": 12958
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "aba16027e2eb1d377fcfc58c621d804ccb9203ba2cf77bf7b5bf11fdc160e852",
+    "bytes": 11867
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "18e9b6bb5185066f8e38a616aac38cff640a20e17052c6e3b8732e670f7c3e05",
+    "bytes": 21189
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/basic_physics_runner.py",
+    "sha256": "da02dac721a189b986ebcc09b52ac52995b83e4f94ed37608b4ffe9d67c2e477",
+    "bytes": 5545
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v08/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v08/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v08/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v08/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v08/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v08/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v08/src/morphosphere/cli.py",
+    "sha256": "6a2090e6e8ceadf2216a743d996cecd9371a15daf9e49a1d380cbefb55423f0d",
+    "bytes": 3131
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v08/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v08/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v08/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v08/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v08/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v08/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v08/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v08/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v08/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v08/src/morphosphere/validation/v853.py",
+    "sha256": "29f29027bb0579a68247bfe17747766e3ca6172d945c54037149b2fb2f8c5e23",
+    "bytes": 30994
+  },
+  {
+    "path": "lin/v24/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v24/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v25/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "44893121a2ef9f648069391ca99ed7e0630c0c85c42c1be60f3b7dcbb54c2555",
+    "bytes": 21999
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "136552490fa801570e104df48a959de1ccb65acb24740df4774eb6f095a1e6f7",
+    "bytes": 12958
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "aba16027e2eb1d377fcfc58c621d804ccb9203ba2cf77bf7b5bf11fdc160e852",
+    "bytes": 11867
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "18e9b6bb5185066f8e38a616aac38cff640a20e17052c6e3b8732e670f7c3e05",
+    "bytes": 21189
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/basic_physics_runner.py",
+    "sha256": "da02dac721a189b986ebcc09b52ac52995b83e4f94ed37608b4ffe9d67c2e477",
+    "bytes": 5545
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/cli.py",
+    "sha256": "ea76224c92b260cd53fcb29ccdb4a092010756fcfc1666128d36faf656172364",
+    "bytes": 1456
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v853p/src/morphosphere/validation/v853.py",
+    "sha256": "6e4ba9992993e363b564cebb64e29f5933d0fee2bddd68fb2eb13830a091049b",
+    "bytes": 19706
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/contracts/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/contracts/clock.py",
+    "sha256": "d075fe9eae1430252557b679d88aef89c09ac265a6c1eac350c84a0cbcfd38bd",
+    "bytes": 3552
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/contracts/run_manifest.py",
+    "sha256": "922c53d89d853bb8977ca90e731ac21eadddd6824273a928d4582224b6b5403d",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/perturbations/__init__.py",
+    "sha256": "9f8fdfe88dd32aab89e482a3c31fa15eac51b66d82146f259c487bff721cc710",
+    "bytes": 111
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/perturbations/definitions.py",
+    "sha256": "9636b857c5341ef973e11a2352d8892c31bcd4cd2221d2154cc06f89d0368d3d",
+    "bytes": 1249
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/__init__.py",
+    "sha256": "2c246c84059c8fdaf604b97e3758089d77e82cff2402a715d50d57206504333b",
+    "bytes": 1049
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/adapters/__init__.py",
+    "sha256": "d59f54a0556395b374495e4cfbbd9ca4d633d38335db6f26424007e167b78f67",
+    "bytes": 230
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/adapters/legacy_preneural_slice_adapter.py",
+    "sha256": "f57c04b67cf4cf32122a548c9c1e69e3a9e6cb012bd9d73198efa8eb5ef1ff71",
+    "bytes": 965
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/assembler.py",
+    "sha256": "b1f1df738a0ed8c4b259dd1d1b49cc5f9de75833bed52b8465926d5395376f0d",
+    "bytes": 15126
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/carrier_slice.py",
+    "sha256": "9c191dbcf28be4751310e52c4d8dc5920a598072f42dcb8cc472a0ec7685a99d",
+    "bytes": 6627
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/geometry.py",
+    "sha256": "e20121bd806eda00592ac4e51b2b11aee4f5ae2c8e8229ad399bfd19be5ffdf6",
+    "bytes": 1288
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/patch_afferent_graph.py",
+    "sha256": "1a68ce9a4eebfae223fd81b98373fc1fe7b7cb6a0f07d96e764718401150d930",
+    "bytes": 12425
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/pointset_slice.py",
+    "sha256": "dd2bd61abb7d25593ddfa246d38ecf4f708f717df261365597898eaa9bea4ce4",
+    "bytes": 1833
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/signal_window.py",
+    "sha256": "808ca0499b997fe1991c68604194d27ae2a1f2aa61ce504a7c4c867fad17c66f",
+    "bytes": 1522
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/transport/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/preneural/transport/builder.py",
+    "sha256": "84abb790d7022bdfa9558942e65ecd3e9e45eea094cd49ee8706dd8d55d95711",
+    "bytes": 20888
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/emergence/__init__.py",
+    "sha256": "94bf92388142238127f874d6aca09657d1f679674ed940972367f1f13e56e565",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/emergence/alert.py",
+    "sha256": "09612b0a8a2a5eaa4584d585e9c1f238dd7c2293e8d026e5e170f002c4591137",
+    "bytes": 7396
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/emergence/proxy_provenance.py",
+    "sha256": "198435ab84428a9d926ec35dcaec063c289f207aef6ac6012d5b852961f67a0c",
+    "bytes": 5967
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/replay/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/replay/alignment.py",
+    "sha256": "296208609eb6a0e22393abad0da3ec53b3d9d8622c2aae3c21909b6033471d68",
+    "bytes": 1433
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/replay/shell0_ci.py",
+    "sha256": "cc9f0f7f3fd84c14495f7612828a6e80b817e00275ecbb77878e4a89cc16c558",
+    "bytes": 483
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/semantic_readout/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/semantic_readout/readout.py",
+    "sha256": "9c164679129185c43defd4589d67ffd79d9f59a8076e6877d7661937a45a19f6",
+    "bytes": 3850
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/__init__.py",
+    "sha256": "529ac5b5893ab28767a868d3294e1cfc2f559533bdf0bd7a886086278c019f98",
+    "bytes": 348
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/binding.py",
+    "sha256": "58e7c6a45906ace2762b83ff7e75dbc4e32718176f28453a3d27f742f1311004",
+    "bytes": 4140
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/confirmation_graph.py",
+    "sha256": "361e95dacc1e0bbce67fad70b817ebeecde50783bc20de8276e1950de059e641",
+    "bytes": 13421
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/core.py",
+    "sha256": "6853e4d79f3743992339d289037ecbc0c3906790ddc01623d563762e4fa517a3",
+    "bytes": 13032
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/populator.py",
+    "sha256": "2e3693e6bba20e55e8b1d39fccabef29fa2b6c4a1a9966847018b252da331bd7",
+    "bytes": 11662
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/runtime/spms/xi_ledger_maturity.py",
+    "sha256": "c893070b03628b4c94274848d81e7ebb5accf9208adf51ff9aa5de872497f19a",
+    "bytes": 21186
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/shell0/__init__.py",
+    "sha256": "a3239406ea9e2b8064b87052a9c38ec2dd447bcd7844ca95b8c29e4842c5f566",
+    "bytes": 34
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/shell0/boundary_analyzer.py",
+    "sha256": "338046656199f011dbe9df4b86868d96bc12fb72fdcef46f3906b5cd66e04971",
+    "bytes": 8698
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/solvers/ot_sinkhorn.py",
+    "sha256": "3b8864c4ebc54c7f649c719dcd72b994ef6bddcbdbe2cbb1f82f26b928925252",
+    "bytes": 1499
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/solvers/pde_diffusion.py",
+    "sha256": "73282c519d4bd9209837ad3ad9fc246be0621845bb6619ffbd1f50dd2d775868",
+    "bytes": 997
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/__init__.py",
+    "sha256": "755076cb90d2764131b541c9676636b251215b5abeb1278a2549fc15529ae56c",
+    "bytes": 945
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/adapters/__init__.py",
+    "sha256": "edd09628dcdb984ea37142994475b079cbcb78f3dd555ee6da6b2fd22fcca0e8",
+    "bytes": 194
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/adapters/legacy_v2_state_adapter.py",
+    "sha256": "45effcba611cc57987779235b82325becdd6531627f2551eba9b2094648fecb5",
+    "bytes": 689
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/cell_graph_state.py",
+    "sha256": "6d30c0847c0b1bb8f54dc2f102fdc1c4a2fdb10456cd4354e9430cc6fad8e035",
+    "bytes": 3370
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/diagnostic_dynamic_driver.py",
+    "sha256": "501c3e5dd1e51a17616a59ea5ce4db2560a11162ad79457ce021bb075af45e69",
+    "bytes": 2263
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/dynamics.py",
+    "sha256": "fa7ad471f891e5b7923827ec60de8d6b218ccd956386b387a43209e816a3ca9a",
+    "bytes": 14776
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/electromechanical_integrator.py",
+    "sha256": "a949eb7104fd9a7a31569a8edc6b9d63e85a468984b19c7e52d6e812bc88df63",
+    "bytes": 3244
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/patch_builder.py",
+    "sha256": "27d38edc5040c780e29038f6dbfb411c26db073bb647f4bc59e32cbd97ee6fd9",
+    "bytes": 1898
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/physical_cell_graph_state.py",
+    "sha256": "cfd7d7fbd92d33837f7ad190e41e841ca7f53d8845b80018b934d58f57d1d8df",
+    "bytes": 5940
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage1_physics/v2_dataclass.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/decomposition/__init__.py",
+    "sha256": "05da6fb5d965baed5d51098f5806e587a23173e0ef798c716f50887aa27efc07",
+    "bytes": 33
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/decomposition/diagnostics.py",
+    "sha256": "3ecca1b3da482be8b4e3b65d7c53a363228070cbfefb7654c3e6486d137410f4",
+    "bytes": 5112
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/decomposition/proposer.py",
+    "sha256": "c041910f5643243d8fa8dc4c9d09791a178073fb0387156fec64209b782b43ba",
+    "bytes": 9133
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/family_surface/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/family_surface/index_builder.py",
+    "sha256": "23a90ebf1137ef7bf9966f349dd428779d349cedb056ac3f227f8ec4ab6769d4",
+    "bytes": 4671
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/family_surface/recursive_surface.py",
+    "sha256": "2a55eee7f7edddf6f18824072a968a05d67bc0d4e9555556afcc29c72eb9a281",
+    "bytes": 1821
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/boundary_elasticity.py",
+    "sha256": "2c4ce2c76d2e57485630991179d15a0a096ebafc3fa0ec3b0678003a1999971a",
+    "bytes": 668
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/occupancy.py",
+    "sha256": "20cd139dd3e470b0755edbeb35f2b42d6b5c69eb69ffbf3024df7e3d83794499",
+    "bytes": 589
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/origin_bundle.py",
+    "sha256": "5792881ed9fcd7349cb4febb418be7174cdbca70fdfd0abb0bd4f1803b3e701b",
+    "bytes": 707
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/other_boundary_relation.py",
+    "sha256": "be70ae9bce5185254de8ea7122b122a52d0bed184046c7513d60bd4def92d750",
+    "bytes": 693
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/p_band_freezer.py",
+    "sha256": "180446456cb2cb5cb149e286660a34c8719ed96eee34da5ed3a79c000adb10ee",
+    "bytes": 1536
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/r_band_freezer.py",
+    "sha256": "d6ded36c967d7ead34c0d7631d9bb4176e730bb7fe657f3e65752dce34f9e735",
+    "bytes": 1493
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/thresholds.py",
+    "sha256": "ea820bd83f9fed8e13b9690eda15fd6ced9e8dbcfbafd4471ef74ba028884883",
+    "bytes": 2498
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/freezing/transition.py",
+    "sha256": "9035b1c4de2c10ac8e4d2ad78cd39e9cb8a05b5410da05a989b1d3759d856634",
+    "bytes": 3133
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/o_candidate_surface.py",
+    "sha256": "23f4e4ba4fab92d61032b5dfe92a42f413932cf4db0e5b58e40947d8a0af3f9f",
+    "bytes": 4633
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/o_field_surface.py",
+    "sha256": "31cdbafb08a05ea8349d9e76411b37ad232941728e836c515d09394644317522",
+    "bytes": 637
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/observable_surface.py",
+    "sha256": "51c5fad0a61088214c6c018203fb36c17d4748cc6038e8ce3c0f8574f7bdf1bd",
+    "bytes": 3121
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/stage2_object/t_surface.py",
+    "sha256": "d071a3ca92886acabdf288003a55cf39faa91d364a92d63b10e41f6284dafdfb",
+    "bytes": 1673
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/active_exec/warm_path/validator.py",
+    "sha256": "7c0e24722d95c08d4a673212f986c069b03ed4fcc5b18854727237452ad971ad",
+    "bytes": 2588
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/archive_access/__init__.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "bytes": 0
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/archive_access/compat_importer.py",
+    "sha256": "4c6a0edd45e4c7678912fcc1b1d77b8a1b99ffb6880c65881426a6c211a5dbb7",
+    "bytes": 2173
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/archive_access/v1_full_importer.py",
+    "sha256": "21b66cd05fec5d16c86a7d4dd1ea4ecc35d972e911673d6cdc9aa76958851737",
+    "bytes": 6744
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "9a9df70e73bce283721cdbdd90a3448e65958cec98c55b6307a297bc69d8e323",
+    "bytes": 357
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/archive_access/v2_reader.py",
+    "sha256": "9f2acd5302c32ea149c9e833ebeac55deaece05b36d3bd41ab6f27b4f78fe88e",
+    "bytes": 372
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/cli.py",
+    "sha256": "ea76224c92b260cd53fcb29ccdb4a092010756fcfc1666128d36faf656172364",
+    "bytes": 1456
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/__init__.py",
+    "sha256": "efbee2d6c3ccb3c5aa6d54176dbc5a0132974d4370b83f08e72d6882fc2a545e",
+    "bytes": 171
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/invariant_registry.py",
+    "sha256": "26c1766ed4d3587038428f749b7c478195cbef527822c8fd33a058c7622c3199",
+    "bytes": 391
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/invariants.py",
+    "sha256": "dbfa0417d9159cbe8ae33d7b3371a0d2d541e2118936e0c4e43dec6e5ffb88e8",
+    "bytes": 234
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/quantity_catalog.py",
+    "sha256": "a34f20035e8bd06d77565009923cd7cfb55d818979ba84864f26bff11488c9aa",
+    "bytes": 560
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/transform_registry.py",
+    "sha256": "12502b5c0bba4c8c069fab0ad026dddde1db4c8aa464813e41d875bc1c5cc4c6",
+    "bytes": 1019
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/contracts/transforms.py",
+    "sha256": "5341786475adf0e7c52340a92753227f7d3a612fc608f1a4e92c0f9d8aadc43a",
+    "bytes": 1329
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_conversion/__init__.py",
+    "sha256": "b49e92d9fc019d5fdd89853f02e10523f676de9824fb4c7aa7598cd03a8c96b2",
+    "bytes": 142
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/__init__.py",
+    "sha256": "2bccc566755d3e52587f5935c47fa5c1ab63d01ebdd6edd915cf3e25472745ef",
+    "bytes": 126
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/anomaly_currents.py",
+    "sha256": "9affd378da0b9c2ad2e00b89568e02bfd362b6a22820f267b0ca4657a5e993c7",
+    "bytes": 457
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/conserved_quantity_ledger.py",
+    "sha256": "f35b42181cfb563ab0dcf8187bd2fa843c0f555029521644cdad59c4d5a8569a",
+    "bytes": 583
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/dissipation_bookkeeper.py",
+    "sha256": "5ba44b07fb54511fd91b43b72759950a20542d68fe4fc96dd9f5626efc34a6c2",
+    "bytes": 447
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/entropy_bookkeeper.py",
+    "sha256": "daaf68fab1445ccf4c8e005e0dd28306f2ad67bcd6de75348b14f925a27d595b",
+    "bytes": 539
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/external_isolation.py",
+    "sha256": "de9394e1c2cd1bdf6760180742d7cd8c3d07de84edbc6e5aee16ce51b3e5ba30",
+    "bytes": 1484
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/noise_budget.py",
+    "sha256": "10671afae0194f5f93b5c2da7446b78db124cace8a73a107d091fa632ab0ef7c",
+    "bytes": 530
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/report_builder.py",
+    "sha256": "3e2f7d9876a627553bef8d16fdaad7e50700a6bcf2212a447d7652730b8a2e1c",
+    "bytes": 104
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/symmetry_catalog.py",
+    "sha256": "74a57b112a3373f2fc80647550e33947b2d3e33c66e02cf6e7b801655f53c81a",
+    "bytes": 95
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_ledgers/variational_closure.py",
+    "sha256": "fe0548d4fd987d359e95e02b45e05f99c144e7cfa8f06f8c594cd8cd318ab79c",
+    "bytes": 1705
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_transitional/__init__.py",
+    "sha256": "a9f647cf427206b22340784bc4ba70e549b63fe70ac212c8374c844dea954d7e",
+    "bytes": 154
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_transitional/noether_entropy_ledger_pilot.py",
+    "sha256": "a7a541701feed500e257b7fa1b7d5c9a6ddaaafa60b5077657a456326e0fbb39",
+    "bytes": 2247
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_transitional/pr_decomposition_pilot_glsr.py",
+    "sha256": "688d17bdd5b018b38586ea7883b67db01db0cb37f699fd52b2fbcd964298c2a6",
+    "bytes": 2348
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/external_transitional/transport_pilot_ot_cpd.py",
+    "sha256": "4d5533c1f56366714b966554130e2e704b3ba143affc4cd1c2f676cdad7272b8",
+    "bytes": 2799
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/legacy/__init__.py",
+    "sha256": "790bb6a45fe6d581b11c41f6c2f03c91a692fcd2c5f13dca4dac2dfd948ae245",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/legacy/reference.py",
+    "sha256": "310ba4568cf51ac0e13e1de3c3a67a28f22c24d41e0b6fc8cbd297ed1f7af8c4",
+    "bytes": 1306
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/mainline/__init__.py",
+    "sha256": "f2ed1f84a2257928dd16b2d2cd91d2de5f443edc3ba984e5efb35a6ef63a5b9d",
+    "bytes": 558
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/mainline/boundary.py",
+    "sha256": "86ba21112f8a8c961c73d0b958e663468f82f2b201b4ef84d3aa598f17a67630",
+    "bytes": 1452
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/mainline/crosswalk.py",
+    "sha256": "c51896eec24206582b80bb9021a312947b5f4d366d94321be4a624a1b42f36d5",
+    "bytes": 8888
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/mainline/manifest_semantics.py",
+    "sha256": "811ffc15d92231ed53af05cf22c4a15319a86ba0b8fa4bfdb8f2223fa15be418",
+    "bytes": 2867
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/validation/__init__.py",
+    "sha256": "31fc48da9d851f1f301cb975420987d223b54f511760bc2b55ced91a2f21f584",
+    "bytes": 85
+  },
+  {
+    "path": "lin/v853pp/src/morphosphere/validation/v853.py",
+    "sha256": "55eedb3efa4dea4f24e7dd53cf6822b6182759702848ddbacb65b5d1aba340a6",
+    "bytes": 14079
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/__init__.py",
+    "sha256": "37aafb3851355d9c7882de9117ca04e442f986ba7604ed402ed6ddd590459da7",
+    "bytes": 395
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/active_exec/__init__.py",
+    "sha256": "cc40f0a21a13acd95b2e1d365f47742613b2d6648a58f94dadfe184a719bd756",
+    "bytes": 157
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/active_exec/pipeline.py",
+    "sha256": "09942b2e1ef6dcf729c1df7dfce14f8a2884bf798dee0b71315dde22f1bbb1d6",
+    "bytes": 11419
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/archive_access/__init__.py",
+    "sha256": "31bc5c1f97650c17321de25ee534c4c5a27839ad0aa9a60f02beed450edbb3be",
+    "bytes": 379
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/archive_access/v1_reader.py",
+    "sha256": "6eb39e0738fd628ec1fb74d0b3e4d47e6ac415910e2a5399b3d98d32197da8b7",
+    "bytes": 8286
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/__init__.py",
+    "sha256": "eb073286bbfe9a51dcdd7c42d6316d3e437037ad955485ed550e70f65c15bcf5",
+    "bytes": 1056
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/cell_graph_state.py",
+    "sha256": "dc594f641c5f38eb8b352b88f4739d51acd0a88122af174e5eb24eb7a209f074",
+    "bytes": 11203
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/clock.py",
+    "sha256": "ec3eed7391fa177e7f703bfe16c3acc0ac3c80866f463e06f4722e5fc7b782ee",
+    "bytes": 7644
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/contracts.py",
+    "sha256": "93169b31f4bc42984521e10f20ff62a4966e7df284537555b4610bea655c1a4f",
+    "bytes": 4402
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/dynamics.py",
+    "sha256": "70bbf100bd21d09b456ac5a3fea452b08a84a8ae45b134a06b48cc4d09903fcb",
+    "bytes": 14780
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/integrator.py",
+    "sha256": "69827150855ab92368d9f7d1b01f4ec4ebb7109a75a4b4f1c1cf1171d323b22b",
+    "bytes": 3663
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/runtime_db.py",
+    "sha256": "9e6177afac5aeb6b84b6ec0e4217c98ba2f8b25dd7c56be3d75b3389c235db5e",
+    "bytes": 14281
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/schema.py",
+    "sha256": "4edbe70feab471c6457ac1da791eb22b101118dfcd77b63804b31c0fcac14e57",
+    "bytes": 9258
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/core/types.py",
+    "sha256": "985a6962eaaaf1681697b88370c80ba13f5f637d08b13a6b29032808cf4e5678",
+    "bytes": 8176
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/ledger/__init__.py",
+    "sha256": "8cd9a8d21d8e6f9e391da7caac89a83ab13cd68f10685977aea912da6108c80e",
+    "bytes": 337
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/ledger/runtime_ledger.py",
+    "sha256": "1de67da4eefb10753b219af7106d224c68a1703a8a78cda35122721afd47aafb",
+    "bytes": 5027
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/ledger/semantic_readout.py",
+    "sha256": "8cd98df5a9a0665b871b2cfa850e548eed7dbcec7d6692ac5538909a062fb059",
+    "bytes": 5553
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/mechanics/__init__.py",
+    "sha256": "0ff65f79a97a13e80cb4549b8ecbd7d0e0cdb8efa534ed8e205c4064e92d501f",
+    "bytes": 752
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/__init__.py",
+    "sha256": "baeef606f09c7d987216d955ad11b2a128433c7b94ff546ea9bda42d22958fc8",
+    "bytes": 1035
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/geometry.py",
+    "sha256": "efe9adb64c946461a345f509f605cf3fed9902c37838e621a9451cde83759850",
+    "bytes": 5630
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/met_channel.py",
+    "sha256": "dd086152eaa0443acc1cf34a819a3b01254f83ad5863400a5b66b6f496c21a48",
+    "bytes": 1204
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/patch_graph.py",
+    "sha256": "cfa622163c104a3889e1b756cdfc769330f6ed3cdc65196fdb7bc408acb3923f",
+    "bytes": 6900
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/preneural_slice.py",
+    "sha256": "a08860bb20f2be4c89cdd9d7aed6c57a5d7c94bec323338ce4438b245818482d",
+    "bytes": 10165
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/preneural/signal_window.py",
+    "sha256": "c002ce4481e5eea3521950130789c0ea7e9d68859e423e17851ed6fbbe313350",
+    "bytes": 4912
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/semantic_assets/__init__.py",
+    "sha256": "ba89fabab8a29c92acc39186422a047a60ad76ea790e4a6f3a78812bf91c42cf",
+    "bytes": 4787
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/shell0/__init__.py",
+    "sha256": "f07e52c96eb4db91376b51f630421477ab5596c89165003b177ab4abdba382f5",
+    "bytes": 439
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/shell0/boundary_hypothesis.py",
+    "sha256": "b8d8d63b14f331adea886281e3edeeb38d1d00c174a4c8d273709662f43fcdc2",
+    "bytes": 9332
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/__init__.py",
+    "sha256": "37a23329736068e9eaebb9692956bb742c1d8abf2de8336e13166777a7a03d68",
+    "bytes": 1820
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/band_records.py",
+    "sha256": "e50fa076771253bcc1b0d64ca430a47e74e99a07a11aa9cd5f973b71ade5a7ce",
+    "bytes": 8707
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/decomposition.py",
+    "sha256": "6454ddcad4848b6cc28b348869627a8efbb92b8313f6ab5ca2c042da9ebb7e55",
+    "bytes": 7346
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/family_surface.py",
+    "sha256": "d97a7bd3c1507bc18ca1fa6f92a94d85de134a829c7c59d3646458b98fbeadb5",
+    "bytes": 1757
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/o_surface.py",
+    "sha256": "f9f439ac8a44c49a9ff62e6d7eadee8524b74baeb91494b714bb6e9a4cf39827",
+    "bytes": 9172
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/observation_field.py",
+    "sha256": "976b616f36078430857cca2f40382eb33d4a844be0f36ea56e9998c8b644a29c",
+    "bytes": 3379
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/origin.py",
+    "sha256": "f7e730eb277426d180ff4f184a8136e6d7aed9b2305b351a9f3e021cdad440dd",
+    "bytes": 6784
+  },
+  {
+    "path": "lin/v853v2/src/morphosphere/trajectory/transport.py",
+    "sha256": "6a26f211b4af592e8b93f3e8bc6a98554d907408843a6c73b61479885273fdfd",
+    "bytes": 6937
+  }
+]

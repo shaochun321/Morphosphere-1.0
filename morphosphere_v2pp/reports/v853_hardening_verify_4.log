@@ -1,0 +1,7 @@
+Morphosphere v8.5.3 validation/perturbation complete
+db=v85_full_diagnostic_run.db
+perturbation_run_id=v853_val_50ea3195
+integrity_check=ok
+behavioral_acceptance=6/6
+
+--- STDERR ---

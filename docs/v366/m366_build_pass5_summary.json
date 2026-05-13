@@ -1,0 +1,62 @@
+{
+  "pass": "pass5",
+  "created_at_utc": "2026-05-06T05:51:44Z",
+  "m365_counts": {
+    "source_data": 1,
+    "information_point": 4575,
+    "information_point_3d4d_backprojection": 4575,
+    "information_point_to_trajectory": 13941,
+    "trajectory_to_o_pr_r_xin": 532,
+    "counter_evidence_chain": 532,
+    "masking_layer": 52,
+    "external_entropy_ledger": 4489,
+    "preneural": 50,
+    "attention": 120,
+    "hyperedge": 120,
+    "hyperedge_incidence": 855,
+    "variational_path": 120,
+    "spacetime_band_coupler": 210,
+    "xin_carrier_external_readout": 31
+  },
+  "process_window_counts": {
+    "v366_process_window_registry": 1633,
+    "v366_process_window_member": 22128,
+    "process_window_materialization_confidence_pass3": 1633,
+    "stage2_bypass_and_route_legitimacy_pass3": 1633,
+    "v366_hypernode_spacetime_backprojection": 855,
+    "hypernode_fk_upgrade_applied_pass2": 855,
+    "v366_hyperedge_spacetime_relation": 2625,
+    "r_chain_concrete_mask_binding_pass2": 532,
+    "preneural_process_window_supplement_pass2": 500,
+    "preneural_process_window_member_pass2": 2000
+  },
+  "materialization_confidence": {
+    "high_materialization_confidence": 120,
+    "low_materialization_confidence": 842,
+    "medium_materialization_confidence": 671
+  },
+  "stage2_route_status": {
+    "hybrid_route": 330,
+    "intentional_bypass_to_toprxin": 532,
+    "overlay_governance_route": 271,
+    "stage1_preneural_interface_direct": 500
+  },
+  "hypernode_fk_coverage": {
+    "blocked_requires_upstream_writer_change": 352,
+    "direct_fk_after_ledger_window_normalization": 112,
+    "direct_fk_after_mask_ref_normalization": 113,
+    "direct_fk_after_source_ref_normalization": 130,
+    "direct_fk_applied": 35,
+    "still_proxy_after_pass2": 113,
+    "direct_after_normalization": 390
+  },
+  "acceptance": {
+    "m365 materialized DB integrity": "PASS",
+    "m366 process-window pass3 DB integrity": "PASS",
+    "process_window count present": "PASS",
+    "stage2 bypass treated as legitimate route": "PASS",
+    "preneural supplement present": "PASS",
+    "hypernode direct FK partial upgrade kept honest": "PASS",
+    "full materialized mode retained": "PASS"
+  }
+}

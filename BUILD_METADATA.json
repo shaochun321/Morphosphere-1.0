@@ -1,0 +1,11 @@
+{
+  "package_name": "morphosphere_full_core_v18_package",
+  "version": "full_core_v1.8_corrected",
+  "purpose": "Corrected complete deployable core package combining the full v1.3 core tree with v1.4-v1.8 layers and latest v1.8 ledger database.",
+  "source_base": "morphosphere_field_stream_v13_package.zip",
+  "overlaid_layers": ["v1.4 streaming queue", "v1.5 multirate sync", "v1.6 sensor fusion memory", "v1.7 frozen promotion", "v1.8 frozen sandbox"],
+  "sqlite_role": "ledger_only",
+  "hot_swap_allowed": false,
+  "candidate_profile_auto_applied": false,
+  "scientific_run": false
+}

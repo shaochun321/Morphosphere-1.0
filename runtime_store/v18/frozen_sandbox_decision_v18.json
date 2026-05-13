@@ -1,0 +1,14 @@
+{
+  "version": "frozen_profile_replay_sandbox_v1.8",
+  "decision": "SANDBOX_COMPLETED_CANDIDATE_REMAINS_STAGED_NOT_PROMOTED",
+  "candidate_promoted": false,
+  "auto_applied": false,
+  "manual_review_required": true,
+  "scenario_count": 10,
+  "candidate_wins": 8,
+  "blockers": [
+    "real_external_data_gate",
+    "human_approval_gate",
+    "candidate_not_replayed_against_true_external_physical_runtime"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "artifact_name": "Morphosphere_v36_2_variational_action_revision_bridge_overlay",
+  "artifact_type": "ENGINEERED_BRIDGE_OVERLAY",
+  "includes_full_base": false,
+  "not_a_full_lineage": true,
+  "created_utc": "2026-05-05T11:57:56.077436+00:00",
+  "version": "v36.2",
+  "purpose": "Variational action revision bridge overlay",
+  "implemented_tables": {
+    "v362_action_functional_candidate_library": 5,
+    "v362_candidate_path_inventory": 120,
+    "v362_discrete_action_score": 120,
+    "v362_stationarity_defect_proxy": 120,
+    "v362_xin_var_closure_defect": 120,
+    "v362_delta_xin_fallback_snapshot": 120,
+    "v362_action_comparison_report": 120,
+    "v362_meta_proxy_registry": 12,
+    "v362_downgrade_contract": 9,
+    "v362_acceptance_report": "12/12 PASS"
+  },
+  "boundaries": {
+    "source_facts_rewritten": 0,
+    "hot_swap_allowed": 0,
+    "semantic_label_in_mainline": 0,
+    "continuous_variational_solver_claimed": 0,
+    "physical_action_claimed": 0,
+    "global_action_solve_claimed": 0,
+    "xin_direct_to_P_allowed": 0,
+    "xin_direct_to_R_allowed": 0,
+    "raw_coordinate_replaced": 0
+  },
+  "local_run": [
+    "./RUN_EXAMPLES.sh",
+    "python3 active/v362/scripts/check_v362.py --db outputs/m362.db"
+  ]
+}

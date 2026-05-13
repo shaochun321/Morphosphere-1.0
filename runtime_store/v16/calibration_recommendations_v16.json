@@ -1,0 +1,39 @@
+{
+  "version": "v1.6",
+  "auto_apply_allowed": false,
+  "recommendations": [
+    {
+      "rec_id": "rec16_domain_01",
+      "target_type": "clock_domain",
+      "target_id": "mechanical_force",
+      "recommendation_type": "offset_ms",
+      "suggested_value": 0.2378882271290515,
+      "confidence": 0.8658616694838266,
+      "requires_human_review": 1,
+      "auto_apply_allowed": 0,
+      "rationale": "domain mechanical_force classified watch; staged offset only, never hot-applied"
+    },
+    {
+      "rec_id": "rec16_domain_02",
+      "target_type": "clock_domain",
+      "target_id": "optical_intensity",
+      "recommendation_type": "offset_ms",
+      "suggested_value": -0.19829301107854988,
+      "confidence": 0.7463642205831804,
+      "requires_human_review": 1,
+      "auto_apply_allowed": 0,
+      "rationale": "domain optical_intensity classified drifting; staged offset only, never hot-applied"
+    },
+    {
+      "rec_id": "rec16_phase_03",
+      "target_type": "modality_pair",
+      "target_id": "acoustic-optical",
+      "recommendation_type": "phase_offset",
+      "suggested_value": -0.4993681784719673,
+      "confidence": 0.6935287207530652,
+      "requires_human_review": 1,
+      "auto_apply_allowed": 0,
+      "rationale": "phase pair acoustic-optical requires staged correction; must pass replay and human review"
+    }
+  ]
+}

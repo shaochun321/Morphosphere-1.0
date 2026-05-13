@@ -1,0 +1,10 @@
+{"check_id":"check27_01_point_samples","status":"PASS","detail":"v27_measure_point_sample=13725 expected=13725"}
+{"check_id":"check27_02_field_cells","status":"PASS","detail":"v27_measure_field_cell=13725"}
+{"check_id":"check27_03_query_index","status":"PASS","detail":"v27_reversible_query_index=11278"}
+{"check_id":"check27_04_grid_spec","status":"PASS","detail":"v27_field_grid_spec=1"}
+{"check_id":"check27_05_recipe_trace","status":"PASS","detail":"v27_measure_recipe_trace=1"}
+{"check_id":"check27_06_reconstruction_query_sample","status":"PASS","detail":"v27_reconstruction_query_sample=2"}
+{"check_id":"check27_07_p_links","status":"PASS","detail":"P samples linked to p_spacetime_measure_v25"}
+{"check_id":"check27_08_r_links","status":"PASS","detail":"R samples linked to r_counter_measure_v25"}
+{"check_id":"check27_09_xi_links","status":"PASS","detail":"Xi samples linked to xi_residual_surface_v25"}
+{"check_id":"check27_10_quick_check","status":"PASS","detail":"SQLite quick_check ok"}

@@ -1,0 +1,220 @@
+[1/7] v8.5.2 SQL acceptance
+DB: /mnt/data/work_v03/morphosphere_online_sensorium_v03_package/outputs/morphosphere_online_sensorium_v03_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] execution_mode_diagnostic_full: [('diagnostic_full',)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] no_invalid_confirmation_transitions: [(0,)]
+[PASS] no_masking_supported_synonym: [(0,)]
+[PASS] spike_rate_positive: [(212,)]
+[PASS] spike_rate_nonuniform: [(213,)]
+[PASS] transport_accepted_rejected: [(2,)]
+[PASS] transport_weight_nonuniform: [(899,)]
+[PASS] boundary_or_signal_nonzero: [(900,)]
+[PASS] derived_o_candidate: [(18,)]
+[PASS] o_support_scores: [(18,)]
+[PASS] xi_lifecycle_multi_state: [(5,)]
+[PASS] xi_non_unknown_types: [(9,)]
+[PASS] xi_support_domains: [(9,)]
+[PASS] relation_entropy_nonuniform: [(9,)]
+[PASS] relation_entropy_distribution_recorded: [(9,)]
+[PASS] proxy_provenance_complete_minimum: [(8,)]
+[PASS] manifest_counts_distinguished: [(50, 10, 500)]
+[PASS] telemetry_present: [(1,)]
+[PASS] synthetic_emergence_isolated: [(1,)]
+{
+  "passed": 21,
+  "failed": []
+}
+[2/7] v8.5.3 behavioral acceptance
+DB: /mnt/data/work_v03/morphosphere_online_sensorium_v03_package/outputs/morphosphere_online_sensorium_v03_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] v853_manifest_present: [(2,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] six_perturbations_recorded: [(6,)]
+[PASS] all_effects_passed: [(0,)]
+[PASS] counterfactual_acceptance_passed: [(0,)]
+[PASS] failed_expectations_visible_and_empty_when_passed: [(0, 0)]
+[PASS] signal_shuffle_entropy_increases: [(0.07579806441648296,)]
+[PASS] geometry_shift_cost_increases: [(0.20000000000000007,)]
+[PASS] boundary_flip_rejection_increases: [(0.15000000000000002,)]
+[PASS] masking_injection_o_support_decreases: [(-0.09999999999999998,)]
+[PASS] xi_pressure_increases: [(0.2,)]
+[PASS] threshold_sweep_nonflat: [(22, 0.6454828005735918)]
+[PASS] transport_cost_matrix_exported: [(18,)]
+[PASS] transport_cost_matrix_record_exported: [(1800,)]
+[PASS] object_evidence_terms_exported: [(36,)]
+[PASS] xi_residual_mass_exported: [(8,)]
+[PASS] xi_residue_mass_record_exported: [(18,)]
+[PASS] reproducibility_report_present: [(2,)]
+[PASS] reproducibility_latest_compared_and_passed: [(18, 0.0, 1e-09, 1)]
+[PASS] artifact_manifest_exported: [(7,)]
+{
+  "passed": 21,
+  "total": 21,
+  "failed": []
+}
+[3/7] state_separation_v0.1 acceptance
+DB: /mnt/data/work_v03/morphosphere_online_sensorium_v03_package/outputs/morphosphere_online_sensorium_v03_output_database.db
+[PASS] integrity_check: [('ok',)]
+[PASS] state_manifest_present: [(1,)]
+[PASS] not_scientific_run: [(0,)]
+[PASS] physical_first_assertion_recorded: [(1,)]
+[PASS] raw_events_present: [(1500,)]
+[PASS] raw_events_multi_channel: [(3,)]
+[PASS] origin_anchors_present: [(10,)]
+[PASS] latent_trajectories_nonsemantic: [(5,)]
+[PASS] trajectory_scores_nonzero: [(0.972324596040456, 0.7674656377729635, 0.794382862996861, 0.889661525612145)]
+[PASS] trajectory_bindings_present: [(1500, 1498)]
+[PASS] xin_residue_retained: [(2,)]
+[PASS] reprojection_passed: [(1,)]
+[PASS] noise_sweep_complete: [(4,)]
+[PASS] noise_sweep_not_collapsed_10pct: [(0.8865306122448979,)]
+[PASS] noise_xin_increases: [(0.206703608780134, 0.3112648332699299)]
+[PASS] hidden_structure_probe_passed: [(1,)]
+[PASS] cross_modal_binding_passed: [(1.0,)]
+[PASS] all_state_tests_passed: [(0,)]
+{
+  "passed": 18,
+  "failed": []
+}
+[4/7] dynamic_recursive_v0.2 acceptance
+PASS table_exists_recursive_system_run_manifest: observed=True expected=table exists
+PASS table_exists_clock_binding_record: observed=True expected=table exists
+PASS table_exists_cell_spatial_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_information_relative_coordinate_snapshot: observed=True expected=table exists
+PASS table_exists_preneural_node_state: observed=True expected=table exists
+PASS table_exists_preneural_edge_state: observed=True expected=table exists
+PASS table_exists_dynamic_origin_anchor_state: observed=True expected=table exists
+PASS table_exists_dynamic_latent_trajectory_state: observed=True expected=table exists
+PASS table_exists_trajectory_transition_edge: observed=True expected=table exists
+PASS table_exists_topdown_feedback_signal: observed=True expected=table exists
+PASS table_exists_xin_residue_dynamics: observed=True expected=table exists
+PASS table_exists_recursive_memory_trace: observed=True expected=table exists
+PASS table_exists_recursive_metric_weight_state: observed=True expected=table exists
+PASS table_exists_dynamic_free_energy_trace: observed=True expected=table exists
+PASS table_exists_recursive_iteration_report: observed=True expected=table exists
+PASS table_exists_recursive_reprojection_report: observed=True expected=table exists
+PASS table_exists_recursive_acceptance_report: observed=True expected=table exists
+PASS manifest_exists: observed=present expected=present
+PASS version_dynamic_recursive_v02: observed=dynamic_recursive_v0.2 expected=dynamic_recursive_v0.2
+PASS execution_mode_diagnostic_recursive: observed=diagnostic_recursive expected=diagnostic_recursive
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS clock_source_system_clock_entry: observed=system_clock_entry expected=system_clock_entry
+PASS iterations_at_least_5: observed=5 expected=>=5
+PASS input_tables_do_not_include_semantic: observed=["raw_event_stream", "spacetime_cell", "information_fiber", "origin_anchor", "latent_trajectory", "trajectory_event_binding", "system_clock_entry"] expected=no semantic/O/P generation tables
+PASS stored_acceptance_all_pass: observed=20/20 expected=all stored recursive checks pass
+PASS clock_binding_recorded: observed=1 expected=1
+PASS cell_coordinate_snapshot_count_matches: observed=500/500 expected=match
+PASS information_coordinate_snapshot_count_matches: observed=1500/1500 expected=match
+PASS preneural_node_states_present: observed=2500 expected=>0
+PASS preneural_edge_states_present: observed=5000 expected=>0
+PASS dynamic_trajectory_states_present: observed=250 expected=>0
+PASS topdown_feedback_present: observed=2000 expected=>0
+PASS xin_multistate: observed=4 expected=>=3
+PASS prediction_error_not_worse: observed=0.109473->0.062833 expected=<=105%
+PASS xin_mass_not_worse: observed=0.111796->0.079147 expected=<=105%
+PASS free_energy_not_worse: observed=0.528132->0.437863 expected=<=105%
+PASS reprojection_beats_baseline: observed=0.409401 expected=>0.30
+PASS metric_weight_rows_present: observed=5 expected=>=5
+dynamic_recursive_v0.2 acceptance: 39/39 PASS
+[5/7] pr_restoration_v0.2.2 acceptance
+PASS table_exists_historical_issue_register_v022: observed=True expected=exists
+PASS table_exists_layer_interface_contract_v022: observed=True expected=exists
+PASS table_exists_layer_port_contract_v022: observed=True expected=exists
+PASS table_exists_pr_term_registry_v022: observed=True expected=exists
+PASS table_exists_o_candidate_bridge_v022: observed=True expected=exists
+PASS table_exists_p_predictive_support_v022: observed=True expected=exists
+PASS table_exists_r_counterstructure_v022: observed=True expected=exists
+PASS table_exists_xi_boundary_guard_v022: observed=True expected=exists
+PASS table_exists_pr_decomposition_binding_v022: observed=True expected=exists
+PASS table_exists_external_ledger_status_v022: observed=True expected=exists
+PASS table_exists_pr_restoration_run_manifest_v022: observed=True expected=exists
+PASS table_exists_pr_restoration_acceptance_report_v022: observed=True expected=exists
+PASS manifest_exists: observed=present expected=present
+PASS execution_mode_append_only: observed=diagnostic_append_only_pr_restoration expected=diagnostic_append_only_pr_restoration
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS source_fact_counts_unchanged_in_manifest: observed={'cell_spatial_coordinate_snapshot': 500, 'dynamic_latent_trajectory_state': 250, 'dynamic_origin_anchor_state': 250, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'preneural_node_state': 2500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10, 'xin_residue_dynamics': 87} expected=same as before
+PASS live_source_fact_counts_match_manifest: observed={'spacetime_cell': 500, 'information_fiber': 500, 'raw_event_stream': 1500, 'cell_spatial_coordinate_snapshot': 500, 'information_relative_coordinate_snapshot': 1500, 'preneural_node_state': 2500, 'dynamic_origin_anchor_state': 250, 'dynamic_latent_trajectory_state': 250, 'xin_residue_dynamics': 87, 'system_clock_entry': 10} expected=manifest after counts
+PASS open_issues_retained: observed=4 expected=>=3
+PASS interfaces_declared: observed=13 expected=>=12
+PASS o_bridge_count_positive: observed=50 expected=>0
+PASS p_support_count_matches_o: observed={'P': 50, 'O': 50} expected=P = O
+PASS r_counter_count_positive: observed=18 expected=>0
+PASS xi_guard_count_positive: observed=87 expected=>0
+PASS R_is_counterstructure_not_residual: observed={'canonical_name': 'Refutational Counter-Structure', 'role_definition': 'A structured counter-evidence state for an O candidate: prediction failure, continuity conflict, conservation conflict, phase conflict, support competition or masking break.'} expected=R canonical_name contains Counter-Structure and not Residual
+PASS Xi_is_residue_carrier: observed={'canonical_name': 'Unresolved Residue Carrier', 'role_definition': 'A protected store for information not currently explained by P or structured as R; it is preserved, decayed, quarantined or considered for re-entry through O candidate formation.'} expected=Xi/Xin canonical_name contains Residue
+PASS no_xi_direct_to_p: observed=all forbidden expected=0 allowed
+PASS no_xi_direct_to_r: observed=all forbidden expected=0 allowed
+PASS all_R_rows_forbid_equivalence_to_Xi: observed=18 expected=all R rows include forbidden equivalence
+PASS chain_order_contracts_present: observed=present expected=4 contracts
+PASS external_ledgers_populated: observed={'external_entropy_ledger': 10, 'external_conserved_quantity_ledger': 10, 'external_dissipation_ledger': 10, 'external_noise_budget_ledger': 10, 'external_anomaly_ledger': 10, 'external_isolation_report': 10} expected=all > 0
+PASS external_ledger_status_reported: observed=6 expected=>=6
+PASS legacy_pr_graph_kept_separate: observed={'legacy': 18, 'new_P': 50} expected=legacy and restored tables both present
+PASS stored_acceptance_all_pass: observed=29/29 expected=all pass
+pr_restoration_v0.2.2 acceptance: 34/34 PASS
+[6/7] rebuild online recursive sensorium + full replay harness v0.3
+[OK] built online_recursive_sensorium_full_replay_v0.3: onrec_v03_432e0e1184b3
+[OK] report dir: /mnt/data/work_v03/morphosphere_online_sensorium_v03_package/morphosphere_v2pp/reports
+[7/7] online_sensorium_v0.3 acceptance
+PASS table_exists_online_sensorium_run_manifest_v03: observed=True expected=exists
+PASS table_exists_online_clock_tick_v03: observed=True expected=exists
+PASS table_exists_online_preneural_tick_state_v03: observed=True expected=exists
+PASS table_exists_online_origin_anchor_tick_v03: observed=True expected=exists
+PASS table_exists_online_latent_trajectory_tick_v03: observed=True expected=exists
+PASS table_exists_online_o_candidate_tick_v03: observed=True expected=exists
+PASS table_exists_online_p_support_tick_v03: observed=True expected=exists
+PASS table_exists_online_r_counterstructure_tick_v03: observed=True expected=exists
+PASS table_exists_online_xi_boundary_tick_v03: observed=True expected=exists
+PASS table_exists_online_feedback_tick_v03: observed=True expected=exists
+PASS table_exists_full_replay_scenario_v03: observed=True expected=exists
+PASS table_exists_full_replay_event_buffer_v03: observed=True expected=exists
+PASS table_exists_full_replay_pr_response_v03: observed=True expected=exists
+PASS table_exists_full_replay_result_v03: observed=True expected=exists
+PASS table_exists_full_replay_source_integrity_v03: observed=True expected=exists
+PASS table_exists_online_sensorium_acceptance_report_v03: observed=True expected=exists
+PASS table_exists_online_sensorium_artifact_manifest_v03: observed=True expected=exists
+PASS manifest_exists: observed=present expected=present
+PASS execution_mode: observed=diagnostic_append_only_online_sensorium_full_replay expected=diagnostic_append_only_online_sensorium_full_replay
+PASS not_scientific_run: observed=0 expected=0
+PASS semantic_labels_disallowed: observed=0 expected=0
+PASS system_clock_source: observed=system_clock_entry expected=system_clock_entry
+PASS clock_tick_matches_clock_count: observed=10 expected=10
+PASS source_fact_counts_unchanged_manifest: observed={'before': {'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}, 'after': {'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}} expected=same
+PASS live_source_counts_match_after: observed={'spacetime_cell': 500, 'information_fiber': 500, 'raw_event_stream': 1500, 'cell_spatial_coordinate_snapshot': 500, 'information_relative_coordinate_snapshot': 1500, 'system_clock_entry': 10} expected={'cell_spatial_coordinate_snapshot': 500, 'information_fiber': 500, 'information_relative_coordinate_snapshot': 1500, 'raw_event_stream': 1500, 'spacetime_cell': 500, 'system_clock_entry': 10}
+PASS online_preneural_states_positive: observed=500 expected=>0
+PASS online_trajectory_ticks_positive: observed=50 expected=>0
+PASS P_support_exists: observed=50 expected=>0
+PASS R_counter_exists: observed=15 expected=>0
+PASS Xi_guard_exists: observed=50 expected=>0
+PASS replay_scenarios_enough: observed=9 expected=>=9
+PASS replay_events_present: observed=13500 expected=>= raw events * 9
+PASS pr_boundary_asserted: observed=P/R remains before Xi; Xi direct_to_p/direct_to_r is forbidden expected=contains P/R remains before Xi
+PASS no_xi_direct_to_p: observed=all direct_to_p_allowed=0 expected=0 allowed
+PASS no_xi_direct_to_r: observed=all direct_to_r_allowed=0 expected=0 allowed
+PASS R_not_Xi_residue: observed=15 expected=all R rows forbid Xi equivalence
+PASS source_integrity_all_unchanged: observed=all unchanged expected=0 changed
+PASS replay_buffer_no_source_rewrite: observed=all replay rows source_fact_rewritten=0 expected=0
+PASS baseline_passed: observed={'result_id': 'rres_9772bb8906d7ba06f9', 'scenario_id': 'rscn_fea2b5c213065ab6ac', 'scenario_name': 'baseline', 'replay_event_count': 1500, 'p_stability_mean': 0.9556096244736949, 'r_counter_rate_mean': 0.0, 'xi_mass_mean': 0.16024592855617453, 'phase_coherence_mean': 0.7533868026316382, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'baseline online replay remains stable', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS noise_05_passed: observed={'result_id': 'rres_6bde7baedd981c2e9b', 'scenario_id': 'rscn_82318f0a9c554f01c1', 'scenario_name': 'noise_05', 'replay_event_count': 1500, 'p_stability_mean': 0.9324114001820046, 'r_counter_rate_mean': 0.0, 'xi_mass_mean': 0.1770023220663083, 'phase_coherence_mean': 0.7533565110519282, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'low-noise replay preserves P/R without collapse', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS noise_10_passed: observed={'result_id': 'rres_d462806f782be4229b', 'scenario_id': 'rscn_572cb0e3349da3b2f5', 'scenario_name': 'noise_10', 'replay_event_count': 1500, 'p_stability_mean': 0.909994784990212, 'r_counter_rate_mean': 0.0, 'xi_mass_mean': 0.19323380483503017, 'phase_coherence_mean': 0.7527607234775715, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'low-noise replay preserves P/R without collapse', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS noise_20_passed: observed={'result_id': 'rres_5f7d3df4624954345e', 'scenario_id': 'rscn_d7938247210f9c03d0', 'scenario_name': 'noise_20', 'replay_event_count': 1500, 'p_stability_mean': 0.8599248437513747, 'r_counter_rate_mean': 0.0, 'xi_mass_mean': 0.22954432333799502, 'phase_coherence_mean': 0.7506336624073467, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'high-noise replay raises Xi/R pressure without crashing', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS noise_30_passed: observed={'result_id': 'rres_ff222b7080671e69df', 'scenario_id': 'rscn_9035f05aac860d758d', 'scenario_name': 'noise_30', 'replay_event_count': 1500, 'p_stability_mean': 0.809298035352907, 'r_counter_rate_mean': 0.00848026048026048, 'xi_mass_mean': 0.2660231219967406, 'phase_coherence_mean': 0.7518480539332684, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'high-noise replay raises Xi/R pressure without crashing', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS xi_increases_with_noise: observed={'noise_05': 0.1770023220663083, 'noise_30': 0.2660231219967406} expected=noise_30 > noise_05
+PASS low_noise_p_stable: observed=0.909994784990212 expected=>0.68
+PASS hidden_structure_passed: observed={'result_id': 'rres_af1765e28e35e55625', 'scenario_id': 'rscn_654746ba62e6e683e4', 'scenario_name': 'hidden_structure_lowfreq', 'replay_event_count': 1500, 'p_stability_mean': 0.5235674521057438, 'r_counter_rate_mean': 0.03496296296296296, 'xi_mass_mean': 0.47229278674278674, 'phase_coherence_mean': 0.7531525116985769, 'hidden_detection_contrast': 0.7137387808341373, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'hidden structure detected as new_P_candidate', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS hidden_contrast_positive: observed=0.7137387808341373 expected=>0.45
+PASS cell_id_permutation_passed: observed={'result_id': 'rres_12da02ab14da0c65e3', 'scenario_id': 'rscn_728d0557ccf671d9b8', 'scenario_name': 'cell_id_permutation', 'replay_event_count': 1500, 'p_stability_mean': 0.9556096244736949, 'r_counter_rate_mean': 0.0, 'xi_mass_mean': 0.16024592855617453, 'phase_coherence_mean': 0.7533868026316382, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.97, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'trajectory response invariant to identifier permutation', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS cell_id_invariant_high: observed=0.97 expected=>0.90
+PASS phase_shift_passed: observed={'result_id': 'rres_47da36eb44ec85e218', 'scenario_id': 'rscn_af36cfd8f9a07981b1', 'scenario_name': 'cross_modal_phase_shift', 'replay_event_count': 1500, 'p_stability_mean': 0.22806052907547003, 'r_counter_rate_mean': 0.3333333333333333, 'xi_mass_mean': 0.7886338123319799, 'phase_coherence_mean': 0.7114473837526111, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 0.0, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'cross-modal phase lag produces detectable R/Xi pressure', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS physics_swap_passed: observed={'result_id': 'rres_ef5a2b0e37dd1dc753', 'scenario_id': 'rscn_1bb9f9530492b10f4b', 'scenario_name': 'physics_swap_MET_proxy', 'replay_event_count': 1500, 'p_stability_mean': 0.12024779849644687, 'r_counter_rate_mean': 0.9720993080993081, 'xi_mass_mean': 0.8084257351975612, 'phase_coherence_mean': 0.11248776942470462, 'hidden_detection_contrast': 0.0, 'cell_id_invariant_score': 0.0, 'physics_signal_nonuniformity': 29.23287825375262, 'source_fact_rewrite_count': 0, 'passed': 1, 'pass_reason': 'MET proxy produces nonuniform signal; downstream P/R/Xi replay runs without source rewrite', 'created_at': '2026-04-30T12:51:47+00:00'} expected=passed
+PASS physics_swap_nonuniform: observed=29.23287825375262 expected=>0.5
+PASS online_p_ticks_cover_o_ticks: observed={'P': 50, 'O': 50} expected=P = O
+PASS online_clock_ordered: observed=distinct ticks match expected=clock count
+PASS artifact_manifest_present: observed=5 expected=>=4
+PASS stored_acceptance_all_pass: observed=55/55 expected=all pass
+online_sensorium_v0.3 acceptance: 56/56 PASS
+[OK] all local checks completed
+
+Packaged output DB: /mnt/data/work_v03/morphosphere_online_sensorium_v03_package/outputs/morphosphere_online_sensorium_v03_output_database.db

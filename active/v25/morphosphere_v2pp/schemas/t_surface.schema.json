@@ -1,0 +1,21 @@
+{
+  "$id": "https://morphosphere.local/schemas/t_surface.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TSurface",
+  "type": "object",
+  "required": ["t_surface_id", "stage_k", "slice_ids", "transport_ids"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "t_surface_id": { "type": "string" },
+    "stage_k": { "type": "integer" },
+    "slice_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "transport_ids": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

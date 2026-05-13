@@ -1,0 +1,12 @@
+{
+  "freeze_date": "2026-05-11T22:20:00+08:00",
+  "dataset": "Fluo-N2DH-GOWT1",
+  "doi": "10.5281/zenodo.15608211",
+  "license": "CC-BY-4.0",
+  "split": "seq02_full",
+  "holdout_rows": 2517,
+  "holdout_sha256": "b53970f7991e0528020fa4b23085345fd7172c7ce7cfa9fd31069569ae62d2ab",
+  "touched_since_freeze": false,
+  "calibration_split": "seq01_frame_0_69",
+  "validation_split": "seq01_frame_70_91"
+}

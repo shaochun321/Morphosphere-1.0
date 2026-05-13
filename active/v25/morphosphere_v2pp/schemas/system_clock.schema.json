@@ -1,0 +1,16 @@
+{
+  "$id": "https://morphosphere.local/schemas/system_clock.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SystemClock",
+  "type": "object",
+  "required": ["clock_n", "run_id", "wall_clock_created_at"],
+  "additionalProperties": false,
+  "schema_version": "1.0",
+  "properties": {
+    "clock_n": { "type": "integer" },
+    "dt_seconds": { "type": "number", "default": 0.001 },
+    "run_id": { "type": "string" },
+    "wall_clock_created_at": { "type": "number" },
+    "tick_hash": { "type": "string", "default": "" }
+  }
+}
