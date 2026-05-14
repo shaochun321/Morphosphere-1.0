@@ -5,6 +5,9 @@ This is an overlay package, not a full baseline package. Apply it to an existing
 
 ```bash
 ./APPLY_TO_EXISTING_TREE.sh /path/to/Morphosphere_tree
+
+此介绍文档已过时，里面提到的问题皆降级实现。Allen Brain Observatory数据库由于体积过大无法上传，源文件大约500mb.
+
 ```# Morphosphere v37 — 项目理解与分析
 
 ## 一句话概括
